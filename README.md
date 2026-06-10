@@ -1,51 +1,78 @@
 # IELTS Topic Collocation
 
-A standalone IELTS Writing Task 2 collocation flashcard tool for topic-based review.
+An IELTS Writing Task 2 collocation flashcard tool for topic-based review, focused practice, and advanced wording upgrades.
 
-## What It Includes
+The app is designed as a local-first study tool: students can open one standalone HTML file and practice without installing a server or signing in.
 
-- Topic-based collocation cards for IELTS Writing Task 2.
-- Advanced synonym and alternative wording support.
-- Zen mode for focused full-screen review.
-- Start Zen mode from a specific card.
-- Familiar / Not familiar review states.
+![Technology topic study page](docs/images/study-page.png)
+
+## Highlights
+
+- 10 IELTS Writing Task 2 topic areas.
+- Topic-colored study pages for fast visual orientation.
+- Flip cards for Chinese-to-English collocation review.
+- Zen mode for focused card-by-card practice.
+- Start Zen mode from any specific card.
+- Synonyms / alternatives panel for advanced wording.
+- Familiar / Not familiar review tracking.
 - Collocation bank for saved weak items.
 - Search by Chinese, English, synonym, or tone.
-- A standalone HTML build that can run locally without a server.
+- Standalone HTML build for offline classroom use.
+
+## Study Flow
+
+1. Choose a topic such as Technology, Education, Environment, or Society.
+2. Review collocation flashcards by flipping each card.
+3. Mark weak items into the collocation bank.
+4. Start Zen mode from the current card when focused practice is needed.
+5. Use the synonym panel to compare alternative expressions and tone.
+
+![Zen mode with synonym alternatives](docs/images/zen-mode.png)
 
 ## Topics
 
-- Technology
-- Education
-- Environment
-- Government
-- Society
-- Health
-- Urbanization
-- Media
-- Economy
-- Arts
+| Topic | Focus |
+| --- | --- |
+| Technology | interfaces, automation, data, modern life |
+| Education | learning, exams, classrooms, growth |
+| Environment | climate, resources, repair, sustainability |
+| Government | policy, law, rights, public order |
+| Society | family, fairness, norms, identity |
+| Health | care, risk, recovery, wellbeing |
+| Urbanization | housing, infrastructure, city life |
+| Media | attention, bias, information, trust |
+| Economy | jobs, markets, money, trade |
+| Arts | culture, expression, imagination |
 
-## Files
+## Mobile Friendly
 
-- `index.html` - source HTML entry.
-- `styles.css` - app styling.
-- `script.js` - app logic and interactions.
-- `data.js` - flashcard data.
-- `sentences.js` - sentence data.
-- `task2-collocation-flashcards-advanced-standalone.html` - single-file local version.
-- `build-standalone.js` - rebuilds the standalone HTML file.
-- `qa-advanced.js` and `qa-topic-header.js` - browser checks for key flows.
+The interface is responsive, so the same standalone file can be used on laptops, classroom screens, or mobile devices.
+
+![Mobile Zen mode](docs/images/mobile-view.png)
 
 ## Use Locally
 
-Open this file in a browser:
+Open this file directly in a browser:
 
 ```text
 task2-collocation-flashcards-advanced-standalone.html
 ```
 
 No installation is required for ordinary study use.
+
+## Project Structure
+
+| File | Purpose |
+| --- | --- |
+| `index.html` | Source HTML entry |
+| `styles.css` | App styling and responsive layout |
+| `script.js` | App logic, study state, Zen mode, navigation |
+| `data.js` | Flashcard data |
+| `sentences.js` | Sentence data |
+| `task2-collocation-flashcards-advanced-standalone.html` | Single-file local version |
+| `build-standalone.js` | Rebuilds the standalone HTML |
+| `qa-advanced.js` | Browser QA for main advanced flows |
+| `qa-topic-header.js` | Browser QA for topic header and navigation |
 
 ## Rebuild Standalone
 
@@ -60,8 +87,8 @@ node qa-topic-header.js task2-collocation-flashcards-advanced-standalone.html
 node qa-advanced.js task2-collocation-flashcards-advanced-standalone.html
 ```
 
-The QA scripts use Playwright/Chrome to verify the main study page, topic header, Zen mode, synonym panel, search, and navigation behavior.
+The QA scripts use Playwright/Chrome to verify the topic header, topic navigation, Zen mode, synonym panel, search behavior, and responsive rendering.
 
-## Repository Name
+## Repository
 
 `IELTS-Topic-Collocation`
