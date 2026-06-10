@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 2 Collocation Flashcards Advanced</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">IELTS Writing Task 2</p>
+      <h1>Collocation Flashcards Advanced</h1>
+      <p id="pageSubtitle" class="page-subtitle">Choose a topic, study the collocation, then open its synonym network for precise alternatives.</p>
+    </div>
+    <div class="stats" aria-live="polite">
+      <span id="visibleCount">0</span>
+      <span>/</span>
+      <span id="totalCount">0</span>
+    </div>
+  </header>
+
+  <main>
+    <section id="topicLanding" class="topic-landing" aria-label="Topic selection"></section>
+
+    <section id="studyPage" class="study-page" hidden>
+      <nav class="study-nav" aria-label="Study navigation">
+        <button id="backButton" class="back-button" type="button">All topics</button>
+        <div id="topicFilters" class="topic-filters" aria-label="Topic filters"></div>
+      </nav>
+
+      <section class="toolbar" aria-label="Flashcard controls">
+        <label class="search-box">
+          <span>Search this topic</span>
+          <input id="searchInput" type="search" placeholder="中文 / English / synonym / tone">
+        </label>
+        <button id="resetButton" type="button">Reset flipped cards</button>
+        <button id="bankButton" type="button">Collocation bank</button>
+        <button id="zenButton" type="button">Zen mode</button>
+        <button id="continueZenButton" type="button">Continue Zen</button>
+        <label class="mode-box">
+          <span>Practice mode</span>
+          <select id="practiceMode">
+            <option value="all">All cards</option>
+            <option value="banked">Banked only</option>
+            <option value="weak">Need practice</option>
+            <option value="random">Random order</option>
+          </select>
+        </label>
+      </section>
+
+      <section id="collocationBank" class="collocation-bank" aria-live="polite"></section>
+      <section id="topicSections" class="topic-sections" aria-live="polite"></section>
+      <section id="zenPage" class="zen-page" hidden aria-live="polite"></section>
+    </section>
+
+    <section id="bankPage" class="bank-page" hidden aria-live="polite"></section>
+  </main>
+
+  <script src="sentences.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
