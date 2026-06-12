@@ -3,6 +3,7 @@ package com.hector.topiccollocation.ui
 import android.content.Context
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
+import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -50,13 +51,12 @@ fun rememberTopicCollocationAppState(
     val reviewMemoryRepository = remember(context) {
         SharedPreferencesReviewMemoryRepository(context)
     }
-    var selectedDestination by rememberSaveable {
+    val selectedDestinationState = rememberSaveable {
         mutableStateOf(initialDestination)
     }
     val appState = remember(studyDataRepository, reviewMemoryRepository) {
         TopicCollocationAppState(
-            selectedDestination = selectedDestination,
-            onDestinationSelected = { selectedDestination = it },
+            selectedDestinationState = selectedDestinationState,
             studyDataRepository = studyDataRepository,
             reviewMemoryRepository = reviewMemoryRepository
         )
@@ -70,13 +70,12 @@ fun rememberTopicCollocationAppState(
 }
 
 class TopicCollocationAppState(
-    selectedDestination: MainDestination,
-    private val onDestinationSelected: (MainDestination) -> Unit,
+    private val selectedDestinationState: MutableState<MainDestination>,
     private val studyDataRepository: StudyDataRepository,
     private val reviewMemoryRepository: ReviewMemoryRepository
 ) {
-    var selectedDestination by mutableStateOf(selectedDestination)
-        private set
+    val selectedDestination: MainDestination
+        get() = selectedDestinationState.value
     var topics by mutableStateOf<List<TopicMeta>>(emptyList())
         private set
     var cards by mutableStateOf<List<Flashcard>>(emptyList())
@@ -113,10 +112,9 @@ class TopicCollocationAppState(
     }
 
     fun select(destination: MainDestination) {
-        selectedDestination = destination
+        selectedDestinationState.value = destination
         detailTopicId = null
         zenRoute = null
-        onDestinationSelected(destination)
     }
 
     fun openTopic(topicId: String, filter: StudyFilter = StudyFilter.All) {
