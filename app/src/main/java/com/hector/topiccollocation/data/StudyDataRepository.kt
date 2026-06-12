@@ -5,6 +5,9 @@ import com.hector.topiccollocation.model.Flashcard
 import com.hector.topiccollocation.model.SynonymGroup
 import com.hector.topiccollocation.model.SynonymOption
 import com.hector.topiccollocation.model.TopicMeta
+import kotlinx.coroutines.CoroutineDispatcher
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -14,15 +17,18 @@ interface StudyDataRepository {
 }
 
 class AndroidAssetStudyDataRepository(
-    context: Context
+    context: Context,
+    private val dispatcher: CoroutineDispatcher = Dispatchers.IO
 ) : StudyDataRepository {
     private val assets = context.applicationContext.assets
 
-    override suspend fun topics(): List<TopicMeta> =
+    override suspend fun topics(): List<TopicMeta> = withContext(dispatcher) {
         JSONArray(readAsset(DATA_TOPICS_PATH)).toTopicMetaList()
+    }
 
-    override suspend fun cards(): List<Flashcard> =
+    override suspend fun cards(): List<Flashcard> = withContext(dispatcher) {
         JSONArray(readAsset(DATA_CARDS_PATH)).toFlashcardList()
+    }
 
     private fun readAsset(path: String): String =
         assets.open(path).bufferedReader(Charsets.UTF_8).use { it.readText() }
@@ -47,17 +53,30 @@ class AndroidAssetStudyDataRepository(
         }
     }
 
-    private fun JSONObject.toFlashcard(): Flashcard = Flashcard(
-        topic = optString("topic"),
-        baseChinese = optString("baseChinese"),
-        baseEnglish = optString("baseEnglish"),
-        type = optString("type"),
-        frontChinese = optString("frontChinese"),
-        backEnglish = optString("backEnglish"),
-        highlightChinese = optString("highlightChinese"),
-        highlightEnglish = optString("highlightEnglish"),
-        synonymNetworks = optJSONArray("synonymNetworks").toSynonymGroups()
-    )
+    private fun JSONObject.toFlashcard(): Flashcard {
+        val topic = optString("topic")
+        val type = optString("type")
+        val frontChinese = optString("frontChinese")
+        val backEnglish = optString("backEnglish")
+
+        return Flashcard(
+            id = cardId(
+                topic = topic,
+                type = type,
+                frontChinese = frontChinese,
+                backEnglish = backEnglish
+            ),
+            topic = topic,
+            baseChinese = optString("baseChinese"),
+            baseEnglish = optString("baseEnglish"),
+            type = type,
+            frontChinese = frontChinese,
+            backEnglish = backEnglish,
+            highlightChinese = optString("highlightChinese"),
+            highlightEnglish = optString("highlightEnglish"),
+            synonymNetworks = optJSONArray("synonymNetworks").toSynonymGroups()
+        )
+    }
 
     private fun JSONArray?.toSynonymGroups(): List<SynonymGroup> {
         if (this == null) return emptyList()
@@ -116,3 +135,10 @@ class AndroidAssetStudyDataRepository(
         const val DATA_CARDS_PATH = "data/cards.json"
     }
 }
+
+fun cardId(
+    topic: String,
+    type: String,
+    frontChinese: String,
+    backEnglish: String
+): String = "$topic::$type::$frontChinese::$backEnglish"

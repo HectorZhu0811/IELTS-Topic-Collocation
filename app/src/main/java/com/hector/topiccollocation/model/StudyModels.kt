@@ -8,6 +8,7 @@ data class TopicMeta(
 )
 
 data class Flashcard(
+    val id: String,
     val topic: String,
     val baseChinese: String,
     val baseEnglish: String,
