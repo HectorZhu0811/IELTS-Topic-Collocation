@@ -1,6 +1,8 @@
 package com.hector.topiccollocation.review
 
 import com.hector.topiccollocation.model.ReviewRecord
+import java.time.Instant
+import java.time.ZoneId
 import kotlin.math.max
 import kotlin.math.roundToInt
 
@@ -13,7 +15,6 @@ enum class ReviewRating(val storageValue: String) {
 
 object ReviewScheduler {
     private const val MEMORY_VERSION = 2
-    private const val DAY_MS = 24L * 60L * 60L * 1000L
     private const val MIN_EASE = 1.3
     private const val DEFAULT_EASE = 2.5
 
@@ -21,7 +22,8 @@ object ReviewScheduler {
         id: String,
         previous: ReviewRecord?,
         rating: ReviewRating,
-        now: Long
+        now: Long,
+        zoneId: ZoneId = ZoneId.systemDefault()
     ): ReviewRecord {
         val source = previous ?: newRecord(id, now)
         var ease = max(MIN_EASE, source.ease)
@@ -71,6 +73,7 @@ object ReviewScheduler {
 
         return source.copy(
             version = MEMORY_VERSION,
+            id = id,
             status = status,
             lastRating = rating.storageValue,
             reviewCount = source.reviewCount + 1,
@@ -79,16 +82,29 @@ object ReviewScheduler {
             ease = ease,
             intervalDays = intervalDays,
             lastReviewedAt = now,
-            nextReviewAt = if (rating == ReviewRating.AGAIN) now else addDays(now, intervalDays),
+            nextReviewAt = if (rating == ReviewRating.AGAIN) now else addDays(now, intervalDays, zoneId),
             updatedAt = now
         )
     }
 
     fun isDue(record: ReviewRecord, now: Long): Boolean = record.nextReviewAt <= now
 
-    fun todayStart(value: Long): Long = value - (value % DAY_MS)
+    fun todayStart(value: Long, zoneId: ZoneId = ZoneId.systemDefault()): Long =
+        Instant.ofEpochMilli(value)
+            .atZone(zoneId)
+            .toLocalDate()
+            .atStartOfDay(zoneId)
+            .toInstant()
+            .toEpochMilli()
 
-    private fun addDays(value: Long, days: Int): Long = todayStart(value) + max(0, days) * DAY_MS
+    private fun addDays(value: Long, days: Int, zoneId: ZoneId): Long =
+        Instant.ofEpochMilli(value)
+            .atZone(zoneId)
+            .toLocalDate()
+            .plusDays(max(0, days).toLong())
+            .atStartOfDay(zoneId)
+            .toInstant()
+            .toEpochMilli()
 
     private fun newRecord(id: String, now: Long): ReviewRecord = ReviewRecord(
         version = MEMORY_VERSION,
