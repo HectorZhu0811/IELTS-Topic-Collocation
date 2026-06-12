@@ -67,7 +67,7 @@ fun SettingsScreen(
                 val result = appState.importMemoryJson(context.contentResolver, uri)
                 snackbarHostState.showSnackbar(
                     result.fold(
-                        onSuccess = { count -> "Imported $count memory records." },
+                        onSuccess = { count -> "Applied $count new or updated memory records." },
                         onFailure = { error -> error.message ?: "Import failed." }
                     )
                 )

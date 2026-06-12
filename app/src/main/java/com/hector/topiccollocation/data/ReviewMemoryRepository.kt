@@ -3,14 +3,12 @@ package com.hector.topiccollocation.data
 import android.content.Context
 import android.content.SharedPreferences
 import com.hector.topiccollocation.model.ReviewRecord
-import org.json.JSONException
-import org.json.JSONObject
 
 interface ReviewMemoryRepository {
     fun recordFor(cardId: String): ReviewRecord?
     fun save(record: ReviewRecord)
     fun allRecords(): Map<String, ReviewRecord>
-    fun importRecords(records: Map<String, ReviewRecord>)
+    fun importRecords(records: Map<String, ReviewRecord>): Int
 }
 
 class SharedPreferencesReviewMemoryRepository(
@@ -32,8 +30,10 @@ class SharedPreferencesReviewMemoryRepository(
         return decodeReviewRecordsJson(json)
     }
 
-    override fun importRecords(records: Map<String, ReviewRecord>) {
-        writeRecords(mergeReviewRecords(allRecords(), records))
+    override fun importRecords(records: Map<String, ReviewRecord>): Int {
+        val result = mergeReviewRecordsWithStats(allRecords(), records)
+        writeRecords(result.records)
+        return result.changedCount
     }
 
     private fun writeRecords(records: Map<String, ReviewRecord>) {
@@ -44,71 +44,13 @@ class SharedPreferencesReviewMemoryRepository(
 }
 
 fun encodeReviewRecordsJson(records: Map<String, ReviewRecord>): String =
-    records.toJsonObject().toString()
+    MemoryJson.encode(records)
 
 fun decodeReviewRecordsJson(json: String): Map<String, ReviewRecord> {
     if (json.isBlank()) return emptyMap()
 
-    return try {
-        val root = JSONObject(json)
-        buildMap {
-            val keys = root.keys()
-            while (keys.hasNext()) {
-                val id = keys.next()
-                val record = root.optJSONObject(id)?.toReviewRecordOrNull(id)
-                if (record != null) {
-                    put(id, record)
-                }
-            }
-        }
-    } catch (_: JSONException) {
-        emptyMap()
-    }
+    return MemoryJson.decode(json).getOrElse { emptyMap() }
 }
-
-private fun Map<String, ReviewRecord>.toJsonObject(): JSONObject {
-    val root = JSONObject()
-    forEach { (id, record) ->
-        root.put(id, record.copy(id = id).toJsonObject())
-    }
-    return root
-}
-
-private fun ReviewRecord.toJsonObject(): JSONObject = JSONObject()
-    .put("version", version)
-    .put("id", id)
-    .put("status", status)
-    .put("lastRating", lastRating)
-    .put("reviewCount", reviewCount)
-    .put("wrongCount", wrongCount)
-    .put("lapseCount", lapseCount)
-    .put("ease", ease)
-    .put("intervalDays", intervalDays)
-    .put("lastReviewedAt", lastReviewedAt)
-    .put("nextReviewAt", nextReviewAt)
-    .put("createdAt", createdAt)
-    .put("updatedAt", updatedAt)
-
-private fun JSONObject.toReviewRecordOrNull(id: String): ReviewRecord? =
-    try {
-        ReviewRecord(
-            version = optInt("version", 2),
-            id = id,
-            status = optString("status"),
-            lastRating = optString("lastRating"),
-            reviewCount = optInt("reviewCount"),
-            wrongCount = optInt("wrongCount"),
-            lapseCount = optInt("lapseCount"),
-            ease = optDouble("ease", 2.5),
-            intervalDays = optInt("intervalDays"),
-            lastReviewedAt = optLong("lastReviewedAt"),
-            nextReviewAt = optLong("nextReviewAt"),
-            createdAt = optLong("createdAt"),
-            updatedAt = optLong("updatedAt")
-        )
-    } catch (_: JSONException) {
-        null
-    }
 
 private const val REVIEW_MEMORY_PREFS_NAME = "topic_collocation_review_memory"
 private const val REVIEW_MEMORY_KEY = "topic_collocation_review_memory_v1"
@@ -120,13 +62,28 @@ private fun shouldReplace(current: ReviewRecord?, incoming: ReviewRecord): Boole
 fun mergeReviewRecords(
     current: Map<String, ReviewRecord>,
     incoming: Map<String, ReviewRecord>
-): Map<String, ReviewRecord> {
+): Map<String, ReviewRecord> = mergeReviewRecordsWithStats(current, incoming).records
+
+data class ReviewMemoryMergeResult(
+    val records: Map<String, ReviewRecord>,
+    val changedCount: Int
+)
+
+fun mergeReviewRecordsWithStats(
+    current: Map<String, ReviewRecord>,
+    incoming: Map<String, ReviewRecord>
+): ReviewMemoryMergeResult {
     val merged = current.toMutableMap()
+    var changedCount = 0
     incoming.forEach { (id, record) ->
         val normalized = record.copy(id = id)
-        if (shouldReplace(merged[id], normalized)) {
+        val previous = merged[id]
+        if (shouldReplace(previous, normalized)) {
             merged[id] = normalized
+            if (previous != normalized) {
+                changedCount += 1
+            }
         }
     }
-    return merged
+    return ReviewMemoryMergeResult(records = merged, changedCount = changedCount)
 }

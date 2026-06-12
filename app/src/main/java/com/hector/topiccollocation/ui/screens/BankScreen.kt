@@ -46,6 +46,7 @@ fun BankScreen(
     modifier: Modifier = Modifier
 ) {
     val dueCards = appState.dueCards()
+    val dueReviewCards = appState.dueReviewCards()
     val weakCards = appState.weakCards()
     val dueWeakCards = weakCards.filter { appState.isDue(it) }
     val focusCards = (dueWeakCards + weakCards + dueCards)
@@ -118,7 +119,7 @@ fun BankScreen(
                         }
                         if (dueCards.isNotEmpty()) {
                             OutlinedButton(
-                                onClick = { appState.startZen("All due review", dueCards) },
+                                onClick = { appState.startZen("All due review", dueReviewCards) },
                                 modifier = Modifier.fillMaxWidth()
                             ) {
                                 Text(text = "Review all due")

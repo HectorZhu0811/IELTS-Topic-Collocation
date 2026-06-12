@@ -64,6 +64,26 @@ class ReviewMemoryRepositoryTest {
     }
 
     @Test
+    fun mergeResultCountsOnlyRecordsThatChangeStoredState() {
+        val current = mapOf(
+            "old" to record(id = "old", reviewCount = 3, updatedAt = 300L),
+            "update" to record(id = "update", reviewCount = 1, updatedAt = 100L)
+        )
+        val incoming = mapOf(
+            "old" to record(id = "old", reviewCount = 1, updatedAt = 100L),
+            "update" to record(id = "update", reviewCount = 4, updatedAt = 400L),
+            "new" to record(id = "new", reviewCount = 1, updatedAt = 50L)
+        )
+
+        val result = mergeReviewRecordsWithStats(current, incoming)
+
+        assertEquals(2, result.changedCount)
+        assertEquals(3, result.records.getValue("old").reviewCount)
+        assertEquals(4, result.records.getValue("update").reviewCount)
+        assertEquals(1, result.records.getValue("new").reviewCount)
+    }
+
+    @Test
     fun malformedRecordsJsonReturnsEmptyMap() {
         val decoded = decodeReviewRecordsJson("{not json")
 

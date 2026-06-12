@@ -32,6 +32,7 @@ fun TodayScreen(
     modifier: Modifier = Modifier
 ) {
     val dueCards = appState.dueCards()
+    val dueReviewCards = appState.dueReviewCards()
     val weakCards = appState.weakCards()
     val priorityTopics = appState.topicSummaries()
         .filter { it.dueCount > 0 }
@@ -105,8 +106,8 @@ fun TodayScreen(
             item {
                 Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                     Button(
-                        onClick = { appState.startZen("Due review", dueCards) },
-                        enabled = dueCards.isNotEmpty(),
+                        onClick = { appState.startZen("Due review", dueReviewCards) },
+                        enabled = dueReviewCards.isNotEmpty(),
                         modifier = Modifier.fillMaxWidth()
                     ) {
                         Text(text = "Start due review")

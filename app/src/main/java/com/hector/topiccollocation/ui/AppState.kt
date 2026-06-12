@@ -21,6 +21,8 @@ import com.hector.topiccollocation.model.ReviewRecord
 import com.hector.topiccollocation.model.TopicMeta
 import com.hector.topiccollocation.review.ReviewRating
 import com.hector.topiccollocation.review.ReviewScheduler
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
 
 enum class StudyFilter(val label: String) {
     All("All"),
@@ -182,6 +184,12 @@ class TopicCollocationAppState(
     fun dueCards(now: Long = System.currentTimeMillis()): List<Flashcard> =
         cards.filter { it.matchesFilter(StudyFilter.Due, now) }
 
+    fun dueReviewCards(now: Long = System.currentTimeMillis()): List<Flashcard> {
+        val dueCards = dueCards(now)
+        val orderedCards = if (randomizeCards) dueCards.shuffled() else dueCards
+        return orderedCards.take(dailyTarget)
+    }
+
     fun weakCards(now: Long = System.currentTimeMillis()): List<Flashcard> =
         cards.filter { it.matchesFilter(StudyFilter.Weak, now) }
 
@@ -284,25 +292,31 @@ class TopicCollocationAppState(
         englishFontSizeSp = value.coerceIn(20, 34)
     }
 
-    fun exportMemoryJson(contentResolver: ContentResolver, uri: Uri): Result<Int> =
-        runCatching {
-            val currentRecords = reviewMemoryRepository.allRecords()
-            val json = MemoryJson.encode(currentRecords)
-            contentResolver.openOutputStream(uri)?.use { outputStream ->
-                outputStream.write(json.toByteArray(Charsets.UTF_8))
-            } ?: error("Unable to open export destination.")
-            currentRecords.size
+    suspend fun exportMemoryJson(contentResolver: ContentResolver, uri: Uri): Result<Int> =
+        withContext(Dispatchers.IO) {
+            runCatching {
+                val currentRecords = reviewMemoryRepository.allRecords()
+                val json = MemoryJson.encode(currentRecords)
+                contentResolver.openOutputStream(uri)?.use { outputStream ->
+                    outputStream.write(json.toByteArray(Charsets.UTF_8))
+                } ?: error("Unable to open export destination.")
+                currentRecords.size
+            }
         }
 
-    fun importMemoryJson(contentResolver: ContentResolver, uri: Uri): Result<Int> =
-        runCatching {
-            val payload = contentResolver.openInputStream(uri)?.use { inputStream ->
-                inputStream.readBytes().toString(Charsets.UTF_8)
-            } ?: error("Unable to open import source.")
-            val importedRecords = MemoryJson.decode(payload).getOrThrow()
-            reviewMemoryRepository.importRecords(importedRecords)
-            records = reviewMemoryRepository.allRecords()
-            importedRecords.size
+    suspend fun importMemoryJson(contentResolver: ContentResolver, uri: Uri): Result<Int> =
+        withContext(Dispatchers.IO) {
+            runCatching {
+                val payload = contentResolver.openInputStream(uri)?.use { inputStream ->
+                    inputStream.readBytes().toString(Charsets.UTF_8)
+                } ?: error("Unable to open import source.")
+                val importedRecords = MemoryJson.decode(payload).getOrThrow()
+                val changedCount = reviewMemoryRepository.importRecords(importedRecords)
+                changedCount to reviewMemoryRepository.allRecords()
+            }
+        }.map { (changedCount, loadedRecords) ->
+            records = loadedRecords
+            changedCount
         }
 
     private fun Flashcard.matchesFilter(filter: StudyFilter, now: Long): Boolean =

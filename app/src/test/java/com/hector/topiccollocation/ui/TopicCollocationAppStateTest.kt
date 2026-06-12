@@ -71,6 +71,21 @@ class TopicCollocationAppStateTest {
         assertEquals(2, appState.reviewedThisWeekCount(now))
     }
 
+    @Test
+    fun dueReviewCardsAreCappedByDailyTargetWithoutChangingManualReviewDecks() = runBlocking {
+        val cards = (1..8).map { index -> card("card-$index") }
+        val appState = appState(cards = cards, records = emptyMap())
+
+        appState.load()
+        appState.setDailyTarget(5)
+
+        assertEquals(5, appState.dueReviewCards(now).size)
+
+        appState.startZen("Manual", listOf(cards.first()))
+
+        assertEquals(1, appState.zenRoute?.totalCount)
+    }
+
     private fun appState(
         cards: List<Flashcard>,
         records: Map<String, ReviewRecord>
@@ -135,6 +150,6 @@ class TopicCollocationAppStateTest {
         override fun recordFor(cardId: String): ReviewRecord? = records[cardId]
         override fun save(record: ReviewRecord) = Unit
         override fun allRecords(): Map<String, ReviewRecord> = records
-        override fun importRecords(records: Map<String, ReviewRecord>) = Unit
+        override fun importRecords(records: Map<String, ReviewRecord>): Int = 0
     }
 }
