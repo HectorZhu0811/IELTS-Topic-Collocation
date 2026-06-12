@@ -19,6 +19,26 @@ The app is designed as a local-first study tool: students can open one standalon
 - Search by Chinese, English, synonym, or tone.
 - Standalone HTML build for offline classroom use.
 
+## Native Android
+
+The Android app is now a native Kotlin/Compose app. `MainActivity` launches Compose screens, navigation, review state, and JSON-backed study data from `app/src/main/assets/data/`.
+
+The standalone HTML file is no longer the Android runtime UI, and the native app should not depend on a WebView or `android_asset/www` page for its interface. The HTML version remains useful for classroom projection, browser-based study, and quick offline sharing.
+
+Native verification uses the bundled local Android toolchain:
+
+```powershell
+$env:JAVA_HOME = (Resolve-Path .\.android-toolchain\jdk\jdk-21.0.11+10).Path
+& .\.android-toolchain\gradle\gradle-8.10.2\bin\gradle.bat :app:testDebugUnitTest
+& .\.android-toolchain\gradle\gradle-8.10.2\bin\gradle.bat :app:assembleDebug
+```
+
+When the build succeeds, the debug APK is written to:
+
+```text
+app/build/outputs/apk/debug/app-debug.apk
+```
+
 ## Study Flow
 
 1. Choose a topic such as Technology, Education, Environment, or Society.
