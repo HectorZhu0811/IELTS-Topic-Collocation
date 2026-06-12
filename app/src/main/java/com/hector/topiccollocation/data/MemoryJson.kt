@@ -109,8 +109,8 @@ private fun JSONArray.toReviewRecordMap(): Map<String, ReviewRecord> =
         }
     }
 
-private fun JSONObject.toReviewRecordOrNull(id: String): ReviewRecord? =
-    try {
+private fun JSONObject.toReviewRecordOrNull(id: String): ReviewRecord? {
+    return try {
         val normalizedId = id.trim()
         if (normalizedId.isBlank()) return null
         if (!hasReviewRecordShape()) return null
@@ -139,6 +139,7 @@ private fun JSONObject.toReviewRecordOrNull(id: String): ReviewRecord? =
     } catch (_: JSONException) {
         null
     }
+}
 
 private fun JSONObject.hasReviewRecordShape(): Boolean =
     requiredString("status") != null &&

@@ -98,22 +98,28 @@ class TopicCollocationAppState(
         private set
     var detailTopicId by mutableStateOf<String?>(null)
         private set
-    var detailFilter by mutableStateOf(StudyFilter.All)
-        private set
+    private var mutableDetailFilter by mutableStateOf(StudyFilter.All)
+    val detailFilter: StudyFilter
+        get() = mutableDetailFilter
     var zenRoute by mutableStateOf<ZenReviewRoute?>(null)
         private set
-    var dailyTarget by mutableStateOf(20)
-        private set
-    var randomizeCards by mutableStateOf(false)
-        private set
-    var showSynonymSheetByDefault by mutableStateOf(false)
-        private set
+    private var mutableDailyTarget by mutableStateOf(20)
+    val dailyTarget: Int
+        get() = mutableDailyTarget
+    private var mutableRandomizeCards by mutableStateOf(false)
+    val randomizeCards: Boolean
+        get() = mutableRandomizeCards
+    private var mutableShowSynonymSheetByDefault by mutableStateOf(false)
+    val showSynonymSheetByDefault: Boolean
+        get() = mutableShowSynonymSheetByDefault
     var themeLabel by mutableStateOf(THEME_WARM)
         private set
-    var chineseFontSizeSp by mutableStateOf(28)
-        private set
-    var englishFontSizeSp by mutableStateOf(28)
-        private set
+    private var mutableChineseFontSizeSp by mutableStateOf(28)
+    val chineseFontSizeSp: Int
+        get() = mutableChineseFontSizeSp
+    private var mutableEnglishFontSizeSp by mutableStateOf(28)
+    val englishFontSizeSp: Int
+        get() = mutableEnglishFontSizeSp
 
     val isMainTabVisible: Boolean
         get() = detailTopicId == null && zenRoute == null
@@ -141,17 +147,17 @@ class TopicCollocationAppState(
 
     fun openTopic(topicId: String, filter: StudyFilter = StudyFilter.All) {
         detailTopicId = topicId
-        detailFilter = filter
+        mutableDetailFilter = filter
         zenRoute = null
     }
 
     fun closeTopic() {
         detailTopicId = null
-        detailFilter = StudyFilter.All
+        mutableDetailFilter = StudyFilter.All
     }
 
     fun setDetailFilter(filter: StudyFilter) {
-        detailFilter = filter
+        mutableDetailFilter = filter
     }
 
     fun startZen(title: String, deck: List<Flashcard>) {
@@ -265,15 +271,15 @@ class TopicCollocationAppState(
         records[card.id]?.status == STATUS_BANKED
 
     fun setDailyTarget(value: Int) {
-        dailyTarget = value.coerceIn(5, 100)
+        mutableDailyTarget = value.coerceIn(5, 100)
     }
 
     fun setRandomizeCards(value: Boolean) {
-        randomizeCards = value
+        mutableRandomizeCards = value
     }
 
     fun setShowSynonymSheetByDefault(value: Boolean) {
-        showSynonymSheetByDefault = value
+        mutableShowSynonymSheetByDefault = value
     }
 
     fun cycleTheme() {
@@ -285,11 +291,11 @@ class TopicCollocationAppState(
     }
 
     fun setChineseFontSizeSp(value: Int) {
-        chineseFontSizeSp = value.coerceIn(20, 34)
+        mutableChineseFontSizeSp = value.coerceIn(20, 34)
     }
 
     fun setEnglishFontSizeSp(value: Int) {
-        englishFontSizeSp = value.coerceIn(20, 34)
+        mutableEnglishFontSizeSp = value.coerceIn(20, 34)
     }
 
     suspend fun exportMemoryJson(contentResolver: ContentResolver, uri: Uri): Result<Int> =

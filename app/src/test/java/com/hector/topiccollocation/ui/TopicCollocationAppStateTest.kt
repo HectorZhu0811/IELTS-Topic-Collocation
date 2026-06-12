@@ -58,7 +58,7 @@ class TopicCollocationAppStateTest {
         val appState = appState(
             cards = listOf(currentToday, currentThisWeek, currentFuture),
             records = mapOf(
-                currentToday.id to record(currentToday.id, lastReviewedAt = todayStart + 100L),
+                currentToday.id to record(currentToday.id, lastReviewedAt = todayStart),
                 currentThisWeek.id to record(currentThisWeek.id, lastReviewedAt = todayStart - (2 * dayMs)),
                 currentFuture.id to record(currentFuture.id, lastReviewedAt = now + 100L),
                 unknownTodayId to record(unknownTodayId, lastReviewedAt = todayStart + 200L)
