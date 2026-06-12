@@ -34,6 +34,7 @@ fun TodayScreen(
     val dueCards = appState.dueCards()
     val weakCards = appState.weakCards()
     val priorityTopics = appState.topicSummaries()
+        .filter { it.dueCount > 0 }
         .sortedWith(compareByDescending<TopicStudySummary> { it.dueCount }
             .thenByDescending { it.weakCount }
             .thenBy { it.topic.id })
@@ -128,11 +129,21 @@ fun TodayScreen(
                 )
             }
 
-            items(priorityTopics, key = { it.topic.id }) { summary ->
-                TopicSummaryCard(
-                    summary = summary,
-                    onClick = { appState.openTopic(summary.topic.id, StudyFilter.Due) }
-                )
+            if (priorityTopics.isEmpty()) {
+                item {
+                    Text(
+                        text = "All topics are clear for now.",
+                        style = MaterialTheme.typography.bodyMedium,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                }
+            } else {
+                items(priorityTopics, key = { it.topic.id }) { summary ->
+                    TopicSummaryCard(
+                        summary = summary,
+                        onClick = { appState.openTopic(summary.topic.id, StudyFilter.Due) }
+                    )
+                }
             }
         }
     }

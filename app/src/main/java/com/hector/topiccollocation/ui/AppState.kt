@@ -203,12 +203,12 @@ class TopicCollocationAppState(
 
     fun reviewedThisWeekCount(now: Long = System.currentTimeMillis()): Int {
         val weekStart = ReviewScheduler.todayStart(now) - SIX_DAYS_MILLIS
-        return records.values.count { it.lastReviewedAt >= weekStart }
+        return reviewedCountBetween(weekStart, now)
     }
 
     fun reviewedTodayCount(now: Long = System.currentTimeMillis()): Int {
         val todayStart = ReviewScheduler.todayStart(now)
-        return records.values.count { it.lastReviewedAt >= todayStart }
+        return reviewedCountBetween(todayStart, now)
     }
 
     fun recordFor(card: Flashcard): ReviewRecord? = records[card.id]
@@ -218,7 +218,7 @@ class TopicCollocationAppState(
 
     fun isWeak(card: Flashcard): Boolean {
         val record = records[card.id] ?: return false
-        return record.status == STATUS_WEAK || record.wrongCount > 0 || record.lapseCount > 0
+        return record.isCurrentlyWeak()
     }
 
     fun isBanked(card: Flashcard): Boolean =
@@ -231,6 +231,18 @@ class TopicCollocationAppState(
             StudyFilter.Weak -> isWeak(this)
             StudyFilter.Banked -> isBanked(this)
         }
+
+    private fun reviewedCountBetween(start: Long, now: Long): Int {
+        val currentCardIds = cards.map { it.id }.toSet()
+        return records.values.count { record ->
+            record.id in currentCardIds && record.lastReviewedAt in start..now
+        }
+    }
+
+    private fun ReviewRecord.isCurrentlyWeak(): Boolean =
+        status == STATUS_WEAK ||
+            lastRating == ReviewRating.AGAIN.storageValue ||
+            lastRating == ReviewRating.HARD.storageValue
 
     private companion object {
         const val STATUS_WEAK = "weak"
