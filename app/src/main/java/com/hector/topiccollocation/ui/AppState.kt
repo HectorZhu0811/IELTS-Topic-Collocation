@@ -206,6 +206,11 @@ class TopicCollocationAppState(
         return records.values.count { it.lastReviewedAt >= weekStart }
     }
 
+    fun reviewedTodayCount(now: Long = System.currentTimeMillis()): Int {
+        val todayStart = ReviewScheduler.todayStart(now)
+        return records.values.count { it.lastReviewedAt >= todayStart }
+    }
+
     fun recordFor(card: Flashcard): ReviewRecord? = records[card.id]
 
     fun isDue(card: Flashcard, now: Long = System.currentTimeMillis()): Boolean =

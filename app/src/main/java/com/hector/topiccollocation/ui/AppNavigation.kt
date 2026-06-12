@@ -78,7 +78,7 @@ fun TopicCollocationApp(
             }
 
             appState.selectedDestination == MainDestination.Bank -> {
-                BankScreen(modifier = modifier)
+                BankScreen(appState = appState, modifier = modifier)
             }
 
             appState.selectedDestination == MainDestination.Settings -> {
