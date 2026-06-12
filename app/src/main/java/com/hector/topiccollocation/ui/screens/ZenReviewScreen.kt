@@ -35,6 +35,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.hector.topiccollocation.model.Flashcard
 import com.hector.topiccollocation.model.SynonymGroup
 import com.hector.topiccollocation.review.ReviewRating
@@ -56,7 +57,8 @@ fun ZenReviewScreen(
 
     LaunchedEffect(currentCard?.id) {
         isFlipped = false
-        showSynonyms = false
+        showSynonyms = appState.showSynonymSheetByDefault &&
+            currentCard?.synonymNetworks?.isNotEmpty() == true
     }
 
     Scaffold(
@@ -152,6 +154,8 @@ private fun ReviewBody(
             card = card,
             isFlipped = isFlipped,
             lastRating = appState.recordFor(card)?.lastRating.orEmpty(),
+            chineseFontSizeSp = appState.chineseFontSizeSp,
+            englishFontSizeSp = appState.englishFontSizeSp,
             onFlip = onFlip
         )
         if (card.synonymNetworks.isNotEmpty()) {
@@ -173,6 +177,8 @@ private fun ReviewCard(
     card: Flashcard,
     isFlipped: Boolean,
     lastRating: String,
+    chineseFontSizeSp: Int,
+    englishFontSizeSp: Int,
     onFlip: () -> Unit
 ) {
     ElevatedCard(
@@ -201,6 +207,7 @@ private fun ReviewCard(
                 Text(
                     text = if (isFlipped) card.backEnglish else card.frontChinese,
                     style = MaterialTheme.typography.headlineMedium,
+                    fontSize = if (isFlipped) englishFontSizeSp.sp else chineseFontSizeSp.sp,
                     fontWeight = FontWeight.SemiBold,
                     textAlign = TextAlign.Center
                 )

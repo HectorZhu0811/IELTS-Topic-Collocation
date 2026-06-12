@@ -8,6 +8,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import com.hector.topiccollocation.ui.screens.BankScreen
 import com.hector.topiccollocation.ui.screens.SettingsScreen
@@ -31,7 +32,11 @@ fun TopicCollocationApp(
     appState: TopicCollocationAppState = rememberTopicCollocationAppState(LocalContext.current)
 ) {
     Scaffold(
-        containerColor = MaterialTheme.colorScheme.background,
+        containerColor = when (appState.themeLabel) {
+            "Paper" -> Color.White
+            "Cool" -> Color(0xFFF4F8FB)
+            else -> MaterialTheme.colorScheme.background
+        },
         bottomBar = {
             if (appState.isMainTabVisible) {
                 TopicCollocationNavigationBar(
@@ -82,7 +87,7 @@ fun TopicCollocationApp(
             }
 
             appState.selectedDestination == MainDestination.Settings -> {
-                SettingsScreen(modifier = modifier)
+                SettingsScreen(appState = appState, modifier = modifier)
             }
         }
     }

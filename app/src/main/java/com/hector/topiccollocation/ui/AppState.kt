@@ -1,6 +1,8 @@
 package com.hector.topiccollocation.ui
 
+import android.content.ContentResolver
 import android.content.Context
+import android.net.Uri
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.MutableState
@@ -10,6 +12,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import com.hector.topiccollocation.data.AndroidAssetStudyDataRepository
+import com.hector.topiccollocation.data.MemoryJson
 import com.hector.topiccollocation.data.ReviewMemoryRepository
 import com.hector.topiccollocation.data.SharedPreferencesReviewMemoryRepository
 import com.hector.topiccollocation.data.StudyDataRepository
@@ -38,6 +41,11 @@ data class ZenReviewRoute(
     val title: String,
     val cards: List<Flashcard>,
     val totalCount: Int
+)
+
+data class ReviewLogEntry(
+    val card: Flashcard?,
+    val record: ReviewRecord
 )
 
 @Composable
@@ -92,6 +100,18 @@ class TopicCollocationAppState(
         private set
     var zenRoute by mutableStateOf<ZenReviewRoute?>(null)
         private set
+    var dailyTarget by mutableStateOf(20)
+        private set
+    var randomizeCards by mutableStateOf(false)
+        private set
+    var showSynonymSheetByDefault by mutableStateOf(false)
+        private set
+    var themeLabel by mutableStateOf(THEME_WARM)
+        private set
+    var chineseFontSizeSp by mutableStateOf(28)
+        private set
+    var englishFontSizeSp by mutableStateOf(28)
+        private set
 
     val isMainTabVisible: Boolean
         get() = detailTopicId == null && zenRoute == null
@@ -133,10 +153,11 @@ class TopicCollocationAppState(
     }
 
     fun startZen(title: String, deck: List<Flashcard>) {
+        val preparedDeck = if (randomizeCards) deck.shuffled() else deck
         zenRoute = ZenReviewRoute(
             title = title,
-            cards = deck,
-            totalCount = deck.size
+            cards = preparedDeck,
+            totalCount = preparedDeck.size
         )
     }
 
@@ -163,6 +184,17 @@ class TopicCollocationAppState(
 
     fun weakCards(now: Long = System.currentTimeMillis()): List<Flashcard> =
         cards.filter { it.matchesFilter(StudyFilter.Weak, now) }
+
+    fun bankedCards(now: Long = System.currentTimeMillis()): List<Flashcard> =
+        cards.filter { it.matchesFilter(StudyFilter.Banked, now) }
+
+    fun reviewLogEntries(): List<ReviewLogEntry> {
+        val cardsById = cards.associateBy { it.id }
+        return records.values
+            .filter { it.lastReviewedAt > 0L }
+            .sortedByDescending { it.lastReviewedAt }
+            .map { record -> ReviewLogEntry(cardsById[record.id], record) }
+    }
 
     fun topicCards(topicId: String): List<Flashcard> =
         cards.filter { it.topic == topicId }
@@ -224,6 +256,55 @@ class TopicCollocationAppState(
     fun isBanked(card: Flashcard): Boolean =
         records[card.id]?.status == STATUS_BANKED
 
+    fun setDailyTarget(value: Int) {
+        dailyTarget = value.coerceIn(5, 100)
+    }
+
+    fun setRandomizeCards(value: Boolean) {
+        randomizeCards = value
+    }
+
+    fun setShowSynonymSheetByDefault(value: Boolean) {
+        showSynonymSheetByDefault = value
+    }
+
+    fun cycleTheme() {
+        themeLabel = when (themeLabel) {
+            THEME_WARM -> THEME_PAPER
+            THEME_PAPER -> THEME_COOL
+            else -> THEME_WARM
+        }
+    }
+
+    fun setChineseFontSizeSp(value: Int) {
+        chineseFontSizeSp = value.coerceIn(20, 34)
+    }
+
+    fun setEnglishFontSizeSp(value: Int) {
+        englishFontSizeSp = value.coerceIn(20, 34)
+    }
+
+    fun exportMemoryJson(contentResolver: ContentResolver, uri: Uri): Result<Int> =
+        runCatching {
+            val currentRecords = reviewMemoryRepository.allRecords()
+            val json = MemoryJson.encode(currentRecords)
+            contentResolver.openOutputStream(uri)?.use { outputStream ->
+                outputStream.write(json.toByteArray(Charsets.UTF_8))
+            } ?: error("Unable to open export destination.")
+            currentRecords.size
+        }
+
+    fun importMemoryJson(contentResolver: ContentResolver, uri: Uri): Result<Int> =
+        runCatching {
+            val payload = contentResolver.openInputStream(uri)?.use { inputStream ->
+                inputStream.readBytes().toString(Charsets.UTF_8)
+            } ?: error("Unable to open import source.")
+            val importedRecords = MemoryJson.decode(payload).getOrThrow()
+            reviewMemoryRepository.importRecords(importedRecords)
+            records = reviewMemoryRepository.allRecords()
+            importedRecords.size
+        }
+
     private fun Flashcard.matchesFilter(filter: StudyFilter, now: Long): Boolean =
         when (filter) {
             StudyFilter.All -> true
@@ -248,5 +329,8 @@ class TopicCollocationAppState(
         const val STATUS_WEAK = "weak"
         const val STATUS_BANKED = "banked"
         const val SIX_DAYS_MILLIS = 6L * 24L * 60L * 60L * 1000L
+        const val THEME_WARM = "Warm"
+        const val THEME_PAPER = "Paper"
+        const val THEME_COOL = "Cool"
     }
 }
