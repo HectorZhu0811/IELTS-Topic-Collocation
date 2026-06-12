@@ -1,40 +1,237 @@
 package com.hector.topiccollocation.ui
 
+import android.content.Context
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
+import com.hector.topiccollocation.data.AndroidAssetStudyDataRepository
+import com.hector.topiccollocation.data.ReviewMemoryRepository
+import com.hector.topiccollocation.data.SharedPreferencesReviewMemoryRepository
+import com.hector.topiccollocation.data.StudyDataRepository
+import com.hector.topiccollocation.model.Flashcard
+import com.hector.topiccollocation.model.ReviewRecord
+import com.hector.topiccollocation.model.TopicMeta
+import com.hector.topiccollocation.review.ReviewRating
+import com.hector.topiccollocation.review.ReviewScheduler
+
+enum class StudyFilter(val label: String) {
+    All("All"),
+    Due("Due"),
+    Weak("Weak"),
+    Banked("Banked")
+}
+
+data class TopicStudySummary(
+    val topic: TopicMeta,
+    val totalCount: Int,
+    val dueCount: Int,
+    val weakCount: Int,
+    val bankedCount: Int
+)
+
+data class ZenReviewRoute(
+    val title: String,
+    val cards: List<Flashcard>,
+    val totalCount: Int
+)
 
 @Composable
 fun rememberTopicCollocationAppState(
+    context: Context,
     initialDestination: MainDestination = MainDestination.Today
 ): TopicCollocationAppState {
-    var selectedDestinationRoute by rememberSaveable {
-        mutableStateOf(initialDestination.route)
+    val studyDataRepository = remember(context) {
+        AndroidAssetStudyDataRepository(context)
+    }
+    val reviewMemoryRepository = remember(context) {
+        SharedPreferencesReviewMemoryRepository(context)
+    }
+    var selectedDestination by rememberSaveable {
+        mutableStateOf(initialDestination)
+    }
+    val appState = remember(studyDataRepository, reviewMemoryRepository) {
+        TopicCollocationAppState(
+            selectedDestination = selectedDestination,
+            onDestinationSelected = { selectedDestination = it },
+            studyDataRepository = studyDataRepository,
+            reviewMemoryRepository = reviewMemoryRepository
+        )
     }
 
-    return TopicCollocationAppState(
-        selectedDestinationRoute = selectedDestinationRoute,
-        onDestinationSelected = { destination ->
-            selectedDestinationRoute = destination.route
-        }
-    )
+    LaunchedEffect(appState) {
+        appState.load()
+    }
+
+    return appState
 }
 
 class TopicCollocationAppState(
-    selectedDestinationRoute: String,
-    private val onDestinationSelected: (MainDestination) -> Unit
+    selectedDestination: MainDestination,
+    private val onDestinationSelected: (MainDestination) -> Unit,
+    private val studyDataRepository: StudyDataRepository,
+    private val reviewMemoryRepository: ReviewMemoryRepository
 ) {
-    var selectedDestinationRoute by mutableStateOf(selectedDestinationRoute)
+    var selectedDestination by mutableStateOf(selectedDestination)
+        private set
+    var topics by mutableStateOf<List<TopicMeta>>(emptyList())
+        private set
+    var cards by mutableStateOf<List<Flashcard>>(emptyList())
+        private set
+    var records by mutableStateOf<Map<String, ReviewRecord>>(emptyMap())
+        private set
+    var isLoading by mutableStateOf(true)
+        private set
+    var loadError by mutableStateOf<String?>(null)
+        private set
+    var detailTopicId by mutableStateOf<String?>(null)
+        private set
+    var detailFilter by mutableStateOf(StudyFilter.All)
+        private set
+    var zenRoute by mutableStateOf<ZenReviewRoute?>(null)
         private set
 
-    val selectedDestination: MainDestination
-        get() = MainDestination.entries.firstOrNull { it.route == selectedDestinationRoute }
-            ?: MainDestination.Today
+    val isMainTabVisible: Boolean
+        get() = detailTopicId == null && zenRoute == null
+
+    suspend fun load() {
+        isLoading = true
+        loadError = null
+        runCatching {
+            val loadedTopics = studyDataRepository.topics()
+            val loadedCards = studyDataRepository.cards()
+            topics = loadedTopics
+            cards = loadedCards
+            records = reviewMemoryRepository.allRecords()
+        }.onFailure { throwable ->
+            loadError = throwable.message ?: "Unable to load study data."
+        }
+        isLoading = false
+    }
 
     fun select(destination: MainDestination) {
-        selectedDestinationRoute = destination.route
+        selectedDestination = destination
+        detailTopicId = null
+        zenRoute = null
         onDestinationSelected(destination)
+    }
+
+    fun openTopic(topicId: String, filter: StudyFilter = StudyFilter.All) {
+        detailTopicId = topicId
+        detailFilter = filter
+        zenRoute = null
+    }
+
+    fun closeTopic() {
+        detailTopicId = null
+        detailFilter = StudyFilter.All
+    }
+
+    fun setDetailFilter(filter: StudyFilter) {
+        detailFilter = filter
+    }
+
+    fun startZen(title: String, deck: List<Flashcard>) {
+        zenRoute = ZenReviewRoute(
+            title = title,
+            cards = deck,
+            totalCount = deck.size
+        )
+    }
+
+    fun closeZen() {
+        zenRoute = null
+    }
+
+    fun rateCurrentCard(rating: ReviewRating, now: Long = System.currentTimeMillis()) {
+        val route = zenRoute ?: return
+        val current = route.cards.firstOrNull() ?: return
+        val scheduled = ReviewScheduler.schedule(
+            id = current.id,
+            previous = records[current.id],
+            rating = rating,
+            now = now
+        )
+        reviewMemoryRepository.save(scheduled)
+        records = records + (scheduled.id to scheduled)
+        zenRoute = route.copy(cards = route.cards.drop(1))
+    }
+
+    fun dueCards(now: Long = System.currentTimeMillis()): List<Flashcard> =
+        cards.filter { it.matchesFilter(StudyFilter.Due, now) }
+
+    fun weakCards(now: Long = System.currentTimeMillis()): List<Flashcard> =
+        cards.filter { it.matchesFilter(StudyFilter.Weak, now) }
+
+    fun topicCards(topicId: String): List<Flashcard> =
+        cards.filter { it.topic == topicId }
+
+    fun topicFor(topicId: String): TopicMeta? =
+        topics.firstOrNull { it.id == topicId }
+
+    fun filteredCards(
+        source: List<Flashcard>,
+        filter: StudyFilter,
+        query: String = "",
+        now: Long = System.currentTimeMillis()
+    ): List<Flashcard> {
+        val normalizedQuery = query.trim()
+        return source
+            .asSequence()
+            .filter { it.matchesFilter(filter, now) }
+            .filter { card ->
+                normalizedQuery.isBlank() ||
+                    card.frontChinese.contains(normalizedQuery, ignoreCase = true) ||
+                    card.backEnglish.contains(normalizedQuery, ignoreCase = true) ||
+                    card.type.contains(normalizedQuery, ignoreCase = true)
+            }
+            .toList()
+    }
+
+    fun topicSummaries(now: Long = System.currentTimeMillis()): List<TopicStudySummary> =
+        topics.map { topic ->
+            val topicCards = topicCards(topic.id)
+            TopicStudySummary(
+                topic = topic,
+                totalCount = topicCards.size,
+                dueCount = topicCards.count { it.matchesFilter(StudyFilter.Due, now) },
+                weakCount = topicCards.count { it.matchesFilter(StudyFilter.Weak, now) },
+                bankedCount = topicCards.count { it.matchesFilter(StudyFilter.Banked, now) }
+            )
+        }
+
+    fun reviewedThisWeekCount(now: Long = System.currentTimeMillis()): Int {
+        val weekStart = ReviewScheduler.todayStart(now) - SIX_DAYS_MILLIS
+        return records.values.count { it.lastReviewedAt >= weekStart }
+    }
+
+    fun recordFor(card: Flashcard): ReviewRecord? = records[card.id]
+
+    fun isDue(card: Flashcard, now: Long = System.currentTimeMillis()): Boolean =
+        records[card.id]?.let { ReviewScheduler.isDue(it, now) } ?: true
+
+    fun isWeak(card: Flashcard): Boolean {
+        val record = records[card.id] ?: return false
+        return record.status == STATUS_WEAK || record.wrongCount > 0 || record.lapseCount > 0
+    }
+
+    fun isBanked(card: Flashcard): Boolean =
+        records[card.id]?.status == STATUS_BANKED
+
+    private fun Flashcard.matchesFilter(filter: StudyFilter, now: Long): Boolean =
+        when (filter) {
+            StudyFilter.All -> true
+            StudyFilter.Due -> isDue(this, now)
+            StudyFilter.Weak -> isWeak(this)
+            StudyFilter.Banked -> isBanked(this)
+        }
+
+    private companion object {
+        const val STATUS_WEAK = "weak"
+        const val STATUS_BANKED = "banked"
+        const val SIX_DAYS_MILLIS = 6L * 24L * 60L * 60L * 1000L
     }
 }

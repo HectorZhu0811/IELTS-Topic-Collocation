@@ -8,41 +8,82 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import com.hector.topiccollocation.ui.screens.BankScreen
 import com.hector.topiccollocation.ui.screens.SettingsScreen
 import com.hector.topiccollocation.ui.screens.TodayScreen
+import com.hector.topiccollocation.ui.screens.TopicDetailScreen
 import com.hector.topiccollocation.ui.screens.TopicsScreen
+import com.hector.topiccollocation.ui.screens.ZenReviewScreen
 
 enum class MainDestination(
-    val route: String,
-    val label: String
+    val label: String,
+    val navGlyph: String
 ) {
-    Today("today", "Today"),
-    Topics("topics", "Topics"),
-    Bank("bank", "Bank"),
-    Settings("settings", "Settings")
+    Today("Today", "T"),
+    Topics("Topics", "P"),
+    Bank("Bank", "B"),
+    Settings("Settings", "S")
 }
 
 @Composable
 fun TopicCollocationApp(
-    appState: TopicCollocationAppState = rememberTopicCollocationAppState()
+    appState: TopicCollocationAppState = rememberTopicCollocationAppState(LocalContext.current)
 ) {
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,
         bottomBar = {
-            TopicCollocationNavigationBar(
-                selectedDestination = appState.selectedDestination,
-                onDestinationSelected = appState::select
-            )
+            if (appState.isMainTabVisible) {
+                TopicCollocationNavigationBar(
+                    selectedDestination = appState.selectedDestination,
+                    onDestinationSelected = appState::select
+                )
+            }
         }
     ) { innerPadding ->
         val modifier = Modifier.padding(innerPadding)
+        val zenRoute = appState.zenRoute
+        val detailTopicId = appState.detailTopicId
 
-        when (appState.selectedDestination) {
-            MainDestination.Today -> TodayScreen(modifier = modifier)
-            MainDestination.Topics -> TopicsScreen(modifier = modifier)
-            MainDestination.Bank -> BankScreen(modifier = modifier)
-            MainDestination.Settings -> SettingsScreen(modifier = modifier)
+        when {
+            zenRoute != null -> {
+                ZenReviewScreen(
+                    route = zenRoute,
+                    appState = appState,
+                    onClose = appState::closeZen,
+                    modifier = modifier
+                )
+            }
+
+            detailTopicId != null -> {
+                val topic = appState.topicFor(detailTopicId)
+                if (topic == null) {
+                    Text(text = "Topic not found", modifier = modifier)
+                } else {
+                    TopicDetailScreen(
+                        topic = topic,
+                        appState = appState,
+                        onBack = appState::closeTopic,
+                        modifier = modifier
+                    )
+                }
+            }
+
+            appState.selectedDestination == MainDestination.Today -> {
+                TodayScreen(appState = appState, modifier = modifier)
+            }
+
+            appState.selectedDestination == MainDestination.Topics -> {
+                TopicsScreen(appState = appState, modifier = modifier)
+            }
+
+            appState.selectedDestination == MainDestination.Bank -> {
+                BankScreen(modifier = modifier)
+            }
+
+            appState.selectedDestination == MainDestination.Settings -> {
+                SettingsScreen(modifier = modifier)
+            }
         }
     }
 }
@@ -58,7 +99,7 @@ private fun TopicCollocationNavigationBar(
                 selected = selectedDestination == destination,
                 onClick = { onDestinationSelected(destination) },
                 label = { Text(text = destination.label) },
-                icon = {}
+                icon = { Text(text = destination.navGlyph) }
             )
         }
     }
