@@ -23,12 +23,25 @@ const topics = [
 
 const context = vm.createContext({ window: {} });
 const source = fs.readFileSync(dataPath, "utf8");
-vm.runInContext(source, context, { filename: dataPath });
+vm.runInContext(source, context, { filename: dataPath, timeout: 1000 });
 
 const cards = context.window.FLASHCARD_DATA;
 
 if (!Array.isArray(cards) || cards.length === 0) {
   throw new Error("window.FLASHCARD_DATA is missing or empty");
+}
+
+const cardTopics = new Set(cards.map((card) => card.topic));
+const metadataTopics = new Set(topics.map((topic) => topic.id));
+const missingMetadata = [...cardTopics].filter((topic) => !metadataTopics.has(topic));
+const unusedMetadata = [...metadataTopics].filter((topic) => !cardTopics.has(topic));
+
+if (missingMetadata.length > 0) {
+  throw new Error(`Missing topic metadata for card topics: ${missingMetadata.join(", ")}`);
+}
+
+if (unusedMetadata.length > 0) {
+  throw new Error(`Unused topic metadata with no cards: ${unusedMetadata.join(", ")}`);
 }
 
 fs.mkdirSync(outputDir, { recursive: true });
