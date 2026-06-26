@@ -113,23 +113,4 @@ node qa-advanced.js task2-collocation-flashcards-advanced-standalone.html
 | `docs/images/` | README 使用的成品截图 |
 | `app/` | Android 原生版本代码 |
 
-## Android 版本
-
-仓库中也保留了原生 Android 版本。`MainActivity` 会启动 Kotlin/Compose 页面，并从 `app/src/main/assets/data/` 读取学习数据。
-
-Android 版本不是 WebView 包装；HTML 版本主要用于浏览器学习、课堂投屏和本地分享。
-
-构建命令：
-
-```powershell
-$env:JAVA_HOME = (Resolve-Path .\.android-toolchain\jdk\jdk-21.0.11+10).Path
-& .\.android-toolchain\gradle\gradle-8.10.2\bin\gradle.bat :app:testDebugUnitTest
-& .\.android-toolchain\gradle\gradle-8.10.2\bin\gradle.bat :app:assembleDebug
-```
-
-成功后 APK 输出到：
-
-```text
-app/build/outputs/apk/debug/app-debug.apk
-```
 
