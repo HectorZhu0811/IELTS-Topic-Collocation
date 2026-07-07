@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upgrade Wording Tone Fill Previews</title>
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --ink: #1d1d1f;
+      --muted: #6e6e73;
+      --panel: #ffffff;
+      --line: #d9d9df;
+      --topic: #16a34a;
+      --tone-value: #edf3ec;
+      --tone-value-ink: #448361;
+      --tone-neutral: #f1f1ef;
+      --tone-neutral-ink: #787774;
+      --tone-policy: #e7f3f8;
+      --tone-policy-ink: #337ea9;
+      --tone-formal: #f6f3f8;
+      --tone-formal-ink: #9065b0;
+      --shadow: 0 22px 54px rgba(0, 0, 0, 0.09);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans SC", sans-serif;
+    }
+
+    header {
+      display: grid;
+      gap: 12px;
+      padding: 44px clamp(20px, 5vw, 72px) 24px;
+    }
+
+    .eyebrow {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 1060px;
+      margin: 0;
+      font-size: clamp(36px, 6vw, 76px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .header-copy {
+      max-width: 760px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.55;
+    }
+
+    main {
+      display: grid;
+      gap: 24px;
+      padding: 0 clamp(16px, 4vw, 56px) 56px;
+    }
+
+    .preview-shell {
+      display: grid;
+      gap: 18px;
+      padding: clamp(18px, 3vw, 34px);
+      border-top: 10px solid var(--topic);
+      border-radius: 24px;
+      background:
+        linear-gradient(135deg, color-mix(in srgb, var(--topic), #fff 92%), #fff 62%),
+        var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .study-card {
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 18px;
+      min-height: 280px;
+      padding: clamp(24px, 4vw, 48px);
+      border: 1px solid color-mix(in srgb, var(--topic), #fff 48%);
+      border-radius: 22px;
+      background: #fff;
+    }
+
+    .card-label {
+      color: var(--topic);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .card-text {
+      align-self: center;
+      font-size: clamp(38px, 6vw, 72px);
+      line-height: 1.05;
+      font-weight: 850;
+      overflow-wrap: anywhere;
+    }
+
+    .card-text span {
+      color: var(--topic);
+    }
+
+    .card-hint {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .panels {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .panel-option {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: 14px;
+      min-height: 620px;
+      padding: 18px;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 16px 38px rgba(0, 0, 0, 0.06);
+    }
+
+    .option-head {
+      display: grid;
+      gap: 8px;
+    }
+
+    .option-head h2 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1.04;
+    }
+
+    .option-head p:not(.eyebrow) {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .upgrade-panel {
+      display: grid;
+      align-content: start;
+      gap: 14px;
+      min-height: 500px;
+      padding: 18px;
+      border-radius: 22px;
+      border: 1px solid color-mix(in srgb, var(--topic), #fff 64%);
+      background: #fff;
+      overflow: hidden;
+    }
+
+    .upgrade-title {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .upgrade-title h3 {
+      margin: 3px 0 0;
+      font-size: 25px;
+      line-height: 1;
+    }
+
+    .tone-key {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .tone-key span,
+    .tone-chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 24px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 950;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .tone-value {
+      --tone-bg: var(--tone-value);
+      --tone-ink: var(--tone-value-ink);
+    }
+
+    .tone-neutral {
+      --tone-bg: var(--tone-neutral);
+      --tone-ink: var(--tone-neutral-ink);
+    }
+
+    .tone-policy {
+      --tone-bg: var(--tone-policy);
+      --tone-ink: var(--tone-policy-ink);
+    }
+
+    .tone-formal {
+      --tone-bg: var(--tone-formal);
+      --tone-ink: var(--tone-formal-ink);
+    }
+
+    .tone-key .tone-value,
+    .tone-chip.tone-value,
+    .tone-key .tone-neutral,
+    .tone-chip.tone-neutral,
+    .tone-key .tone-policy,
+    .tone-chip.tone-policy,
+    .tone-key .tone-formal,
+    .tone-chip.tone-formal {
+      background: var(--tone-bg);
+      color: var(--tone-ink);
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--tone-ink), #fff 82%);
+    }
+
+    .tone-card {
+      display: grid;
+      gap: 8px;
+      padding: 15px;
+      border-radius: 18px;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0)),
+        var(--tone-bg);
+      color: var(--tone-ink);
+      border: 1px solid color-mix(in srgb, var(--tone-ink), #fff 82%);
+      box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.54),
+        0 10px 20px rgba(43, 47, 51, 0.035);
+    }
+
+    .tone-card strong {
+      color: #2f3437;
+      font-size: 18px;
+      line-height: 1.2;
+      overflow-wrap: anywhere;
+    }
+
+    .tone-card p {
+      margin: 0;
+      color: color-mix(in srgb, var(--tone-ink), #2f3437 34%);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .tone-card-head {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .preview-a {
+      background:
+        radial-gradient(circle at 86% 8%, rgba(68, 131, 97, 0.10), transparent 30%),
+        linear-gradient(180deg, #fbfbfa, #f7f7f5);
+      border-color: #dfdfdd;
+    }
+
+    .soft-stack {
+      display: grid;
+      gap: 11px;
+    }
+
+    .preview-b {
+      padding: 0;
+      background: #fff;
+    }
+
+    .band-title {
+      padding: 18px 18px 0;
+    }
+
+    .tone-band {
+      display: grid;
+      gap: 7px;
+      padding: 18px;
+      background: var(--tone-bg);
+      color: var(--tone-ink);
+      border-top: 1px solid color-mix(in srgb, var(--tone-ink), #fff 76%);
+    }
+
+    .tone-band:first-of-type {
+      border-top: 0;
+    }
+
+    .tone-band strong {
+      color: #111827;
+      font-size: 19px;
+      line-height: 1.2;
+      overflow-wrap: anywhere;
+    }
+
+    .tone-band p {
+      margin: 0;
+      color: color-mix(in srgb, var(--tone-ink), #111 22%);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    .band-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .preview-c {
+      gap: 12px;
+      background:
+        linear-gradient(180deg, #f8fafc, #fff 46%),
+        #fff;
+    }
+
+    .tile-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+
+    .tone-tile {
+      display: grid;
+      gap: 10px;
+      min-height: 126px;
+      padding: 16px;
+      border-radius: 20px;
+      background: var(--tone-bg);
+      color: var(--tone-ink);
+      box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--tone-ink), #fff 72%);
+    }
+
+    .tone-tile strong {
+      color: #111827;
+      font-size: 22px;
+      line-height: 1.08;
+      overflow-wrap: anywhere;
+    }
+
+    .tone-tile p {
+      margin: 0;
+      color: color-mix(in srgb, var(--tone-ink), #111 25%);
+      font-size: 13px;
+      line-height: 1.42;
+    }
+
+    .notes {
+      display: grid;
+      gap: 10px;
+      padding: 18px 20px;
+      border-radius: 20px;
+      background: #fff;
+      color: var(--muted);
+      line-height: 1.55;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+    }
+
+    .notes strong {
+      color: var(--ink);
+    }
+
+    @media (max-width: 1180px) {
+      .panels {
+        grid-template-columns: repeat(3, minmax(320px, 82vw));
+        overflow-x: auto;
+        padding-bottom: 4px;
+        scroll-snap-type: x mandatory;
+      }
+
+      .panel-option {
+        scroll-snap-align: start;
+      }
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding-inline: 18px;
+      }
+
+      main {
+        padding-inline: 14px;
+      }
+
+      .preview-shell {
+        padding: 14px;
+        border-radius: 18px;
+      }
+
+      .study-card {
+        min-height: 300px;
+        padding: 18px;
+      }
+
+      .card-text {
+        font-size: clamp(34px, 12vw, 52px);
+      }
+
+      .panels {
+        grid-template-columns: repeat(3, minmax(300px, 88vw));
+      }
+
+      .panel-option {
+        min-height: 580px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Upgrade wording panel previews</p>
+    <h1>用 tone 背景色，让替换表达一眼有语气。</h1>
+    <p class="header-copy">这次不再靠复杂结构，而是让每个表达的 tone 直接变成背景色：Value 用绿色，Neutral 用灰蓝，Policy 用蓝色，Formal 用紫色。学生扫一眼就知道表达的语气和适用方向。</p>
+  </header>
+
+  <main>
+    <section class="preview-shell" aria-label="Zen context preview">
+      <article class="study-card">
+        <span class="card-label">Chinese front</span>
+        <strong class="card-text"><span>资金充足的</span>公立学校</strong>
+        <span class="card-hint">Space: reveal answer / click: flip card</span>
+      </article>
+
+      <div class="panels" aria-label="Tone fill design options">
+        <article class="panel-option">
+          <div class="option-head">
+            <p class="eyebrow">Option 1</p>
+            <h2>Soft Tone Cards</h2>
+            <p>每条表达是一张柔和彩色卡片。最接近当前面板，改动小，但 tone 更明显。</p>
+          </div>
+          <section class="upgrade-panel preview-a">
+            <div class="upgrade-title">
+              <div>
+                <p class="eyebrow">Upgrade wording</p>
+                <h3>Pick by tone</h3>
+              </div>
+            </div>
+            <div class="tone-key">
+              <span class="tone-value">Value</span>
+              <span class="tone-neutral">Neutral</span>
+              <span class="tone-policy">Policy</span>
+            </div>
+            <div class="soft-stack">
+              <article class="tone-card tone-value">
+                <div class="tone-card-head">
+                  <strong>meaningful public school</strong>
+                  <span class="tone-chip tone-value">Value</span>
+                </div>
+                <p>中文：有实际意义的。强调真实价值，适合写教育投入带来的效果。</p>
+              </article>
+              <article class="tone-card tone-neutral">
+                <div class="tone-card-head">
+                  <strong>notable public school</strong>
+                  <span class="tone-chip tone-neutral">Neutral</span>
+                </div>
+                <p>中文：值得注意的。语气稳，适合描述特点、变化或影响。</p>
+              </article>
+              <article class="tone-card tone-policy">
+                <div class="tone-card-head">
+                  <strong>well-targeted public school</strong>
+                  <span class="tone-chip tone-policy">Policy</span>
+                </div>
+                <p>中文：有针对性的。适合写政策、服务或资源分配。</p>
+              </article>
+            </div>
+          </section>
+        </article>
+
+        <article class="panel-option">
+          <div class="option-head">
+            <p class="eyebrow">Option 2</p>
+            <h2>Tone Bands</h2>
+            <p>整个横条都按 tone 填色。阅读速度最快，像 Apple 设置页的分组列表，但更有学习颜色。</p>
+          </div>
+          <section class="upgrade-panel preview-b">
+            <div class="band-title">
+              <div class="upgrade-title">
+                <div>
+                  <p class="eyebrow">Upgrade wording</p>
+                  <h3>Tone bands</h3>
+                </div>
+              </div>
+            </div>
+            <article class="tone-band tone-value">
+              <div class="band-meta">
+                <span class="tone-chip tone-value">Value</span>
+                <span>推荐优先</span>
+              </div>
+              <strong>meaningful public school</strong>
+              <p>强调“有实际意义”，比 important 更像在写影响和价值。</p>
+            </article>
+            <article class="tone-band tone-neutral">
+              <div class="band-meta">
+                <span class="tone-chip tone-neutral">Neutral</span>
+                <span>中性描述</span>
+              </div>
+              <strong>notable public school</strong>
+              <p>语气不强，适合描述一个特点，不主动表达赞同或反对。</p>
+            </article>
+            <article class="tone-band tone-policy">
+              <div class="band-meta">
+                <span class="tone-chip tone-policy">Policy</span>
+                <span>措施语境</span>
+              </div>
+              <strong>well-targeted public school</strong>
+              <p>适合政府措施、资源配置、教育服务这类论述。</p>
+            </article>
+          </section>
+        </article>
+
+        <article class="panel-option">
+          <div class="option-head">
+            <p class="eyebrow">Option 3</p>
+            <h2>Full Tone Tiles</h2>
+            <p>色块更大胆，每个表达像一个可选卡片。质感最强，但正式落地时需要控制饱和度。</p>
+          </div>
+          <section class="upgrade-panel preview-c">
+            <div class="upgrade-title">
+              <div>
+                <p class="eyebrow">Upgrade wording</p>
+                <h3>Choose a tile</h3>
+              </div>
+            </div>
+            <div class="tile-grid">
+              <article class="tone-tile tone-value">
+                <span class="tone-chip tone-value">Value</span>
+                <strong>meaningful public school</strong>
+                <p>有实际意义的。强调价值和结果，适合观点句或解释句。</p>
+              </article>
+              <article class="tone-tile tone-neutral">
+                <span class="tone-chip tone-neutral">Neutral</span>
+                <strong>notable public school</strong>
+                <p>值得注意的。适合客观描述，不让语气过度拔高。</p>
+              </article>
+              <article class="tone-tile tone-policy">
+                <span class="tone-chip tone-policy">Policy</span>
+                <strong>well-targeted public school</strong>
+                <p>有针对性的。适合写资源分配、政策设计和教育服务。</p>
+              </article>
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
+
+    <section class="notes">
+      <strong>这版我的建议：</strong>
+      <span>我会优先选 Option 2。它把 tone 做成整条背景色，扫读最快，也不会像 Option 3 那样颜色太重。正式落地时可以把当前 Positive / Neutral / Negative 继续保留为小标签，同时新增 Value / Neutral / Policy / Formal 这种 tone 色彩层。</span>
+    </section>
+  </main>
+</body>
+</html>

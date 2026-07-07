@@ -1,0 +1,2108 @@
+{
+  "topic": "Environment",
+  "guidance": "project-docs/synonym-curation-guidelines.md",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "issueCount": 71,
+  "issueCardCount": 30,
+  "issueRows": [
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "气候变化",
+      "baseEnglish": "climate change",
+      "focus": "accelerating",
+      "original": "accelerating climate change",
+      "term": "long-term",
+      "phrase": "long-term climate change",
+      "zh": "长期的",
+      "tone": "中性，强调时间跨度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "温室气体",
+      "baseEnglish": "greenhouse gases",
+      "focus": "reduce",
+      "original": "reduce greenhouse gases",
+      "term": "reduce",
+      "phrase": "reduce greenhouse gas emissions",
+      "zh": "减少温室气体排放",
+      "tone": "这条搭配适合讲通过能源转型或监管降低温室气体排放。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "碳足迹",
+      "baseEnglish": "carbon footprint",
+      "focus": "large",
+      "original": "large carbon footprint",
+      "term": "meaningful",
+      "phrase": "meaningful carbon footprint",
+      "zh": "有意义的",
+      "tone": "这条搭配适合强调真实价值或影响。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "碳足迹",
+      "baseEnglish": "carbon footprint",
+      "focus": "large",
+      "original": "large carbon footprint",
+      "term": "measurable",
+      "phrase": "measurable carbon footprint",
+      "zh": "可衡量的",
+      "tone": "这条搭配适合数据或效果评估语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "碳足迹",
+      "baseEnglish": "carbon footprint",
+      "focus": "large",
+      "original": "large carbon footprint",
+      "term": "limited",
+      "phrase": "limited carbon footprint",
+      "zh": "有限的",
+      "tone": "这条搭配适合批判作用或覆盖面不足。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "碳足迹",
+      "baseEnglish": "carbon footprint",
+      "focus": "reduce",
+      "original": "reduce carbon footprint",
+      "term": "reduce",
+      "phrase": "reduce a carbon footprint",
+      "zh": "降低碳足迹",
+      "tone": "这条搭配适合讲个人、企业或城市如何减少环境影响。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "生态足迹",
+      "baseEnglish": "ecological footprint",
+      "focus": "minimize",
+      "original": "minimize ecological footprint",
+      "term": "develop",
+      "phrase": "develop ecological footprint",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "生态足迹",
+      "baseEnglish": "ecological footprint",
+      "focus": "minimize",
+      "original": "minimize ecological footprint",
+      "term": "assess",
+      "phrase": "assess ecological footprint",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "生态足迹",
+      "baseEnglish": "ecological footprint",
+      "focus": "minimize",
+      "original": "minimize ecological footprint",
+      "term": "undermine",
+      "phrase": "undermine ecological footprint",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "森林砍伐",
+      "baseEnglish": "deforestation",
+      "focus": "curb",
+      "original": "curb deforestation",
+      "term": "develop",
+      "phrase": "develop deforestation",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "森林砍伐",
+      "baseEnglish": "deforestation",
+      "focus": "curb",
+      "original": "curb deforestation",
+      "term": "discuss",
+      "phrase": "discuss deforestation",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "森林砍伐",
+      "baseEnglish": "deforestation",
+      "focus": "curb",
+      "original": "curb deforestation",
+      "term": "overlook",
+      "phrase": "overlook deforestation",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "环境恶化",
+      "baseEnglish": "environmental degradation",
+      "focus": "prevent",
+      "original": "prevent environmental degradation",
+      "term": "maintain",
+      "phrase": "maintain environmental degradation",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "环境恶化",
+      "baseEnglish": "environmental degradation",
+      "focus": "prevent",
+      "original": "prevent environmental degradation",
+      "term": "discuss",
+      "phrase": "discuss environmental degradation",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "环境恶化",
+      "baseEnglish": "environmental degradation",
+      "focus": "prevent",
+      "original": "prevent environmental degradation",
+      "term": "overlook",
+      "phrase": "overlook environmental degradation",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "回收",
+      "baseEnglish": "recycling",
+      "focus": "household",
+      "original": "household recycling",
+      "term": "household",
+      "phrase": "household recycling",
+      "zh": "家庭层面的",
+      "tone": "中性，强调场景。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "回收",
+      "baseEnglish": "recycling",
+      "focus": "promote",
+      "original": "promote recycling",
+      "term": "assess",
+      "phrase": "assess recycling",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "回收",
+      "baseEnglish": "recycling",
+      "focus": "promote",
+      "original": "promote recycling",
+      "term": "overlook",
+      "phrase": "overlook recycling",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "垃圾分类",
+      "baseEnglish": "waste-sorting / waste separation",
+      "focus": "implement",
+      "original": "implement waste-sorting",
+      "term": "maintain",
+      "phrase": "maintain waste-sorting",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "垃圾分类",
+      "baseEnglish": "waste-sorting / waste separation",
+      "focus": "implement",
+      "original": "implement waste-sorting",
+      "term": "sideline",
+      "phrase": "sideline waste-sorting",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "节能",
+      "baseEnglish": "energy conservation",
+      "focus": "encourage",
+      "original": "encourage energy conservation",
+      "term": "develop",
+      "phrase": "develop energy conservation",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "节能",
+      "baseEnglish": "energy conservation",
+      "focus": "encourage",
+      "original": "encourage energy conservation",
+      "term": "assess",
+      "phrase": "assess energy conservation",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "节能",
+      "baseEnglish": "energy conservation",
+      "focus": "encourage",
+      "original": "encourage energy conservation",
+      "term": "undermine",
+      "phrase": "undermine energy conservation",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "绿色出行",
+      "baseEnglish": "green commuting",
+      "focus": "low-carbon",
+      "original": "low-carbon green commuting",
+      "term": "context-specific",
+      "phrase": "context-specific green commuting",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "绿色出行",
+      "baseEnglish": "green commuting",
+      "focus": "low-carbon",
+      "original": "low-carbon green commuting",
+      "term": "controversial",
+      "phrase": "controversial green commuting",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "绿色出行",
+      "baseEnglish": "green commuting",
+      "focus": "choose",
+      "original": "choose green commuting",
+      "term": "develop",
+      "phrase": "develop green commuting",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "绿色出行",
+      "baseEnglish": "green commuting",
+      "focus": "choose",
+      "original": "choose green commuting",
+      "term": "assess",
+      "phrase": "assess green commuting",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "绿色出行",
+      "baseEnglish": "green commuting",
+      "focus": "choose",
+      "original": "choose green commuting",
+      "term": "undermine",
+      "phrase": "undermine green commuting",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "可持续发展",
+      "baseEnglish": "sustainable development",
+      "focus": "long-term",
+      "original": "long-term sustainable development",
+      "term": "meaningful",
+      "phrase": "meaningful sustainable development",
+      "zh": "有意义的",
+      "tone": "这条搭配适合强调真实价值或影响。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "可持续发展",
+      "baseEnglish": "sustainable development",
+      "focus": "long-term",
+      "original": "long-term sustainable development",
+      "term": "measurable",
+      "phrase": "measurable sustainable development",
+      "zh": "可衡量的",
+      "tone": "这条搭配适合数据或效果评估语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "可持续发展",
+      "baseEnglish": "sustainable development",
+      "focus": "long-term",
+      "original": "long-term sustainable development",
+      "term": "limited",
+      "phrase": "limited sustainable development",
+      "zh": "有限的",
+      "tone": "这条搭配适合批判作用或覆盖面不足。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "可持续发展",
+      "baseEnglish": "sustainable development",
+      "focus": "achieve",
+      "original": "achieve sustainable development",
+      "term": "develop",
+      "phrase": "develop sustainable development",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "可持续发展",
+      "baseEnglish": "sustainable development",
+      "focus": "achieve",
+      "original": "achieve sustainable development",
+      "term": "discuss",
+      "phrase": "discuss sustainable development",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "可持续发展",
+      "baseEnglish": "sustainable development",
+      "focus": "achieve",
+      "original": "achieve sustainable development",
+      "term": "overlook",
+      "phrase": "overlook sustainable development",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "水能",
+      "baseEnglish": "hydroelectric power",
+      "focus": "renewable",
+      "original": "renewable hydroelectric power",
+      "term": "meaningful",
+      "phrase": "meaningful hydroelectric power",
+      "zh": "有意义的",
+      "tone": "这条搭配适合强调真实价值或影响。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "水能",
+      "baseEnglish": "hydroelectric power",
+      "focus": "renewable",
+      "original": "renewable hydroelectric power",
+      "term": "measurable",
+      "phrase": "measurable hydroelectric power",
+      "zh": "可衡量的",
+      "tone": "这条搭配适合数据或效果评估语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "水能",
+      "baseEnglish": "hydroelectric power",
+      "focus": "renewable",
+      "original": "renewable hydroelectric power",
+      "term": "limited",
+      "phrase": "limited hydroelectric power",
+      "zh": "有限的",
+      "tone": "这条搭配适合批判作用或覆盖面不足。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "水能",
+      "baseEnglish": "hydroelectric power",
+      "focus": "generate",
+      "original": "generate hydroelectric power",
+      "term": "maintain",
+      "phrase": "maintain hydroelectric power",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "水能",
+      "baseEnglish": "hydroelectric power",
+      "focus": "generate",
+      "original": "generate hydroelectric power",
+      "term": "assess",
+      "phrase": "assess hydroelectric power",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "水能",
+      "baseEnglish": "hydroelectric power",
+      "focus": "generate",
+      "original": "generate hydroelectric power",
+      "term": "undermine",
+      "phrase": "undermine hydroelectric power",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "太阳能",
+      "baseEnglish": "solar power",
+      "focus": "harness",
+      "original": "harness solar power",
+      "term": "develop",
+      "phrase": "develop solar power",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "太阳能",
+      "baseEnglish": "solar power",
+      "focus": "harness",
+      "original": "harness solar power",
+      "term": "discuss",
+      "phrase": "discuss solar power",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "太阳能",
+      "baseEnglish": "solar power",
+      "focus": "harness",
+      "original": "harness solar power",
+      "term": "overlook",
+      "phrase": "overlook solar power",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "风能",
+      "baseEnglish": "wind energy",
+      "focus": "clean",
+      "original": "clean wind energy",
+      "term": "context-specific",
+      "phrase": "context-specific wind energy",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "风能",
+      "baseEnglish": "wind energy",
+      "focus": "clean",
+      "original": "clean wind energy",
+      "term": "controversial",
+      "phrase": "controversial wind energy",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "风能",
+      "baseEnglish": "wind energy",
+      "focus": "produce",
+      "original": "produce wind energy",
+      "term": "assess",
+      "phrase": "assess wind energy potential",
+      "zh": "评估风能潜力",
+      "tone": "这条搭配适合分析某地区开发风能的可行性和成本。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "生物多样性",
+      "baseEnglish": "biodiversity",
+      "focus": "rich",
+      "original": "rich biodiversity",
+      "term": "meaningful",
+      "phrase": "meaningful biodiversity",
+      "zh": "有意义的",
+      "tone": "这条搭配适合强调真实价值或影响。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "生物多样性",
+      "baseEnglish": "biodiversity",
+      "focus": "rich",
+      "original": "rich biodiversity",
+      "term": "measurable",
+      "phrase": "measurable biodiversity",
+      "zh": "可衡量的",
+      "tone": "这条搭配适合数据或效果评估语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "生物多样性",
+      "baseEnglish": "biodiversity",
+      "focus": "rich",
+      "original": "rich biodiversity",
+      "term": "limited",
+      "phrase": "limited biodiversity",
+      "zh": "有限的",
+      "tone": "这条搭配适合批判作用或覆盖面不足。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "生物多样性",
+      "baseEnglish": "biodiversity",
+      "focus": "protect",
+      "original": "protect biodiversity",
+      "term": "maintain",
+      "phrase": "maintain biodiversity",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "生物多样性",
+      "baseEnglish": "biodiversity",
+      "focus": "protect",
+      "original": "protect biodiversity",
+      "term": "assess",
+      "phrase": "assess biodiversity",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "生物多样性",
+      "baseEnglish": "biodiversity",
+      "focus": "protect",
+      "original": "protect biodiversity",
+      "term": "undermine",
+      "phrase": "undermine biodiversity",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "生态系统",
+      "baseEnglish": "ecosystem",
+      "focus": "fragile",
+      "original": "fragile ecosystem",
+      "term": "context-specific",
+      "phrase": "context-specific ecosystem",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "生态系统",
+      "baseEnglish": "ecosystem",
+      "focus": "fragile",
+      "original": "fragile ecosystem",
+      "term": "controversial",
+      "phrase": "controversial ecosystem",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "生态系统",
+      "baseEnglish": "ecosystem",
+      "focus": "restore",
+      "original": "restore ecosystems",
+      "term": "develop",
+      "phrase": "develop ecosystems",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "生态系统",
+      "baseEnglish": "ecosystem",
+      "focus": "restore",
+      "original": "restore ecosystems",
+      "term": "assess",
+      "phrase": "assess ecosystems",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "生态系统",
+      "baseEnglish": "ecosystem",
+      "focus": "restore",
+      "original": "restore ecosystems",
+      "term": "undermine",
+      "phrase": "undermine ecosystems",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "adjective",
+      "baseChinese": "濒危物种",
+      "baseEnglish": "endangered species",
+      "focus": "critically endangered",
+      "original": "critically endangered species",
+      "term": "critically endangered",
+      "phrase": "critically endangered species",
+      "zh": "极度濒危的",
+      "tone": "强调风险严重。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "濒危物种",
+      "baseEnglish": "endangered species",
+      "focus": "protect",
+      "original": "protect endangered species",
+      "term": "assess",
+      "phrase": "assess endangered species",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "濒危物种",
+      "baseEnglish": "endangered species",
+      "focus": "protect",
+      "original": "protect endangered species",
+      "term": "undermine",
+      "phrase": "undermine endangered species",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "栖息地破坏",
+      "baseEnglish": "habitat destruction",
+      "focus": "prevent",
+      "original": "prevent habitat destruction",
+      "term": "discuss",
+      "phrase": "discuss habitat destruction",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "栖息地破坏",
+      "baseEnglish": "habitat destruction",
+      "focus": "prevent",
+      "original": "prevent habitat destruction",
+      "term": "undermine",
+      "phrase": "undermine habitat destruction",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "环保意识",
+      "baseEnglish": "environmental awareness",
+      "focus": "raise",
+      "original": "raise environmental awareness",
+      "term": "develop",
+      "phrase": "develop environmental awareness",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "环保意识",
+      "baseEnglish": "environmental awareness",
+      "focus": "raise",
+      "original": "raise environmental awareness",
+      "term": "discuss",
+      "phrase": "discuss environmental awareness",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "环保意识",
+      "baseEnglish": "environmental awareness",
+      "focus": "raise",
+      "original": "raise environmental awareness",
+      "term": "overlook",
+      "phrase": "overlook environmental awareness",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "环保法规",
+      "baseEnglish": "environmental regulations",
+      "focus": "enforce",
+      "original": "enforce environmental regulations",
+      "term": "maintain",
+      "phrase": "maintain environmental regulations",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "环保法规",
+      "baseEnglish": "environmental regulations",
+      "focus": "enforce",
+      "original": "enforce environmental regulations",
+      "term": "discuss",
+      "phrase": "discuss environmental regulations",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "环保法规",
+      "baseEnglish": "environmental regulations",
+      "focus": "enforce",
+      "original": "enforce environmental regulations",
+      "term": "overlook",
+      "phrase": "overlook environmental regulations",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "国际合作",
+      "baseEnglish": "international cooperation",
+      "focus": "strengthen",
+      "original": "strengthen international cooperation",
+      "term": "promote",
+      "phrase": "promote international cooperation",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "国际合作",
+      "baseEnglish": "international cooperation",
+      "focus": "strengthen",
+      "original": "strengthen international cooperation",
+      "term": "analyse",
+      "phrase": "analyse international cooperation",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Environment",
+      "type": "verb",
+      "baseChinese": "国际合作",
+      "baseEnglish": "international cooperation",
+      "focus": "strengthen",
+      "original": "strengthen international cooperation",
+      "term": "sideline",
+      "phrase": "sideline international cooperation",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    }
+  ],
+  "cardsToReview": [
+    {
+      "cardKey": "Environment::adjective::accelerating climate change",
+      "topic": "Environment",
+      "baseChinese": "气候变化",
+      "baseEnglish": "climate change",
+      "type": "adjective",
+      "original": "accelerating climate change",
+      "focus": "accelerating",
+      "currentOptions": [
+        {
+          "phrase": "human-induced climate change",
+          "term": "human-induced",
+          "zh": "人为导致的",
+          "stance": "Neutral",
+          "tone": "强调原因。"
+        },
+        {
+          "phrase": "long-term climate change",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "中性，强调时间跨度。"
+        },
+        {
+          "phrase": "catastrophic climate change",
+          "term": "catastrophic",
+          "zh": "灾难性的",
+          "stance": "Negative",
+          "tone": "消极，强调严重后果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::reduce greenhouse gases",
+      "topic": "Environment",
+      "baseChinese": "温室气体",
+      "baseEnglish": "greenhouse gases",
+      "type": "verb",
+      "original": "reduce greenhouse gases",
+      "focus": "reduce",
+      "currentOptions": [
+        {
+          "phrase": "reduce greenhouse gas emissions",
+          "term": "reduce",
+          "zh": "减少温室气体排放",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲通过能源转型或监管降低温室气体排放。"
+        },
+        {
+          "phrase": "measure greenhouse gas emissions",
+          "term": "measure",
+          "zh": "测量温室气体排放",
+          "stance": "Neutral",
+          "tone": "这条搭配适合用数据评估行业、城市或国家的排放水平。"
+        },
+        {
+          "phrase": "increase greenhouse gas emissions",
+          "term": "increase",
+          "zh": "增加温室气体排放",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判某种产业或生活方式加剧气候问题。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::large carbon footprint",
+      "topic": "Environment",
+      "baseChinese": "碳足迹",
+      "baseEnglish": "carbon footprint",
+      "type": "adjective",
+      "original": "large carbon footprint",
+      "focus": "large",
+      "currentOptions": [
+        {
+          "phrase": "meaningful carbon footprint",
+          "term": "meaningful",
+          "zh": "有意义的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调真实价值或影响。"
+        },
+        {
+          "phrase": "measurable carbon footprint",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合数据或效果评估语境。"
+        },
+        {
+          "phrase": "limited carbon footprint",
+          "term": "limited",
+          "zh": "有限的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判作用或覆盖面不足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::reduce carbon footprint",
+      "topic": "Environment",
+      "baseChinese": "碳足迹",
+      "baseEnglish": "carbon footprint",
+      "type": "verb",
+      "original": "reduce carbon footprint",
+      "focus": "reduce",
+      "currentOptions": [
+        {
+          "phrase": "reduce a carbon footprint",
+          "term": "reduce",
+          "zh": "降低碳足迹",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲个人、企业或城市如何减少环境影响。"
+        },
+        {
+          "phrase": "measure a carbon footprint",
+          "term": "measure",
+          "zh": "测量碳足迹",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观计算某种活动或产品的排放影响。"
+        },
+        {
+          "phrase": "leave a large carbon footprint",
+          "term": "leave",
+          "zh": "留下很大的碳足迹",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判高排放消费或低效生产造成较大环境负担。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::minimize ecological footprint",
+      "topic": "Environment",
+      "baseChinese": "生态足迹",
+      "baseEnglish": "ecological footprint",
+      "type": "verb",
+      "original": "minimize ecological footprint",
+      "focus": "minimize",
+      "currentOptions": [
+        {
+          "phrase": "develop ecological footprint",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "assess ecological footprint",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine ecological footprint",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::curb deforestation",
+      "topic": "Environment",
+      "baseChinese": "森林砍伐",
+      "baseEnglish": "deforestation",
+      "type": "verb",
+      "original": "curb deforestation",
+      "focus": "curb",
+      "currentOptions": [
+        {
+          "phrase": "develop deforestation",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss deforestation",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook deforestation",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::prevent environmental degradation",
+      "topic": "Environment",
+      "baseChinese": "环境恶化",
+      "baseEnglish": "environmental degradation",
+      "type": "verb",
+      "original": "prevent environmental degradation",
+      "focus": "prevent",
+      "currentOptions": [
+        {
+          "phrase": "maintain environmental degradation",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "discuss environmental degradation",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook environmental degradation",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::household recycling",
+      "topic": "Environment",
+      "baseChinese": "回收",
+      "baseEnglish": "recycling",
+      "type": "adjective",
+      "original": "household recycling",
+      "focus": "household",
+      "currentOptions": [
+        {
+          "phrase": "effective recycling",
+          "term": "effective",
+          "zh": "有效的",
+          "stance": "Positive",
+          "tone": "积极，强调实际效果。"
+        },
+        {
+          "phrase": "household recycling",
+          "term": "household",
+          "zh": "家庭层面的",
+          "stance": "Neutral",
+          "tone": "中性，强调场景。"
+        },
+        {
+          "phrase": "inefficient recycling",
+          "term": "inefficient",
+          "zh": "低效的",
+          "stance": "Negative",
+          "tone": "消极，强调执行效果差。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::promote recycling",
+      "topic": "Environment",
+      "baseChinese": "回收",
+      "baseEnglish": "recycling",
+      "type": "verb",
+      "original": "promote recycling",
+      "focus": "promote",
+      "currentOptions": [
+        {
+          "phrase": "advance recycling",
+          "term": "advance",
+          "zh": "推进",
+          "stance": "Positive",
+          "tone": "更正式，强调向前发展。"
+        },
+        {
+          "phrase": "assess recycling",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook recycling",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::implement waste-sorting",
+      "topic": "Environment",
+      "baseChinese": "垃圾分类",
+      "baseEnglish": "waste-sorting / waste separation",
+      "type": "verb",
+      "original": "implement waste-sorting",
+      "focus": "implement",
+      "currentOptions": [
+        {
+          "phrase": "maintain waste-sorting",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "carry out waste-sorting",
+          "term": "carry out",
+          "zh": "执行",
+          "stance": "Neutral",
+          "tone": "较直接，适合计划和措施。"
+        },
+        {
+          "phrase": "sideline waste-sorting",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::encourage energy conservation",
+      "topic": "Environment",
+      "baseChinese": "节能",
+      "baseEnglish": "energy conservation",
+      "type": "verb",
+      "original": "encourage energy conservation",
+      "focus": "encourage",
+      "currentOptions": [
+        {
+          "phrase": "develop energy conservation",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "assess energy conservation",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine energy conservation",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::low-carbon green commuting",
+      "topic": "Environment",
+      "baseChinese": "绿色出行",
+      "baseEnglish": "green commuting",
+      "type": "adjective",
+      "original": "low-carbon green commuting",
+      "focus": "low-carbon",
+      "currentOptions": [
+        {
+          "phrase": "practical green commuting",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific green commuting",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial green commuting",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::choose green commuting",
+      "topic": "Environment",
+      "baseChinese": "绿色出行",
+      "baseEnglish": "green commuting",
+      "type": "verb",
+      "original": "choose green commuting",
+      "focus": "choose",
+      "currentOptions": [
+        {
+          "phrase": "develop green commuting",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "assess green commuting",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine green commuting",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::long-term sustainable development",
+      "topic": "Environment",
+      "baseChinese": "可持续发展",
+      "baseEnglish": "sustainable development",
+      "type": "adjective",
+      "original": "long-term sustainable development",
+      "focus": "long-term",
+      "currentOptions": [
+        {
+          "phrase": "meaningful sustainable development",
+          "term": "meaningful",
+          "zh": "有意义的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调真实价值或影响。"
+        },
+        {
+          "phrase": "measurable sustainable development",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合数据或效果评估语境。"
+        },
+        {
+          "phrase": "limited sustainable development",
+          "term": "limited",
+          "zh": "有限的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判作用或覆盖面不足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::achieve sustainable development",
+      "topic": "Environment",
+      "baseChinese": "可持续发展",
+      "baseEnglish": "sustainable development",
+      "type": "verb",
+      "original": "achieve sustainable development",
+      "focus": "achieve",
+      "currentOptions": [
+        {
+          "phrase": "develop sustainable development",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss sustainable development",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook sustainable development",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::renewable hydroelectric power",
+      "topic": "Environment",
+      "baseChinese": "水能",
+      "baseEnglish": "hydroelectric power",
+      "type": "adjective",
+      "original": "renewable hydroelectric power",
+      "focus": "renewable",
+      "currentOptions": [
+        {
+          "phrase": "meaningful hydroelectric power",
+          "term": "meaningful",
+          "zh": "有意义的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调真实价值或影响。"
+        },
+        {
+          "phrase": "measurable hydroelectric power",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合数据或效果评估语境。"
+        },
+        {
+          "phrase": "limited hydroelectric power",
+          "term": "limited",
+          "zh": "有限的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判作用或覆盖面不足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::generate hydroelectric power",
+      "topic": "Environment",
+      "baseChinese": "水能",
+      "baseEnglish": "hydroelectric power",
+      "type": "verb",
+      "original": "generate hydroelectric power",
+      "focus": "generate",
+      "currentOptions": [
+        {
+          "phrase": "maintain hydroelectric power",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess hydroelectric power",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine hydroelectric power",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::harness solar power",
+      "topic": "Environment",
+      "baseChinese": "太阳能",
+      "baseEnglish": "solar power",
+      "type": "verb",
+      "original": "harness solar power",
+      "focus": "harness",
+      "currentOptions": [
+        {
+          "phrase": "develop solar power",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss solar power",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook solar power",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::clean wind energy",
+      "topic": "Environment",
+      "baseChinese": "风能",
+      "baseEnglish": "wind energy",
+      "type": "adjective",
+      "original": "clean wind energy",
+      "focus": "clean",
+      "currentOptions": [
+        {
+          "phrase": "practical wind energy",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific wind energy",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial wind energy",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::produce wind energy",
+      "topic": "Environment",
+      "baseChinese": "风能",
+      "baseEnglish": "wind energy",
+      "type": "verb",
+      "original": "produce wind energy",
+      "focus": "produce",
+      "currentOptions": [
+        {
+          "phrase": "expand wind energy generation",
+          "term": "expand",
+          "zh": "扩大风能发电",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲增加清洁能源供给和减少化石燃料依赖。"
+        },
+        {
+          "phrase": "assess wind energy potential",
+          "term": "assess",
+          "zh": "评估风能潜力",
+          "stance": "Neutral",
+          "tone": "这条搭配适合分析某地区开发风能的可行性和成本。"
+        },
+        {
+          "phrase": "underinvest in wind energy",
+          "term": "underinvest in",
+          "zh": "对风能投资不足",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判政府或企业没有给风能足够资金支持。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::rich biodiversity",
+      "topic": "Environment",
+      "baseChinese": "生物多样性",
+      "baseEnglish": "biodiversity",
+      "type": "adjective",
+      "original": "rich biodiversity",
+      "focus": "rich",
+      "currentOptions": [
+        {
+          "phrase": "meaningful biodiversity",
+          "term": "meaningful",
+          "zh": "有意义的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调真实价值或影响。"
+        },
+        {
+          "phrase": "measurable biodiversity",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合数据或效果评估语境。"
+        },
+        {
+          "phrase": "limited biodiversity",
+          "term": "limited",
+          "zh": "有限的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判作用或覆盖面不足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::protect biodiversity",
+      "topic": "Environment",
+      "baseChinese": "生物多样性",
+      "baseEnglish": "biodiversity",
+      "type": "verb",
+      "original": "protect biodiversity",
+      "focus": "protect",
+      "currentOptions": [
+        {
+          "phrase": "maintain biodiversity",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess biodiversity",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine biodiversity",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::fragile ecosystem",
+      "topic": "Environment",
+      "baseChinese": "生态系统",
+      "baseEnglish": "ecosystem",
+      "type": "adjective",
+      "original": "fragile ecosystem",
+      "focus": "fragile",
+      "currentOptions": [
+        {
+          "phrase": "practical ecosystem",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific ecosystem",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial ecosystem",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::restore ecosystems",
+      "topic": "Environment",
+      "baseChinese": "生态系统",
+      "baseEnglish": "ecosystem",
+      "type": "verb",
+      "original": "restore ecosystems",
+      "focus": "restore",
+      "currentOptions": [
+        {
+          "phrase": "develop ecosystems",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "assess ecosystems",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine ecosystems",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::critically endangered species",
+      "topic": "Environment",
+      "baseChinese": "濒危物种",
+      "baseEnglish": "endangered species",
+      "type": "adjective",
+      "original": "critically endangered species",
+      "focus": "critically endangered",
+      "currentOptions": [
+        {
+          "phrase": "critically endangered species",
+          "term": "critically endangered",
+          "zh": "极度濒危的",
+          "stance": "Negative",
+          "tone": "强调风险严重。"
+        },
+        {
+          "phrase": "protected species",
+          "term": "protected",
+          "zh": "受保护的",
+          "stance": "Positive",
+          "tone": "积极，强调保护状态。"
+        },
+        {
+          "phrase": "vulnerable species",
+          "term": "vulnerable",
+          "zh": "易受威胁的",
+          "stance": "Negative",
+          "tone": "消极，强调脆弱性。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::protect endangered species",
+      "topic": "Environment",
+      "baseChinese": "濒危物种",
+      "baseEnglish": "endangered species",
+      "type": "verb",
+      "original": "protect endangered species",
+      "focus": "protect",
+      "currentOptions": [
+        {
+          "phrase": "defend endangered species",
+          "term": "defend",
+          "zh": "防卫 / 捍卫",
+          "stance": "Positive",
+          "tone": "更强烈，适合权利或主权。"
+        },
+        {
+          "phrase": "assess endangered species",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine endangered species",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::prevent habitat destruction",
+      "topic": "Environment",
+      "baseChinese": "栖息地破坏",
+      "baseEnglish": "habitat destruction",
+      "type": "verb",
+      "original": "prevent habitat destruction",
+      "focus": "prevent",
+      "currentOptions": [
+        {
+          "phrase": "avert habitat destruction",
+          "term": "avert",
+          "zh": "避免 / 防止",
+          "stance": "Positive",
+          "tone": "正式，常用于危机或风险。"
+        },
+        {
+          "phrase": "discuss habitat destruction",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "undermine habitat destruction",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::raise environmental awareness",
+      "topic": "Environment",
+      "baseChinese": "环保意识",
+      "baseEnglish": "environmental awareness",
+      "type": "verb",
+      "original": "raise environmental awareness",
+      "focus": "raise",
+      "currentOptions": [
+        {
+          "phrase": "develop environmental awareness",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss environmental awareness",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook environmental awareness",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::enforce environmental regulations",
+      "topic": "Environment",
+      "baseChinese": "环保法规",
+      "baseEnglish": "environmental regulations",
+      "type": "verb",
+      "original": "enforce environmental regulations",
+      "focus": "enforce",
+      "currentOptions": [
+        {
+          "phrase": "maintain environmental regulations",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "discuss environmental regulations",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook environmental regulations",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::strengthen international cooperation",
+      "topic": "Environment",
+      "baseChinese": "国际合作",
+      "baseEnglish": "international cooperation",
+      "type": "verb",
+      "original": "strengthen international cooperation",
+      "focus": "strengthen",
+      "currentOptions": [
+        {
+          "phrase": "promote international cooperation",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "analyse international cooperation",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline international cooperation",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    }
+  ]
+}

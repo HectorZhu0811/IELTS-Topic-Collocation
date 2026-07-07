@@ -1,0 +1,416 @@
+{
+  "topic": "Arts",
+  "curator": "main-agent-after-subagent-disconnects",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "approved": [
+    {
+      "cardKey": "Arts::adjective::traditional performing arts",
+      "baseChinese": "表演艺术",
+      "baseEnglish": "performing arts",
+      "type": "adjective",
+      "original": "traditional performing arts",
+      "focus": "traditional",
+      "options": [
+        {
+          "phrase": "live performing arts",
+          "term": "live",
+          "zh": "现场表演艺术",
+          "stance": "Neutral",
+          "tone": "适合强调戏剧、舞蹈、音乐等艺术形式通过现场演出与观众互动。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::promote performing arts",
+      "baseChinese": "表演艺术",
+      "baseEnglish": "performing arts",
+      "type": "verb",
+      "original": "promote performing arts",
+      "focus": "promote",
+      "options": [
+        {
+          "phrase": "fund performing arts",
+          "term": "fund",
+          "zh": "资助表演艺术",
+          "stance": "Positive",
+          "tone": "适合讲政府、学校或基金会通过经费支持剧场、舞蹈和音乐演出。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::stage improv theatre",
+      "baseChinese": "即兴戏剧",
+      "baseEnglish": "improv theatre",
+      "type": "verb",
+      "original": "stage improv theatre",
+      "focus": "stage",
+      "options": [
+        {
+          "phrase": "perform improv theatre",
+          "term": "perform",
+          "zh": "表演即兴戏剧",
+          "stance": "Positive",
+          "tone": "适合描述演员在没有完整剧本的情况下通过现场反应和互动完成表演。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::attend dance performances",
+      "baseChinese": "舞蹈表演",
+      "baseEnglish": "dance performances",
+      "type": "verb",
+      "original": "attend dance performances",
+      "focus": "attend",
+      "options": [
+        {
+          "phrase": "watch dance performances",
+          "term": "watch",
+          "zh": "观看舞蹈表演",
+          "stance": "Neutral",
+          "tone": "适合描述观众参与文化活动，欣赏舞蹈的动作、音乐和舞台表达。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::watch theatrical performances",
+      "baseChinese": "戏剧表演",
+      "baseEnglish": "theatrical performances",
+      "type": "verb",
+      "original": "watch theatrical performances",
+      "focus": "watch",
+      "options": [
+        {
+          "phrase": "attend theatrical performances",
+          "term": "attend",
+          "zh": "观看戏剧演出",
+          "stance": "Neutral",
+          "tone": "适合强调观众进入剧场或演出空间，体验演员、舞台和叙事。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::appreciate visual arts",
+      "baseChinese": "视觉艺术",
+      "baseEnglish": "visual arts",
+      "type": "verb",
+      "original": "appreciate visual arts",
+      "focus": "appreciate",
+      "options": [
+        {
+          "phrase": "interpret visual arts",
+          "term": "interpret",
+          "zh": "解读视觉艺术",
+          "stance": "Neutral",
+          "tone": "适合强调观众或学生分析图像、构图、色彩和作品背后的含义。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::create abstract paintings",
+      "baseChinese": "抽象画",
+      "baseEnglish": "abstract painting",
+      "type": "verb",
+      "original": "create abstract paintings",
+      "focus": "create",
+      "options": [
+        {
+          "phrase": "produce abstract paintings",
+          "term": "produce",
+          "zh": "创作抽象画",
+          "stance": "Positive",
+          "tone": "适合描述艺术家通过色彩、线条和形式创作不直接再现现实的作品。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::exhibit contemporary sculpture",
+      "baseChinese": "当代雕塑",
+      "baseEnglish": "contemporary sculpture",
+      "type": "verb",
+      "original": "exhibit contemporary sculpture",
+      "focus": "exhibit",
+      "options": [
+        {
+          "phrase": "display contemporary sculpture",
+          "term": "display",
+          "zh": "展出当代雕塑",
+          "stance": "Neutral",
+          "tone": "适合描述美术馆、公共空间或艺术节呈现当代雕塑作品。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::design digital installations",
+      "baseChinese": "数字装置",
+      "baseEnglish": "digital installations",
+      "type": "verb",
+      "original": "design digital installations",
+      "focus": "design",
+      "options": [
+        {
+          "phrase": "create digital installations",
+          "term": "create",
+          "zh": "创作数字装置",
+          "stance": "Positive",
+          "tone": "适合讲艺术家结合屏幕、传感器、声音或互动技术完成装置艺术。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::use immersive projections",
+      "baseChinese": "沉浸式投影",
+      "baseEnglish": "immersive projections",
+      "type": "verb",
+      "original": "use immersive projections",
+      "focus": "use",
+      "options": [
+        {
+          "phrase": "incorporate immersive projections",
+          "term": "incorporate",
+          "zh": "融入沉浸式投影",
+          "stance": "Positive",
+          "tone": "适合讲展览或演出把投影技术纳入空间体验，增强观众的临场感。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::interpret abstract art",
+      "baseChinese": "抽象艺术",
+      "baseEnglish": "abstract art",
+      "type": "verb",
+      "original": "interpret abstract art",
+      "focus": "interpret",
+      "options": [
+        {
+          "phrase": "decode abstract art",
+          "term": "decode",
+          "zh": "解读抽象艺术",
+          "stance": "Neutral",
+          "tone": "适合强调观众通过形式、情绪和背景理解抽象作品，而不是寻找直接情节。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::support contemporary art",
+      "baseChinese": "当代艺术",
+      "baseEnglish": "contemporary art",
+      "type": "verb",
+      "original": "support contemporary art",
+      "focus": "support",
+      "options": [
+        {
+          "phrase": "commission contemporary art",
+          "term": "commission",
+          "zh": "委托创作当代艺术",
+          "stance": "Positive",
+          "tone": "适合讲政府、企业或机构通过委托项目为当代艺术家提供创作机会。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::use online streaming platforms",
+      "baseChinese": "在线流媒体平台",
+      "baseEnglish": "online streaming platforms",
+      "type": "verb",
+      "original": "use online streaming platforms",
+      "focus": "use",
+      "options": [
+        {
+          "phrase": "stream art through online platforms",
+          "term": "stream",
+          "zh": "通过在线平台播放艺术内容",
+          "stance": "Neutral",
+          "tone": "适合描述音乐、戏剧、展览或演出借助流媒体扩大受众覆盖。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::offer monetary incentives",
+      "baseChinese": "金钱激励",
+      "baseEnglish": "monetary incentives",
+      "type": "verb",
+      "original": "offer monetary incentives",
+      "focus": "offer",
+      "options": [
+        {
+          "phrase": "provide grants for artists",
+          "term": "provide grants",
+          "zh": "为艺术家提供补助",
+          "stance": "Positive",
+          "tone": "适合讲资助、奖金或创作基金如何降低艺术家的经济压力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::adjective::convenient on-demand access",
+      "baseChinese": "按需访问",
+      "baseEnglish": "on-demand access",
+      "type": "adjective",
+      "original": "convenient on-demand access",
+      "focus": "convenient",
+      "options": [
+        {
+          "phrase": "instant on-demand access",
+          "term": "instant",
+          "zh": "即时按需访问",
+          "stance": "Positive",
+          "tone": "适合强调观众可以随时通过数字平台观看演出、课程或展览内容。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::organize a cultural festival",
+      "baseChinese": "文化节",
+      "baseEnglish": "cultural festival",
+      "type": "verb",
+      "original": "organize a cultural festival",
+      "focus": "organize",
+      "options": [
+        {
+          "phrase": "host a cultural festival",
+          "term": "host",
+          "zh": "举办文化节",
+          "stance": "Positive",
+          "tone": "适合讲城市、学校或社区通过文化节展示本地艺术、传统和公共参与。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::adjective::intense fan culture",
+      "baseChinese": "粉丝文化",
+      "baseEnglish": "fan culture",
+      "type": "adjective",
+      "original": "intense fan culture",
+      "focus": "intense",
+      "options": [
+        {
+          "phrase": "toxic fan culture",
+          "term": "toxic",
+          "zh": "有害的粉丝文化",
+          "stance": "Negative",
+          "tone": "适合批评粉丝群体中的攻击、盲目消费或网络骚扰现象。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::build a global franchise",
+      "baseChinese": "全球系列",
+      "baseEnglish": "global franchise",
+      "type": "verb",
+      "original": "build a global franchise",
+      "focus": "build",
+      "options": [
+        {
+          "phrase": "expand a global franchise",
+          "term": "expand",
+          "zh": "扩大全球系列 IP",
+          "stance": "Positive",
+          "tone": "适合讲电影、游戏或音乐品牌通过续作、授权和跨媒体内容扩大国际影响。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::recognize artistic value",
+      "baseChinese": "艺术价值",
+      "baseEnglish": "artistic value",
+      "type": "verb",
+      "original": "recognize artistic value",
+      "focus": "recognize",
+      "options": [
+        {
+          "phrase": "acknowledge artistic value",
+          "term": "acknowledge",
+          "zh": "承认艺术价值",
+          "stance": "Positive",
+          "tone": "适合强调社会、学校或政府应承认艺术作品在审美、文化和教育上的价值。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::adjective::strong cultural identity",
+      "baseChinese": "文化认同",
+      "baseEnglish": "cultural identity",
+      "type": "adjective",
+      "original": "strong cultural identity",
+      "focus": "strong",
+      "options": [
+        {
+          "phrase": "shared cultural identity",
+          "term": "shared",
+          "zh": "共同的文化认同",
+          "stance": "Positive",
+          "tone": "适合强调群体通过语言、历史、艺术和传统形成共同归属感。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::preserve cultural identity",
+      "baseChinese": "文化认同",
+      "baseEnglish": "cultural identity",
+      "type": "verb",
+      "original": "preserve cultural identity",
+      "focus": "preserve",
+      "options": [
+        {
+          "phrase": "sustain cultural identity",
+          "term": "sustain",
+          "zh": "延续文化认同",
+          "stance": "Positive",
+          "tone": "适合讲教育、艺术活动和社区传统如何让文化认同在现代社会中继续存在。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::adjective::local indigenous community",
+      "baseChinese": "原住民社区",
+      "baseEnglish": "indigenous community",
+      "type": "adjective",
+      "original": "local indigenous community",
+      "focus": "local",
+      "options": [
+        {
+          "phrase": "traditional Indigenous community",
+          "term": "traditional",
+          "zh": "保留传统的原住民社区",
+          "stance": "Neutral",
+          "tone": "适合强调某一群体与当地土地、语言和文化传统之间的历史联系。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::fund cultural heritage preservation",
+      "baseChinese": "文化遗产保护",
+      "baseEnglish": "cultural heritage preservation",
+      "type": "verb",
+      "original": "fund cultural heritage preservation",
+      "focus": "fund",
+      "options": [
+        {
+          "phrase": "finance cultural heritage preservation",
+          "term": "finance",
+          "zh": "资助文化遗产保护",
+          "stance": "Positive",
+          "tone": "适合讲政府、基金会或旅游收入为古迹修复、档案保存和传统工艺保护提供资金。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::protect artistic freedom",
+      "baseChinese": "艺术自由",
+      "baseEnglish": "artistic freedom",
+      "type": "verb",
+      "original": "protect artistic freedom",
+      "focus": "protect",
+      "options": [
+        {
+          "phrase": "defend artistic freedom",
+          "term": "defend",
+          "zh": "捍卫艺术自由",
+          "stance": "Positive",
+          "tone": "适合强调艺术家表达争议、批判或实验性观点时需要免受不当审查。"
+        }
+      ]
+    }
+  ],
+  "deferred": []
+}

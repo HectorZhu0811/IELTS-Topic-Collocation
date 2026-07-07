@@ -1,0 +1,467 @@
+{
+  "topic": "Economy",
+  "curator": "main-agent-after-subagent-disconnects",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "approved": [
+    {
+      "cardKey": "Economy::verb::stimulate economic growth",
+      "baseChinese": "经济增长",
+      "baseEnglish": "economic growth",
+      "type": "verb",
+      "original": "stimulate economic growth",
+      "focus": "stimulate",
+      "options": [
+        {
+          "phrase": "drive economic growth",
+          "term": "drive",
+          "zh": "推动经济增长",
+          "stance": "Positive",
+          "tone": "适合强调投资、创新、消费或贸易对经济扩张的直接推动作用。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::curb inflation",
+      "baseChinese": "通货膨胀",
+      "baseEnglish": "inflation",
+      "type": "verb",
+      "original": "curb inflation",
+      "focus": "curb",
+      "options": [
+        {
+          "phrase": "contain inflation",
+          "term": "contain",
+          "zh": "控制通货膨胀",
+          "stance": "Positive",
+          "tone": "适合讲央行、财政政策或供应链措施把物价上涨控制在可承受范围内。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::annual gross domestic product",
+      "baseChinese": "国内生产总值",
+      "baseEnglish": "gross domestic product",
+      "type": "adjective",
+      "original": "annual gross domestic product",
+      "focus": "annual",
+      "options": [
+        {
+          "phrase": "real gross domestic product",
+          "term": "real",
+          "zh": "实际国内生产总值",
+          "stance": "Neutral",
+          "tone": "适合经济分析中排除价格变化后讨论产出规模，更强调真实增长。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::increase gross domestic product",
+      "baseChinese": "国内生产总值",
+      "baseEnglish": "gross domestic product",
+      "type": "verb",
+      "original": "increase gross domestic product",
+      "focus": "increase",
+      "options": [
+        {
+          "phrase": "raise gross domestic product",
+          "term": "raise",
+          "zh": "提高国内生产总值",
+          "stance": "Positive",
+          "tone": "适合讲生产率提升、投资扩大或出口增长带来总产出增加。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::lower the unemployment rate",
+      "baseChinese": "失业率",
+      "baseEnglish": "unemployment rate",
+      "type": "verb",
+      "original": "lower the unemployment rate",
+      "focus": "lower",
+      "options": [
+        {
+          "phrase": "bring down the unemployment rate",
+          "term": "bring down",
+          "zh": "降低失业率",
+          "stance": "Positive",
+          "tone": "适合强调就业政策、培训和产业扩张让更多劳动者获得岗位。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::weather an economic crisis",
+      "baseChinese": "经济危机",
+      "baseEnglish": "economic crisis",
+      "type": "verb",
+      "original": "weather an economic crisis",
+      "focus": "weather",
+      "options": [
+        {
+          "phrase": "withstand an economic crisis",
+          "term": "withstand",
+          "zh": "经受住经济危机",
+          "stance": "Positive",
+          "tone": "适合强调企业、家庭或国家凭借储备、韧性和政策支持承受经济冲击。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::maintain a trade surplus",
+      "baseChinese": "贸易顺差",
+      "baseEnglish": "trade surplus",
+      "type": "verb",
+      "original": "maintain a trade surplus",
+      "focus": "maintain",
+      "options": [
+        {
+          "phrase": "preserve a trade surplus",
+          "term": "preserve",
+          "zh": "保持贸易顺差",
+          "stance": "Neutral",
+          "tone": "适合客观讨论出口竞争力和进口结构如何使顺差持续存在。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::reduce a trade deficit",
+      "baseChinese": "贸易逆差",
+      "baseEnglish": "trade deficit",
+      "type": "verb",
+      "original": "reduce a trade deficit",
+      "focus": "reduce",
+      "options": [
+        {
+          "phrase": "narrow a trade deficit",
+          "term": "narrow",
+          "zh": "缩小贸易逆差",
+          "stance": "Positive",
+          "tone": "适合讲提升出口、替代进口或调整汇率后贸易差额变小。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::deep economic restructuring",
+      "baseChinese": "经济结构调整",
+      "baseEnglish": "economic restructuring",
+      "type": "adjective",
+      "original": "deep economic restructuring",
+      "focus": "deep",
+      "options": [
+        {
+          "phrase": "structural economic restructuring",
+          "term": "structural",
+          "zh": "结构性经济调整",
+          "stance": "Neutral",
+          "tone": "适合强调产业、就业和资源配置层面的深层改变，而不只是短期刺激。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::promote economic restructuring",
+      "baseChinese": "经济结构调整",
+      "baseEnglish": "economic restructuring",
+      "type": "verb",
+      "original": "promote economic restructuring",
+      "focus": "promote",
+      "options": [
+        {
+          "phrase": "accelerate economic restructuring",
+          "term": "accelerate",
+          "zh": "加快经济结构调整",
+          "stance": "Positive",
+          "tone": "适合讲技术升级、产业转型和政策改革推动经济从旧模式转向新模式。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::temporary stimulus measures",
+      "baseChinese": "刺激措施",
+      "baseEnglish": "stimulus measures",
+      "type": "adjective",
+      "original": "temporary stimulus measures",
+      "focus": "temporary",
+      "options": [
+        {
+          "phrase": "short-term stimulus measures",
+          "term": "short-term",
+          "zh": "短期刺激措施",
+          "stance": "Neutral",
+          "tone": "适合说明这类措施用于应对短期需求不足或就业压力，而非长期增长方案。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::introduce stimulus measures",
+      "baseChinese": "刺激措施",
+      "baseEnglish": "stimulus measures",
+      "type": "verb",
+      "original": "introduce stimulus measures",
+      "focus": "introduce",
+      "options": [
+        {
+          "phrase": "roll out stimulus measures",
+          "term": "roll out",
+          "zh": "推出刺激措施",
+          "stance": "Positive",
+          "tone": "适合讲政府在经济下行时推出补贴、减税或公共投资来稳定需求。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::increase economic interdependence",
+      "baseChinese": "经济相互依赖",
+      "baseEnglish": "economic interdependence",
+      "type": "verb",
+      "original": "increase economic interdependence",
+      "focus": "increase",
+      "options": [
+        {
+          "phrase": "deepen economic interdependence",
+          "term": "deepen",
+          "zh": "加深经济相互依赖",
+          "stance": "Neutral",
+          "tone": "适合描述贸易、投资和供应链联系让国家之间的经济关系更紧密。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::sluggish global trade growth rate",
+      "baseChinese": "全球贸易增长率",
+      "baseEnglish": "global trade growth rate",
+      "type": "adjective",
+      "original": "sluggish global trade growth rate",
+      "focus": "sluggish",
+      "options": [
+        {
+          "phrase": "weak global trade growth",
+          "term": "weak",
+          "zh": "疲弱的全球贸易增长",
+          "stance": "Negative",
+          "tone": "适合描述贸易扩张乏力，常与需求下降、保护主义或供应链冲击有关。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::boost global trade growth rate",
+      "baseChinese": "全球贸易增长率",
+      "baseEnglish": "global trade growth rate",
+      "type": "verb",
+      "original": "boost global trade growth rate",
+      "focus": "boost",
+      "options": [
+        {
+          "phrase": "revive global trade growth",
+          "term": "revive",
+          "zh": "恢复全球贸易增长",
+          "stance": "Positive",
+          "tone": "适合讲降低贸易壁垒、稳定供应链或改善需求后贸易重新增长。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::cost-effective offshore production",
+      "baseChinese": "海外生产",
+      "baseEnglish": "offshore production",
+      "type": "adjective",
+      "original": "cost-effective offshore production",
+      "focus": "cost-effective",
+      "options": [
+        {
+          "phrase": "low-cost offshore production",
+          "term": "low-cost",
+          "zh": "低成本海外生产",
+          "stance": "Positive",
+          "tone": "适合说明企业将生产转移到成本较低地区以降低制造和劳动力成本。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::establish a free trade zone",
+      "baseChinese": "自由贸易区",
+      "baseEnglish": "free trade zone",
+      "type": "verb",
+      "original": "establish a free trade zone",
+      "focus": "establish",
+      "options": [
+        {
+          "phrase": "set up a free trade zone",
+          "term": "set up",
+          "zh": "设立自由贸易区",
+          "stance": "Positive",
+          "tone": "适合讲政府通过制度安排、税收规则和通关便利创建贸易试验区域。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::substantial foreign direct investment",
+      "baseChinese": "外国直接投资",
+      "baseEnglish": "foreign direct investment",
+      "type": "adjective",
+      "original": "substantial foreign direct investment",
+      "focus": "substantial",
+      "options": [
+        {
+          "phrase": "large-scale foreign direct investment",
+          "term": "large-scale",
+          "zh": "大规模外国直接投资",
+          "stance": "Positive",
+          "tone": "适合强调资本流入规模较大，并可能带来就业、技术和产业升级。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::attract foreign direct investment",
+      "baseChinese": "外国直接投资",
+      "baseEnglish": "foreign direct investment",
+      "type": "verb",
+      "original": "attract foreign direct investment",
+      "focus": "attract",
+      "options": [
+        {
+          "phrase": "draw foreign direct investment",
+          "term": "draw",
+          "zh": "吸引外国直接投资",
+          "stance": "Positive",
+          "tone": "适合讲稳定政策、基础设施和市场机会如何吸引跨国企业投资。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::stabilize currency fluctuations",
+      "baseChinese": "货币波动",
+      "baseEnglish": "currency fluctuation",
+      "type": "verb",
+      "original": "stabilize currency fluctuations",
+      "focus": "stabilize",
+      "options": [
+        {
+          "phrase": "smooth currency fluctuations",
+          "term": "smooth",
+          "zh": "平抑货币波动",
+          "stance": "Positive",
+          "tone": "适合讲央行干预、外汇储备或政策沟通减少汇率剧烈波动。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::reduce the cost of living",
+      "baseChinese": "生活成本",
+      "baseEnglish": "cost of living",
+      "type": "verb",
+      "original": "reduce the cost of living",
+      "focus": "reduce",
+      "options": [
+        {
+          "phrase": "lower the cost of living",
+          "term": "lower",
+          "zh": "降低生活成本",
+          "stance": "Positive",
+          "tone": "适合讲住房、能源、食品或交通价格下降减轻家庭日常压力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::discourage credit-based spending",
+      "baseChinese": "信贷消费",
+      "baseEnglish": "credit-based spending",
+      "type": "verb",
+      "original": "discourage credit-based spending",
+      "focus": "discourage",
+      "options": [
+        {
+          "phrase": "curb credit-based spending",
+          "term": "curb",
+          "zh": "抑制信贷消费",
+          "stance": "Positive",
+          "tone": "适合讲金融教育、信贷限制或利率政策减少过度借贷消费。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::practice frugality",
+      "baseChinese": "节俭",
+      "baseEnglish": "frugality",
+      "type": "verb",
+      "original": "practice frugality",
+      "focus": "practice",
+      "options": [
+        {
+          "phrase": "adopt frugal habits",
+          "term": "adopt",
+          "zh": "养成节俭习惯",
+          "stance": "Positive",
+          "tone": "适合讲个人或家庭通过预算、少冲动消费和延迟满足来管理财务。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::improve financial planning",
+      "baseChinese": "财务规划",
+      "baseEnglish": "financial planning",
+      "type": "verb",
+      "original": "improve financial planning",
+      "focus": "improve",
+      "options": [
+        {
+          "phrase": "strengthen financial planning",
+          "term": "strengthen",
+          "zh": "加强财务规划",
+          "stance": "Positive",
+          "tone": "适合强调预算、储蓄、保险和长期目标安排让家庭财务更稳健。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::raise saving awareness",
+      "baseChinese": "储蓄意识",
+      "baseEnglish": "saving awareness",
+      "type": "verb",
+      "original": "raise saving awareness",
+      "focus": "raise",
+      "options": [
+        {
+          "phrase": "cultivate saving awareness",
+          "term": "cultivate",
+          "zh": "培养储蓄意识",
+          "stance": "Positive",
+          "tone": "适合讲学校、家庭或金融教育帮助年轻人理解储蓄和应急资金的重要性。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::basic financial literacy",
+      "baseChinese": "金融素养",
+      "baseEnglish": "financial literacy",
+      "type": "adjective",
+      "original": "basic financial literacy",
+      "focus": "basic",
+      "options": [
+        {
+          "phrase": "practical financial literacy",
+          "term": "practical",
+          "zh": "实用金融素养",
+          "stance": "Positive",
+          "tone": "适合强调预算、利息、贷款和风险判断等能直接用于日常生活的金融知识。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::enhance financial literacy",
+      "baseChinese": "金融素养",
+      "baseEnglish": "financial literacy",
+      "type": "verb",
+      "original": "enhance financial literacy",
+      "focus": "enhance",
+      "options": [
+        {
+          "phrase": "build financial literacy",
+          "term": "build",
+          "zh": "建立金融素养",
+          "stance": "Positive",
+          "tone": "适合讲通过课程、家庭教育和公共宣传逐步提高人们理解金融产品的能力。"
+        }
+      ]
+    }
+  ],
+  "deferred": []
+}

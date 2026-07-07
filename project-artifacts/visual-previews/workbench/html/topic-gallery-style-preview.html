@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Topic Gallery Style Preview</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f5f7;
+      --panel: #fff;
+      --ink: #1d1d1f;
+      --muted: #6e6e73;
+      --line: rgba(0, 0, 0, 0.08);
+      --shadow: 0 18px 42px rgba(0, 0, 0, 0.06);
+      --blue: #0071e3;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .page {
+      display: grid;
+      gap: 18px;
+      width: min(100% - 48px, 1420px);
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    .store-hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(280px, 0.6fr);
+      gap: 22px;
+      align-items: stretch;
+    }
+
+    .store-hero-copy,
+    .store-feature,
+    .metric,
+    .preview-card {
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .store-hero-copy {
+      display: grid;
+      align-content: center;
+      gap: 18px;
+      min-height: 260px;
+      padding: clamp(28px, 5vw, 64px);
+    }
+
+    .eyebrow {
+      margin: 0;
+      color: #6f6f75;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .store-hero-copy > p:not(.eyebrow) {
+      max-width: 680px;
+      color: var(--muted);
+      font-size: clamp(16px, 2vw, 21px);
+      line-height: 1.45;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .pill {
+      min-height: 42px;
+      padding: 0 20px;
+      border: 0;
+      border-radius: 999px;
+      background: #f5f5f7;
+      color: #1d1d1f;
+      font-weight: 850;
+    }
+
+    .pill.primary {
+      background: var(--blue);
+      color: #fff;
+    }
+
+    .store-feature {
+      display: grid;
+      align-content: end;
+      gap: 8px;
+      min-height: 260px;
+      padding: 28px;
+      color: #fff;
+      background:
+        radial-gradient(circle at 24% 18%, #84cc16, transparent 34%),
+        linear-gradient(145deg, #16a34a, #65a30d);
+      overflow: hidden;
+    }
+
+    .store-feature span {
+      font-weight: 850;
+      opacity: 0.86;
+    }
+
+    .store-feature strong {
+      font-size: clamp(40px, 5vw, 62px);
+      line-height: 1;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .metric {
+      display: grid;
+      gap: 8px;
+      min-height: 112px;
+      padding: 22px;
+    }
+
+    .metric span {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .metric strong {
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 16px;
+      padding-top: 10px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      line-height: 1;
+    }
+
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      align-items: start;
+    }
+
+    .preview-card {
+      display: grid;
+      gap: 18px;
+      padding: 20px;
+    }
+
+    .preview-card header {
+      display: grid;
+      gap: 8px;
+      min-height: 120px;
+    }
+
+    .option-label {
+      display: inline-flex;
+      width: fit-content;
+      min-height: 28px;
+      align-items: center;
+      padding: 0 10px;
+      border-radius: 999px;
+      background: #f5f5f7;
+      color: #4b4b50;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .preview-card h3 {
+      font-size: 25px;
+      line-height: 1.05;
+    }
+
+    .preview-card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    .mini-gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .topic-card {
+      --topic: #16a34a;
+      --accent: #84cc16;
+      display: grid;
+      min-height: 238px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .topic-card strong {
+      font-size: 22px;
+      line-height: 1.05;
+    }
+
+    .topic-card small {
+      color: var(--topic);
+      font-size: 12px;
+      font-weight: 950;
+    }
+
+    .topic-card p {
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .chips {
+      display: flex;
+      gap: 5px;
+      flex-wrap: wrap;
+      align-self: end;
+    }
+
+    .chips span {
+      padding: 5px 7px;
+      border-radius: 999px;
+      background: #f5f5f7;
+      color: #4b4b50;
+      font-size: 10px;
+      font-weight: 850;
+    }
+
+    .a-card {
+      grid-template-rows: 6px 1fr;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    .a-card::before {
+      content: "";
+      background: linear-gradient(90deg, var(--topic), var(--accent));
+    }
+
+    .a-body {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 8px;
+      padding: 18px;
+    }
+
+    .a-card .word-strip {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      align-self: end;
+    }
+
+    .a-card .word-strip span {
+      padding: 6px 8px;
+      border-radius: 8px;
+      background: color-mix(in srgb, var(--topic), #fff 90%);
+      color: color-mix(in srgb, var(--topic), #111 20%);
+      font-size: 10px;
+      font-weight: 950;
+      text-transform: uppercase;
+    }
+
+    .b-card {
+      grid-template-rows: auto 1fr;
+      box-shadow: none;
+    }
+
+    .b-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--topic), #fff 92%);
+    }
+
+    .b-head span {
+      display: inline-grid;
+      place-items: center;
+      min-width: 44px;
+      height: 28px;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--topic);
+      font-size: 11px;
+      font-weight: 950;
+    }
+
+    .b-body {
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      gap: 8px;
+      padding: 16px;
+    }
+
+    .progress {
+      height: 7px;
+      border-radius: 999px;
+      background: #f1f1f3;
+      overflow: hidden;
+    }
+
+    .progress::before {
+      content: "";
+      display: block;
+      width: var(--progress, 18%);
+      height: 100%;
+      border-radius: inherit;
+      background: var(--topic);
+    }
+
+    .c-gallery {
+      display: grid;
+      gap: 12px;
+    }
+
+    .c-card {
+      position: relative;
+      min-height: 258px;
+      grid-template-rows: auto 1fr;
+      gap: 18px;
+      padding: 24px;
+      border: 0;
+      border-radius: 22px;
+      background:
+        radial-gradient(circle at 85% 12%, color-mix(in srgb, var(--accent), #fff 46%), transparent 38%),
+        linear-gradient(155deg, #fff 0%, color-mix(in srgb, var(--topic), #fff 91%) 100%);
+      box-shadow: 0 16px 38px rgba(0, 0, 0, 0.055);
+      overflow: hidden;
+    }
+
+    .c-topline {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+
+    .c-topline small {
+      font-size: 13px;
+      font-weight: 950;
+    }
+
+    .c-card .c-topic-title {
+      align-self: center;
+      max-width: 260px;
+      color: #1d1d1f;
+      font-size: clamp(32px, 4.4vw, 46px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .recommendation {
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: 8px;
+      padding: 14px;
+      background: #fbfbfd;
+    }
+
+    .recommendation strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 1050px) {
+      .store-hero,
+      .preview-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .metrics,
+      .mini-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(100% - 24px, 1420px);
+      }
+
+      .metrics,
+      .mini-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="store-hero" aria-label="Current visual context">
+      <div class="store-hero-copy">
+        <p class="eyebrow">Current upper style</p>
+        <h1>Train the phrases that make your essay sound ready.</h1>
+        <p>White surfaces, soft shadow, rounded modules, and one strong recommendation card.</p>
+        <div class="actions">
+          <button class="pill primary" type="button">Start 10-min review</button>
+          <button class="pill" type="button">Continue Education</button>
+        </div>
+      </div>
+      <div class="store-feature">
+        <span>Recommended</span>
+        <strong>Education</strong>
+        <span>79 due today / 0 weak</span>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Study summary">
+      <article class="metric"><span>Due today</span><strong>554</strong></article>
+      <article class="metric"><span>Weak bank</span><strong>0</strong></article>
+      <article class="metric"><span>Reviewed today</span><strong>2</strong></article>
+      <article class="metric"><span>Mastered</span><strong>10</strong></article>
+    </section>
+
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Three directions</p>
+        <h2>Choose a calmer topic gallery.</h2>
+      </div>
+      <button class="pill" type="button">Memory bank</button>
+    </div>
+
+    <section class="preview-grid" aria-label="Topic gallery visual options">
+      <article class="preview-card">
+        <header>
+          <span class="option-label">A - Minimal study cards</span>
+          <h3>去掉插画区，只保留一条主题色顶边。</h3>
+          <p>最像上方 dashboard：白底、低噪声、信息更清楚。适合长期学习工具。</p>
+        </header>
+        <div class="mini-gallery">
+          <article class="topic-card a-card" style="--topic:#16a34a;--accent:#84cc16">
+            <div class="a-body">
+              <small>教育</small>
+              <strong>Education</strong>
+              <p>Classrooms, learning paths, exams, and the quiet pressure to grow.</p>
+              <div class="word-strip"><span>Class</span><span>Exam</span><span>Mind</span></div>
+            </div>
+          </article>
+          <article class="topic-card a-card" style="--topic:#2563eb;--accent:#38bdf8">
+            <div class="a-body">
+              <small>科技</small>
+              <strong>Technology</strong>
+              <p>Interfaces, automation, data, and the future texture of daily life.</p>
+              <div class="word-strip"><span>Signal</span><span>Device</span><span>Network</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="recommendation">
+          <strong>建议</strong>
+          <p>如果你想整体更统一，我最推荐这个。它和 hero、metrics 是同一套语气。</p>
+        </div>
+      </article>
+
+      <article class="preview-card">
+        <header>
+          <span class="option-label">B - Learning ledger</span>
+          <h3>把卡片改成学习账本：进度和任务优先。</h3>
+          <p>减少美术装饰，把 due / mastered / progress 做成明确的操作信号。</p>
+        </header>
+        <div class="mini-gallery">
+          <article class="topic-card b-card" style="--topic:#16a34a;--accent:#84cc16;--progress:40%">
+            <div class="b-head"><small>教育</small><span>79 due</span></div>
+            <div class="b-body">
+              <strong>Education</strong>
+              <p>Classrooms, learning paths, exams, and pressure to grow.</p>
+              <div class="progress"></div>
+              <div class="chips"><span>0 weak</span><span>4/80 mastered</span></div>
+            </div>
+          </article>
+          <article class="topic-card b-card" style="--topic:#dc2626;--accent:#f97316;--progress:18%">
+            <div class="b-head"><small>健康</small><span>64 due</span></div>
+            <div class="b-body">
+              <strong>Health</strong>
+              <p>Bodies, care systems, risk, recovery, and wellbeing choices.</p>
+              <div class="progress"></div>
+              <div class="chips"><span>0 weak</span><span>0/64 mastered</span></div>
+            </div>
+          </article>
+        </div>
+        <div class="recommendation">
+          <strong>建议</strong>
+          <p>如果你希望首页更像复习工作台，而不是主题海报，这个方向最实用。</p>
+        </div>
+      </article>
+
+      <article class="preview-card">
+        <header>
+          <span class="option-label">C - Apple-style large cards</span>
+          <h3>大卡片、少元素、淡色氛围。</h3>
+          <p>把主题卡当成 Apple 式功能卡：少标签、大标题、轻渐变，靠留白和层次统一页面。</p>
+        </header>
+        <div class="c-gallery">
+          <article class="topic-card c-card" style="--topic:#16a34a;--accent:#84cc16">
+            <div class="c-topline"><small>教育</small></div>
+            <strong class="c-topic-title">Education</strong>
+          </article>
+          <article class="topic-card c-card" style="--topic:#db2777;--accent:#fb7185">
+            <div class="c-topline"><small>社会</small></div>
+            <strong class="c-topic-title">Society</strong>
+          </article>
+        </div>
+        <div class="recommendation">
+          <strong>建议</strong>
+          <p>这个版本更接近 less is more：主题感还在，但视觉噪声已经降到最低。</p>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>

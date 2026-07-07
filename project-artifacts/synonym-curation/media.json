@@ -1,0 +1,382 @@
+{
+  "topic": "Media",
+  "curator": "main-agent-after-subagent-disconnects",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "approved": [
+    {
+      "cardKey": "Media::verb::regulate mass media",
+      "baseChinese": "大众媒体",
+      "baseEnglish": "mass media",
+      "type": "verb",
+      "original": "regulate mass media",
+      "focus": "regulate",
+      "options": [
+        {
+          "phrase": "hold mass media accountable",
+          "term": "hold accountable",
+          "zh": "追究大众媒体责任",
+          "stance": "Positive",
+          "tone": "适合强调媒体在报道准确性、公共利益和纠错机制上需要承担责任。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::adjective::credible mainstream media",
+      "baseChinese": "主流媒体",
+      "baseEnglish": "mainstream media",
+      "type": "adjective",
+      "original": "credible mainstream media",
+      "focus": "credible",
+      "options": [
+        {
+          "phrase": "reputable mainstream media",
+          "term": "reputable",
+          "zh": "有公信力的主流媒体",
+          "stance": "Positive",
+          "tone": "适合强调媒体机构长期积累的声誉、事实核查能力和专业标准。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::trust mainstream media",
+      "baseChinese": "主流媒体",
+      "baseEnglish": "mainstream media",
+      "type": "verb",
+      "original": "trust mainstream media",
+      "focus": "trust",
+      "options": [
+        {
+          "phrase": "rely on mainstream media",
+          "term": "rely on",
+          "zh": "依赖主流媒体获取信息",
+          "stance": "Neutral",
+          "tone": "适合描述公众在重大新闻、公共政策或危机事件中把主流媒体作为信息来源。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::use digital media",
+      "baseChinese": "数字媒体",
+      "baseEnglish": "digital media",
+      "type": "verb",
+      "original": "use digital media",
+      "focus": "use",
+      "options": [
+        {
+          "phrase": "engage with digital media",
+          "term": "engage with",
+          "zh": "接触并参与数字媒体",
+          "stance": "Neutral",
+          "tone": "适合说明用户不仅浏览内容，也会评论、分享和参与线上讨论。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::monitor social media",
+      "baseChinese": "社交媒体",
+      "baseEnglish": "social media",
+      "type": "verb",
+      "original": "monitor social media",
+      "focus": "monitor",
+      "options": [
+        {
+          "phrase": "track social media activity",
+          "term": "track",
+          "zh": "追踪社交媒体活动",
+          "stance": "Neutral",
+          "tone": "适合客观描述平台、研究者或监管者观察传播趋势、谣言扩散和用户互动。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::support independent media",
+      "baseChinese": "独立媒体",
+      "baseEnglish": "independent media",
+      "type": "verb",
+      "original": "support independent media",
+      "focus": "support",
+      "options": [
+        {
+          "phrase": "fund independent journalism",
+          "term": "fund",
+          "zh": "资助独立新闻业",
+          "stance": "Positive",
+          "tone": "适合强调订阅、基金会或公共机制为调查报道和地方新闻提供稳定资源。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::protect freedom of the press",
+      "baseChinese": "新闻自由",
+      "baseEnglish": "freedom of the press",
+      "type": "verb",
+      "original": "protect freedom of the press",
+      "focus": "protect",
+      "options": [
+        {
+          "phrase": "safeguard press freedom",
+          "term": "safeguard",
+          "zh": "保障新闻自由",
+          "stance": "Positive",
+          "tone": "适合讲法律、制度和公众监督如何保护记者调查和报道公共事务的空间。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::facilitate information dissemination",
+      "baseChinese": "信息传播",
+      "baseEnglish": "information dissemination",
+      "type": "verb",
+      "original": "facilitate information dissemination",
+      "focus": "facilitate",
+      "options": [
+        {
+          "phrase": "speed up information dissemination",
+          "term": "speed up",
+          "zh": "加快信息传播",
+          "stance": "Neutral",
+          "tone": "适合说明数字平台在灾害预警、公共卫生和新闻更新中提高信息到达速度。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::improve media literacy",
+      "baseChinese": "媒介素养",
+      "baseEnglish": "media literacy",
+      "type": "verb",
+      "original": "improve media literacy",
+      "focus": "improve",
+      "options": [
+        {
+          "phrase": "strengthen media literacy",
+          "term": "strengthen",
+          "zh": "加强媒介素养",
+          "stance": "Positive",
+          "tone": "适合强调学校和公共教育帮助人们识别偏见、广告和错误信息。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::launch an advertising campaign",
+      "baseChinese": "广告活动",
+      "baseEnglish": "advertising campaign",
+      "type": "verb",
+      "original": "launch an advertising campaign",
+      "focus": "launch",
+      "options": [
+        {
+          "phrase": "run an advertising campaign",
+          "term": "run",
+          "zh": "开展广告活动",
+          "stance": "Neutral",
+          "tone": "适合描述企业或机构在一段时间内通过多个渠道持续投放广告。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::reach the target audience",
+      "baseChinese": "目标受众",
+      "baseEnglish": "target audience",
+      "type": "verb",
+      "original": "reach the target audience",
+      "focus": "reach",
+      "options": [
+        {
+          "phrase": "target a specific audience",
+          "term": "target",
+          "zh": "瞄准特定受众",
+          "stance": "Neutral",
+          "tone": "适合讲广告、公共宣传或媒体内容根据年龄、兴趣和需求定位人群。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::develop an advertising strategy",
+      "baseChinese": "广告策略",
+      "baseEnglish": "advertising strategy",
+      "type": "verb",
+      "original": "develop an advertising strategy",
+      "focus": "develop",
+      "options": [
+        {
+          "phrase": "craft an advertising strategy",
+          "term": "craft",
+          "zh": "制定广告策略",
+          "stance": "Positive",
+          "tone": "适合强调广告策略需要围绕目标受众、渠道、信息和预算精心设计。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::exert subconscious influence",
+      "baseChinese": "潜意识影响",
+      "baseEnglish": "subconscious influence",
+      "type": "verb",
+      "original": "exert subconscious influence",
+      "focus": "exert",
+      "options": [
+        {
+          "phrase": "shape consumer preferences subconsciously",
+          "term": "shape",
+          "zh": "潜移默化地塑造消费者偏好",
+          "stance": "Negative",
+          "tone": "适合批评广告通过反复曝光、情绪暗示和名人形象影响消费者判断。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::use celebrity endorsement",
+      "baseChinese": "名人代言",
+      "baseEnglish": "celebrity endorsement",
+      "type": "verb",
+      "original": "use celebrity endorsement",
+      "focus": "use",
+      "options": [
+        {
+          "phrase": "rely on celebrity endorsement",
+          "term": "rely on",
+          "zh": "依赖名人代言",
+          "stance": "Negative",
+          "tone": "适合批评品牌用明星影响力替代产品质量、证据或真实用户体验。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::build a brand image",
+      "baseChinese": "品牌形象",
+      "baseEnglish": "brand image",
+      "type": "verb",
+      "original": "build a brand image",
+      "focus": "build",
+      "options": [
+        {
+          "phrase": "shape a brand image",
+          "term": "shape",
+          "zh": "塑造品牌形象",
+          "stance": "Positive",
+          "tone": "适合讲广告、服务体验和公共沟通如何影响消费者对品牌的长期印象。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::create user-generated content",
+      "baseChinese": "用户生成内容",
+      "baseEnglish": "user-generated content",
+      "type": "verb",
+      "original": "create user-generated content",
+      "focus": "create",
+      "options": [
+        {
+          "phrase": "share user-generated content",
+          "term": "share",
+          "zh": "分享用户生成内容",
+          "stance": "Neutral",
+          "tone": "适合描述普通用户在平台上传、转发或评论由用户自发生产的内容。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::spread misinformation",
+      "baseChinese": "错误信息",
+      "baseEnglish": "misinformation",
+      "type": "verb",
+      "original": "spread misinformation",
+      "focus": "spread",
+      "options": [
+        {
+          "phrase": "circulate misinformation",
+          "term": "circulate",
+          "zh": "传播错误信息",
+          "stance": "Negative",
+          "tone": "适合讲未经核实的信息在社交平台、群聊或短视频中不断流转。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::expose advertising manipulation",
+      "baseChinese": "广告操纵",
+      "baseEnglish": "advertising manipulation",
+      "type": "verb",
+      "original": "expose advertising manipulation",
+      "focus": "expose",
+      "options": [
+        {
+          "phrase": "uncover advertising manipulation",
+          "term": "uncover",
+          "zh": "揭露广告操纵",
+          "stance": "Positive",
+          "tone": "适合强调监管、媒体调查或消费者教育发现隐性营销和数据操控。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::encourage consumerism",
+      "baseChinese": "消费主义",
+      "baseEnglish": "consumerism",
+      "type": "verb",
+      "original": "encourage consumerism",
+      "focus": "encourage",
+      "options": [
+        {
+          "phrase": "fuel excessive consumerism",
+          "term": "fuel",
+          "zh": "助长过度消费主义",
+          "stance": "Negative",
+          "tone": "适合批评广告和社交媒体不断制造欲望，使人把购买等同于身份和幸福。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::challenge media bias",
+      "baseChinese": "媒体偏见",
+      "baseEnglish": "media bias",
+      "type": "verb",
+      "original": "challenge media bias",
+      "focus": "challenge",
+      "options": [
+        {
+          "phrase": "question media bias",
+          "term": "question",
+          "zh": "质疑媒体偏见",
+          "stance": "Positive",
+          "tone": "适合强调读者需要比较来源、识别立场和追问报道是否片面。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::prevent invasion of privacy",
+      "baseChinese": "侵犯隐私",
+      "baseEnglish": "invasion of privacy",
+      "type": "verb",
+      "original": "prevent invasion of privacy",
+      "focus": "prevent",
+      "options": [
+        {
+          "phrase": "guard against invasion of privacy",
+          "term": "guard against",
+          "zh": "防范隐私侵犯",
+          "stance": "Positive",
+          "tone": "适合讲平台规则、隐私设置和法律保护如何降低个人信息被滥用的风险。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::skew public perception",
+      "baseChinese": "公众认知",
+      "baseEnglish": "public perception",
+      "type": "verb",
+      "original": "skew public perception",
+      "focus": "skew",
+      "options": [
+        {
+          "phrase": "distort public perception",
+          "term": "distort",
+          "zh": "扭曲公众认知",
+          "stance": "Negative",
+          "tone": "适合批评片面报道、算法推荐或虚假信息让公众对问题形成失真的判断。"
+        }
+      ]
+    }
+  ],
+  "deferred": []
+}

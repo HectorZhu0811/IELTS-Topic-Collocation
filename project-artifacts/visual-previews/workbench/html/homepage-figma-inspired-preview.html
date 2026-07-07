@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Figma Inspired Topic Reel Preview</title>
+  <style>
+    :root {
+      --bg: #f3f4f6;
+      --panel: #ffffff;
+      --ink: #202124;
+      --soft: #6b7280;
+      --line: rgba(32, 33, 36, 0.1);
+      --blue: #0b7ae8;
+      --green: #16a34a;
+      --lime: #a3e635;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 17% 15%, rgba(11, 122, 232, 0.09), transparent 30%),
+        radial-gradient(circle at 86% 10%, rgba(163, 230, 53, 0.12), transparent 34%),
+        var(--bg);
+      color: var(--ink);
+    }
+
+    main {
+      width: min(1440px, calc(100vw - 32px));
+      margin: 0 auto;
+      padding: 36px 0 52px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 26px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .mark {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: #111827;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 950;
+      place-items: center;
+    }
+
+    h1,
+    p {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 20px;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .subtle {
+      margin-top: 5px;
+      color: var(--soft);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .status-pill {
+      min-height: 42px;
+      padding: 0 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.82);
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 950;
+      backdrop-filter: blur(16px);
+    }
+
+    .home {
+      display: grid;
+      grid-template-columns: minmax(210px, 0.34fr) minmax(520px, 1fr) minmax(300px, 0.46fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .memory,
+    .today,
+    .queue {
+      border: 1px solid rgba(255, 255, 255, 0.72);
+      border-radius: 24px;
+      background: rgba(255, 255, 255, 0.88);
+      box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+    }
+
+    .memory {
+      display: grid;
+      grid-template-rows: 1fr auto;
+      min-height: 642px;
+      padding: 24px;
+    }
+
+    .memory-title {
+      align-self: end;
+    }
+
+    .kicker {
+      color: var(--soft);
+      font-size: 12px;
+      font-weight: 950;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .memory strong,
+    .today h2 {
+      display: block;
+      margin-top: 8px;
+      font-size: clamp(38px, 4.4vw, 66px);
+      line-height: 0.96;
+      letter-spacing: 0;
+    }
+
+    .memory strong {
+      font-size: clamp(34px, 3.6vw, 50px);
+    }
+
+    .mini-grid {
+      display: grid;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .mini {
+      display: grid;
+      gap: 3px;
+      padding: 14px;
+      border-radius: 16px;
+      background: #f8fafc;
+    }
+
+    .mini span {
+      color: var(--soft);
+      font-size: 11px;
+      font-weight: 850;
+    }
+
+    .mini b {
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .today {
+      display: grid;
+      grid-template-rows: 1fr auto;
+      min-height: 642px;
+      padding: clamp(28px, 5vw, 58px);
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 83% 14%, rgba(163, 230, 53, 0.82), transparent 30%),
+        radial-gradient(circle at 74% 75%, rgba(22, 163, 74, 0.13), transparent 38%),
+        linear-gradient(145deg, #ffffff, #eefbf3);
+    }
+
+    .today h2 {
+      color: #079547;
+    }
+
+    .due-line {
+      margin-top: 12px;
+      color: #05713b;
+      font-size: 16px;
+      font-weight: 950;
+    }
+
+    .action-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .primary,
+    .secondary {
+      min-height: 48px;
+      padding: 0 20px;
+      border: 0;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 950;
+    }
+
+    .primary {
+      background: var(--blue);
+      color: #fff;
+      box-shadow: 0 14px 26px rgba(11, 122, 232, 0.22);
+    }
+
+    .secondary {
+      background: rgba(7, 149, 71, 0.09);
+      color: #075d32;
+    }
+
+    .queue {
+      display: grid;
+      align-content: center;
+      gap: 12px;
+      min-height: 642px;
+      padding: 18px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .queue::before,
+    .queue::after {
+      position: absolute;
+      right: 0;
+      left: 0;
+      z-index: 2;
+      height: 84px;
+      content: "";
+      pointer-events: none;
+    }
+
+    .queue::before {
+      top: 0;
+      background: linear-gradient(180deg, #fff, transparent);
+    }
+
+    .queue::after {
+      bottom: 0;
+      background: linear-gradient(0deg, #fff, transparent);
+    }
+
+    .topic {
+      --tone: #2563eb;
+      --glow: #38bdf8;
+      display: grid;
+      align-content: center;
+      min-height: 112px;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background:
+        radial-gradient(circle at 90% 18%, color-mix(in srgb, var(--glow), #fff 18%), transparent 45%),
+        color-mix(in srgb, var(--tone), #fff 91%);
+      opacity: 0.36;
+    }
+
+    .topic.is-next {
+      min-height: 138px;
+      opacity: 0.78;
+    }
+
+    .topic.is-soft {
+      opacity: 0.16;
+    }
+
+    .topic span {
+      color: color-mix(in srgb, var(--tone), #111 20%);
+      font-size: 12px;
+      font-weight: 950;
+    }
+
+    .topic strong {
+      margin-top: 8px;
+      color: color-mix(in srgb, var(--tone), #111 12%);
+      font-size: clamp(30px, 3vw, 44px);
+      line-height: 1;
+    }
+
+    @media (max-width: 900px) {
+      main {
+        width: min(430px, calc(100vw - 20px));
+        padding: 22px 0 34px;
+      }
+
+      .topbar {
+        align-items: flex-start;
+      }
+
+      .home {
+        grid-template-columns: 1fr;
+      }
+
+      .memory {
+        min-height: 190px;
+      }
+
+      .mini-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .today {
+        min-height: 420px;
+      }
+
+      .queue {
+        min-height: 450px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark">C</div>
+        <div>
+          <h1>Collocation Trainer</h1>
+          <p class="subtle">IELTS Writing Task 2</p>
+        </div>
+      </div>
+      <button class="status-pill" type="button">556 due</button>
+    </header>
+
+    <section class="home" aria-label="Figma inspired homepage preview">
+      <button class="memory" type="button">
+        <div class="memory-title">
+          <span class="kicker">Memory bank</span>
+          <strong>Review queue</strong>
+        </div>
+        <div class="mini-grid">
+          <div class="mini">
+            <span>Weak</span>
+            <b>0</b>
+          </div>
+          <div class="mini">
+            <span>Mastered</span>
+            <b>0</b>
+          </div>
+        </div>
+      </button>
+
+      <article class="today">
+        <div>
+          <span class="kicker">Today’s topic</span>
+          <h2>Education</h2>
+          <p class="due-line">80 due today</p>
+          <div class="action-row">
+            <button class="primary" type="button">Start review</button>
+            <button class="secondary" type="button">Spin topic</button>
+          </div>
+        </div>
+      </article>
+
+      <div class="queue" aria-label="Topic reel">
+        <article class="topic is-soft" style="--tone:#9333ea;--glow:#f0abfc">
+          <span>Candidate · Arts</span>
+          <strong>Arts</strong>
+        </article>
+        <article class="topic is-next" style="--tone:#ca8a04;--glow:#fde047">
+          <span>Candidate · Media</span>
+          <strong>Media</strong>
+        </article>
+        <article class="topic is-next" style="--tone:#2563eb;--glow:#38bdf8">
+          <span>Candidate · Technology</span>
+          <strong>Technology</strong>
+        </article>
+        <article class="topic" style="--tone:#dc2626;--glow:#fb923c">
+          <span>Candidate · Health</span>
+          <strong>Health</strong>
+        </article>
+        <article class="topic is-soft" style="--tone:#db2777;--glow:#f9a8d4">
+          <span>Candidate · Society</span>
+          <strong>Society</strong>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

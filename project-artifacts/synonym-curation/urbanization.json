@@ -1,0 +1,280 @@
+{
+  "topic": "Urbanization",
+  "curator": "main-agent-after-subagent-disconnects",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "approved": [
+    {
+      "cardKey": "Urbanization::verb::improve urban planning",
+      "baseChinese": "城市规划",
+      "baseEnglish": "urban planning",
+      "type": "verb",
+      "original": "improve urban planning",
+      "focus": "improve",
+      "options": [
+        {
+          "phrase": "coordinate urban planning",
+          "term": "coordinate",
+          "zh": "统筹城市规划",
+          "stance": "Positive",
+          "tone": "适合强调住房、交通、公共服务和绿地需要统一设计，避免各部门各自为政。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::adjective::overcrowded urban slum",
+      "baseChinese": "城市贫民窟",
+      "baseEnglish": "urban slum",
+      "type": "adjective",
+      "original": "overcrowded urban slum",
+      "focus": "overcrowded",
+      "options": [
+        {
+          "phrase": "informal urban settlement",
+          "term": "informal",
+          "zh": "非正式城市住区",
+          "stance": "Neutral",
+          "tone": "适合客观描述缺少正式产权、基础设施或公共服务覆盖的城市居住区域。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::redevelop urban slums",
+      "baseChinese": "城市贫民窟",
+      "baseEnglish": "urban slum",
+      "type": "verb",
+      "original": "redevelop urban slums",
+      "focus": "redevelop",
+      "options": [
+        {
+          "phrase": "upgrade informal settlements",
+          "term": "upgrade",
+          "zh": "升级改造非正式住区",
+          "stance": "Positive",
+          "tone": "适合讲通过供水、排污、道路和住房安全改善贫民窟，而不是简单拆除。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::reduce urban population density",
+      "baseChinese": "城市人口密度",
+      "baseEnglish": "urban population density",
+      "type": "verb",
+      "original": "reduce urban population density",
+      "focus": "reduce",
+      "options": [
+        {
+          "phrase": "manage urban population density",
+          "term": "manage",
+          "zh": "管理城市人口密度",
+          "stance": "Neutral",
+          "tone": "适合分析通过分区、公共交通和住房供给控制密度带来的压力，而不是单纯驱散人口。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::improve quality of life",
+      "baseChinese": "生活质量",
+      "baseEnglish": "quality of life",
+      "type": "verb",
+      "original": "improve quality of life",
+      "focus": "improve",
+      "options": [
+        {
+          "phrase": "raise residents' quality of life",
+          "term": "raise",
+          "zh": "提高居民生活质量",
+          "stance": "Positive",
+          "tone": "适合强调住房、交通、安全和公共空间改善对普通居民日常体验的影响。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::expand urban green space",
+      "baseChinese": "城市绿地",
+      "baseEnglish": "urban green space",
+      "type": "verb",
+      "original": "expand urban green space",
+      "focus": "expand",
+      "options": [
+        {
+          "phrase": "protect urban green space",
+          "term": "protect",
+          "zh": "保护城市绿地",
+          "stance": "Positive",
+          "tone": "适合强调在城市扩张中保留公园、绿带和社区开放空间，以缓解热岛效应。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::use public transport",
+      "baseChinese": "公共交通",
+      "baseEnglish": "public transport",
+      "type": "verb",
+      "original": "use public transport",
+      "focus": "use",
+      "options": [
+        {
+          "phrase": "take public transport",
+          "term": "take",
+          "zh": "乘坐公共交通",
+          "stance": "Neutral",
+          "tone": "适合描述居民选择公交、地铁或轻轨出行，以减少私家车依赖。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::restrict private vehicles",
+      "baseChinese": "私家车",
+      "baseEnglish": "private vehicle",
+      "type": "verb",
+      "original": "restrict private vehicles",
+      "focus": "restrict",
+      "options": [
+        {
+          "phrase": "limit private car use",
+          "term": "limit",
+          "zh": "限制私家车使用",
+          "stance": "Neutral",
+          "tone": "适合讲拥堵收费、限行或停车政策如何减少城市中心的车辆压力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::encourage ride-sharing",
+      "baseChinese": "拼车",
+      "baseEnglish": "carpooling / ride-sharing",
+      "type": "verb",
+      "original": "encourage ride-sharing",
+      "focus": "encourage",
+      "options": [
+        {
+          "phrase": "incentivize carpooling",
+          "term": "incentivize",
+          "zh": "激励拼车出行",
+          "stance": "Positive",
+          "tone": "适合讲通过停车优惠、专用车道或企业通勤安排减少单人驾车。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::avoid rush hour",
+      "baseChinese": "高峰时段",
+      "baseEnglish": "rush hour",
+      "type": "verb",
+      "original": "avoid rush hour",
+      "focus": "avoid",
+      "options": [
+        {
+          "phrase": "travel outside peak hours",
+          "term": "travel outside",
+          "zh": "错峰出行",
+          "stance": "Positive",
+          "tone": "适合说明弹性工作制或错峰通勤如何减轻早晚高峰的交通压力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::shorten the commute",
+      "baseChinese": "通勤",
+      "baseEnglish": "commute",
+      "type": "verb",
+      "original": "shorten the commute",
+      "focus": "shorten",
+      "options": [
+        {
+          "phrase": "cut commuting time",
+          "term": "cut",
+          "zh": "缩短通勤时间",
+          "stance": "Positive",
+          "tone": "适合强调轨道交通、混合办公或职住平衡能减少每天花在路上的时间。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::make cities bike-friendly",
+      "baseChinese": "适合步行/骑行",
+      "baseEnglish": "walkable / bike-friendly",
+      "type": "verb",
+      "original": "make cities bike-friendly",
+      "focus": "make",
+      "options": [
+        {
+          "phrase": "design bike-friendly streets",
+          "term": "design",
+          "zh": "设计骑行友好型街道",
+          "stance": "Positive",
+          "tone": "适合讲通过自行车道、减速措施和安全路口让骑行成为现实选择。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::ease traffic congestion",
+      "baseChinese": "交通拥堵",
+      "baseEnglish": "traffic congestion",
+      "type": "verb",
+      "original": "ease traffic congestion",
+      "focus": "ease",
+      "options": [
+        {
+          "phrase": "relieve traffic congestion",
+          "term": "relieve",
+          "zh": "缓解交通拥堵",
+          "stance": "Positive",
+          "tone": "适合讲公共交通扩容、道路管理和错峰政策如何降低拥堵程度。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::reduce vehicle emissions",
+      "baseChinese": "交通尾气",
+      "baseEnglish": "vehicle emissions",
+      "type": "verb",
+      "original": "reduce vehicle emissions",
+      "focus": "reduce",
+      "options": [
+        {
+          "phrase": "cut vehicle emissions",
+          "term": "cut",
+          "zh": "削减车辆排放",
+          "stance": "Positive",
+          "tone": "适合强调清洁车辆、公共交通和限行政策对空气质量的改善。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::address parking shortages",
+      "baseChinese": "停车位短缺",
+      "baseEnglish": "parking shortages",
+      "type": "verb",
+      "original": "address parking shortages",
+      "focus": "address",
+      "options": [
+        {
+          "phrase": "solve parking shortages",
+          "term": "solve",
+          "zh": "解决停车位短缺",
+          "stance": "Positive",
+          "tone": "适合讲共享停车、价格调节和公共交通替代如何减少停车供需矛盾。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::prevent distracted driving",
+      "baseChinese": "分心驾驶",
+      "baseEnglish": "distracted driving",
+      "type": "verb",
+      "original": "prevent distracted driving",
+      "focus": "prevent",
+      "options": [
+        {
+          "phrase": "deter distracted driving",
+          "term": "deter",
+          "zh": "遏制分心驾驶",
+          "stance": "Positive",
+          "tone": "适合讲执法、宣传和车载限制功能如何减少开车看手机等危险行为。"
+        }
+      ]
+    }
+  ],
+  "deferred": []
+}

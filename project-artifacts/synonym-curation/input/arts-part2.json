@@ -1,0 +1,813 @@
+{
+  "topic": "Arts",
+  "guidance": "project-docs/synonym-curation-guidelines.md",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "issueCount": 54,
+  "issueCardCount": 24,
+  "issueRows": [
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "在线流媒体平台",
+      "baseEnglish": "online streaming platforms",
+      "focus": "use",
+      "original": "use online streaming platforms",
+      "term": "maintain",
+      "phrase": "maintain online streaming platforms",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "在线流媒体平台",
+      "baseEnglish": "online streaming platforms",
+      "focus": "use",
+      "original": "use online streaming platforms",
+      "term": "assess",
+      "phrase": "assess online streaming platforms",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "在线流媒体平台",
+      "baseEnglish": "online streaming platforms",
+      "focus": "use",
+      "original": "use online streaming platforms",
+      "term": "undermine",
+      "phrase": "undermine online streaming platforms",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "金钱激励",
+      "baseEnglish": "monetary incentives",
+      "focus": "offer",
+      "original": "offer monetary incentives",
+      "term": "offer",
+      "phrase": "offer monetary incentives",
+      "zh": "提供",
+      "tone": "这条搭配适合讲用资金鼓励创作、参赛或文化参与。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "adjective",
+      "baseChinese": "按需访问",
+      "baseEnglish": "on-demand access",
+      "focus": "convenient",
+      "original": "convenient on-demand access",
+      "term": "meaningful",
+      "phrase": "meaningful on-demand access",
+      "zh": "有意义的",
+      "tone": "这条搭配适合强调真实价值或影响。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "adjective",
+      "baseChinese": "按需访问",
+      "baseEnglish": "on-demand access",
+      "focus": "convenient",
+      "original": "convenient on-demand access",
+      "term": "measurable",
+      "phrase": "measurable on-demand access",
+      "zh": "可衡量的",
+      "tone": "这条搭配适合数据或效果评估语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "adjective",
+      "baseChinese": "按需访问",
+      "baseEnglish": "on-demand access",
+      "focus": "convenient",
+      "original": "convenient on-demand access",
+      "term": "limited",
+      "phrase": "limited on-demand access",
+      "zh": "有限的",
+      "tone": "这条搭配适合批判作用或覆盖面不足。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "文化节",
+      "baseEnglish": "cultural festival",
+      "focus": "organize",
+      "original": "organize a cultural festival",
+      "term": "maintain",
+      "phrase": "maintain a cultural festival",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "文化节",
+      "baseEnglish": "cultural festival",
+      "focus": "organize",
+      "original": "organize a cultural festival",
+      "term": "assess",
+      "phrase": "assess a cultural festival",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "文化节",
+      "baseEnglish": "cultural festival",
+      "focus": "organize",
+      "original": "organize a cultural festival",
+      "term": "undermine",
+      "phrase": "undermine a cultural festival",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "adjective",
+      "baseChinese": "粉丝文化",
+      "baseEnglish": "fan culture",
+      "focus": "intense",
+      "original": "intense fan culture",
+      "term": "context-specific",
+      "phrase": "context-specific fan culture",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "adjective",
+      "baseChinese": "粉丝文化",
+      "baseEnglish": "fan culture",
+      "focus": "intense",
+      "original": "intense fan culture",
+      "term": "controversial",
+      "phrase": "controversial fan culture",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "全球系列",
+      "baseEnglish": "global franchise",
+      "focus": "build",
+      "original": "build a global franchise",
+      "term": "maintain",
+      "phrase": "maintain a global franchise",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "全球系列",
+      "baseEnglish": "global franchise",
+      "focus": "build",
+      "original": "build a global franchise",
+      "term": "discuss",
+      "phrase": "discuss a global franchise",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "全球系列",
+      "baseEnglish": "global franchise",
+      "focus": "build",
+      "original": "build a global franchise",
+      "term": "overlook",
+      "phrase": "overlook a global franchise",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "艺术价值",
+      "baseEnglish": "artistic value",
+      "focus": "recognize",
+      "original": "recognize artistic value",
+      "term": "assess",
+      "phrase": "assess artistic value",
+      "zh": "评估",
+      "tone": "中性，适合评论和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "adjective",
+      "baseChinese": "文化认同",
+      "baseEnglish": "cultural identity",
+      "focus": "strong",
+      "original": "strong cultural identity",
+      "term": "strong",
+      "phrase": "strong cultural identity",
+      "zh": "强烈的",
+      "tone": "这条搭配适合强调学生对文化来源有清晰认同。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "文化认同",
+      "baseEnglish": "cultural identity",
+      "focus": "preserve",
+      "original": "preserve cultural identity",
+      "term": "develop",
+      "phrase": "develop cultural identity",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "文化认同",
+      "baseEnglish": "cultural identity",
+      "focus": "preserve",
+      "original": "preserve cultural identity",
+      "term": "assess",
+      "phrase": "assess cultural identity",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "文化认同",
+      "baseEnglish": "cultural identity",
+      "focus": "preserve",
+      "original": "preserve cultural identity",
+      "term": "undermine",
+      "phrase": "undermine cultural identity",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "adjective",
+      "baseChinese": "原住民社区",
+      "baseEnglish": "indigenous community",
+      "focus": "local",
+      "original": "local indigenous community",
+      "term": "valuable",
+      "phrase": "valuable indigenous community",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "adjective",
+      "baseChinese": "原住民社区",
+      "baseEnglish": "indigenous community",
+      "focus": "local",
+      "original": "local indigenous community",
+      "term": "long-term",
+      "phrase": "long-term indigenous community",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "adjective",
+      "baseChinese": "原住民社区",
+      "baseEnglish": "indigenous community",
+      "focus": "local",
+      "original": "local indigenous community",
+      "term": "problematic",
+      "phrase": "problematic indigenous community",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "文化遗产保护",
+      "baseEnglish": "cultural heritage preservation",
+      "focus": "fund",
+      "original": "fund cultural heritage preservation",
+      "term": "discuss",
+      "phrase": "discuss cultural heritage preservation",
+      "zh": "讨论",
+      "tone": "中性，适合政策辩论。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "艺术自由",
+      "baseEnglish": "artistic freedom",
+      "focus": "protect",
+      "original": "protect artistic freedom",
+      "term": "assess",
+      "phrase": "assess artistic freedom",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "艺术自由",
+      "baseEnglish": "artistic freedom",
+      "focus": "protect",
+      "original": "protect artistic freedom",
+      "term": "undermine",
+      "phrase": "undermine artistic freedom",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    }
+  ],
+  "cardsToReview": [
+    {
+      "cardKey": "Arts::verb::use online streaming platforms",
+      "topic": "Arts",
+      "baseChinese": "在线流媒体平台",
+      "baseEnglish": "online streaming platforms",
+      "type": "verb",
+      "original": "use online streaming platforms",
+      "focus": "use",
+      "currentOptions": [
+        {
+          "phrase": "maintain online streaming platforms",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess online streaming platforms",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine online streaming platforms",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::offer monetary incentives",
+      "topic": "Arts",
+      "baseChinese": "金钱激励",
+      "baseEnglish": "monetary incentives",
+      "type": "verb",
+      "original": "offer monetary incentives",
+      "focus": "offer",
+      "currentOptions": [
+        {
+          "phrase": "offer monetary incentives",
+          "term": "offer",
+          "zh": "提供",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲用资金鼓励创作、参赛或文化参与。"
+        },
+        {
+          "phrase": "evaluate monetary incentives",
+          "term": "evaluate",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观分析奖励机制的效果和副作用。"
+        },
+        {
+          "phrase": "overemphasize monetary incentives",
+          "term": "overemphasize",
+          "zh": "过度强调",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判让艺术活动过分功利化。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::adjective::convenient on-demand access",
+      "topic": "Arts",
+      "baseChinese": "按需访问",
+      "baseEnglish": "on-demand access",
+      "type": "adjective",
+      "original": "convenient on-demand access",
+      "focus": "convenient",
+      "currentOptions": [
+        {
+          "phrase": "meaningful on-demand access",
+          "term": "meaningful",
+          "zh": "有意义的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调真实价值或影响。"
+        },
+        {
+          "phrase": "measurable on-demand access",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合数据或效果评估语境。"
+        },
+        {
+          "phrase": "limited on-demand access",
+          "term": "limited",
+          "zh": "有限的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判作用或覆盖面不足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::organize a cultural festival",
+      "topic": "Arts",
+      "baseChinese": "文化节",
+      "baseEnglish": "cultural festival",
+      "type": "verb",
+      "original": "organize a cultural festival",
+      "focus": "organize",
+      "currentOptions": [
+        {
+          "phrase": "maintain a cultural festival",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess a cultural festival",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine a cultural festival",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::adjective::intense fan culture",
+      "topic": "Arts",
+      "baseChinese": "粉丝文化",
+      "baseEnglish": "fan culture",
+      "type": "adjective",
+      "original": "intense fan culture",
+      "focus": "intense",
+      "currentOptions": [
+        {
+          "phrase": "practical fan culture",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific fan culture",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial fan culture",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::build a global franchise",
+      "topic": "Arts",
+      "baseChinese": "全球系列",
+      "baseEnglish": "global franchise",
+      "type": "verb",
+      "original": "build a global franchise",
+      "focus": "build",
+      "currentOptions": [
+        {
+          "phrase": "maintain a global franchise",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "discuss a global franchise",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook a global franchise",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::recognize artistic value",
+      "topic": "Arts",
+      "baseChinese": "艺术价值",
+      "baseEnglish": "artistic value",
+      "type": "verb",
+      "original": "recognize artistic value",
+      "focus": "recognize",
+      "currentOptions": [
+        {
+          "phrase": "preserve artistic value",
+          "term": "preserve",
+          "zh": "保留 / 维护",
+          "stance": "Positive",
+          "tone": "积极，强调不让价值流失。"
+        },
+        {
+          "phrase": "assess artistic value",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性，适合评论和判断。"
+        },
+        {
+          "phrase": "diminish artistic value",
+          "term": "diminish",
+          "zh": "削弱",
+          "stance": "Negative",
+          "tone": "消极，强调价值降低。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::adjective::strong cultural identity",
+      "topic": "Arts",
+      "baseChinese": "文化认同",
+      "baseEnglish": "cultural identity",
+      "type": "adjective",
+      "original": "strong cultural identity",
+      "focus": "strong",
+      "currentOptions": [
+        {
+          "phrase": "strong cultural identity",
+          "term": "strong",
+          "zh": "强烈的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调学生对文化来源有清晰认同。"
+        },
+        {
+          "phrase": "hybrid cultural identity",
+          "term": "hybrid",
+          "zh": "混合型的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观描述多元文化影响下的身份认同。"
+        },
+        {
+          "phrase": "fragile cultural identity",
+          "term": "fragile",
+          "zh": "脆弱的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判文化传承不足导致认同感不稳。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::preserve cultural identity",
+      "topic": "Arts",
+      "baseChinese": "文化认同",
+      "baseEnglish": "cultural identity",
+      "type": "verb",
+      "original": "preserve cultural identity",
+      "focus": "preserve",
+      "currentOptions": [
+        {
+          "phrase": "develop cultural identity",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "assess cultural identity",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine cultural identity",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::adjective::local indigenous community",
+      "topic": "Arts",
+      "baseChinese": "原住民社区",
+      "baseEnglish": "indigenous community",
+      "type": "adjective",
+      "original": "local indigenous community",
+      "focus": "local",
+      "currentOptions": [
+        {
+          "phrase": "valuable indigenous community",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term indigenous community",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic indigenous community",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::fund cultural heritage preservation",
+      "topic": "Arts",
+      "baseChinese": "文化遗产保护",
+      "baseEnglish": "cultural heritage preservation",
+      "type": "verb",
+      "original": "fund cultural heritage preservation",
+      "focus": "fund",
+      "currentOptions": [
+        {
+          "phrase": "finance cultural heritage preservation",
+          "term": "finance",
+          "zh": "资助",
+          "stance": "Positive",
+          "tone": "积极，强调资金支持。"
+        },
+        {
+          "phrase": "discuss cultural heritage preservation",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性，适合政策辩论。"
+        },
+        {
+          "phrase": "underfund cultural heritage preservation",
+          "term": "underfund",
+          "zh": "资金不足",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判文化遗产保护缺少稳定资金和制度支持。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::protect artistic freedom",
+      "topic": "Arts",
+      "baseChinese": "艺术自由",
+      "baseEnglish": "artistic freedom",
+      "type": "verb",
+      "original": "protect artistic freedom",
+      "focus": "protect",
+      "currentOptions": [
+        {
+          "phrase": "defend artistic freedom",
+          "term": "defend",
+          "zh": "防卫 / 捍卫",
+          "stance": "Positive",
+          "tone": "更强烈，适合权利或主权。"
+        },
+        {
+          "phrase": "assess artistic freedom",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine artistic freedom",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    }
+  ],
+  "part": "part2"
+}

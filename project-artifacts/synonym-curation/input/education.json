@@ -1,0 +1,675 @@
+{
+  "topic": "Education",
+  "guidance": "project-docs/synonym-curation-guidelines.md",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "issueCount": 14,
+  "issueCardCount": 14,
+  "issueRows": [
+    {
+      "topic": "Education",
+      "type": "verb",
+      "baseChinese": "终身学习",
+      "baseEnglish": "lifelong learning",
+      "focus": "promote",
+      "original": "promote lifelong learning",
+      "term": "promote lifelong learning among workers",
+      "phrase": "promote lifelong learning among workers",
+      "zh": "在劳动者中推广终身学习",
+      "tone": "这条搭配适合客观描述企业或政府面向劳动者推动继续学习文化和培训参与。",
+      "reasons": [
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Education",
+      "type": "verb",
+      "baseChinese": "小组学习",
+      "baseEnglish": "group work / collaborative learning",
+      "focus": "facilitate",
+      "original": "facilitate collaborative learning",
+      "term": "facilitate",
+      "phrase": "facilitate peer interaction",
+      "zh": "促进同伴互动",
+      "tone": "这条搭配适合在 IELTS 或社会教育论证里强调，协作学习的关键不只是分组，而是设计能让学生彼此解释、质疑和回应的互动过程。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Education",
+      "type": "verb",
+      "baseChinese": "个性化教学",
+      "baseEnglish": "tailored / personalized teaching",
+      "focus": "provide",
+      "original": "provide tailored teaching",
+      "term": "provide",
+      "phrase": "provide targeted feedback",
+      "zh": "提供有针对性的反馈",
+      "tone": "这条搭配适合在 IELTS 或社会教育论证里具体说明个性化教学不是一句口号，而是根据学生的真实问题给出精准反馈和改进方向。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Education",
+      "type": "verb",
+      "baseChinese": "死记硬背",
+      "baseEnglish": "rote memorization",
+      "focus": "discourage",
+      "original": "discourage rote memorization",
+      "term": "promote",
+      "phrase": "promote understanding over rote memorization",
+      "zh": "重理解而不是死记硬背",
+      "tone": "这条搭配适合在 IELTS 教育题中强调教师应帮助学生理解原理和联系，而不是只要求他们机械背诵。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Education",
+      "type": "adjective",
+      "baseChinese": "全面发展的人",
+      "baseEnglish": "well-rounded individuals",
+      "focus": "well-rounded",
+      "original": "well-rounded individuals",
+      "term": "well-rounded",
+      "phrase": "well-rounded graduates",
+      "zh": "全面发展的毕业生",
+      "tone": "这条搭配适合在 IELTS 教育题中强调学校培养的不应只是会考试的人，还应具备沟通、合作、审美和社会责任等能力。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Education",
+      "type": "verb",
+      "baseChinese": "全面发展的人",
+      "baseEnglish": "well-rounded individuals",
+      "focus": "develop",
+      "original": "develop well-rounded individuals",
+      "term": "promote",
+      "phrase": "promote balanced personal development",
+      "zh": "促进均衡的个人发展",
+      "tone": "这条搭配适合中性讨论教育目标不只包括成绩，也包括兴趣、品格、社交能力和身心健康。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Education",
+      "type": "adjective",
+      "baseChinese": "独立思考",
+      "baseEnglish": "independent thinking",
+      "focus": "critical",
+      "original": "critical independent thinking",
+      "term": "critical",
+      "phrase": "critical thinking skills",
+      "zh": "批判性思维能力",
+      "tone": "这条搭配适合在 IELTS 教育题中强调学生需要分析证据、质疑假设并形成有根据的判断。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Education",
+      "type": "verb",
+      "baseChinese": "独立思考",
+      "baseEnglish": "independent thinking",
+      "focus": "foster",
+      "original": "foster independent thinking",
+      "term": "develop",
+      "phrase": "develop independent judgement",
+      "zh": "发展独立判断能力",
+      "tone": "这条搭配适合中性描述教育逐步培养学生分析信息、比较观点并作出判断的能力。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Education",
+      "type": "verb",
+      "baseChinese": "作文计划",
+      "baseEnglish": "essay plans",
+      "focus": "develop",
+      "original": "develop essay plans",
+      "term": "develop",
+      "phrase": "develop flexible essay plans",
+      "zh": "制定灵活的作文计划",
+      "tone": "这条搭配适合强调学生在动笔前主动安排论证路径，语气偏积极。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Education",
+      "type": "verb",
+      "baseChinese": "文化认同",
+      "baseEnglish": "cultural identity",
+      "focus": "preserve",
+      "original": "preserve cultural identity",
+      "term": "preserve",
+      "phrase": "preserve cultural heritage",
+      "zh": "保护文化遗产",
+      "tone": "这条搭配适合在 IELTS 教育题中强调学校和社区通过语言、历史和艺术教育延续重要文化传统。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Education",
+      "type": "verb",
+      "baseChinese": "公民意识",
+      "baseEnglish": "civic awareness",
+      "focus": "raise",
+      "original": "raise civic awareness",
+      "term": "promote",
+      "phrase": "promote civic awareness among students",
+      "zh": "提升学生的公民意识",
+      "tone": "这条搭配适合在 IELTS 教育题中强调学校通过课程、讨论和社区活动帮助学生理解公共责任。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Education",
+      "type": "adjective",
+      "baseChinese": "辍学",
+      "baseEnglish": "dropout",
+      "focus": "early",
+      "original": "early dropout",
+      "term": "early",
+      "phrase": "early school dropout",
+      "zh": "过早辍学",
+      "tone": "这条搭配适合批评学生在基础教育阶段过早离校，影响未来就业、收入和社会流动。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Education",
+      "type": "adjective",
+      "baseChinese": "校园霸凌",
+      "baseEnglish": "school bullying",
+      "focus": "persistent",
+      "original": "persistent school bullying",
+      "term": "persistent",
+      "phrase": "persistent school bullying",
+      "zh": "持续存在的校园霸凌",
+      "tone": "这条搭配适合批评学校治理不足，导致霸凌反复发生并长期伤害学生安全感。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Education",
+      "type": "adjective",
+      "baseChinese": "教育商品化",
+      "baseEnglish": "commercialization of education",
+      "focus": "excessive",
+      "original": "excessive commercialization of education",
+      "term": "excessive",
+      "phrase": "excessive commercialization of education",
+      "zh": "过度的教育商品化",
+      "tone": "这条搭配适合批评教育被过度当作商品出售，学生和家庭被迫为基本学习机会支付高额费用。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    }
+  ],
+  "cardsToReview": [
+    {
+      "cardKey": "Education::verb::promote lifelong learning",
+      "topic": "Education",
+      "baseChinese": "终身学习",
+      "baseEnglish": "lifelong learning",
+      "type": "verb",
+      "original": "promote lifelong learning",
+      "focus": "promote",
+      "currentOptions": [
+        {
+          "phrase": "encourage adults to reskill",
+          "term": "encourage adults to reskill",
+          "zh": "鼓励成年人进行技能再培训",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调政府或雇主帮助成年人更新技能，以适应产业变化和岗位转型。"
+        },
+        {
+          "phrase": "promote lifelong learning among workers",
+          "term": "promote lifelong learning among workers",
+          "zh": "在劳动者中推广终身学习",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观描述企业或政府面向劳动者推动继续学习文化和培训参与。"
+        },
+        {
+          "phrase": "pay lip service to lifelong learning",
+          "term": "pay lip service to",
+          "zh": "对终身学习只是口头支持",
+          "stance": "Negative",
+          "tone": "这条搭配适合批评机构嘴上强调终身学习，却没有提供时间、资金或可进入的课程支持。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::facilitate collaborative learning",
+      "topic": "Education",
+      "baseChinese": "小组学习",
+      "baseEnglish": "group work / collaborative learning",
+      "type": "verb",
+      "original": "facilitate collaborative learning",
+      "focus": "facilitate",
+      "currentOptions": [
+        {
+          "phrase": "facilitate peer interaction",
+          "term": "facilitate",
+          "zh": "促进同伴互动",
+          "stance": "Positive",
+          "tone": "这条搭配适合在 IELTS 或社会教育论证里强调，协作学习的关键不只是分组，而是设计能让学生彼此解释、质疑和回应的互动过程。"
+        },
+        {
+          "phrase": "assign collaborative projects",
+          "term": "assign",
+          "zh": "布置合作项目",
+          "stance": "Neutral",
+          "tone": "这条搭配适合在 IELTS 或社会教育语境里中性描述教师组织协作学习的一种做法，即通过项目任务把合作嵌入课程要求之中。"
+        },
+        {
+          "phrase": "force students into poorly managed groups",
+          "term": "force students into",
+          "zh": "把学生硬塞进管理不善的小组",
+          "stance": "Negative",
+          "tone": "这条搭配适合在 IELTS 或社会教育讨论里批评形式化合作，因为如果分组机制和监督都不到位，学生往往会对协作学习产生反感。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::provide tailored teaching",
+      "topic": "Education",
+      "baseChinese": "个性化教学",
+      "baseEnglish": "tailored / personalized teaching",
+      "type": "verb",
+      "original": "provide tailored teaching",
+      "focus": "provide",
+      "currentOptions": [
+        {
+          "phrase": "provide targeted feedback",
+          "term": "provide",
+          "zh": "提供有针对性的反馈",
+          "stance": "Positive",
+          "tone": "这条搭配适合在 IELTS 或社会教育论证里具体说明个性化教学不是一句口号，而是根据学生的真实问题给出精准反馈和改进方向。"
+        },
+        {
+          "phrase": "adapt lessons to learner needs",
+          "term": "adapt lessons to",
+          "zh": "根据学习者需求调整课程",
+          "stance": "Neutral",
+          "tone": "这条搭配适合在 IELTS 或社会教育语境里中性描述教师提供个性化教学的一种方式，即围绕不同学习者的基础与需求微调内容和节奏。"
+        },
+        {
+          "phrase": "over-tailor instruction to fixed ability groups",
+          "term": "over-tailor instruction",
+          "zh": "按固定能力分组过度定制教学",
+          "stance": "Negative",
+          "tone": "这条搭配适合在 IELTS 或社会教育讨论里提醒 tailored teaching 的风险：如果教学把学生锁定在狭窄的能力类别中，反而可能限制他们继续成长。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::discourage rote memorization",
+      "topic": "Education",
+      "baseChinese": "死记硬背",
+      "baseEnglish": "rote memorization",
+      "type": "verb",
+      "original": "discourage rote memorization",
+      "focus": "discourage",
+      "currentOptions": [
+        {
+          "phrase": "promote understanding over rote memorization",
+          "term": "promote",
+          "zh": "重理解而不是死记硬背",
+          "stance": "Positive",
+          "tone": "这条搭配适合在 IELTS 教育题中强调教师应帮助学生理解原理和联系，而不是只要求他们机械背诵。"
+        },
+        {
+          "phrase": "balance memorization with understanding",
+          "term": "balance",
+          "zh": "在记忆和理解之间取得平衡",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性讨论基础记忆仍有必要，但应与概念理解、应用和分析能力结合。"
+        },
+        {
+          "phrase": "replace rote memorization with shallow guessing",
+          "term": "replace",
+          "zh": "用浅层猜测取代死记硬背",
+          "stance": "Negative",
+          "tone": "这条搭配适合批评改革走偏：学校反对死记硬背，却没有建立深度理解，反而让学生依赖猜题和套路。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::adjective::well-rounded individuals",
+      "topic": "Education",
+      "baseChinese": "全面发展的人",
+      "baseEnglish": "well-rounded individuals",
+      "type": "adjective",
+      "original": "well-rounded individuals",
+      "focus": "well-rounded",
+      "currentOptions": [
+        {
+          "phrase": "well-rounded graduates",
+          "term": "well-rounded",
+          "zh": "全面发展的毕业生",
+          "stance": "Positive",
+          "tone": "这条搭配适合在 IELTS 教育题中强调学校培养的不应只是会考试的人，还应具备沟通、合作、审美和社会责任等能力。"
+        },
+        {
+          "phrase": "balanced personal development",
+          "term": "balanced",
+          "zh": "均衡的个人发展",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性描述学生在学业、兴趣、品格和社交能力之间保持相对均衡的发展。"
+        },
+        {
+          "phrase": "one-dimensional academic achievers",
+          "term": "one-dimensional",
+          "zh": "单一维度的学业成功者",
+          "stance": "Negative",
+          "tone": "这条搭配适合批评学校只追求分数和升学率，导致学生成绩好却缺少创造力、同理心或现实问题解决能力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::develop well-rounded individuals",
+      "topic": "Education",
+      "baseChinese": "全面发展的人",
+      "baseEnglish": "well-rounded individuals",
+      "type": "verb",
+      "original": "develop well-rounded individuals",
+      "focus": "develop",
+      "currentOptions": [
+        {
+          "phrase": "nurture well-rounded graduates",
+          "term": "nurture",
+          "zh": "培养全面发展的毕业生",
+          "stance": "Positive",
+          "tone": "这条搭配适合在 IELTS 教育题中强调学校应培养学业、品格、沟通和社会参与都较均衡的学生。"
+        },
+        {
+          "phrase": "promote balanced personal development",
+          "term": "promote",
+          "zh": "促进均衡的个人发展",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性讨论教育目标不只包括成绩，也包括兴趣、品格、社交能力和身心健康。"
+        },
+        {
+          "phrase": "produce one-dimensional academic achievers",
+          "term": "produce",
+          "zh": "培养出单一维度的学业成功者",
+          "stance": "Negative",
+          "tone": "这条搭配适合批评学校如果只追求分数，可能培养出成绩好但缺少创造力、同理心和现实能力的学生。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::adjective::critical independent thinking",
+      "topic": "Education",
+      "baseChinese": "独立思考",
+      "baseEnglish": "independent thinking",
+      "type": "adjective",
+      "original": "critical independent thinking",
+      "focus": "critical",
+      "currentOptions": [
+        {
+          "phrase": "critical thinking skills",
+          "term": "critical",
+          "zh": "批判性思维能力",
+          "stance": "Positive",
+          "tone": "这条搭配适合在 IELTS 教育题中强调学生需要分析证据、质疑假设并形成有根据的判断。"
+        },
+        {
+          "phrase": "independent judgement",
+          "term": "independent",
+          "zh": "独立判断",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性描述学生不完全依赖老师或标准答案，而能根据理由作出自己的判断。"
+        },
+        {
+          "phrase": "isolated individualism",
+          "term": "isolated",
+          "zh": "孤立的个人主义",
+          "stance": "Negative",
+          "tone": "这条搭配适合批评所谓独立思考被误解为只顾个人立场、拒绝合作和公共责任。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::foster independent thinking",
+      "topic": "Education",
+      "baseChinese": "独立思考",
+      "baseEnglish": "independent thinking",
+      "type": "verb",
+      "original": "foster independent thinking",
+      "focus": "foster",
+      "currentOptions": [
+        {
+          "phrase": "encourage students to question assumptions",
+          "term": "encourage",
+          "zh": "鼓励学生质疑假设",
+          "stance": "Positive",
+          "tone": "这条搭配适合在 IELTS 教育题中强调教师应引导学生追问证据和前提，而不是被动接受结论。"
+        },
+        {
+          "phrase": "develop independent judgement",
+          "term": "develop",
+          "zh": "发展独立判断能力",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性描述教育逐步培养学生分析信息、比较观点并作出判断的能力。"
+        },
+        {
+          "phrase": "suppress independent thinking",
+          "term": "suppress",
+          "zh": "压制独立思考",
+          "stance": "Negative",
+          "tone": "这条搭配适合批评过度权威的课堂或考试制度让学生不敢提出不同观点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::develop essay plans",
+      "topic": "Education",
+      "baseChinese": "作文计划",
+      "baseEnglish": "essay plans",
+      "type": "verb",
+      "original": "develop essay plans",
+      "focus": "develop",
+      "currentOptions": [
+        {
+          "phrase": "develop flexible essay plans",
+          "term": "develop",
+          "zh": "制定灵活的作文计划",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调学生在动笔前主动安排论证路径，语气偏积极。"
+        },
+        {
+          "phrase": "draft essay plans",
+          "term": "draft",
+          "zh": "起草作文计划",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性描述写作前列提纲这一过程。"
+        },
+        {
+          "phrase": "rely on rigid essay plans",
+          "term": "rely on",
+          "zh": "依赖僵硬的作文计划",
+          "stance": "Negative",
+          "tone": "这条搭配适合批评学生把提纲当成固定公式，削弱思考和回应题目的能力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::preserve cultural identity",
+      "topic": "Education",
+      "baseChinese": "文化认同",
+      "baseEnglish": "cultural identity",
+      "type": "verb",
+      "original": "preserve cultural identity",
+      "focus": "preserve",
+      "currentOptions": [
+        {
+          "phrase": "preserve cultural heritage",
+          "term": "preserve",
+          "zh": "保护文化遗产",
+          "stance": "Positive",
+          "tone": "这条搭配适合在 IELTS 教育题中强调学校和社区通过语言、历史和艺术教育延续重要文化传统。"
+        },
+        {
+          "phrase": "transmit cultural traditions",
+          "term": "transmit",
+          "zh": "传承文化传统",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性描述教育在代际之间传递习俗、价值观和历史记忆的功能。"
+        },
+        {
+          "phrase": "freeze culture into stereotypes",
+          "term": "freeze",
+          "zh": "把文化固化成刻板印象",
+          "stance": "Negative",
+          "tone": "这条搭配适合批评文化教育如果只强调固定标签，可能让学生误以为文化是不变且单一的。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::raise civic awareness",
+      "topic": "Education",
+      "baseChinese": "公民意识",
+      "baseEnglish": "civic awareness",
+      "type": "verb",
+      "original": "raise civic awareness",
+      "focus": "raise",
+      "currentOptions": [
+        {
+          "phrase": "promote civic awareness among students",
+          "term": "promote",
+          "zh": "提升学生的公民意识",
+          "stance": "Positive",
+          "tone": "这条搭配适合在 IELTS 教育题中强调学校通过课程、讨论和社区活动帮助学生理解公共责任。"
+        },
+        {
+          "phrase": "teach civic responsibilities",
+          "term": "teach",
+          "zh": "教授公民责任",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性描述学校向学生讲解权利义务、公共规则和参与社会的基本方式。"
+        },
+        {
+          "phrase": "neglect civic education",
+          "term": "neglect",
+          "zh": "忽视公民教育",
+          "stance": "Negative",
+          "tone": "这条搭配适合批评学校只关注考试成绩，却没有系统培养学生的公共意识和社会责任。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::adjective::early dropout",
+      "topic": "Education",
+      "baseChinese": "辍学",
+      "baseEnglish": "dropout",
+      "type": "adjective",
+      "original": "early dropout",
+      "focus": "early",
+      "currentOptions": [
+        {
+          "phrase": "preventable school dropout",
+          "term": "preventable",
+          "zh": "可预防的辍学",
+          "stance": "Positive",
+          "tone": "这条搭配适合在 IELTS 教育题中强调辍学往往可以通过经济支持、学习辅导和家庭干预来减少。"
+        },
+        {
+          "phrase": "student dropout",
+          "term": "student",
+          "zh": "学生辍学",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性描述学生离开学校或停止完成学业这一教育现象。"
+        },
+        {
+          "phrase": "early school dropout",
+          "term": "early",
+          "zh": "过早辍学",
+          "stance": "Negative",
+          "tone": "这条搭配适合批评学生在基础教育阶段过早离校，影响未来就业、收入和社会流动。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::adjective::persistent school bullying",
+      "topic": "Education",
+      "baseChinese": "校园霸凌",
+      "baseEnglish": "school bullying",
+      "type": "adjective",
+      "original": "persistent school bullying",
+      "focus": "persistent",
+      "currentOptions": [
+        {
+          "phrase": "effective anti-bullying measures",
+          "term": "effective",
+          "zh": "有效的反霸凌措施",
+          "stance": "Positive",
+          "tone": "这条搭配适合在 IELTS 教育题中强调学校有清晰机制处理霸凌，包括举报、干预和持续跟进。"
+        },
+        {
+          "phrase": "reported school bullying",
+          "term": "reported",
+          "zh": "被报告的校园霸凌",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性描述已经被学生、家长或教师正式反映出来的霸凌事件。"
+        },
+        {
+          "phrase": "persistent school bullying",
+          "term": "persistent",
+          "zh": "持续存在的校园霸凌",
+          "stance": "Negative",
+          "tone": "这条搭配适合批评学校治理不足，导致霸凌反复发生并长期伤害学生安全感。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::adjective::excessive commercialization of education",
+      "topic": "Education",
+      "baseChinese": "教育商品化",
+      "baseEnglish": "commercialization of education",
+      "type": "adjective",
+      "original": "excessive commercialization of education",
+      "focus": "excessive",
+      "currentOptions": [
+        {
+          "phrase": "responsible private investment in education",
+          "term": "responsible",
+          "zh": "负责任的私人教育投资",
+          "stance": "Positive",
+          "tone": "这条搭配适合在 IELTS 教育题中承认适度投资可以改善设施和课程，但前提是不能损害公平性。"
+        },
+        {
+          "phrase": "private-sector involvement in education",
+          "term": "private",
+          "zh": "私营部门参与教育",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性描述企业、培训机构或社会资本参与教育服务供给。"
+        },
+        {
+          "phrase": "excessive commercialization of education",
+          "term": "excessive",
+          "zh": "过度的教育商品化",
+          "stance": "Negative",
+          "tone": "这条搭配适合批评教育被过度当作商品出售，学生和家庭被迫为基本学习机会支付高额费用。"
+        }
+      ]
+    }
+  ]
+}

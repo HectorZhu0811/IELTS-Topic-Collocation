@@ -1,0 +1,826 @@
+{
+  "topic": "Media",
+  "guidance": "project-docs/synonym-curation-guidelines.md",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "issueCount": 51,
+  "issueCardCount": 22,
+  "issueRows": [
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "大众媒体",
+      "baseEnglish": "mass media",
+      "focus": "regulate",
+      "original": "regulate mass media",
+      "term": "regulate",
+      "phrase": "regulate mass media",
+      "zh": "监管",
+      "tone": "这条搭配适合讲通过规则让大众媒体更负责任。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "大众媒体",
+      "baseEnglish": "mass media",
+      "focus": "regulate",
+      "original": "regulate mass media",
+      "term": "analyse",
+      "phrase": "analyse the influence of mass media",
+      "zh": "分析大众媒体的影响",
+      "tone": "这条搭配适合客观分析大众媒体对公众观点和社会议题的影响。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "adjective",
+      "baseChinese": "主流媒体",
+      "baseEnglish": "mainstream media",
+      "focus": "credible",
+      "original": "credible mainstream media",
+      "term": "credible",
+      "phrase": "credible mainstream media",
+      "zh": "可信的",
+      "tone": "积极，适合新闻和信息。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "主流媒体",
+      "baseEnglish": "mainstream media",
+      "focus": "trust",
+      "original": "trust mainstream media",
+      "term": "maintain",
+      "phrase": "maintain mainstream media",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "主流媒体",
+      "baseEnglish": "mainstream media",
+      "focus": "trust",
+      "original": "trust mainstream media",
+      "term": "assess",
+      "phrase": "assess mainstream media",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "主流媒体",
+      "baseEnglish": "mainstream media",
+      "focus": "trust",
+      "original": "trust mainstream media",
+      "term": "undermine",
+      "phrase": "undermine mainstream media",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "数字媒体",
+      "baseEnglish": "digital media",
+      "focus": "use",
+      "original": "use digital media",
+      "term": "develop",
+      "phrase": "develop digital media",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "数字媒体",
+      "baseEnglish": "digital media",
+      "focus": "use",
+      "original": "use digital media",
+      "term": "discuss",
+      "phrase": "discuss digital media",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "数字媒体",
+      "baseEnglish": "digital media",
+      "focus": "use",
+      "original": "use digital media",
+      "term": "overlook",
+      "phrase": "overlook digital media",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "社交媒体",
+      "baseEnglish": "social media",
+      "focus": "monitor",
+      "original": "monitor social media",
+      "term": "maintain",
+      "phrase": "maintain social media",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "社交媒体",
+      "baseEnglish": "social media",
+      "focus": "monitor",
+      "original": "monitor social media",
+      "term": "discuss",
+      "phrase": "discuss social media",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "社交媒体",
+      "baseEnglish": "social media",
+      "focus": "monitor",
+      "original": "monitor social media",
+      "term": "overlook",
+      "phrase": "overlook social media",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "独立媒体",
+      "baseEnglish": "independent media",
+      "focus": "support",
+      "original": "support independent media",
+      "term": "develop",
+      "phrase": "develop independent media",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "独立媒体",
+      "baseEnglish": "independent media",
+      "focus": "support",
+      "original": "support independent media",
+      "term": "discuss",
+      "phrase": "discuss independent media",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "独立媒体",
+      "baseEnglish": "independent media",
+      "focus": "support",
+      "original": "support independent media",
+      "term": "undermine",
+      "phrase": "undermine independent media",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "新闻自由",
+      "baseEnglish": "freedom of the press",
+      "focus": "protect",
+      "original": "protect freedom of the press",
+      "term": "assess",
+      "phrase": "assess freedom of the press",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "新闻自由",
+      "baseEnglish": "freedom of the press",
+      "focus": "protect",
+      "original": "protect freedom of the press",
+      "term": "undermine",
+      "phrase": "undermine freedom of the press",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "信息传播",
+      "baseEnglish": "information dissemination",
+      "focus": "facilitate",
+      "original": "facilitate information dissemination",
+      "term": "promote",
+      "phrase": "promote information dissemination",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "信息传播",
+      "baseEnglish": "information dissemination",
+      "focus": "facilitate",
+      "original": "facilitate information dissemination",
+      "term": "analyse",
+      "phrase": "analyse information dissemination",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "信息传播",
+      "baseEnglish": "information dissemination",
+      "focus": "facilitate",
+      "original": "facilitate information dissemination",
+      "term": "sideline",
+      "phrase": "sideline information dissemination",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "媒介素养",
+      "baseEnglish": "media literacy",
+      "focus": "improve",
+      "original": "improve media literacy",
+      "term": "maintain",
+      "phrase": "maintain media literacy",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "媒介素养",
+      "baseEnglish": "media literacy",
+      "focus": "improve",
+      "original": "improve media literacy",
+      "term": "assess",
+      "phrase": "assess media literacy",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "媒介素养",
+      "baseEnglish": "media literacy",
+      "focus": "improve",
+      "original": "improve media literacy",
+      "term": "overlook",
+      "phrase": "overlook media literacy",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "广告活动",
+      "baseEnglish": "advertising campaign",
+      "focus": "launch",
+      "original": "launch an advertising campaign",
+      "term": "maintain",
+      "phrase": "maintain an advertising campaign",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "广告活动",
+      "baseEnglish": "advertising campaign",
+      "focus": "launch",
+      "original": "launch an advertising campaign",
+      "term": "assess",
+      "phrase": "assess an advertising campaign",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "广告活动",
+      "baseEnglish": "advertising campaign",
+      "focus": "launch",
+      "original": "launch an advertising campaign",
+      "term": "overlook",
+      "phrase": "overlook an advertising campaign",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "目标受众",
+      "baseEnglish": "target audience",
+      "focus": "reach",
+      "original": "reach the target audience",
+      "term": "promote",
+      "phrase": "promote the target audience",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "目标受众",
+      "baseEnglish": "target audience",
+      "focus": "reach",
+      "original": "reach the target audience",
+      "term": "analyse",
+      "phrase": "analyse the target audience",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Media",
+      "type": "verb",
+      "baseChinese": "目标受众",
+      "baseEnglish": "target audience",
+      "focus": "reach",
+      "original": "reach the target audience",
+      "term": "sideline",
+      "phrase": "sideline the target audience",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    }
+  ],
+  "cardsToReview": [
+    {
+      "cardKey": "Media::verb::regulate mass media",
+      "topic": "Media",
+      "baseChinese": "大众媒体",
+      "baseEnglish": "mass media",
+      "type": "verb",
+      "original": "regulate mass media",
+      "focus": "regulate",
+      "currentOptions": [
+        {
+          "phrase": "regulate mass media",
+          "term": "regulate",
+          "zh": "监管",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲通过规则让大众媒体更负责任。"
+        },
+        {
+          "phrase": "analyse the influence of mass media",
+          "term": "analyse",
+          "zh": "分析大众媒体的影响",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观分析大众媒体对公众观点和社会议题的影响。"
+        },
+        {
+          "phrase": "misuse mass media",
+          "term": "misuse",
+          "zh": "滥用",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判不当使用大众媒体造成误导、操控或煽动。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::adjective::credible mainstream media",
+      "topic": "Media",
+      "baseChinese": "主流媒体",
+      "baseEnglish": "mainstream media",
+      "type": "adjective",
+      "original": "credible mainstream media",
+      "focus": "credible",
+      "currentOptions": [
+        {
+          "phrase": "credible mainstream media",
+          "term": "credible",
+          "zh": "可信的",
+          "stance": "Positive",
+          "tone": "积极，适合新闻和信息。"
+        },
+        {
+          "phrase": "algorithmic mainstream media",
+          "term": "algorithmic",
+          "zh": "算法驱动的",
+          "stance": "Neutral",
+          "tone": "中性，适合平台语境。"
+        },
+        {
+          "phrase": "misleading mainstream media",
+          "term": "misleading",
+          "zh": "误导性的",
+          "stance": "Negative",
+          "tone": "消极，强调信息风险。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::trust mainstream media",
+      "topic": "Media",
+      "baseChinese": "主流媒体",
+      "baseEnglish": "mainstream media",
+      "type": "verb",
+      "original": "trust mainstream media",
+      "focus": "trust",
+      "currentOptions": [
+        {
+          "phrase": "maintain mainstream media",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess mainstream media",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine mainstream media",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::use digital media",
+      "topic": "Media",
+      "baseChinese": "数字媒体",
+      "baseEnglish": "digital media",
+      "type": "verb",
+      "original": "use digital media",
+      "focus": "use",
+      "currentOptions": [
+        {
+          "phrase": "develop digital media",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss digital media",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook digital media",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::monitor social media",
+      "topic": "Media",
+      "baseChinese": "社交媒体",
+      "baseEnglish": "social media",
+      "type": "verb",
+      "original": "monitor social media",
+      "focus": "monitor",
+      "currentOptions": [
+        {
+          "phrase": "maintain social media",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "discuss social media",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook social media",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::support independent media",
+      "topic": "Media",
+      "baseChinese": "独立媒体",
+      "baseEnglish": "independent media",
+      "type": "verb",
+      "original": "support independent media",
+      "focus": "support",
+      "currentOptions": [
+        {
+          "phrase": "develop independent media",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss independent media",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "undermine independent media",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::protect freedom of the press",
+      "topic": "Media",
+      "baseChinese": "新闻自由",
+      "baseEnglish": "freedom of the press",
+      "type": "verb",
+      "original": "protect freedom of the press",
+      "focus": "protect",
+      "currentOptions": [
+        {
+          "phrase": "defend freedom of the press",
+          "term": "defend",
+          "zh": "防卫 / 捍卫",
+          "stance": "Positive",
+          "tone": "更强烈，适合权利或主权。"
+        },
+        {
+          "phrase": "assess freedom of the press",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine freedom of the press",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::facilitate information dissemination",
+      "topic": "Media",
+      "baseChinese": "信息传播",
+      "baseEnglish": "information dissemination",
+      "type": "verb",
+      "original": "facilitate information dissemination",
+      "focus": "facilitate",
+      "currentOptions": [
+        {
+          "phrase": "promote information dissemination",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "analyse information dissemination",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline information dissemination",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::improve media literacy",
+      "topic": "Media",
+      "baseChinese": "媒介素养",
+      "baseEnglish": "media literacy",
+      "type": "verb",
+      "original": "improve media literacy",
+      "focus": "improve",
+      "currentOptions": [
+        {
+          "phrase": "maintain media literacy",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess media literacy",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook media literacy",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::launch an advertising campaign",
+      "topic": "Media",
+      "baseChinese": "广告活动",
+      "baseEnglish": "advertising campaign",
+      "type": "verb",
+      "original": "launch an advertising campaign",
+      "focus": "launch",
+      "currentOptions": [
+        {
+          "phrase": "maintain an advertising campaign",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess an advertising campaign",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook an advertising campaign",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Media::verb::reach the target audience",
+      "topic": "Media",
+      "baseChinese": "目标受众",
+      "baseEnglish": "target audience",
+      "type": "verb",
+      "original": "reach the target audience",
+      "focus": "reach",
+      "currentOptions": [
+        {
+          "phrase": "promote the target audience",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "analyse the target audience",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline the target audience",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    }
+  ],
+  "part": "part1"
+}

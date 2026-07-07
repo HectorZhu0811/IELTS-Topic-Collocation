@@ -1,0 +1,442 @@
+{
+  "topic": "Education",
+  "curator": "topic-subagent",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "approved": [
+    {
+      "cardKey": "Education::verb::promote lifelong learning",
+      "baseChinese": "终身学习",
+      "baseEnglish": "lifelong learning",
+      "type": "verb",
+      "original": "promote lifelong learning",
+      "focus": "promote",
+      "options": [
+        {
+          "phrase": "encourage adults to reskill",
+          "term": "encourage adults to reskill",
+          "zh": "鼓励成年人进行技能再培训",
+          "stance": "Positive",
+          "tone": "适合说明政府或雇主帮助成年人更新技能，以应对产业变化和岗位转型。"
+        },
+        {
+          "phrase": "support continuing education",
+          "term": "support",
+          "zh": "支持继续教育",
+          "stance": "Neutral",
+          "tone": "适合客观描述学校、企业或政府为成年人提供可持续学习机会和课程资源。"
+        },
+        {
+          "phrase": "pay lip service to lifelong learning",
+          "term": "pay lip service to",
+          "zh": "对终身学习只是口头支持",
+          "stance": "Negative",
+          "tone": "适合批评机构嘴上强调终身学习，却没有提供时间、经费或可进入的课程。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::facilitate collaborative learning",
+      "baseChinese": "小组学习",
+      "baseEnglish": "group work / collaborative learning",
+      "type": "verb",
+      "original": "facilitate collaborative learning",
+      "focus": "facilitate",
+      "options": [
+        {
+          "phrase": "structure peer interaction",
+          "term": "structure",
+          "zh": "设计有结构的同伴互动",
+          "stance": "Positive",
+          "tone": "适合强调教师通过问题、角色和反馈机制，让学生在小组中真正解释、质疑和回应。"
+        },
+        {
+          "phrase": "assign collaborative projects",
+          "term": "assign",
+          "zh": "布置合作项目",
+          "stance": "Neutral",
+          "tone": "适合中性描述教师把小组协作嵌入课程任务，而不是只让学生坐在一起。"
+        },
+        {
+          "phrase": "force students into poorly managed groups",
+          "term": "force students into",
+          "zh": "把学生硬塞进管理不善的小组",
+          "stance": "Negative",
+          "tone": "适合批评形式化分组，因为缺少分工、监督和评价标准会让合作学习失效。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::provide tailored teaching",
+      "baseChinese": "个性化教学",
+      "baseEnglish": "tailored / personalized teaching",
+      "type": "verb",
+      "original": "provide tailored teaching",
+      "focus": "provide",
+      "options": [
+        {
+          "phrase": "differentiate classroom instruction",
+          "term": "differentiate",
+          "zh": "实施差异化课堂教学",
+          "stance": "Positive",
+          "tone": "适合说明教师根据学生基础、学习速度和薄弱环节调整任务与讲解方式。"
+        },
+        {
+          "phrase": "adapt lessons to learner needs",
+          "term": "adapt lessons to",
+          "zh": "根据学习者需求调整课程",
+          "stance": "Neutral",
+          "tone": "适合中性描述个性化教学的操作方式，即围绕不同学生的目标和困难微调内容。"
+        },
+        {
+          "phrase": "over-tailor instruction to fixed ability groups",
+          "term": "over-tailor instruction",
+          "zh": "按固定能力分组过度定制教学",
+          "stance": "Negative",
+          "tone": "适合提醒个性化教学的风险：如果学生被锁定在狭窄能力标签中，成长空间会被限制。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::discourage rote memorization",
+      "baseChinese": "死记硬背",
+      "baseEnglish": "rote memorization",
+      "type": "verb",
+      "original": "discourage rote memorization",
+      "focus": "discourage",
+      "options": [
+        {
+          "phrase": "prioritize conceptual understanding",
+          "term": "prioritize",
+          "zh": "优先培养概念理解",
+          "stance": "Positive",
+          "tone": "适合强调课堂应帮助学生理解原理和联系，而不是只要求机械背诵答案。"
+        },
+        {
+          "phrase": "balance memorization with understanding",
+          "term": "balance",
+          "zh": "在记忆和理解之间取得平衡",
+          "stance": "Neutral",
+          "tone": "适合承认基础记忆仍有必要，但需要和概念理解、应用能力结合。"
+        },
+        {
+          "phrase": "replace memorization drills with shallow guessing",
+          "term": "replace",
+          "zh": "用浅层猜测取代记忆训练",
+          "stance": "Negative",
+          "tone": "适合批评改革走偏：反对死记硬背后没有建立深度理解，反而让学生依赖猜题。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::adjective::well-rounded individuals",
+      "baseChinese": "全面发展的人",
+      "baseEnglish": "well-rounded individuals",
+      "type": "adjective",
+      "original": "well-rounded individuals",
+      "focus": "well-rounded",
+      "options": [
+        {
+          "phrase": "balanced graduates",
+          "term": "balanced",
+          "zh": "均衡发展的毕业生",
+          "stance": "Positive",
+          "tone": "适合说明学生不仅成绩好，也具备沟通、合作、品格和身心健康等方面的能力。"
+        },
+        {
+          "phrase": "versatile learners",
+          "term": "versatile",
+          "zh": "能力多元的学习者",
+          "stance": "Positive",
+          "tone": "适合强调学校培养的学生能适应不同任务，而不是只擅长考试或单一学科。"
+        },
+        {
+          "phrase": "one-dimensional academic achievers",
+          "term": "one-dimensional",
+          "zh": "单一维度的学业成功者",
+          "stance": "Negative",
+          "tone": "适合批评学校只追求分数，导致学生缺少创造力、同理心或现实问题解决能力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::develop well-rounded individuals",
+      "baseChinese": "全面发展的人",
+      "baseEnglish": "well-rounded individuals",
+      "type": "verb",
+      "original": "develop well-rounded individuals",
+      "focus": "develop",
+      "options": [
+        {
+          "phrase": "nurture balanced graduates",
+          "term": "nurture",
+          "zh": "培养均衡发展的毕业生",
+          "stance": "Positive",
+          "tone": "适合强调学校应同时重视学业、品格、沟通能力和社会参与。"
+        },
+        {
+          "phrase": "cultivate students' social and academic growth",
+          "term": "cultivate",
+          "zh": "培养学生在社交和学业上的共同成长",
+          "stance": "Neutral",
+          "tone": "适合中性说明教育目标不只包括考试成绩，也包括合作、表达和责任感。"
+        },
+        {
+          "phrase": "produce exam-focused graduates",
+          "term": "produce",
+          "zh": "培养出只围绕考试的毕业生",
+          "stance": "Negative",
+          "tone": "适合批评学校把学生训练成会考试的人，却忽视创造力、品格和现实能力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::adjective::critical independent thinking",
+      "baseChinese": "独立思考",
+      "baseEnglish": "independent thinking",
+      "type": "adjective",
+      "original": "critical independent thinking",
+      "focus": "critical",
+      "options": [
+        {
+          "phrase": "analytical thinking skills",
+          "term": "analytical",
+          "zh": "分析性思维能力",
+          "stance": "Positive",
+          "tone": "适合强调学生能够拆解信息、比较证据并形成有根据的判断。"
+        },
+        {
+          "phrase": "independent judgment",
+          "term": "independent",
+          "zh": "独立判断能力",
+          "stance": "Neutral",
+          "tone": "适合中性描述学生不完全依赖老师或标准答案，而能根据理由作出判断。"
+        },
+        {
+          "phrase": "unquestioning conformity",
+          "term": "unquestioning",
+          "zh": "不加质疑的从众",
+          "stance": "Negative",
+          "tone": "适合批评课堂或考试文化让学生习惯接受权威答案，而不愿提出自己的理由。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::foster independent thinking",
+      "baseChinese": "独立思考",
+      "baseEnglish": "independent thinking",
+      "type": "verb",
+      "original": "foster independent thinking",
+      "focus": "foster",
+      "options": [
+        {
+          "phrase": "encourage students to question assumptions",
+          "term": "encourage",
+          "zh": "鼓励学生质疑假设",
+          "stance": "Positive",
+          "tone": "适合强调教师应引导学生追问证据和前提，而不是被动接受结论。"
+        },
+        {
+          "phrase": "cultivate independent judgment",
+          "term": "cultivate",
+          "zh": "培养独立判断能力",
+          "stance": "Neutral",
+          "tone": "适合描述教育逐步帮助学生比较观点、分析信息并作出自己的判断。"
+        },
+        {
+          "phrase": "suppress independent thinking",
+          "term": "suppress",
+          "zh": "压制独立思考",
+          "stance": "Negative",
+          "tone": "适合批评过度权威的课堂或考试制度让学生不敢提出不同观点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::develop essay plans",
+      "baseChinese": "作文计划",
+      "baseEnglish": "essay plans",
+      "type": "verb",
+      "original": "develop essay plans",
+      "focus": "develop",
+      "options": [
+        {
+          "phrase": "draft essay plans",
+          "term": "draft",
+          "zh": "起草作文计划",
+          "stance": "Neutral",
+          "tone": "适合描述学生在动笔前列出立场、分论点和例证安排。"
+        },
+        {
+          "phrase": "outline arguments before writing",
+          "term": "outline",
+          "zh": "写作前列出论证结构",
+          "stance": "Positive",
+          "tone": "适合强调写作前先安排论证路径，有助于让 Task 2 作文更连贯。"
+        },
+        {
+          "phrase": "rely on rigid essay templates",
+          "term": "rely on",
+          "zh": "依赖僵硬的作文模板",
+          "stance": "Negative",
+          "tone": "适合批评学生把提纲当成固定公式，削弱回应题目和展开观点的能力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::preserve cultural identity",
+      "baseChinese": "文化认同",
+      "baseEnglish": "cultural identity",
+      "type": "verb",
+      "original": "preserve cultural identity",
+      "focus": "preserve",
+      "options": [
+        {
+          "phrase": "strengthen students' cultural identity",
+          "term": "strengthen",
+          "zh": "增强学生的文化认同",
+          "stance": "Positive",
+          "tone": "适合说明语言、历史和艺术教育能帮助学生理解自己的文化来源。"
+        },
+        {
+          "phrase": "transmit cultural traditions",
+          "term": "transmit",
+          "zh": "传承文化传统",
+          "stance": "Neutral",
+          "tone": "适合中性描述教育在代际之间传递习俗、价值观和历史记忆的功能。"
+        },
+        {
+          "phrase": "reduce culture to stereotypes",
+          "term": "reduce",
+          "zh": "把文化简化成刻板印象",
+          "stance": "Negative",
+          "tone": "适合批评文化教育如果只强调固定标签，会让学生误以为文化单一且不变。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::verb::raise civic awareness",
+      "baseChinese": "公民意识",
+      "baseEnglish": "civic awareness",
+      "type": "verb",
+      "original": "raise civic awareness",
+      "focus": "raise",
+      "options": [
+        {
+          "phrase": "teach civic responsibilities",
+          "term": "teach",
+          "zh": "教授公民责任",
+          "stance": "Neutral",
+          "tone": "适合描述学校向学生讲解权利义务、公共规则和参与社会的基本方式。"
+        },
+        {
+          "phrase": "build students' sense of citizenship",
+          "term": "build",
+          "zh": "建立学生的公民身份意识",
+          "stance": "Positive",
+          "tone": "适合强调学校通过课程、讨论和社区活动帮助学生理解公共责任。"
+        },
+        {
+          "phrase": "neglect civic education",
+          "term": "neglect",
+          "zh": "忽视公民教育",
+          "stance": "Negative",
+          "tone": "适合批评学校只关注考试成绩，却没有系统培养学生的公共意识和社会责任。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::adjective::early dropout",
+      "baseChinese": "辍学",
+      "baseEnglish": "dropout",
+      "type": "adjective",
+      "original": "early dropout",
+      "focus": "early",
+      "options": [
+        {
+          "phrase": "preventable school dropout",
+          "term": "preventable",
+          "zh": "可预防的辍学",
+          "stance": "Positive",
+          "tone": "适合强调辍学往往可以通过经济支持、学习辅导和家庭干预来减少。"
+        },
+        {
+          "phrase": "student dropout",
+          "term": "student",
+          "zh": "学生辍学",
+          "stance": "Neutral",
+          "tone": "适合中性描述学生离开学校或停止完成学业这一教育现象。"
+        },
+        {
+          "phrase": "premature school leaving",
+          "term": "premature",
+          "zh": "过早离校",
+          "stance": "Negative",
+          "tone": "适合批评学生在基础教育阶段过早离开学校，影响未来就业和社会流动。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::adjective::persistent school bullying",
+      "baseChinese": "校园霸凌",
+      "baseEnglish": "school bullying",
+      "type": "adjective",
+      "original": "persistent school bullying",
+      "focus": "persistent",
+      "options": [
+        {
+          "phrase": "recurring school bullying",
+          "term": "recurring",
+          "zh": "反复发生的校园霸凌",
+          "stance": "Negative",
+          "tone": "适合批评霸凌事件多次出现，说明学校的预防、举报和干预机制没有真正发挥作用。"
+        },
+        {
+          "phrase": "reported school bullying",
+          "term": "reported",
+          "zh": "被报告的校园霸凌",
+          "stance": "Neutral",
+          "tone": "适合中性描述已经被学生、家长或教师正式反映出来的霸凌事件。"
+        },
+        {
+          "phrase": "unchecked school bullying",
+          "term": "unchecked",
+          "zh": "未被有效制止的校园霸凌",
+          "stance": "Negative",
+          "tone": "适合批评学校治理不足，导致霸凌没有被及时干预并持续伤害学生安全感。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Education::adjective::excessive commercialization of education",
+      "baseChinese": "教育商品化",
+      "baseEnglish": "commercialization of education",
+      "type": "adjective",
+      "original": "excessive commercialization of education",
+      "focus": "excessive",
+      "options": [
+        {
+          "phrase": "responsible private investment in education",
+          "term": "responsible",
+          "zh": "负责任的私人教育投资",
+          "stance": "Positive",
+          "tone": "适合承认适度投资可以改善设施和课程，但前提是不能损害公平性。"
+        },
+        {
+          "phrase": "private-sector involvement in education",
+          "term": "private-sector",
+          "zh": "私营部门参与教育",
+          "stance": "Neutral",
+          "tone": "适合中性描述企业、培训机构或社会资本参与教育服务供给。"
+        },
+        {
+          "phrase": "profit-driven education services",
+          "term": "profit-driven",
+          "zh": "逐利导向的教育服务",
+          "stance": "Negative",
+          "tone": "适合批评教育机构过度追求收费和利润，削弱教育公平和公共属性。"
+        }
+      ]
+    }
+  ],
+  "deferred": []
+}

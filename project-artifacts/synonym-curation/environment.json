@@ -1,0 +1,938 @@
+{
+  "topic": "Environment",
+  "curator": "topic-subagent",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "approved": [
+    {
+      "cardKey": "Environment::adjective::accelerating climate change",
+      "baseChinese": "气候变化",
+      "baseEnglish": "climate change",
+      "type": "adjective",
+      "original": "accelerating climate change",
+      "focus": "accelerating",
+      "options": [
+        {
+          "phrase": "human-induced climate change",
+          "term": "human-induced",
+          "zh": "人为导致的气候变化",
+          "stance": "Neutral",
+          "tone": "适合说明气候变化主要由工业生产、交通和能源消费等人类活动造成。"
+        },
+        {
+          "phrase": "rapid climate change",
+          "term": "rapid",
+          "zh": "快速发生的气候变化",
+          "stance": "Negative",
+          "tone": "适合强调气候系统变化速度快，社会和生态系统难以及时适应。"
+        },
+        {
+          "phrase": "catastrophic climate change",
+          "term": "catastrophic",
+          "zh": "灾难性的气候变化",
+          "stance": "Negative",
+          "tone": "适合描述极端天气、海平面上升和粮食危机等严重后果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::reduce greenhouse gases",
+      "baseChinese": "温室气体",
+      "baseEnglish": "greenhouse gases",
+      "type": "verb",
+      "original": "reduce greenhouse gases",
+      "focus": "reduce",
+      "options": [
+        {
+          "phrase": "cut greenhouse gas emissions",
+          "term": "cut",
+          "zh": "削减温室气体排放",
+          "stance": "Positive",
+          "tone": "适合提出政府、企业或个人通过能源转型降低排放总量。"
+        },
+        {
+          "phrase": "lower greenhouse gas emissions",
+          "term": "lower",
+          "zh": "降低温室气体排放水平",
+          "stance": "Positive",
+          "tone": "适合较客观地说明政策或技术使排放水平下降。"
+        },
+        {
+          "phrase": "curb greenhouse gas emissions",
+          "term": "curb",
+          "zh": "遏制温室气体排放",
+          "stance": "Positive",
+          "tone": "适合强调通过监管和约束控制排放增长。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::large carbon footprint",
+      "baseChinese": "碳足迹",
+      "baseEnglish": "carbon footprint",
+      "type": "adjective",
+      "original": "large carbon footprint",
+      "focus": "large",
+      "options": [
+        {
+          "phrase": "substantial carbon footprint",
+          "term": "substantial",
+          "zh": "相当大的碳足迹",
+          "stance": "Negative",
+          "tone": "适合描述一种产品、行业或生活方式产生较高排放。"
+        },
+        {
+          "phrase": "heavy carbon footprint",
+          "term": "heavy",
+          "zh": "沉重的碳足迹",
+          "stance": "Negative",
+          "tone": "适合批判航空旅行、肉类消费或能源密集型生产带来的高排放负担。"
+        },
+        {
+          "phrase": "outsized carbon footprint",
+          "term": "outsized",
+          "zh": "不成比例地大的碳足迹",
+          "stance": "Negative",
+          "tone": "适合说明某些富裕群体或高耗能产业的排放远高于其人口或产出占比。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::reduce carbon footprint",
+      "baseChinese": "碳足迹",
+      "baseEnglish": "carbon footprint",
+      "type": "verb",
+      "original": "reduce carbon footprint",
+      "focus": "reduce",
+      "options": [
+        {
+          "phrase": "shrink a carbon footprint",
+          "term": "shrink",
+          "zh": "缩小碳足迹",
+          "stance": "Positive",
+          "tone": "适合讲个人、企业或城市通过节能和低碳出行减少排放影响。"
+        },
+        {
+          "phrase": "lower a carbon footprint",
+          "term": "lower",
+          "zh": "降低碳足迹",
+          "stance": "Positive",
+          "tone": "适合客观描述某项措施使排放影响下降。"
+        },
+        {
+          "phrase": "cut a carbon footprint",
+          "term": "cut",
+          "zh": "削减碳足迹",
+          "stance": "Positive",
+          "tone": "适合强调主动采取行动减少产品、家庭或组织的碳排放。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::minimize ecological footprint",
+      "baseChinese": "生态足迹",
+      "baseEnglish": "ecological footprint",
+      "type": "verb",
+      "original": "minimize ecological footprint",
+      "focus": "minimize",
+      "options": [
+        {
+          "phrase": "shrink an ecological footprint",
+          "term": "shrink",
+          "zh": "缩小生态足迹",
+          "stance": "Positive",
+          "tone": "适合讲减少土地、水、能源和自然资源占用。"
+        },
+        {
+          "phrase": "lessen an ecological footprint",
+          "term": "lessen",
+          "zh": "减轻生态足迹",
+          "stance": "Positive",
+          "tone": "适合说明消费方式或城市规划降低对生态系统的压力。"
+        },
+        {
+          "phrase": "keep an ecological footprint to a minimum",
+          "term": "keep to a minimum",
+          "zh": "把生态足迹控制在最低水平",
+          "stance": "Positive",
+          "tone": "适合正式提出环保原则或可持续生活目标。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::curb deforestation",
+      "baseChinese": "森林砍伐",
+      "baseEnglish": "deforestation",
+      "type": "verb",
+      "original": "curb deforestation",
+      "focus": "curb",
+      "options": [
+        {
+          "phrase": "halt deforestation",
+          "term": "halt",
+          "zh": "停止森林砍伐",
+          "stance": "Positive",
+          "tone": "适合表达强硬政策目标，如禁止非法伐木或暂停森林转农地。"
+        },
+        {
+          "phrase": "slow deforestation",
+          "term": "slow",
+          "zh": "减缓森林砍伐速度",
+          "stance": "Positive",
+          "tone": "适合说明政策尚未完全解决问题，但能降低森林流失速度。"
+        },
+        {
+          "phrase": "combat deforestation",
+          "term": "combat",
+          "zh": "打击森林砍伐",
+          "stance": "Positive",
+          "tone": "适合强调政府、企业和国际组织共同应对非法伐木。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::prevent environmental degradation",
+      "baseChinese": "环境恶化",
+      "baseEnglish": "environmental degradation",
+      "type": "verb",
+      "original": "prevent environmental degradation",
+      "focus": "prevent",
+      "options": [
+        {
+          "phrase": "avert environmental degradation",
+          "term": "avert",
+          "zh": "避免环境恶化",
+          "stance": "Positive",
+          "tone": "适合正式论述在污染失控前采取措施。"
+        },
+        {
+          "phrase": "halt environmental degradation",
+          "term": "halt",
+          "zh": "制止环境恶化",
+          "stance": "Positive",
+          "tone": "适合强调停止土地退化、水污染或生态破坏继续扩大。"
+        },
+        {
+          "phrase": "combat environmental degradation",
+          "term": "combat",
+          "zh": "应对环境恶化",
+          "stance": "Positive",
+          "tone": "适合讨论政府监管、绿色技术和公众参与共同解决环境退化。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::household recycling",
+      "baseChinese": "回收",
+      "baseEnglish": "recycling",
+      "type": "adjective",
+      "original": "household recycling",
+      "focus": "household",
+      "options": [
+        {
+          "phrase": "domestic recycling",
+          "term": "domestic",
+          "zh": "家庭生活中的回收",
+          "stance": "Neutral",
+          "tone": "适合说明居民在家中分类和回收纸张、塑料、玻璃等垃圾。"
+        },
+        {
+          "phrase": "residential recycling",
+          "term": "residential",
+          "zh": "居民区回收",
+          "stance": "Neutral",
+          "tone": "适合讨论社区、住宅楼或居民区的回收系统。"
+        },
+        {
+          "phrase": "curbside recycling",
+          "term": "curbside",
+          "zh": "路边回收",
+          "stance": "Neutral",
+          "tone": "适合描述城市定期上门或路边收集可回收物的制度。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::promote recycling",
+      "baseChinese": "回收",
+      "baseEnglish": "recycling",
+      "type": "verb",
+      "original": "promote recycling",
+      "focus": "promote",
+      "options": [
+        {
+          "phrase": "encourage recycling",
+          "term": "encourage",
+          "zh": "鼓励回收",
+          "stance": "Positive",
+          "tone": "适合说明学校、政府或媒体引导公众参与回收。"
+        },
+        {
+          "phrase": "incentivize recycling",
+          "term": "incentivize",
+          "zh": "通过激励措施推动回收",
+          "stance": "Positive",
+          "tone": "适合讨论押金返还、积分奖励或税收优惠提高回收参与度。"
+        },
+        {
+          "phrase": "boost recycling rates",
+          "term": "boost",
+          "zh": "提高回收率",
+          "stance": "Positive",
+          "tone": "适合用在数据导向的论述中，强调让更多废弃物进入回收体系。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::implement waste-sorting",
+      "baseChinese": "垃圾分类",
+      "baseEnglish": "waste-sorting / waste separation",
+      "type": "verb",
+      "original": "implement waste-sorting",
+      "focus": "implement",
+      "options": [
+        {
+          "phrase": "introduce waste-sorting",
+          "term": "introduce",
+          "zh": "引入垃圾分类",
+          "stance": "Positive",
+          "tone": "适合说明城市或学校开始建立垃圾分类制度。"
+        },
+        {
+          "phrase": "roll out waste-sorting",
+          "term": "roll out",
+          "zh": "逐步推行垃圾分类",
+          "stance": "Positive",
+          "tone": "适合描述政府把垃圾分类从试点扩大到更多地区。"
+        },
+        {
+          "phrase": "carry out waste separation",
+          "term": "carry out",
+          "zh": "执行垃圾分类",
+          "stance": "Neutral",
+          "tone": "适合描述居民、企业或学校按要求把不同类型垃圾分开处理。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::encourage energy conservation",
+      "baseChinese": "节能",
+      "baseEnglish": "energy conservation",
+      "type": "verb",
+      "original": "encourage energy conservation",
+      "focus": "encourage",
+      "options": [
+        {
+          "phrase": "incentivize energy conservation",
+          "term": "incentivize",
+          "zh": "通过激励措施鼓励节能",
+          "stance": "Positive",
+          "tone": "适合讨论补贴、阶梯电价或税收优惠促使家庭和企业减少能耗。"
+        },
+        {
+          "phrase": "foster energy-saving habits",
+          "term": "foster",
+          "zh": "培养节能习惯",
+          "stance": "Positive",
+          "tone": "适合说明教育和公共宣传让居民养成关灯、少开空调等习惯。"
+        },
+        {
+          "phrase": "drive energy conservation efforts",
+          "term": "drive",
+          "zh": "推动节能行动",
+          "stance": "Positive",
+          "tone": "适合强调政策或技术带动更广泛的节能实践。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::low-carbon green commuting",
+      "baseChinese": "绿色出行",
+      "baseEnglish": "green commuting",
+      "type": "adjective",
+      "original": "low-carbon green commuting",
+      "focus": "low-carbon",
+      "options": [
+        {
+          "phrase": "low-emission commuting",
+          "term": "low-emission",
+          "zh": "低排放通勤",
+          "stance": "Positive",
+          "tone": "适合描述公交、地铁、骑行或步行等排放较低的通勤方式。"
+        },
+        {
+          "phrase": "eco-friendly commuting",
+          "term": "eco-friendly",
+          "zh": "环保通勤",
+          "stance": "Positive",
+          "tone": "适合较宽泛地说明对环境影响较小的日常出行选择。"
+        },
+        {
+          "phrase": "car-free commuting",
+          "term": "car-free",
+          "zh": "无私家车通勤",
+          "stance": "Positive",
+          "tone": "适合强调通过步行、骑行或公共交通减少私家车依赖。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::choose green commuting",
+      "baseChinese": "绿色出行",
+      "baseEnglish": "green commuting",
+      "type": "verb",
+      "original": "choose green commuting",
+      "focus": "choose",
+      "options": [
+        {
+          "phrase": "opt for green commuting",
+          "term": "opt for",
+          "zh": "选择绿色出行",
+          "stance": "Positive",
+          "tone": "适合说明个人主动用公共交通、骑行或步行替代开车。"
+        },
+        {
+          "phrase": "switch to greener commuting",
+          "term": "switch to",
+          "zh": "转向更环保的通勤方式",
+          "stance": "Positive",
+          "tone": "适合强调从高排放出行方式转变为更低排放的通勤方式。"
+        },
+        {
+          "phrase": "adopt low-emission commuting habits",
+          "term": "adopt",
+          "zh": "采用低排放通勤习惯",
+          "stance": "Positive",
+          "tone": "适合讨论长期行为改变，而不是一次性的出行选择。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::long-term sustainable development",
+      "baseChinese": "可持续发展",
+      "baseEnglish": "sustainable development",
+      "type": "adjective",
+      "original": "long-term sustainable development",
+      "focus": "long-term",
+      "options": [
+        {
+          "phrase": "inclusive sustainable development",
+          "term": "inclusive",
+          "zh": "包容性的可持续发展",
+          "stance": "Positive",
+          "tone": "适合强调环保目标也要兼顾低收入群体、就业和社会公平。"
+        },
+        {
+          "phrase": "balanced sustainable development",
+          "term": "balanced",
+          "zh": "平衡的可持续发展",
+          "stance": "Positive",
+          "tone": "适合说明经济增长、环境保护和社会福利之间需要协调。"
+        },
+        {
+          "phrase": "environmentally sound development",
+          "term": "environmentally sound",
+          "zh": "环境上合理的发展",
+          "stance": "Positive",
+          "tone": "适合正式表达发展模式不会以严重污染或资源透支为代价。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::achieve sustainable development",
+      "baseChinese": "可持续发展",
+      "baseEnglish": "sustainable development",
+      "type": "verb",
+      "original": "achieve sustainable development",
+      "focus": "achieve",
+      "options": [
+        {
+          "phrase": "attain sustainable development",
+          "term": "attain",
+          "zh": "实现可持续发展",
+          "stance": "Positive",
+          "tone": "适合正式说明国家或城市达到经济、社会和环境协调发展的目标。"
+        },
+        {
+          "phrase": "pursue sustainable development",
+          "term": "pursue",
+          "zh": "追求可持续发展",
+          "stance": "Positive",
+          "tone": "适合表示政府或社会把可持续发展作为长期政策方向。"
+        },
+        {
+          "phrase": "advance sustainable development",
+          "term": "advance",
+          "zh": "推进可持续发展",
+          "stance": "Positive",
+          "tone": "适合说明绿色技术、监管和教育使可持续发展取得进展。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::renewable hydroelectric power",
+      "baseChinese": "水能",
+      "baseEnglish": "hydroelectric power",
+      "type": "adjective",
+      "original": "renewable hydroelectric power",
+      "focus": "renewable",
+      "options": [
+        {
+          "phrase": "low-carbon hydroelectric power",
+          "term": "low-carbon",
+          "zh": "低碳水力发电",
+          "stance": "Positive",
+          "tone": "适合强调水电在发电阶段排放较低。"
+        },
+        {
+          "phrase": "large-scale hydroelectric power",
+          "term": "large-scale",
+          "zh": "大规模水力发电",
+          "stance": "Neutral",
+          "tone": "适合描述大型水坝和水电站提供大量电力。"
+        },
+        {
+          "phrase": "run-of-river hydroelectric power",
+          "term": "run-of-river",
+          "zh": "径流式水力发电",
+          "stance": "Neutral",
+          "tone": "适合讨论较少依赖大型水库、生态影响相对不同的水电形式。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::generate hydroelectric power",
+      "baseChinese": "水能",
+      "baseEnglish": "hydroelectric power",
+      "type": "verb",
+      "original": "generate hydroelectric power",
+      "focus": "generate",
+      "options": [
+        {
+          "phrase": "produce hydroelectric power",
+          "term": "produce",
+          "zh": "生产水力电力",
+          "stance": "Positive",
+          "tone": "适合客观描述水坝或水电站把水流转化为电力。"
+        },
+        {
+          "phrase": "supply hydroelectric power",
+          "term": "supply",
+          "zh": "供应水力电力",
+          "stance": "Positive",
+          "tone": "适合说明水电为城市、工业或电网提供稳定电力。"
+        },
+        {
+          "phrase": "harness hydropower",
+          "term": "harness",
+          "zh": "利用水能发电",
+          "stance": "Positive",
+          "tone": "适合强调人类利用河流、水库或水流的能量。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::harness solar power",
+      "baseChinese": "太阳能",
+      "baseEnglish": "solar power",
+      "type": "verb",
+      "original": "harness solar power",
+      "focus": "harness",
+      "options": [
+        {
+          "phrase": "capture solar energy",
+          "term": "capture",
+          "zh": "捕获太阳能",
+          "stance": "Positive",
+          "tone": "适合说明太阳能板把阳光转化为可用电力。"
+        },
+        {
+          "phrase": "tap solar power",
+          "term": "tap",
+          "zh": "开发利用太阳能",
+          "stance": "Positive",
+          "tone": "适合讨论家庭、企业或国家利用丰富的太阳能资源。"
+        },
+        {
+          "phrase": "utilize solar power",
+          "term": "utilize",
+          "zh": "利用太阳能",
+          "stance": "Positive",
+          "tone": "适合正式表达把太阳能作为清洁电力来源。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::clean wind energy",
+      "baseChinese": "风能",
+      "baseEnglish": "wind energy",
+      "type": "adjective",
+      "original": "clean wind energy",
+      "focus": "clean",
+      "options": [
+        {
+          "phrase": "renewable wind energy",
+          "term": "renewable",
+          "zh": "可再生风能",
+          "stance": "Positive",
+          "tone": "适合强调风能来自可持续补充的自然资源。"
+        },
+        {
+          "phrase": "offshore wind energy",
+          "term": "offshore",
+          "zh": "海上风能",
+          "stance": "Neutral",
+          "tone": "适合讨论沿海国家建设海上风电场。"
+        },
+        {
+          "phrase": "low-carbon wind energy",
+          "term": "low-carbon",
+          "zh": "低碳风能",
+          "stance": "Positive",
+          "tone": "适合强调风力发电相较化石燃料排放更低。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::produce wind energy",
+      "baseChinese": "风能",
+      "baseEnglish": "wind energy",
+      "type": "verb",
+      "original": "produce wind energy",
+      "focus": "produce",
+      "options": [
+        {
+          "phrase": "generate wind energy",
+          "term": "generate",
+          "zh": "产生风能电力",
+          "stance": "Positive",
+          "tone": "适合描述风力涡轮机把风能转化为电力。"
+        },
+        {
+          "phrase": "harness wind energy",
+          "term": "harness",
+          "zh": "利用风能",
+          "stance": "Positive",
+          "tone": "适合强调利用自然风力作为清洁能源。"
+        },
+        {
+          "phrase": "expand wind power generation",
+          "term": "expand",
+          "zh": "扩大风力发电",
+          "stance": "Positive",
+          "tone": "适合讨论增加风电场、风机和并网能力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::rich biodiversity",
+      "baseChinese": "生物多样性",
+      "baseEnglish": "biodiversity",
+      "type": "adjective",
+      "original": "rich biodiversity",
+      "focus": "rich",
+      "options": [
+        {
+          "phrase": "high biodiversity",
+          "term": "high",
+          "zh": "较高的生物多样性",
+          "stance": "Positive",
+          "tone": "适合客观描述某地拥有多种动植物和生态类型。"
+        },
+        {
+          "phrase": "exceptional biodiversity",
+          "term": "exceptional",
+          "zh": "极为突出的生物多样性",
+          "stance": "Positive",
+          "tone": "适合强调热带雨林、湿地或珊瑚礁等地区生态价值很高。"
+        },
+        {
+          "phrase": "abundant biodiversity",
+          "term": "abundant",
+          "zh": "丰富的生物多样性",
+          "stance": "Positive",
+          "tone": "适合说明一个地区物种数量多、生态资源充足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::protect biodiversity",
+      "baseChinese": "生物多样性",
+      "baseEnglish": "biodiversity",
+      "type": "verb",
+      "original": "protect biodiversity",
+      "focus": "protect",
+      "options": [
+        {
+          "phrase": "conserve biodiversity",
+          "term": "conserve",
+          "zh": "保护生物多样性",
+          "stance": "Positive",
+          "tone": "适合正式讨论通过保护区、法律和生态修复保存物种多样性。"
+        },
+        {
+          "phrase": "safeguard biodiversity",
+          "term": "safeguard",
+          "zh": "守护生物多样性",
+          "stance": "Positive",
+          "tone": "适合强调防止开发、污染或气候变化威胁生物多样性。"
+        },
+        {
+          "phrase": "preserve biodiversity",
+          "term": "preserve",
+          "zh": "保存生物多样性",
+          "stance": "Positive",
+          "tone": "适合说明为后代和生态平衡保留物种资源。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::fragile ecosystem",
+      "baseChinese": "生态系统",
+      "baseEnglish": "ecosystem",
+      "type": "adjective",
+      "original": "fragile ecosystem",
+      "focus": "fragile",
+      "options": [
+        {
+          "phrase": "delicate ecosystem",
+          "term": "delicate",
+          "zh": "脆弱敏感的生态系统",
+          "stance": "Negative",
+          "tone": "适合说明生态系统容易受到污染、开发或气候变化影响。"
+        },
+        {
+          "phrase": "vulnerable ecosystem",
+          "term": "vulnerable",
+          "zh": "易受威胁的生态系统",
+          "stance": "Negative",
+          "tone": "适合描述珊瑚礁、湿地或高山生态系统面临外部压力。"
+        },
+        {
+          "phrase": "threatened ecosystem",
+          "term": "threatened",
+          "zh": "受到威胁的生态系统",
+          "stance": "Negative",
+          "tone": "适合强调生态系统已经被开发、污染或物种入侵威胁。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::restore ecosystems",
+      "baseChinese": "生态系统",
+      "baseEnglish": "ecosystem",
+      "type": "verb",
+      "original": "restore ecosystems",
+      "focus": "restore",
+      "options": [
+        {
+          "phrase": "rehabilitate ecosystems",
+          "term": "rehabilitate",
+          "zh": "修复生态系统",
+          "stance": "Positive",
+          "tone": "适合正式描述让受损湿地、森林或河流恢复生态功能。"
+        },
+        {
+          "phrase": "regenerate ecosystems",
+          "term": "regenerate",
+          "zh": "再生生态系统",
+          "stance": "Positive",
+          "tone": "适合强调通过长期修复让生态系统重新恢复生命力。"
+        },
+        {
+          "phrase": "revive ecosystems",
+          "term": "revive",
+          "zh": "使生态系统重新恢复活力",
+          "stance": "Positive",
+          "tone": "适合描述植被恢复、水质改善和物种回归带来的生态复苏。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::adjective::critically endangered species",
+      "baseChinese": "濒危物种",
+      "baseEnglish": "endangered species",
+      "type": "adjective",
+      "original": "critically endangered species",
+      "focus": "critically endangered",
+      "options": [
+        {
+          "phrase": "threatened species",
+          "term": "threatened",
+          "zh": "受到威胁的物种",
+          "stance": "Negative",
+          "tone": "适合泛指因栖息地破坏、偷猎或污染而面临生存压力的物种。"
+        },
+        {
+          "phrase": "vulnerable species",
+          "term": "vulnerable",
+          "zh": "易受威胁的物种",
+          "stance": "Negative",
+          "tone": "适合说明物种数量下降，尚未必然灭绝但风险较高。"
+        },
+        {
+          "phrase": "protected species",
+          "term": "protected",
+          "zh": "受法律保护的物种",
+          "stance": "Positive",
+          "tone": "适合强调某些动物或植物已经纳入保护名录。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::protect endangered species",
+      "baseChinese": "濒危物种",
+      "baseEnglish": "endangered species",
+      "type": "verb",
+      "original": "protect endangered species",
+      "focus": "protect",
+      "options": [
+        {
+          "phrase": "conserve endangered species",
+          "term": "conserve",
+          "zh": "保护濒危物种",
+          "stance": "Positive",
+          "tone": "适合正式讨论通过保护区、繁育项目或反偷猎措施保留濒危物种。"
+        },
+        {
+          "phrase": "safeguard endangered species",
+          "term": "safeguard",
+          "zh": "守护濒危物种",
+          "stance": "Positive",
+          "tone": "适合强调避免人类活动进一步威胁稀有动物或植物。"
+        },
+        {
+          "phrase": "preserve endangered species",
+          "term": "preserve",
+          "zh": "保存濒危物种",
+          "stance": "Positive",
+          "tone": "适合说明为了生态平衡和后代利益保留濒危物种。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::prevent habitat destruction",
+      "baseChinese": "栖息地破坏",
+      "baseEnglish": "habitat destruction",
+      "type": "verb",
+      "original": "prevent habitat destruction",
+      "focus": "prevent",
+      "options": [
+        {
+          "phrase": "avert habitat destruction",
+          "term": "avert",
+          "zh": "避免栖息地破坏",
+          "stance": "Positive",
+          "tone": "适合正式说明在开发项目造成破坏前采取保护措施。"
+        },
+        {
+          "phrase": "stop habitat destruction",
+          "term": "stop",
+          "zh": "停止栖息地破坏",
+          "stance": "Positive",
+          "tone": "适合强调禁止毁林、填湿地或破坏野生动物栖息地。"
+        },
+        {
+          "phrase": "avoid habitat destruction",
+          "term": "avoid",
+          "zh": "避免造成栖息地破坏",
+          "stance": "Positive",
+          "tone": "适合讨论城市规划或基础设施建设应避开生态敏感区。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::raise environmental awareness",
+      "baseChinese": "环保意识",
+      "baseEnglish": "environmental awareness",
+      "type": "verb",
+      "original": "raise environmental awareness",
+      "focus": "raise",
+      "options": [
+        {
+          "phrase": "heighten environmental awareness",
+          "term": "heighten",
+          "zh": "增强环保意识",
+          "stance": "Positive",
+          "tone": "适合正式说明教育或媒体让公众更重视环境问题。"
+        },
+        {
+          "phrase": "build environmental awareness",
+          "term": "build",
+          "zh": "建立环保意识",
+          "stance": "Positive",
+          "tone": "适合描述学校教育或社区活动逐步形成环保观念。"
+        },
+        {
+          "phrase": "foster environmental awareness",
+          "term": "foster",
+          "zh": "培养环保意识",
+          "stance": "Positive",
+          "tone": "适合强调长期教育和家庭影响帮助人们形成环保习惯。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::enforce environmental regulations",
+      "baseChinese": "环保法规",
+      "baseEnglish": "environmental regulations",
+      "type": "verb",
+      "original": "enforce environmental regulations",
+      "focus": "enforce",
+      "options": [
+        {
+          "phrase": "tighten environmental regulations",
+          "term": "tighten",
+          "zh": "收紧环保法规",
+          "stance": "Positive",
+          "tone": "适合说明政府提高排放标准、罚款力度或审批要求。"
+        },
+        {
+          "phrase": "uphold environmental regulations",
+          "term": "uphold",
+          "zh": "维护环保法规的效力",
+          "stance": "Positive",
+          "tone": "适合强调监管部门要确保环保法律真正得到遵守。"
+        },
+        {
+          "phrase": "apply environmental regulations",
+          "term": "apply",
+          "zh": "适用环保法规",
+          "stance": "Neutral",
+          "tone": "适合说明具体行业、企业或项目需要按照环保法规运行。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Environment::verb::strengthen international cooperation",
+      "baseChinese": "国际合作",
+      "baseEnglish": "international cooperation",
+      "type": "verb",
+      "original": "strengthen international cooperation",
+      "focus": "strengthen",
+      "options": [
+        {
+          "phrase": "deepen international cooperation",
+          "term": "deepen",
+          "zh": "深化国际合作",
+          "stance": "Positive",
+          "tone": "适合说明各国在气候融资、技术转让或减排目标上开展更深入合作。"
+        },
+        {
+          "phrase": "enhance international cooperation",
+          "term": "enhance",
+          "zh": "加强国际合作",
+          "stance": "Positive",
+          "tone": "适合正式表达提升跨国协作的质量和效果。"
+        },
+        {
+          "phrase": "reinforce international cooperation",
+          "term": "reinforce",
+          "zh": "巩固国际合作",
+          "stance": "Positive",
+          "tone": "适合强调已有环境协定和跨国行动需要进一步支撑。"
+        }
+      ]
+    }
+  ],
+  "deferred": []
+}

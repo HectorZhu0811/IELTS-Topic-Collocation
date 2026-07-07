@@ -1,0 +1,2062 @@
+{
+  "topic": "Government",
+  "guidance": "project-docs/synonym-curation-guidelines.md",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "issueCount": 66,
+  "issueCardCount": 31,
+  "issueRows": [
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "市场导向手段",
+      "baseEnglish": "market-oriented measures",
+      "focus": "targeted",
+      "original": "targeted market-oriented measures",
+      "term": "context-specific",
+      "phrase": "context-specific market-oriented measures",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "市场导向手段",
+      "baseEnglish": "market-oriented measures",
+      "focus": "targeted",
+      "original": "targeted market-oriented measures",
+      "term": "controversial",
+      "phrase": "controversial market-oriented measures",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "市场导向手段",
+      "baseEnglish": "market-oriented measures",
+      "focus": "adopt",
+      "original": "adopt market-oriented measures",
+      "term": "undermine",
+      "phrase": "undermine market-oriented measures",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "高质量公共服务",
+      "baseEnglish": "high-quality public services",
+      "focus": "provide",
+      "original": "provide high-quality public services",
+      "term": "develop",
+      "phrase": "develop high-quality public services",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "高质量公共服务",
+      "baseEnglish": "high-quality public services",
+      "focus": "provide",
+      "original": "provide high-quality public services",
+      "term": "discuss",
+      "phrase": "discuss high-quality public services",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "高质量公共服务",
+      "baseEnglish": "high-quality public services",
+      "focus": "provide",
+      "original": "provide high-quality public services",
+      "term": "overlook",
+      "phrase": "overlook high-quality public services",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "纳税人",
+      "baseEnglish": "taxpayers",
+      "focus": "ordinary",
+      "original": "ordinary taxpayers",
+      "term": "ordinary",
+      "phrase": "ordinary taxpayers",
+      "zh": "普通的",
+      "tone": "中性，强调一般纳税人。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "纳税人",
+      "baseEnglish": "taxpayers",
+      "focus": "protect",
+      "original": "protect taxpayers",
+      "term": "protect",
+      "phrase": "protect taxpayers",
+      "zh": "保护",
+      "tone": "这条搭配适合讲政策如何维护纳税人的利益和公共资金使用效率。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "国家预算",
+      "baseEnglish": "national budget",
+      "focus": "annual",
+      "original": "annual national budget",
+      "term": "annual",
+      "phrase": "annual national budget",
+      "zh": "年度的",
+      "tone": "中性财政搭配。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "国家预算",
+      "baseEnglish": "national budget",
+      "focus": "approve",
+      "original": "approve a national budget",
+      "term": "develop",
+      "phrase": "develop a national budget",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "国家预算",
+      "baseEnglish": "national budget",
+      "focus": "approve",
+      "original": "approve a national budget",
+      "term": "assess",
+      "phrase": "assess a national budget",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "国家预算",
+      "baseEnglish": "national budget",
+      "focus": "approve",
+      "original": "approve a national budget",
+      "term": "undermine",
+      "phrase": "undermine a national budget",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "立法",
+      "baseEnglish": "legislation",
+      "focus": "comprehensive",
+      "original": "comprehensive legislation",
+      "term": "context-specific",
+      "phrase": "context-specific legislation",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "立法",
+      "baseEnglish": "legislation",
+      "focus": "comprehensive",
+      "original": "comprehensive legislation",
+      "term": "controversial",
+      "phrase": "controversial legislation",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "立法",
+      "baseEnglish": "legislation",
+      "focus": "introduce",
+      "original": "introduce legislation",
+      "term": "introduce",
+      "phrase": "introduce legislation",
+      "zh": "推出",
+      "tone": "这条搭配适合讲政府用立法回应社会问题或治理漏洞。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "法案",
+      "baseEnglish": "bill",
+      "focus": "proposed",
+      "original": "proposed bill",
+      "term": "context-specific",
+      "phrase": "context-specific bill",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "法案",
+      "baseEnglish": "bill",
+      "focus": "proposed",
+      "original": "proposed bill",
+      "term": "controversial",
+      "phrase": "controversial bill",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "法案",
+      "baseEnglish": "bill",
+      "focus": "pass",
+      "original": "pass a bill",
+      "term": "maintain",
+      "phrase": "maintain a bill",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "法案",
+      "baseEnglish": "bill",
+      "focus": "pass",
+      "original": "pass a bill",
+      "term": "assess",
+      "phrase": "assess a bill",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "法案",
+      "baseEnglish": "bill",
+      "focus": "pass",
+      "original": "pass a bill",
+      "term": "overlook",
+      "phrase": "overlook a bill",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "修正案",
+      "baseEnglish": "amendment",
+      "focus": "constitutional",
+      "original": "constitutional amendment",
+      "term": "context-specific",
+      "phrase": "context-specific amendment",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "修正案",
+      "baseEnglish": "amendment",
+      "focus": "constitutional",
+      "original": "constitutional amendment",
+      "term": "controversial",
+      "phrase": "controversial amendment",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "修正案",
+      "baseEnglish": "amendment",
+      "focus": "propose",
+      "original": "propose an amendment",
+      "term": "maintain",
+      "phrase": "maintain an amendment",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "修正案",
+      "baseEnglish": "amendment",
+      "focus": "propose",
+      "original": "propose an amendment",
+      "term": "assess",
+      "phrase": "assess an amendment",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "修正案",
+      "baseEnglish": "amendment",
+      "focus": "propose",
+      "original": "propose an amendment",
+      "term": "overlook",
+      "phrase": "overlook an amendment",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "司法独立",
+      "baseEnglish": "judicial independence",
+      "focus": "genuine",
+      "original": "genuine judicial independence",
+      "term": "genuine",
+      "phrase": "genuine judicial independence",
+      "zh": "真正的",
+      "tone": "积极，强调实质性独立。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "司法独立",
+      "baseEnglish": "judicial independence",
+      "focus": "safeguard",
+      "original": "safeguard judicial independence",
+      "term": "develop",
+      "phrase": "develop judicial independence",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "司法独立",
+      "baseEnglish": "judicial independence",
+      "focus": "safeguard",
+      "original": "safeguard judicial independence",
+      "term": "discuss",
+      "phrase": "discuss judicial independence",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "司法独立",
+      "baseEnglish": "judicial independence",
+      "focus": "safeguard",
+      "original": "safeguard judicial independence",
+      "term": "undermine",
+      "phrase": "undermine judicial independence",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "权利与义务",
+      "baseEnglish": "rights and obligations",
+      "focus": "fundamental",
+      "original": "fundamental rights and obligations",
+      "term": "context-specific",
+      "phrase": "context-specific rights and obligations",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "权利与义务",
+      "baseEnglish": "rights and obligations",
+      "focus": "fundamental",
+      "original": "fundamental rights and obligations",
+      "term": "controversial",
+      "phrase": "controversial rights and obligations",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "权利与义务",
+      "baseEnglish": "rights and obligations",
+      "focus": "balance",
+      "original": "balance rights and obligations",
+      "term": "balance",
+      "phrase": "balance rights and obligations",
+      "zh": "平衡",
+      "tone": "这条搭配适合讲在法律或社会生活中公平处理权利与义务。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "正当程序",
+      "baseEnglish": "due process",
+      "focus": "guarantee",
+      "original": "guarantee due process",
+      "term": "develop",
+      "phrase": "develop due process",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "正当程序",
+      "baseEnglish": "due process",
+      "focus": "guarantee",
+      "original": "guarantee due process",
+      "term": "assess",
+      "phrase": "assess due process",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "正当程序",
+      "baseEnglish": "due process",
+      "focus": "guarantee",
+      "original": "guarantee due process",
+      "term": "undermine",
+      "phrase": "undermine due process",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "国家主权",
+      "baseEnglish": "national sovereignty",
+      "focus": "full",
+      "original": "full national sovereignty",
+      "term": "valuable",
+      "phrase": "valuable national sovereignty",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "国家主权",
+      "baseEnglish": "national sovereignty",
+      "focus": "full",
+      "original": "full national sovereignty",
+      "term": "long-term",
+      "phrase": "long-term national sovereignty",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "国家主权",
+      "baseEnglish": "national sovereignty",
+      "focus": "full",
+      "original": "full national sovereignty",
+      "term": "problematic",
+      "phrase": "problematic national sovereignty",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "国家主权",
+      "baseEnglish": "national sovereignty",
+      "focus": "defend",
+      "original": "defend national sovereignty",
+      "term": "maintain",
+      "phrase": "maintain national sovereignty",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "国家主权",
+      "baseEnglish": "national sovereignty",
+      "focus": "defend",
+      "original": "defend national sovereignty",
+      "term": "assess",
+      "phrase": "assess national sovereignty",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "国家主权",
+      "baseEnglish": "national sovereignty",
+      "focus": "defend",
+      "original": "defend national sovereignty",
+      "term": "overlook",
+      "phrase": "overlook national sovereignty",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "条约与协议",
+      "baseEnglish": "treaty and agreement",
+      "focus": "international",
+      "original": "international treaty and agreement",
+      "term": "valuable",
+      "phrase": "valuable treaty and agreement",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "条约与协议",
+      "baseEnglish": "treaty and agreement",
+      "focus": "international",
+      "original": "international treaty and agreement",
+      "term": "long-term",
+      "phrase": "long-term treaty and agreement",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "条约与协议",
+      "baseEnglish": "treaty and agreement",
+      "focus": "international",
+      "original": "international treaty and agreement",
+      "term": "problematic",
+      "phrase": "problematic treaty and agreement",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "条约与协议",
+      "baseEnglish": "treaty and agreement",
+      "focus": "sign",
+      "original": "sign a treaty and agreement",
+      "term": "develop",
+      "phrase": "develop a treaty and agreement",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "条约与协议",
+      "baseEnglish": "treaty and agreement",
+      "focus": "sign",
+      "original": "sign a treaty and agreement",
+      "term": "assess",
+      "phrase": "assess a treaty and agreement",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "条约与协议",
+      "baseEnglish": "treaty and agreement",
+      "focus": "sign",
+      "original": "sign a treaty and agreement",
+      "term": "undermine",
+      "phrase": "undermine a treaty and agreement",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "引渡",
+      "baseEnglish": "extradition",
+      "focus": "formal",
+      "original": "formal extradition",
+      "term": "meaningful",
+      "phrase": "meaningful extradition",
+      "zh": "有意义的",
+      "tone": "这条搭配适合强调真实价值或影响。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "引渡",
+      "baseEnglish": "extradition",
+      "focus": "formal",
+      "original": "formal extradition",
+      "term": "measurable",
+      "phrase": "measurable extradition",
+      "zh": "可衡量的",
+      "tone": "这条搭配适合数据或效果评估语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "引渡",
+      "baseEnglish": "extradition",
+      "focus": "formal",
+      "original": "formal extradition",
+      "term": "limited",
+      "phrase": "limited extradition",
+      "zh": "有限的",
+      "tone": "这条搭配适合批判作用或覆盖面不足。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "引渡",
+      "baseEnglish": "extradition",
+      "focus": "request",
+      "original": "request extradition",
+      "term": "request",
+      "phrase": "request extradition",
+      "zh": "请求",
+      "tone": "这条搭配适合讲依法推进跨境司法合作。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "贩毒",
+      "baseEnglish": "drug trafficking",
+      "focus": "combat",
+      "original": "combat drug trafficking",
+      "term": "maintain",
+      "phrase": "maintain drug trafficking",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "贩毒",
+      "baseEnglish": "drug trafficking",
+      "focus": "combat",
+      "original": "combat drug trafficking",
+      "term": "undermine",
+      "phrase": "undermine drug trafficking",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "人口贩卖",
+      "baseEnglish": "human trafficking",
+      "focus": "cross-border",
+      "original": "cross-border human trafficking",
+      "term": "cross-border",
+      "phrase": "cross-border human trafficking",
+      "zh": "跨境的",
+      "tone": "自然犯罪搭配。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "人口贩卖",
+      "baseEnglish": "human trafficking",
+      "focus": "prevent",
+      "original": "prevent human trafficking",
+      "term": "assess",
+      "phrase": "assess human trafficking",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "人口贩卖",
+      "baseEnglish": "human trafficking",
+      "focus": "prevent",
+      "original": "prevent human trafficking",
+      "term": "undermine",
+      "phrase": "undermine human trafficking",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "洗钱",
+      "baseEnglish": "money laundering",
+      "focus": "combat",
+      "original": "combat money laundering",
+      "term": "maintain",
+      "phrase": "maintain money laundering",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "洗钱",
+      "baseEnglish": "money laundering",
+      "focus": "combat",
+      "original": "combat money laundering",
+      "term": "assess",
+      "phrase": "assess money laundering",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "偷渡",
+      "baseEnglish": "smuggling of migrants",
+      "focus": "organized",
+      "original": "organized smuggling of migrants",
+      "term": "valuable",
+      "phrase": "valuable smuggling of migrants",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "偷渡",
+      "baseEnglish": "smuggling of migrants",
+      "focus": "organized",
+      "original": "organized smuggling of migrants",
+      "term": "long-term",
+      "phrase": "long-term smuggling of migrants",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "adjective",
+      "baseChinese": "偷渡",
+      "baseEnglish": "smuggling of migrants",
+      "focus": "organized",
+      "original": "organized smuggling of migrants",
+      "term": "problematic",
+      "phrase": "problematic smuggling of migrants",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "偷渡",
+      "baseEnglish": "smuggling of migrants",
+      "focus": "crack down on",
+      "original": "crack down on the smuggling of migrants",
+      "term": "develop",
+      "phrase": "develop the smuggling of migrants",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "偷渡",
+      "baseEnglish": "smuggling of migrants",
+      "focus": "crack down on",
+      "original": "crack down on the smuggling of migrants",
+      "term": "discuss",
+      "phrase": "discuss the smuggling of migrants",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "偷渡",
+      "baseEnglish": "smuggling of migrants",
+      "focus": "crack down on",
+      "original": "crack down on the smuggling of migrants",
+      "term": "undermine",
+      "phrase": "undermine the smuggling of migrants",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "多边合作机制",
+      "baseEnglish": "multilateral cooperation",
+      "focus": "strengthen",
+      "original": "strengthen multilateral cooperation",
+      "term": "discuss",
+      "phrase": "discuss multilateral cooperation",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Government",
+      "type": "verb",
+      "baseChinese": "多边合作机制",
+      "baseEnglish": "multilateral cooperation",
+      "focus": "strengthen",
+      "original": "strengthen multilateral cooperation",
+      "term": "undermine",
+      "phrase": "undermine multilateral cooperation",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    }
+  ],
+  "cardsToReview": [
+    {
+      "cardKey": "Government::adjective::targeted market-oriented measures",
+      "topic": "Government",
+      "baseChinese": "市场导向手段",
+      "baseEnglish": "market-oriented measures",
+      "type": "adjective",
+      "original": "targeted market-oriented measures",
+      "focus": "targeted",
+      "currentOptions": [
+        {
+          "phrase": "practical market-oriented measures",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific market-oriented measures",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial market-oriented measures",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::adopt market-oriented measures",
+      "topic": "Government",
+      "baseChinese": "市场导向手段",
+      "baseEnglish": "market-oriented measures",
+      "type": "verb",
+      "original": "adopt market-oriented measures",
+      "focus": "adopt",
+      "currentOptions": [
+        {
+          "phrase": "implement market-oriented measures",
+          "term": "implement",
+          "zh": "实施",
+          "stance": "Positive",
+          "tone": "更正式，强调落地执行。"
+        },
+        {
+          "phrase": "take up market-oriented measures",
+          "term": "take up",
+          "zh": "开始采用",
+          "stance": "Neutral",
+          "tone": "较口语，适合个人或机构。"
+        },
+        {
+          "phrase": "undermine market-oriented measures",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::provide high-quality public services",
+      "topic": "Government",
+      "baseChinese": "高质量公共服务",
+      "baseEnglish": "high-quality public services",
+      "type": "verb",
+      "original": "provide high-quality public services",
+      "focus": "provide",
+      "currentOptions": [
+        {
+          "phrase": "develop high-quality public services",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss high-quality public services",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook high-quality public services",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::ordinary taxpayers",
+      "topic": "Government",
+      "baseChinese": "纳税人",
+      "baseEnglish": "taxpayers",
+      "type": "adjective",
+      "original": "ordinary taxpayers",
+      "focus": "ordinary",
+      "currentOptions": [
+        {
+          "phrase": "ordinary taxpayers",
+          "term": "ordinary",
+          "zh": "普通的",
+          "stance": "Neutral",
+          "tone": "中性，强调一般纳税人。"
+        },
+        {
+          "phrase": "low-income taxpayers",
+          "term": "low-income",
+          "zh": "低收入的",
+          "stance": "Neutral",
+          "tone": "中性，强调群体特征。"
+        },
+        {
+          "phrase": "overburdened taxpayers",
+          "term": "overburdened",
+          "zh": "负担过重的",
+          "stance": "Negative",
+          "tone": "消极，强调税负压力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::protect taxpayers",
+      "topic": "Government",
+      "baseChinese": "纳税人",
+      "baseEnglish": "taxpayers",
+      "type": "verb",
+      "original": "protect taxpayers",
+      "focus": "protect",
+      "currentOptions": [
+        {
+          "phrase": "protect taxpayers",
+          "term": "protect",
+          "zh": "保护",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲政策如何维护纳税人的利益和公共资金使用效率。"
+        },
+        {
+          "phrase": "address taxpayer concerns",
+          "term": "address",
+          "zh": "回应纳税人关切",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观说明政府处理公众对税收政策的担忧。"
+        },
+        {
+          "phrase": "disregard taxpayers' interests",
+          "term": "disregard",
+          "zh": "无视纳税人利益",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判政策没有顾及纳税人的负担和权益。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::annual national budget",
+      "topic": "Government",
+      "baseChinese": "国家预算",
+      "baseEnglish": "national budget",
+      "type": "adjective",
+      "original": "annual national budget",
+      "focus": "annual",
+      "currentOptions": [
+        {
+          "phrase": "annual national budget",
+          "term": "annual",
+          "zh": "年度的",
+          "stance": "Neutral",
+          "tone": "中性财政搭配。"
+        },
+        {
+          "phrase": "balanced national budget",
+          "term": "balanced",
+          "zh": "平衡的",
+          "stance": "Positive",
+          "tone": "积极，强调收支可控。"
+        },
+        {
+          "phrase": "strained national budget",
+          "term": "strained",
+          "zh": "吃紧的",
+          "stance": "Negative",
+          "tone": "消极，强调财政压力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::approve a national budget",
+      "topic": "Government",
+      "baseChinese": "国家预算",
+      "baseEnglish": "national budget",
+      "type": "verb",
+      "original": "approve a national budget",
+      "focus": "approve",
+      "currentOptions": [
+        {
+          "phrase": "develop a national budget",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "assess a national budget",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine a national budget",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::comprehensive legislation",
+      "topic": "Government",
+      "baseChinese": "立法",
+      "baseEnglish": "legislation",
+      "type": "adjective",
+      "original": "comprehensive legislation",
+      "focus": "comprehensive",
+      "currentOptions": [
+        {
+          "phrase": "practical legislation",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific legislation",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial legislation",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::introduce legislation",
+      "topic": "Government",
+      "baseChinese": "立法",
+      "baseEnglish": "legislation",
+      "type": "verb",
+      "original": "introduce legislation",
+      "focus": "introduce",
+      "currentOptions": [
+        {
+          "phrase": "introduce legislation",
+          "term": "introduce",
+          "zh": "推出",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲政府用立法回应社会问题或治理漏洞。"
+        },
+        {
+          "phrase": "review proposed legislation",
+          "term": "review",
+          "zh": "审查拟议立法",
+          "stance": "Neutral",
+          "tone": "这条搭配适合评估法律草案的必要性、成本和执行边界。"
+        },
+        {
+          "phrase": "weaken legislation",
+          "term": "weaken",
+          "zh": "削弱",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判修改法律时降低监管力度或保护水平。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::proposed bill",
+      "topic": "Government",
+      "baseChinese": "法案",
+      "baseEnglish": "bill",
+      "type": "adjective",
+      "original": "proposed bill",
+      "focus": "proposed",
+      "currentOptions": [
+        {
+          "phrase": "practical bill",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific bill",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial bill",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::pass a bill",
+      "topic": "Government",
+      "baseChinese": "法案",
+      "baseEnglish": "bill",
+      "type": "verb",
+      "original": "pass a bill",
+      "focus": "pass",
+      "currentOptions": [
+        {
+          "phrase": "maintain a bill",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess a bill",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook a bill",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::constitutional amendment",
+      "topic": "Government",
+      "baseChinese": "修正案",
+      "baseEnglish": "amendment",
+      "type": "adjective",
+      "original": "constitutional amendment",
+      "focus": "constitutional",
+      "currentOptions": [
+        {
+          "phrase": "practical amendment",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific amendment",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial amendment",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::propose an amendment",
+      "topic": "Government",
+      "baseChinese": "修正案",
+      "baseEnglish": "amendment",
+      "type": "verb",
+      "original": "propose an amendment",
+      "focus": "propose",
+      "currentOptions": [
+        {
+          "phrase": "maintain an amendment",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess an amendment",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook an amendment",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::genuine judicial independence",
+      "topic": "Government",
+      "baseChinese": "司法独立",
+      "baseEnglish": "judicial independence",
+      "type": "adjective",
+      "original": "genuine judicial independence",
+      "focus": "genuine",
+      "currentOptions": [
+        {
+          "phrase": "genuine judicial independence",
+          "term": "genuine",
+          "zh": "真正的",
+          "stance": "Positive",
+          "tone": "积极，强调实质性独立。"
+        },
+        {
+          "phrase": "constitutional judicial independence",
+          "term": "constitutional",
+          "zh": "宪法层面的",
+          "stance": "Neutral",
+          "tone": "中性正式。"
+        },
+        {
+          "phrase": "fragile judicial independence",
+          "term": "fragile",
+          "zh": "脆弱的",
+          "stance": "Negative",
+          "tone": "消极，强调易受干预。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::safeguard judicial independence",
+      "topic": "Government",
+      "baseChinese": "司法独立",
+      "baseEnglish": "judicial independence",
+      "type": "verb",
+      "original": "safeguard judicial independence",
+      "focus": "safeguard",
+      "currentOptions": [
+        {
+          "phrase": "develop judicial independence",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss judicial independence",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "undermine judicial independence",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::fundamental rights and obligations",
+      "topic": "Government",
+      "baseChinese": "权利与义务",
+      "baseEnglish": "rights and obligations",
+      "type": "adjective",
+      "original": "fundamental rights and obligations",
+      "focus": "fundamental",
+      "currentOptions": [
+        {
+          "phrase": "practical rights and obligations",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific rights and obligations",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial rights and obligations",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::balance rights and obligations",
+      "topic": "Government",
+      "baseChinese": "权利与义务",
+      "baseEnglish": "rights and obligations",
+      "type": "verb",
+      "original": "balance rights and obligations",
+      "focus": "balance",
+      "currentOptions": [
+        {
+          "phrase": "balance rights and obligations",
+          "term": "balance",
+          "zh": "平衡",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲在法律或社会生活中公平处理权利与义务。"
+        },
+        {
+          "phrase": "review rights and obligations",
+          "term": "review",
+          "zh": "审视",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观分析个人、企业或政府之间的责任关系。"
+        },
+        {
+          "phrase": "disregard rights and obligations",
+          "term": "disregard",
+          "zh": "无视",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判某些行为忽略基本责任和权利边界。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::guarantee due process",
+      "topic": "Government",
+      "baseChinese": "正当程序",
+      "baseEnglish": "due process",
+      "type": "verb",
+      "original": "guarantee due process",
+      "focus": "guarantee",
+      "currentOptions": [
+        {
+          "phrase": "develop due process",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "assess due process",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine due process",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::full national sovereignty",
+      "topic": "Government",
+      "baseChinese": "国家主权",
+      "baseEnglish": "national sovereignty",
+      "type": "adjective",
+      "original": "full national sovereignty",
+      "focus": "full",
+      "currentOptions": [
+        {
+          "phrase": "valuable national sovereignty",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term national sovereignty",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic national sovereignty",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::defend national sovereignty",
+      "topic": "Government",
+      "baseChinese": "国家主权",
+      "baseEnglish": "national sovereignty",
+      "type": "verb",
+      "original": "defend national sovereignty",
+      "focus": "defend",
+      "currentOptions": [
+        {
+          "phrase": "maintain national sovereignty",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess national sovereignty",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook national sovereignty",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::international treaty and agreement",
+      "topic": "Government",
+      "baseChinese": "条约与协议",
+      "baseEnglish": "treaty and agreement",
+      "type": "adjective",
+      "original": "international treaty and agreement",
+      "focus": "international",
+      "currentOptions": [
+        {
+          "phrase": "valuable treaty and agreement",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term treaty and agreement",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic treaty and agreement",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::sign a treaty and agreement",
+      "topic": "Government",
+      "baseChinese": "条约与协议",
+      "baseEnglish": "treaty and agreement",
+      "type": "verb",
+      "original": "sign a treaty and agreement",
+      "focus": "sign",
+      "currentOptions": [
+        {
+          "phrase": "develop a treaty and agreement",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "assess a treaty and agreement",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine a treaty and agreement",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::formal extradition",
+      "topic": "Government",
+      "baseChinese": "引渡",
+      "baseEnglish": "extradition",
+      "type": "adjective",
+      "original": "formal extradition",
+      "focus": "formal",
+      "currentOptions": [
+        {
+          "phrase": "meaningful extradition",
+          "term": "meaningful",
+          "zh": "有意义的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调真实价值或影响。"
+        },
+        {
+          "phrase": "measurable extradition",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合数据或效果评估语境。"
+        },
+        {
+          "phrase": "limited extradition",
+          "term": "limited",
+          "zh": "有限的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判作用或覆盖面不足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::request extradition",
+      "topic": "Government",
+      "baseChinese": "引渡",
+      "baseEnglish": "extradition",
+      "type": "verb",
+      "original": "request extradition",
+      "focus": "request",
+      "currentOptions": [
+        {
+          "phrase": "request extradition",
+          "term": "request",
+          "zh": "请求",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲依法推进跨境司法合作。"
+        },
+        {
+          "phrase": "review an extradition request",
+          "term": "review",
+          "zh": "审查引渡请求",
+          "stance": "Neutral",
+          "tone": "这条搭配适合判断具体引渡请求是否合法、合规。"
+        },
+        {
+          "phrase": "block extradition",
+          "term": "block",
+          "zh": "阻止",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判政治阻力或程序拖延妨碍司法合作。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::combat drug trafficking",
+      "topic": "Government",
+      "baseChinese": "贩毒",
+      "baseEnglish": "drug trafficking",
+      "type": "verb",
+      "original": "combat drug trafficking",
+      "focus": "combat",
+      "currentOptions": [
+        {
+          "phrase": "maintain drug trafficking",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "address drug trafficking",
+          "term": "address",
+          "zh": "处理 / 应对",
+          "stance": "Neutral",
+          "tone": "更温和，适合政策建议。"
+        },
+        {
+          "phrase": "undermine drug trafficking",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::cross-border human trafficking",
+      "topic": "Government",
+      "baseChinese": "人口贩卖",
+      "baseEnglish": "human trafficking",
+      "type": "adjective",
+      "original": "cross-border human trafficking",
+      "focus": "cross-border",
+      "currentOptions": [
+        {
+          "phrase": "cross-border human trafficking",
+          "term": "cross-border",
+          "zh": "跨境的",
+          "stance": "Neutral",
+          "tone": "自然犯罪搭配。"
+        },
+        {
+          "phrase": "organized human trafficking",
+          "term": "organized",
+          "zh": "有组织的",
+          "stance": "Negative",
+          "tone": "强调犯罪结构。"
+        },
+        {
+          "phrase": "large-scale human trafficking",
+          "term": "large-scale",
+          "zh": "大规模的",
+          "stance": "Negative",
+          "tone": "强调严重程度。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::prevent human trafficking",
+      "topic": "Government",
+      "baseChinese": "人口贩卖",
+      "baseEnglish": "human trafficking",
+      "type": "verb",
+      "original": "prevent human trafficking",
+      "focus": "prevent",
+      "currentOptions": [
+        {
+          "phrase": "avert human trafficking",
+          "term": "avert",
+          "zh": "避免 / 防止",
+          "stance": "Positive",
+          "tone": "正式，常用于危机或风险。"
+        },
+        {
+          "phrase": "assess human trafficking",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine human trafficking",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::combat money laundering",
+      "topic": "Government",
+      "baseChinese": "洗钱",
+      "baseEnglish": "money laundering",
+      "type": "verb",
+      "original": "combat money laundering",
+      "focus": "combat",
+      "currentOptions": [
+        {
+          "phrase": "maintain money laundering",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess money laundering",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "counter money laundering",
+          "term": "counter",
+          "zh": "反制",
+          "stance": "Negative",
+          "tone": "正式，适合网络犯罪和虚假信息。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::organized smuggling of migrants",
+      "topic": "Government",
+      "baseChinese": "偷渡",
+      "baseEnglish": "smuggling of migrants",
+      "type": "adjective",
+      "original": "organized smuggling of migrants",
+      "focus": "organized",
+      "currentOptions": [
+        {
+          "phrase": "valuable smuggling of migrants",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term smuggling of migrants",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic smuggling of migrants",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::crack down on the smuggling of migrants",
+      "topic": "Government",
+      "baseChinese": "偷渡",
+      "baseEnglish": "smuggling of migrants",
+      "type": "verb",
+      "original": "crack down on the smuggling of migrants",
+      "focus": "crack down on",
+      "currentOptions": [
+        {
+          "phrase": "develop the smuggling of migrants",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss the smuggling of migrants",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "undermine the smuggling of migrants",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::strengthen multilateral cooperation",
+      "topic": "Government",
+      "baseChinese": "多边合作机制",
+      "baseEnglish": "multilateral cooperation",
+      "type": "verb",
+      "original": "strengthen multilateral cooperation",
+      "focus": "strengthen",
+      "currentOptions": [
+        {
+          "phrase": "build up multilateral cooperation",
+          "term": "build up",
+          "zh": "逐步加强",
+          "stance": "Positive",
+          "tone": "较口语，但适合能力建设。"
+        },
+        {
+          "phrase": "discuss multilateral cooperation",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "undermine multilateral cooperation",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    }
+  ]
+}

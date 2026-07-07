@@ -1,0 +1,1714 @@
+{
+  "topic": "Health",
+  "guidance": "project-docs/synonym-curation-guidelines.md",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "issueCount": 51,
+  "issueCardCount": 28,
+  "issueRows": [
+    {
+      "topic": "Health",
+      "type": "adjective",
+      "baseChinese": "肥胖",
+      "baseEnglish": "obesity",
+      "focus": "severe",
+      "original": "severe obesity",
+      "term": "severe",
+      "phrase": "severe obesity",
+      "zh": "严重的",
+      "tone": "自然健康搭配。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "肥胖",
+      "baseEnglish": "obesity",
+      "focus": "prevent",
+      "original": "prevent obesity",
+      "term": "prevent",
+      "phrase": "prevent obesity",
+      "zh": "预防",
+      "tone": "积极语气，强调主动减少风险。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "糖尿病",
+      "baseEnglish": "diabetes",
+      "focus": "manage",
+      "original": "manage diabetes",
+      "term": "manage",
+      "phrase": "manage diabetes",
+      "zh": "管理",
+      "tone": "这条搭配适合讲通过饮食、用药和监测控制糖尿病。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "adjective",
+      "baseChinese": "焦虑症",
+      "baseEnglish": "anxiety disorder",
+      "focus": "severe",
+      "original": "severe anxiety disorder",
+      "term": "severe",
+      "phrase": "severe anxiety disorder",
+      "zh": "严重的",
+      "tone": "自然健康搭配。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "adjective",
+      "baseChinese": "慢性病",
+      "baseEnglish": "chronic disease",
+      "focus": "preventable",
+      "original": "preventable chronic disease",
+      "term": "preventable",
+      "phrase": "preventable chronic disease",
+      "zh": "可预防的",
+      "tone": "这条搭配适合讲问题可以通过行动减少。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "呼吸系统疾病",
+      "baseEnglish": "respiratory diseases",
+      "focus": "treat",
+      "original": "treat respiratory diseases",
+      "term": "treat",
+      "phrase": "treat respiratory diseases",
+      "zh": "治疗",
+      "tone": "积极，强调医疗干预。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "均衡饮食",
+      "baseEnglish": "balanced diet",
+      "focus": "maintain",
+      "original": "maintain a balanced diet",
+      "term": "promote",
+      "phrase": "promote a balanced diet",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "均衡饮食",
+      "baseEnglish": "balanced diet",
+      "focus": "maintain",
+      "original": "maintain a balanced diet",
+      "term": "analyse",
+      "phrase": "analyse a balanced diet",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "均衡饮食",
+      "baseEnglish": "balanced diet",
+      "focus": "maintain",
+      "original": "maintain a balanced diet",
+      "term": "sideline",
+      "phrase": "sideline a balanced diet",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "久坐生活方式",
+      "baseEnglish": "sedentary lifestyle",
+      "focus": "avoid",
+      "original": "avoid a sedentary lifestyle",
+      "term": "avoid",
+      "phrase": "avoid a sedentary lifestyle",
+      "zh": "避免",
+      "tone": "这条搭配适合讲通过更多活动降低久坐带来的健康风险。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "久坐生活方式",
+      "baseEnglish": "sedentary lifestyle",
+      "focus": "avoid",
+      "original": "avoid a sedentary lifestyle",
+      "term": "analyse",
+      "phrase": "analyse a sedentary lifestyle",
+      "zh": "分析",
+      "tone": "这条搭配适合研究久坐习惯的成因和影响。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "adjective",
+      "baseChinese": "心理咨询",
+      "baseEnglish": "psychological counselling",
+      "focus": "professional",
+      "original": "professional psychological counselling",
+      "term": "professional",
+      "phrase": "professional psychological counselling",
+      "zh": "专业的",
+      "tone": "积极，强调由专业人员提供。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "心理咨询",
+      "baseEnglish": "psychological counselling",
+      "focus": "seek",
+      "original": "seek psychological counselling",
+      "term": "develop",
+      "phrase": "develop psychological counselling",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "心理咨询",
+      "baseEnglish": "psychological counselling",
+      "focus": "seek",
+      "original": "seek psychological counselling",
+      "term": "assess",
+      "phrase": "assess psychological counselling",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "心理咨询",
+      "baseEnglish": "psychological counselling",
+      "focus": "seek",
+      "original": "seek psychological counselling",
+      "term": "undermine",
+      "phrase": "undermine psychological counselling",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "adjective",
+      "baseChinese": "自我照顾",
+      "baseEnglish": "self-care",
+      "focus": "regular",
+      "original": "regular self-care",
+      "term": "regular",
+      "phrase": "regular self-care",
+      "zh": "规律的",
+      "tone": "积极，强调持续习惯。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "自我照顾",
+      "baseEnglish": "self-care",
+      "focus": "prioritize",
+      "original": "prioritize self-care",
+      "term": "promote",
+      "phrase": "promote self-care",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "自我照顾",
+      "baseEnglish": "self-care",
+      "focus": "prioritize",
+      "original": "prioritize self-care",
+      "term": "analyse",
+      "phrase": "analyse self-care",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "自我照顾",
+      "baseEnglish": "self-care",
+      "focus": "prioritize",
+      "original": "prioritize self-care",
+      "term": "sideline",
+      "phrase": "sideline self-care",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "社交支持网络",
+      "baseEnglish": "social support network",
+      "focus": "build",
+      "original": "build a social support network",
+      "term": "maintain",
+      "phrase": "maintain a social support network",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "社交支持网络",
+      "baseEnglish": "social support network",
+      "focus": "build",
+      "original": "build a social support network",
+      "term": "assess",
+      "phrase": "assess a social support network",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "社交支持网络",
+      "baseEnglish": "social support network",
+      "focus": "build",
+      "original": "build a social support network",
+      "term": "overlook",
+      "phrase": "overlook a social support network",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "adjective",
+      "baseChinese": "医疗保险",
+      "baseEnglish": "medical insurance",
+      "focus": "affordable",
+      "original": "affordable medical insurance",
+      "term": "affordable",
+      "phrase": "affordable medical insurance",
+      "zh": "负担得起的",
+      "tone": "积极，强调可及性。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "医疗保险",
+      "baseEnglish": "medical insurance",
+      "focus": "purchase",
+      "original": "purchase medical insurance",
+      "term": "promote",
+      "phrase": "promote medical insurance",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "医疗保险",
+      "baseEnglish": "medical insurance",
+      "focus": "purchase",
+      "original": "purchase medical insurance",
+      "term": "analyse",
+      "phrase": "analyse medical insurance",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "医疗保险",
+      "baseEnglish": "medical insurance",
+      "focus": "purchase",
+      "original": "purchase medical insurance",
+      "term": "sideline",
+      "phrase": "sideline medical insurance",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "医疗费用",
+      "baseEnglish": "medical expenses",
+      "focus": "cover",
+      "original": "cover medical expenses",
+      "term": "develop",
+      "phrase": "develop medical expenses",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "医疗费用",
+      "baseEnglish": "medical expenses",
+      "focus": "cover",
+      "original": "cover medical expenses",
+      "term": "discuss",
+      "phrase": "discuss medical expenses",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "医疗费用",
+      "baseEnglish": "medical expenses",
+      "focus": "cover",
+      "original": "cover medical expenses",
+      "term": "overlook",
+      "phrase": "overlook medical expenses",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "adjective",
+      "baseChinese": "医患关系",
+      "baseEnglish": "doctor-patient relationship",
+      "focus": "trusting",
+      "original": "trusting doctor-patient relationship",
+      "term": "trusting",
+      "phrase": "trusting doctor-patient relationship",
+      "zh": "互相信任的",
+      "tone": "积极，强调沟通基础。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "医患关系",
+      "baseEnglish": "doctor-patient relationship",
+      "focus": "strengthen",
+      "original": "strengthen doctor-patient relationships",
+      "term": "analyse",
+      "phrase": "analyse doctor-patient relationships",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "医患关系",
+      "baseEnglish": "doctor-patient relationship",
+      "focus": "strengthen",
+      "original": "strengthen doctor-patient relationships",
+      "term": "sideline",
+      "phrase": "sideline doctor-patient relationships",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "远程医疗",
+      "baseEnglish": "telemedicine",
+      "focus": "expand",
+      "original": "expand telemedicine",
+      "term": "assess",
+      "phrase": "assess telemedicine",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "远程医疗",
+      "baseEnglish": "telemedicine",
+      "focus": "expand",
+      "original": "expand telemedicine",
+      "term": "overlook",
+      "phrase": "overlook telemedicine",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "体检",
+      "baseEnglish": "health check-up",
+      "focus": "undergo",
+      "original": "undergo a health check-up",
+      "term": "develop",
+      "phrase": "develop a health check-up",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "体检",
+      "baseEnglish": "health check-up",
+      "focus": "undergo",
+      "original": "undergo a health check-up",
+      "term": "discuss",
+      "phrase": "discuss a health check-up",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "体检",
+      "baseEnglish": "health check-up",
+      "focus": "undergo",
+      "original": "undergo a health check-up",
+      "term": "overlook",
+      "phrase": "overlook a health check-up",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "adjective",
+      "baseChinese": "疫苗接种",
+      "baseEnglish": "vaccination",
+      "focus": "routine",
+      "original": "routine vaccination",
+      "term": "routine",
+      "phrase": "routine vaccination",
+      "zh": "常规的",
+      "tone": "中性，适合检查、接种和护理。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "疫苗接种",
+      "baseEnglish": "vaccination",
+      "focus": "promote",
+      "original": "promote vaccination",
+      "term": "promote",
+      "phrase": "promote vaccination",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "疫苗接种",
+      "baseEnglish": "vaccination",
+      "focus": "promote",
+      "original": "promote vaccination",
+      "term": "assess",
+      "phrase": "assess vaccination",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "疫苗接种",
+      "baseEnglish": "vaccination",
+      "focus": "promote",
+      "original": "promote vaccination",
+      "term": "overlook",
+      "phrase": "overlook vaccination",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "adjective",
+      "baseChinese": "健康筛查",
+      "baseEnglish": "health screening",
+      "focus": "early",
+      "original": "early health screening",
+      "term": "early",
+      "phrase": "early health screening",
+      "zh": "早期的",
+      "tone": "积极，强调提前发现。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "健康筛查",
+      "baseEnglish": "health screening",
+      "focus": "conduct",
+      "original": "conduct health screening",
+      "term": "develop",
+      "phrase": "develop health screening",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "健康筛查",
+      "baseEnglish": "health screening",
+      "focus": "conduct",
+      "original": "conduct health screening",
+      "term": "discuss",
+      "phrase": "discuss health screening",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "健康筛查",
+      "baseEnglish": "health screening",
+      "focus": "conduct",
+      "original": "conduct health screening",
+      "term": "undermine",
+      "phrase": "undermine health screening",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "adjective",
+      "baseChinese": "健康促进",
+      "baseEnglish": "health promotion",
+      "focus": "community-based",
+      "original": "community-based health promotion",
+      "term": "community-based",
+      "phrase": "community-based health promotion",
+      "zh": "社区层面的",
+      "tone": "积极，强调贴近居民。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "健康促进",
+      "baseEnglish": "health promotion",
+      "focus": "support",
+      "original": "support health promotion",
+      "term": "support",
+      "phrase": "support health promotion",
+      "zh": "支持",
+      "tone": "这条搭配适合讲为公共健康宣传和预防项目提供资源。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "锻炼计划",
+      "baseEnglish": "exercise regimen",
+      "focus": "follow",
+      "original": "follow an exercise regimen",
+      "term": "develop",
+      "phrase": "develop an exercise regimen",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "锻炼计划",
+      "baseEnglish": "exercise regimen",
+      "focus": "follow",
+      "original": "follow an exercise regimen",
+      "term": "discuss",
+      "phrase": "discuss an exercise regimen",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "verb",
+      "baseChinese": "锻炼计划",
+      "baseEnglish": "exercise regimen",
+      "focus": "follow",
+      "original": "follow an exercise regimen",
+      "term": "overlook",
+      "phrase": "overlook an exercise regimen",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Health",
+      "type": "adjective",
+      "baseChinese": "戒瘾治疗",
+      "baseEnglish": "addiction treatment",
+      "focus": "long-term",
+      "original": "long-term addiction treatment",
+      "term": "long-term",
+      "phrase": "long-term addiction treatment",
+      "zh": "长期的",
+      "tone": "中性，强调治疗周期。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase",
+        "same-as-original-focus"
+      ]
+    }
+  ],
+  "cardsToReview": [
+    {
+      "cardKey": "Health::adjective::severe obesity",
+      "topic": "Health",
+      "baseChinese": "肥胖",
+      "baseEnglish": "obesity",
+      "type": "adjective",
+      "original": "severe obesity",
+      "focus": "severe",
+      "currentOptions": [
+        {
+          "phrase": "morbid obesity",
+          "term": "morbid",
+          "zh": "病态的",
+          "stance": "Negative",
+          "tone": "医学语境，强调严重程度。"
+        },
+        {
+          "phrase": "severe obesity",
+          "term": "severe",
+          "zh": "严重的",
+          "stance": "Negative",
+          "tone": "自然健康搭配。"
+        },
+        {
+          "phrase": "rising obesity",
+          "term": "rising",
+          "zh": "上升的",
+          "stance": "Negative",
+          "tone": "强调趋势变差。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::prevent obesity",
+      "topic": "Health",
+      "baseChinese": "肥胖",
+      "baseEnglish": "obesity",
+      "type": "verb",
+      "original": "prevent obesity",
+      "focus": "prevent",
+      "currentOptions": [
+        {
+          "phrase": "prevent obesity",
+          "term": "prevent",
+          "zh": "预防",
+          "stance": "Positive",
+          "tone": "积极语气，强调主动减少风险。"
+        },
+        {
+          "phrase": "monitor obesity",
+          "term": "monitor",
+          "zh": "监测 / 关注",
+          "stance": "Neutral",
+          "tone": "中性语气，适合描述持续观察。"
+        },
+        {
+          "phrase": "worsen obesity",
+          "term": "worsen",
+          "zh": "使……恶化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判不良政策或行为的后果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::manage diabetes",
+      "topic": "Health",
+      "baseChinese": "糖尿病",
+      "baseEnglish": "diabetes",
+      "type": "verb",
+      "original": "manage diabetes",
+      "focus": "manage",
+      "currentOptions": [
+        {
+          "phrase": "manage diabetes",
+          "term": "manage",
+          "zh": "管理",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲通过饮食、用药和监测控制糖尿病。"
+        },
+        {
+          "phrase": "monitor diabetes",
+          "term": "monitor",
+          "zh": "监测",
+          "stance": "Neutral",
+          "tone": "这条搭配适合持续观察血糖和病情变化。"
+        },
+        {
+          "phrase": "leave diabetes untreated",
+          "term": "leave untreated",
+          "zh": "不治疗",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判让糖尿病得不到治疗会增加并发症风险。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::severe anxiety disorder",
+      "topic": "Health",
+      "baseChinese": "焦虑症",
+      "baseEnglish": "anxiety disorder",
+      "type": "adjective",
+      "original": "severe anxiety disorder",
+      "focus": "severe",
+      "currentOptions": [
+        {
+          "phrase": "acute anxiety disorder",
+          "term": "acute",
+          "zh": "急性的",
+          "stance": "Negative",
+          "tone": "医学语境中可用。"
+        },
+        {
+          "phrase": "diagnosed anxiety disorder",
+          "term": "diagnosed",
+          "zh": "已诊断的",
+          "stance": "Neutral",
+          "tone": "中性，强调专业确认。"
+        },
+        {
+          "phrase": "severe anxiety disorder",
+          "term": "severe",
+          "zh": "严重的",
+          "stance": "Negative",
+          "tone": "自然健康搭配。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::preventable chronic disease",
+      "topic": "Health",
+      "baseChinese": "慢性病",
+      "baseEnglish": "chronic disease",
+      "type": "adjective",
+      "original": "preventable chronic disease",
+      "focus": "preventable",
+      "currentOptions": [
+        {
+          "phrase": "preventable chronic disease",
+          "term": "preventable",
+          "zh": "可预防的",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲问题可以通过行动减少。"
+        },
+        {
+          "phrase": "underlying chronic disease",
+          "term": "underlying",
+          "zh": "潜在的 / 深层的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合分析问题背后的原因。"
+        },
+        {
+          "phrase": "unresolved chronic disease",
+          "term": "unresolved",
+          "zh": "未解决的",
+          "stance": "Negative",
+          "tone": "这条搭配适合强调问题仍然存在。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::treat respiratory diseases",
+      "topic": "Health",
+      "baseChinese": "呼吸系统疾病",
+      "baseEnglish": "respiratory diseases",
+      "type": "verb",
+      "original": "treat respiratory diseases",
+      "focus": "treat",
+      "currentOptions": [
+        {
+          "phrase": "treat respiratory diseases",
+          "term": "treat",
+          "zh": "治疗",
+          "stance": "Positive",
+          "tone": "积极，强调医疗干预。"
+        },
+        {
+          "phrase": "monitor respiratory diseases",
+          "term": "monitor",
+          "zh": "监测",
+          "stance": "Neutral",
+          "tone": "中性，适合公共卫生。"
+        },
+        {
+          "phrase": "aggravate respiratory diseases",
+          "term": "aggravate",
+          "zh": "加重",
+          "stance": "Negative",
+          "tone": "消极，强调污染等因素使疾病恶化。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::maintain a balanced diet",
+      "topic": "Health",
+      "baseChinese": "均衡饮食",
+      "baseEnglish": "balanced diet",
+      "type": "verb",
+      "original": "maintain a balanced diet",
+      "focus": "maintain",
+      "currentOptions": [
+        {
+          "phrase": "promote a balanced diet",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "analyse a balanced diet",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline a balanced diet",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::avoid a sedentary lifestyle",
+      "topic": "Health",
+      "baseChinese": "久坐生活方式",
+      "baseEnglish": "sedentary lifestyle",
+      "type": "verb",
+      "original": "avoid a sedentary lifestyle",
+      "focus": "avoid",
+      "currentOptions": [
+        {
+          "phrase": "avoid a sedentary lifestyle",
+          "term": "avoid",
+          "zh": "避免",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲通过更多活动降低久坐带来的健康风险。"
+        },
+        {
+          "phrase": "analyse a sedentary lifestyle",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "这条搭配适合研究久坐习惯的成因和影响。"
+        },
+        {
+          "phrase": "ignore the risks of a sedentary lifestyle",
+          "term": "ignore",
+          "zh": "忽视久坐风险",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判不重视久坐对健康的长期危害。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::professional psychological counselling",
+      "topic": "Health",
+      "baseChinese": "心理咨询",
+      "baseEnglish": "psychological counselling",
+      "type": "adjective",
+      "original": "professional psychological counselling",
+      "focus": "professional",
+      "currentOptions": [
+        {
+          "phrase": "professional psychological counselling",
+          "term": "professional",
+          "zh": "专业的",
+          "stance": "Positive",
+          "tone": "积极，强调由专业人员提供。"
+        },
+        {
+          "phrase": "confidential psychological counselling",
+          "term": "confidential",
+          "zh": "保密的",
+          "stance": "Positive",
+          "tone": "积极，强调隐私保护。"
+        },
+        {
+          "phrase": "inaccessible psychological counselling",
+          "term": "inaccessible",
+          "zh": "难以获得的",
+          "stance": "Negative",
+          "tone": "消极，强调服务缺口。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::seek psychological counselling",
+      "topic": "Health",
+      "baseChinese": "心理咨询",
+      "baseEnglish": "psychological counselling",
+      "type": "verb",
+      "original": "seek psychological counselling",
+      "focus": "seek",
+      "currentOptions": [
+        {
+          "phrase": "develop psychological counselling",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "assess psychological counselling",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine psychological counselling",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::regular self-care",
+      "topic": "Health",
+      "baseChinese": "自我照顾",
+      "baseEnglish": "self-care",
+      "type": "adjective",
+      "original": "regular self-care",
+      "focus": "regular",
+      "currentOptions": [
+        {
+          "phrase": "regular self-care",
+          "term": "regular",
+          "zh": "规律的",
+          "stance": "Positive",
+          "tone": "积极，强调持续习惯。"
+        },
+        {
+          "phrase": "basic self-care",
+          "term": "basic",
+          "zh": "基础的",
+          "stance": "Neutral",
+          "tone": "中性，强调最低需要。"
+        },
+        {
+          "phrase": "neglected self-care",
+          "term": "neglected",
+          "zh": "被忽视的",
+          "stance": "Negative",
+          "tone": "消极，强调照顾不足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::prioritize self-care",
+      "topic": "Health",
+      "baseChinese": "自我照顾",
+      "baseEnglish": "self-care",
+      "type": "verb",
+      "original": "prioritize self-care",
+      "focus": "prioritize",
+      "currentOptions": [
+        {
+          "phrase": "promote self-care",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "analyse self-care",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline self-care",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::build a social support network",
+      "topic": "Health",
+      "baseChinese": "社交支持网络",
+      "baseEnglish": "social support network",
+      "type": "verb",
+      "original": "build a social support network",
+      "focus": "build",
+      "currentOptions": [
+        {
+          "phrase": "maintain a social support network",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess a social support network",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook a social support network",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::affordable medical insurance",
+      "topic": "Health",
+      "baseChinese": "医疗保险",
+      "baseEnglish": "medical insurance",
+      "type": "adjective",
+      "original": "affordable medical insurance",
+      "focus": "affordable",
+      "currentOptions": [
+        {
+          "phrase": "affordable medical insurance",
+          "term": "affordable",
+          "zh": "负担得起的",
+          "stance": "Positive",
+          "tone": "积极，强调可及性。"
+        },
+        {
+          "phrase": "private medical insurance",
+          "term": "private",
+          "zh": "私营的",
+          "stance": "Neutral",
+          "tone": "中性，描述保险类型。"
+        },
+        {
+          "phrase": "inadequate medical insurance",
+          "term": "inadequate",
+          "zh": "不足的",
+          "stance": "Negative",
+          "tone": "消极，强调保障不够。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::purchase medical insurance",
+      "topic": "Health",
+      "baseChinese": "医疗保险",
+      "baseEnglish": "medical insurance",
+      "type": "verb",
+      "original": "purchase medical insurance",
+      "focus": "purchase",
+      "currentOptions": [
+        {
+          "phrase": "promote medical insurance",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "analyse medical insurance",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline medical insurance",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::cover medical expenses",
+      "topic": "Health",
+      "baseChinese": "医疗费用",
+      "baseEnglish": "medical expenses",
+      "type": "verb",
+      "original": "cover medical expenses",
+      "focus": "cover",
+      "currentOptions": [
+        {
+          "phrase": "develop medical expenses",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss medical expenses",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook medical expenses",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::trusting doctor-patient relationship",
+      "topic": "Health",
+      "baseChinese": "医患关系",
+      "baseEnglish": "doctor-patient relationship",
+      "type": "adjective",
+      "original": "trusting doctor-patient relationship",
+      "focus": "trusting",
+      "currentOptions": [
+        {
+          "phrase": "trusting doctor-patient relationship",
+          "term": "trusting",
+          "zh": "互相信任的",
+          "stance": "Positive",
+          "tone": "积极，强调沟通基础。"
+        },
+        {
+          "phrase": "professional doctor-patient relationship",
+          "term": "professional",
+          "zh": "专业的",
+          "stance": "Neutral",
+          "tone": "中性到积极。"
+        },
+        {
+          "phrase": "strained doctor-patient relationship",
+          "term": "strained",
+          "zh": "紧张的",
+          "stance": "Negative",
+          "tone": "消极，强调关系冲突。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::strengthen doctor-patient relationships",
+      "topic": "Health",
+      "baseChinese": "医患关系",
+      "baseEnglish": "doctor-patient relationship",
+      "type": "verb",
+      "original": "strengthen doctor-patient relationships",
+      "focus": "strengthen",
+      "currentOptions": [
+        {
+          "phrase": "reinforce doctor-patient relationships",
+          "term": "reinforce",
+          "zh": "强化",
+          "stance": "Positive",
+          "tone": "正式，强调使原有系统更稳。"
+        },
+        {
+          "phrase": "analyse doctor-patient relationships",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline doctor-patient relationships",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::expand telemedicine",
+      "topic": "Health",
+      "baseChinese": "远程医疗",
+      "baseEnglish": "telemedicine",
+      "type": "verb",
+      "original": "expand telemedicine",
+      "focus": "expand",
+      "currentOptions": [
+        {
+          "phrase": "scale up telemedicine",
+          "term": "scale up",
+          "zh": "扩大规模",
+          "stance": "Positive",
+          "tone": "适合项目和政策试点。"
+        },
+        {
+          "phrase": "assess telemedicine",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook telemedicine",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::undergo a health check-up",
+      "topic": "Health",
+      "baseChinese": "体检",
+      "baseEnglish": "health check-up",
+      "type": "verb",
+      "original": "undergo a health check-up",
+      "focus": "undergo",
+      "currentOptions": [
+        {
+          "phrase": "develop a health check-up",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss a health check-up",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook a health check-up",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::routine vaccination",
+      "topic": "Health",
+      "baseChinese": "疫苗接种",
+      "baseEnglish": "vaccination",
+      "type": "adjective",
+      "original": "routine vaccination",
+      "focus": "routine",
+      "currentOptions": [
+        {
+          "phrase": "preventive vaccination",
+          "term": "preventive",
+          "zh": "预防性的",
+          "stance": "Positive",
+          "tone": "积极，适合健康服务和公共卫生。"
+        },
+        {
+          "phrase": "routine vaccination",
+          "term": "routine",
+          "zh": "常规的",
+          "stance": "Neutral",
+          "tone": "中性，适合检查、接种和护理。"
+        },
+        {
+          "phrase": "rising vaccination",
+          "term": "rising",
+          "zh": "上升的",
+          "stance": "Negative",
+          "tone": "消极，强调趋势变坏。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::promote vaccination",
+      "topic": "Health",
+      "baseChinese": "疫苗接种",
+      "baseEnglish": "vaccination",
+      "type": "verb",
+      "original": "promote vaccination",
+      "focus": "promote",
+      "currentOptions": [
+        {
+          "phrase": "promote vaccination",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "assess vaccination",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook vaccination",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::early health screening",
+      "topic": "Health",
+      "baseChinese": "健康筛查",
+      "baseEnglish": "health screening",
+      "type": "adjective",
+      "original": "early health screening",
+      "focus": "early",
+      "currentOptions": [
+        {
+          "phrase": "early health screening",
+          "term": "early",
+          "zh": "早期的",
+          "stance": "Positive",
+          "tone": "积极，强调提前发现。"
+        },
+        {
+          "phrase": "routine health screening",
+          "term": "routine",
+          "zh": "常规的",
+          "stance": "Neutral",
+          "tone": "中性，适合公共卫生。"
+        },
+        {
+          "phrase": "delayed health screening",
+          "term": "delayed",
+          "zh": "延迟的",
+          "stance": "Negative",
+          "tone": "消极，强调错过时机。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::conduct health screening",
+      "topic": "Health",
+      "baseChinese": "健康筛查",
+      "baseEnglish": "health screening",
+      "type": "verb",
+      "original": "conduct health screening",
+      "focus": "conduct",
+      "currentOptions": [
+        {
+          "phrase": "develop health screening",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss health screening",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "undermine health screening",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::community-based health promotion",
+      "topic": "Health",
+      "baseChinese": "健康促进",
+      "baseEnglish": "health promotion",
+      "type": "adjective",
+      "original": "community-based health promotion",
+      "focus": "community-based",
+      "currentOptions": [
+        {
+          "phrase": "community-based health promotion",
+          "term": "community-based",
+          "zh": "社区层面的",
+          "stance": "Positive",
+          "tone": "积极，强调贴近居民。"
+        },
+        {
+          "phrase": "school-based health promotion",
+          "term": "school-based",
+          "zh": "学校层面的",
+          "stance": "Neutral",
+          "tone": "中性，强调场景。"
+        },
+        {
+          "phrase": "underfunded health promotion",
+          "term": "underfunded",
+          "zh": "资金不足的",
+          "stance": "Negative",
+          "tone": "消极，强调执行困难。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::support health promotion",
+      "topic": "Health",
+      "baseChinese": "健康促进",
+      "baseEnglish": "health promotion",
+      "type": "verb",
+      "original": "support health promotion",
+      "focus": "support",
+      "currentOptions": [
+        {
+          "phrase": "support health promotion",
+          "term": "support",
+          "zh": "支持",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲为公共健康宣传和预防项目提供资源。"
+        },
+        {
+          "phrase": "evaluate health promotion programmes",
+          "term": "evaluate",
+          "zh": "评估健康促进项目",
+          "stance": "Neutral",
+          "tone": "这条搭配适合判断健康促进项目的覆盖率和效果。"
+        },
+        {
+          "phrase": "underfund health promotion",
+          "term": "underfund",
+          "zh": "资金不足",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判资金不足削弱预防和健康教育效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::follow an exercise regimen",
+      "topic": "Health",
+      "baseChinese": "锻炼计划",
+      "baseEnglish": "exercise regimen",
+      "type": "verb",
+      "original": "follow an exercise regimen",
+      "focus": "follow",
+      "currentOptions": [
+        {
+          "phrase": "develop an exercise regimen",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss an exercise regimen",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook an exercise regimen",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::long-term addiction treatment",
+      "topic": "Health",
+      "baseChinese": "戒瘾治疗",
+      "baseEnglish": "addiction treatment",
+      "type": "adjective",
+      "original": "long-term addiction treatment",
+      "focus": "long-term",
+      "currentOptions": [
+        {
+          "phrase": "long-term addiction treatment",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "中性，强调治疗周期。"
+        },
+        {
+          "phrase": "evidence-based addiction treatment",
+          "term": "evidence-based",
+          "zh": "循证的",
+          "stance": "Positive",
+          "tone": "积极，强调科学依据。"
+        },
+        {
+          "phrase": "inadequate addiction treatment",
+          "term": "inadequate",
+          "zh": "不足的",
+          "stance": "Negative",
+          "tone": "消极，强调治疗缺口。"
+        }
+      ]
+    }
+  ]
+}

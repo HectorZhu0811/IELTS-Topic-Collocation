@@ -1,0 +1,869 @@
+{
+  "topic": "Health",
+  "curator": "health-topic-curation-worker",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "approved": [
+    {
+      "cardKey": "Health::adjective::severe obesity",
+      "baseChinese": "肥胖",
+      "baseEnglish": "obesity",
+      "type": "adjective",
+      "original": "severe obesity",
+      "focus": "severe",
+      "options": [
+        {
+          "phrase": "morbid obesity",
+          "term": "morbid",
+          "zh": "病态性肥胖",
+          "stance": "Negative",
+          "tone": "适合医学和公共健康语境，强调肥胖已经达到高风险程度。"
+        },
+        {
+          "phrase": "extreme obesity",
+          "term": "extreme",
+          "zh": "极度肥胖",
+          "stance": "Negative",
+          "tone": "适合描述肥胖程度非常高，并可能带来明显健康负担。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::prevent obesity",
+      "baseChinese": "肥胖",
+      "baseEnglish": "obesity",
+      "type": "verb",
+      "original": "prevent obesity",
+      "focus": "prevent",
+      "options": [
+        {
+          "phrase": "curb obesity",
+          "term": "curb",
+          "zh": "遏制肥胖",
+          "stance": "Positive",
+          "tone": "适合讲政府、学校或家庭通过饮食和运动干预减少肥胖问题。"
+        },
+        {
+          "phrase": "reduce obesity rates",
+          "term": "reduce",
+          "zh": "降低肥胖率",
+          "stance": "Positive",
+          "tone": "适合公共健康数据语境，强调人群层面的肥胖比例下降。"
+        },
+        {
+          "phrase": "combat obesity",
+          "term": "combat",
+          "zh": "应对肥胖问题",
+          "stance": "Positive",
+          "tone": "适合议论文中强调用综合政策处理肥胖带来的健康风险。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::manage diabetes",
+      "baseChinese": "糖尿病",
+      "baseEnglish": "diabetes",
+      "type": "verb",
+      "original": "manage diabetes",
+      "focus": "manage",
+      "options": [
+        {
+          "phrase": "control diabetes",
+          "term": "control",
+          "zh": "控制糖尿病",
+          "stance": "Positive",
+          "tone": "适合讲通过饮食、运动、用药和血糖监测让病情保持稳定。"
+        },
+        {
+          "phrase": "monitor diabetes",
+          "term": "monitor",
+          "zh": "监测糖尿病病情",
+          "stance": "Neutral",
+          "tone": "适合强调持续观察血糖水平和并发症风险。"
+        },
+        {
+          "phrase": "keep diabetes under control",
+          "term": "keep under control",
+          "zh": "让糖尿病处于受控状态",
+          "stance": "Positive",
+          "tone": "适合说明患者长期坚持治疗和生活方式调整的结果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::severe anxiety disorder",
+      "baseChinese": "焦虑症",
+      "baseEnglish": "anxiety disorder",
+      "type": "adjective",
+      "original": "severe anxiety disorder",
+      "focus": "severe",
+      "options": [
+        {
+          "phrase": "debilitating anxiety disorder",
+          "term": "debilitating",
+          "zh": "令人丧失正常功能的焦虑症",
+          "stance": "Negative",
+          "tone": "适合强调焦虑症已经影响学习、工作和日常生活。"
+        },
+        {
+          "phrase": "diagnosed anxiety disorder",
+          "term": "diagnosed",
+          "zh": "已确诊的焦虑症",
+          "stance": "Neutral",
+          "tone": "适合区分正式医学诊断和普通紧张情绪。"
+        },
+        {
+          "phrase": "untreated anxiety disorder",
+          "term": "untreated",
+          "zh": "未接受治疗的焦虑症",
+          "stance": "Negative",
+          "tone": "适合批判心理健康服务不足导致病情持续恶化。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::preventable chronic disease",
+      "baseChinese": "慢性病",
+      "baseEnglish": "chronic disease",
+      "type": "adjective",
+      "original": "preventable chronic disease",
+      "focus": "preventable",
+      "options": [
+        {
+          "phrase": "avoidable chronic disease",
+          "term": "avoidable",
+          "zh": "本可避免的慢性病",
+          "stance": "Negative",
+          "tone": "适合指出如果及早干预饮食、运动或烟酒习惯，疾病负担可以减少。"
+        },
+        {
+          "phrase": "lifestyle-related chronic disease",
+          "term": "lifestyle-related",
+          "zh": "与生活方式相关的慢性病",
+          "stance": "Neutral",
+          "tone": "适合分析久坐、饮食不均衡和压力等因素造成的长期健康问题。"
+        },
+        {
+          "phrase": "non-communicable chronic disease",
+          "term": "non-communicable",
+          "zh": "非传染性慢性病",
+          "stance": "Neutral",
+          "tone": "适合公共卫生讨论，强调糖尿病、心血管病等不是通过感染传播。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::treat respiratory diseases",
+      "baseChinese": "呼吸系统疾病",
+      "baseEnglish": "respiratory diseases",
+      "type": "verb",
+      "original": "treat respiratory diseases",
+      "focus": "treat",
+      "options": [
+        {
+          "phrase": "diagnose respiratory diseases",
+          "term": "diagnose",
+          "zh": "诊断呼吸系统疾病",
+          "stance": "Neutral",
+          "tone": "适合讲医疗系统及时发现哮喘、肺炎等呼吸道问题。"
+        },
+        {
+          "phrase": "manage respiratory diseases",
+          "term": "manage",
+          "zh": "管理呼吸系统疾病",
+          "stance": "Positive",
+          "tone": "适合说明长期用药、复诊和减少污染暴露可以稳定病情。"
+        },
+        {
+          "phrase": "aggravate respiratory diseases",
+          "term": "aggravate",
+          "zh": "加重呼吸系统疾病",
+          "stance": "Negative",
+          "tone": "适合批判空气污染、吸烟或恶劣居住环境对病情的负面影响。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::maintain a balanced diet",
+      "baseChinese": "均衡饮食",
+      "baseEnglish": "balanced diet",
+      "type": "verb",
+      "original": "maintain a balanced diet",
+      "focus": "maintain",
+      "options": [
+        {
+          "phrase": "adopt a balanced diet",
+          "term": "adopt",
+          "zh": "采用均衡饮食",
+          "stance": "Positive",
+          "tone": "适合讲个人开始改变饮食结构，增加蔬果、蛋白质和全谷物摄入。"
+        },
+        {
+          "phrase": "follow a balanced diet",
+          "term": "follow",
+          "zh": "遵循均衡饮食",
+          "stance": "Positive",
+          "tone": "适合强调日常饮食选择符合营养建议。"
+        },
+        {
+          "phrase": "stick to a balanced diet",
+          "term": "stick to",
+          "zh": "坚持均衡饮食",
+          "stance": "Positive",
+          "tone": "适合说明长期自律对体重控制和慢病预防的作用。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::avoid a sedentary lifestyle",
+      "baseChinese": "久坐生活方式",
+      "baseEnglish": "sedentary lifestyle",
+      "type": "verb",
+      "original": "avoid a sedentary lifestyle",
+      "focus": "avoid",
+      "options": [
+        {
+          "phrase": "move away from a sedentary lifestyle",
+          "term": "move away from",
+          "zh": "摆脱久坐生活方式",
+          "stance": "Positive",
+          "tone": "适合讲通过通勤步行、运动习惯和减少屏幕时间改变生活方式。"
+        },
+        {
+          "phrase": "counter a sedentary lifestyle",
+          "term": "counter",
+          "zh": "抵消久坐生活方式的影响",
+          "stance": "Positive",
+          "tone": "适合说明用规律活动减少久坐对心血管和体重的损害。"
+        },
+        {
+          "phrase": "slip into a sedentary lifestyle",
+          "term": "slip into",
+          "zh": "不知不觉陷入久坐生活方式",
+          "stance": "Negative",
+          "tone": "适合批判现代工作和娱乐方式让人逐渐变得缺乏运动。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::professional psychological counselling",
+      "baseChinese": "心理咨询",
+      "baseEnglish": "psychological counselling",
+      "type": "adjective",
+      "original": "professional psychological counselling",
+      "focus": "professional",
+      "options": [
+        {
+          "phrase": "licensed psychological counselling",
+          "term": "licensed",
+          "zh": "由持证人员提供的心理咨询",
+          "stance": "Positive",
+          "tone": "适合强调服务由合格咨询师或心理健康从业者提供。"
+        },
+        {
+          "phrase": "confidential psychological counselling",
+          "term": "confidential",
+          "zh": "保密的心理咨询",
+          "stance": "Positive",
+          "tone": "适合说明隐私保护能降低学生或患者求助时的顾虑。"
+        },
+        {
+          "phrase": "accessible psychological counselling",
+          "term": "accessible",
+          "zh": "容易获得的心理咨询",
+          "stance": "Positive",
+          "tone": "适合讲学校、社区或线上服务让心理支持更容易到达需要者。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::seek psychological counselling",
+      "baseChinese": "心理咨询",
+      "baseEnglish": "psychological counselling",
+      "type": "verb",
+      "original": "seek psychological counselling",
+      "focus": "seek",
+      "options": [
+        {
+          "phrase": "receive psychological counselling",
+          "term": "receive",
+          "zh": "接受心理咨询",
+          "stance": "Positive",
+          "tone": "适合讲学生、患者或员工获得专业心理支持。"
+        },
+        {
+          "phrase": "access psychological counselling",
+          "term": "access",
+          "zh": "获得心理咨询服务",
+          "stance": "Positive",
+          "tone": "适合讨论心理健康资源是否足够、是否能被普通人使用。"
+        },
+        {
+          "phrase": "turn to psychological counselling",
+          "term": "turn to",
+          "zh": "转向心理咨询寻求帮助",
+          "stance": "Positive",
+          "tone": "适合描述人们在压力、焦虑或创伤后主动寻找专业支持。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::regular self-care",
+      "baseChinese": "自我照顾",
+      "baseEnglish": "self-care",
+      "type": "adjective",
+      "original": "regular self-care",
+      "focus": "regular",
+      "options": [
+        {
+          "phrase": "consistent self-care",
+          "term": "consistent",
+          "zh": "持续稳定的自我照顾",
+          "stance": "Positive",
+          "tone": "适合强调睡眠、运动和情绪调节需要长期坚持。"
+        },
+        {
+          "phrase": "daily self-care",
+          "term": "daily",
+          "zh": "日常自我照顾",
+          "stance": "Positive",
+          "tone": "适合描述每天安排休息、饮食和压力管理的健康习惯。"
+        },
+        {
+          "phrase": "neglected self-care",
+          "term": "neglected",
+          "zh": "被忽视的自我照顾",
+          "stance": "Negative",
+          "tone": "适合批判过度工作或学业压力让个人健康需求被放在后面。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::prioritize self-care",
+      "baseChinese": "自我照顾",
+      "baseEnglish": "self-care",
+      "type": "verb",
+      "original": "prioritize self-care",
+      "focus": "prioritize",
+      "options": [
+        {
+          "phrase": "practice self-care",
+          "term": "practice",
+          "zh": "进行自我照顾",
+          "stance": "Positive",
+          "tone": "适合讲个人通过睡眠、运动、边界感和情绪管理保护身心健康。"
+        },
+        {
+          "phrase": "make time for self-care",
+          "term": "make time for",
+          "zh": "为自我照顾留出时间",
+          "stance": "Positive",
+          "tone": "适合说明忙碌学习或工作中仍应主动安排恢复时间。"
+        },
+        {
+          "phrase": "neglect self-care",
+          "term": "neglect",
+          "zh": "忽视自我照顾",
+          "stance": "Negative",
+          "tone": "适合批判长期压力下忽略睡眠、饮食和心理健康的行为。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::build a social support network",
+      "baseChinese": "社交支持网络",
+      "baseEnglish": "social support network",
+      "type": "verb",
+      "original": "build a social support network",
+      "focus": "build",
+      "options": [
+        {
+          "phrase": "establish a social support network",
+          "term": "establish",
+          "zh": "建立社交支持网络",
+          "stance": "Positive",
+          "tone": "适合讲个人通过家人、朋友、同伴和社区资源获得情绪支持。"
+        },
+        {
+          "phrase": "cultivate a social support network",
+          "term": "cultivate",
+          "zh": "培养社交支持网络",
+          "stance": "Positive",
+          "tone": "适合强调支持关系需要主动联系、互助和长期投入。"
+        },
+        {
+          "phrase": "strengthen a social support network",
+          "term": "strengthen",
+          "zh": "加强社交支持网络",
+          "stance": "Positive",
+          "tone": "适合说明社区活动或心理健康项目能让弱势群体得到更多支持。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::affordable medical insurance",
+      "baseChinese": "医疗保险",
+      "baseEnglish": "medical insurance",
+      "type": "adjective",
+      "original": "affordable medical insurance",
+      "focus": "affordable",
+      "options": [
+        {
+          "phrase": "comprehensive medical insurance",
+          "term": "comprehensive",
+          "zh": "保障全面的医疗保险",
+          "stance": "Positive",
+          "tone": "适合强调保险覆盖门诊、住院、药品和重大疾病等多类费用。"
+        },
+        {
+          "phrase": "subsidized medical insurance",
+          "term": "subsidized",
+          "zh": "有补贴的医疗保险",
+          "stance": "Positive",
+          "tone": "适合讲政府补贴降低低收入群体参保压力。"
+        },
+        {
+          "phrase": "inadequate medical insurance",
+          "term": "inadequate",
+          "zh": "保障不足的医疗保险",
+          "stance": "Negative",
+          "tone": "适合批判保险覆盖范围太窄或报销比例太低。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::purchase medical insurance",
+      "baseChinese": "医疗保险",
+      "baseEnglish": "medical insurance",
+      "type": "verb",
+      "original": "purchase medical insurance",
+      "focus": "purchase",
+      "options": [
+        {
+          "phrase": "buy medical insurance",
+          "term": "buy",
+          "zh": "购买医疗保险",
+          "stance": "Neutral",
+          "tone": "适合普通说明个人或家庭为了应对医疗风险而参保。"
+        },
+        {
+          "phrase": "take out medical insurance",
+          "term": "take out",
+          "zh": "办理医疗保险",
+          "stance": "Neutral",
+          "tone": "适合正式写作中描述个人选择某种保险计划。"
+        },
+        {
+          "phrase": "enroll in a medical insurance plan",
+          "term": "enroll in",
+          "zh": "加入医疗保险计划",
+          "stance": "Positive",
+          "tone": "适合讲员工、学生或居民进入公共或私人医保体系。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::cover medical expenses",
+      "baseChinese": "医疗费用",
+      "baseEnglish": "medical expenses",
+      "type": "verb",
+      "original": "cover medical expenses",
+      "focus": "cover",
+      "options": [
+        {
+          "phrase": "pay medical expenses",
+          "term": "pay",
+          "zh": "支付医疗费用",
+          "stance": "Neutral",
+          "tone": "适合说明个人、家庭、保险公司或政府承担医疗账单。"
+        },
+        {
+          "phrase": "meet medical expenses",
+          "term": "meet",
+          "zh": "负担医疗费用",
+          "stance": "Neutral",
+          "tone": "适合正式写作中表示有能力承担治疗、住院或药品开支。"
+        },
+        {
+          "phrase": "reimburse medical expenses",
+          "term": "reimburse",
+          "zh": "报销医疗费用",
+          "stance": "Positive",
+          "tone": "适合讲医疗保险或雇主福利把患者已经支付的费用返还给个人。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::trusting doctor-patient relationship",
+      "baseChinese": "医患关系",
+      "baseEnglish": "doctor-patient relationship",
+      "type": "adjective",
+      "original": "trusting doctor-patient relationship",
+      "focus": "trusting",
+      "options": [
+        {
+          "phrase": "collaborative doctor-patient relationship",
+          "term": "collaborative",
+          "zh": "合作型医患关系",
+          "stance": "Positive",
+          "tone": "适合强调医生和患者共同沟通治疗方案。"
+        },
+        {
+          "phrase": "respectful doctor-patient relationship",
+          "term": "respectful",
+          "zh": "相互尊重的医患关系",
+          "stance": "Positive",
+          "tone": "适合说明尊重能减少冲突并提高患者配合度。"
+        },
+        {
+          "phrase": "strained doctor-patient relationship",
+          "term": "strained",
+          "zh": "紧张的医患关系",
+          "stance": "Negative",
+          "tone": "适合批判沟通不足、费用压力或误诊争议造成的医患矛盾。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::strengthen doctor-patient relationships",
+      "baseChinese": "医患关系",
+      "baseEnglish": "doctor-patient relationship",
+      "type": "verb",
+      "original": "strengthen doctor-patient relationships",
+      "focus": "strengthen",
+      "options": [
+        {
+          "phrase": "improve doctor-patient relationships",
+          "term": "improve",
+          "zh": "改善医患关系",
+          "stance": "Positive",
+          "tone": "适合讲更清晰的沟通、更透明的收费和更好的服务态度带来改善。"
+        },
+        {
+          "phrase": "repair doctor-patient relationships",
+          "term": "repair",
+          "zh": "修复医患关系",
+          "stance": "Positive",
+          "tone": "适合描述在信任受损后通过制度和沟通重建关系。"
+        },
+        {
+          "phrase": "foster healthier doctor-patient relationships",
+          "term": "foster",
+          "zh": "培育更健康的医患关系",
+          "stance": "Positive",
+          "tone": "适合议论文中提出医院管理、医学教育或患者沟通培训的作用。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::expand telemedicine",
+      "baseChinese": "远程医疗",
+      "baseEnglish": "telemedicine",
+      "type": "verb",
+      "original": "expand telemedicine",
+      "focus": "expand",
+      "options": [
+        {
+          "phrase": "scale up telemedicine",
+          "term": "scale up",
+          "zh": "扩大远程医疗规模",
+          "stance": "Positive",
+          "tone": "适合讲把试点服务推广到更多地区或更多患者群体。"
+        },
+        {
+          "phrase": "roll out telemedicine",
+          "term": "roll out",
+          "zh": "推出远程医疗服务",
+          "stance": "Positive",
+          "tone": "适合描述医院、政府或平台逐步上线线上问诊服务。"
+        },
+        {
+          "phrase": "integrate telemedicine into healthcare",
+          "term": "integrate into",
+          "zh": "把远程医疗纳入医疗体系",
+          "stance": "Positive",
+          "tone": "适合说明线上问诊和线下诊疗结合，提高基层地区可及性。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::undergo a health check-up",
+      "baseChinese": "体检",
+      "baseEnglish": "health check-up",
+      "type": "verb",
+      "original": "undergo a health check-up",
+      "focus": "undergo",
+      "options": [
+        {
+          "phrase": "have a health check-up",
+          "term": "have",
+          "zh": "进行体检",
+          "stance": "Neutral",
+          "tone": "适合日常和正式语境，说明个人接受常规身体检查。"
+        },
+        {
+          "phrase": "receive a health check-up",
+          "term": "receive",
+          "zh": "接受体检",
+          "stance": "Neutral",
+          "tone": "适合讲学校、公司或社区为居民安排检查。"
+        },
+        {
+          "phrase": "schedule a health check-up",
+          "term": "schedule",
+          "zh": "预约体检",
+          "stance": "Positive",
+          "tone": "适合强调个人主动安排体检以便尽早发现健康问题。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::routine vaccination",
+      "baseChinese": "疫苗接种",
+      "baseEnglish": "vaccination",
+      "type": "adjective",
+      "original": "routine vaccination",
+      "focus": "routine",
+      "options": [
+        {
+          "phrase": "preventive vaccination",
+          "term": "preventive",
+          "zh": "预防性疫苗接种",
+          "stance": "Positive",
+          "tone": "适合公共卫生语境，强调接种是为了降低感染和重症风险。"
+        },
+        {
+          "phrase": "childhood vaccination",
+          "term": "childhood",
+          "zh": "儿童疫苗接种",
+          "stance": "Neutral",
+          "tone": "适合讨论学校、家庭和政府在儿童免疫计划中的责任。"
+        },
+        {
+          "phrase": "mandatory vaccination",
+          "term": "mandatory",
+          "zh": "强制性疫苗接种",
+          "stance": "Neutral",
+          "tone": "适合议论文中讨论公共利益与个人选择之间的政策争议。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::promote vaccination",
+      "baseChinese": "疫苗接种",
+      "baseEnglish": "vaccination",
+      "type": "verb",
+      "original": "promote vaccination",
+      "focus": "promote",
+      "options": [
+        {
+          "phrase": "encourage vaccination",
+          "term": "encourage",
+          "zh": "鼓励疫苗接种",
+          "stance": "Positive",
+          "tone": "适合讲政府或学校通过科普和提醒提高接种意愿。"
+        },
+        {
+          "phrase": "increase vaccination uptake",
+          "term": "increase uptake",
+          "zh": "提高疫苗接种率",
+          "stance": "Positive",
+          "tone": "适合公共卫生数据语境，强调更多人实际完成接种。"
+        },
+        {
+          "phrase": "run vaccination campaigns",
+          "term": "run campaigns",
+          "zh": "开展疫苗接种宣传活动",
+          "stance": "Positive",
+          "tone": "适合描述政府、医院或社区用宣传和集中接种提高覆盖率。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::early health screening",
+      "baseChinese": "健康筛查",
+      "baseEnglish": "health screening",
+      "type": "adjective",
+      "original": "early health screening",
+      "focus": "early",
+      "options": [
+        {
+          "phrase": "timely health screening",
+          "term": "timely",
+          "zh": "及时的健康筛查",
+          "stance": "Positive",
+          "tone": "适合强调在疾病恶化前发现风险并尽早干预。"
+        },
+        {
+          "phrase": "routine health screening",
+          "term": "routine",
+          "zh": "常规健康筛查",
+          "stance": "Neutral",
+          "tone": "适合描述学校、公司或社区定期安排的基础筛查。"
+        },
+        {
+          "phrase": "targeted health screening",
+          "term": "targeted",
+          "zh": "针对性健康筛查",
+          "stance": "Positive",
+          "tone": "适合讲对高风险人群进行更精准的疾病筛查。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::conduct health screening",
+      "baseChinese": "健康筛查",
+      "baseEnglish": "health screening",
+      "type": "verb",
+      "original": "conduct health screening",
+      "focus": "conduct",
+      "options": [
+        {
+          "phrase": "carry out health screening",
+          "term": "carry out",
+          "zh": "开展健康筛查",
+          "stance": "Neutral",
+          "tone": "适合正式说明医院、学校或社区执行筛查工作。"
+        },
+        {
+          "phrase": "provide health screening",
+          "term": "provide",
+          "zh": "提供健康筛查",
+          "stance": "Positive",
+          "tone": "适合讲公共机构或雇主向居民、学生或员工提供检查服务。"
+        },
+        {
+          "phrase": "expand access to health screening",
+          "term": "expand access to",
+          "zh": "扩大健康筛查的可及性",
+          "stance": "Positive",
+          "tone": "适合强调让低收入群体或偏远地区居民也能接受筛查。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::community-based health promotion",
+      "baseChinese": "健康促进",
+      "baseEnglish": "health promotion",
+      "type": "adjective",
+      "original": "community-based health promotion",
+      "focus": "community-based",
+      "options": [
+        {
+          "phrase": "school-based health promotion",
+          "term": "school-based",
+          "zh": "学校层面的健康促进",
+          "stance": "Neutral",
+          "tone": "适合讲通过课程、运动安排和饮食教育改善学生健康。"
+        },
+        {
+          "phrase": "workplace health promotion",
+          "term": "workplace",
+          "zh": "职场健康促进",
+          "stance": "Positive",
+          "tone": "适合讨论企业通过体检、心理支持和运动项目改善员工健康。"
+        },
+        {
+          "phrase": "underfunded health promotion",
+          "term": "underfunded",
+          "zh": "资金不足的健康促进",
+          "stance": "Negative",
+          "tone": "适合批判健康教育和预防项目因为经费不足而覆盖有限。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::support health promotion",
+      "baseChinese": "健康促进",
+      "baseEnglish": "health promotion",
+      "type": "verb",
+      "original": "support health promotion",
+      "focus": "support",
+      "options": [
+        {
+          "phrase": "fund health promotion",
+          "term": "fund",
+          "zh": "资助健康促进",
+          "stance": "Positive",
+          "tone": "适合讲政府或企业为健康教育、筛查和预防项目提供资金。"
+        },
+        {
+          "phrase": "invest in health promotion",
+          "term": "invest in",
+          "zh": "投资健康促进",
+          "stance": "Positive",
+          "tone": "适合强调预防投入可以减少未来医疗负担。"
+        },
+        {
+          "phrase": "coordinate health promotion initiatives",
+          "term": "coordinate",
+          "zh": "协调健康促进项目",
+          "stance": "Positive",
+          "tone": "适合说明学校、医院和社区合作组织健康宣传和预防活动。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::verb::follow an exercise regimen",
+      "baseChinese": "锻炼计划",
+      "baseEnglish": "exercise regimen",
+      "type": "verb",
+      "original": "follow an exercise regimen",
+      "focus": "follow",
+      "options": [
+        {
+          "phrase": "stick to an exercise regimen",
+          "term": "stick to",
+          "zh": "坚持锻炼计划",
+          "stance": "Positive",
+          "tone": "适合强调长期规律运动对体重、心肺功能和心理健康的作用。"
+        },
+        {
+          "phrase": "adopt an exercise regimen",
+          "term": "adopt",
+          "zh": "采用锻炼计划",
+          "stance": "Positive",
+          "tone": "适合讲个人开始按照固定计划进行力量训练或有氧运动。"
+        },
+        {
+          "phrase": "tailor an exercise regimen",
+          "term": "tailor",
+          "zh": "量身定制锻炼计划",
+          "stance": "Positive",
+          "tone": "适合说明锻炼计划应根据年龄、体能和健康状况调整。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Health::adjective::long-term addiction treatment",
+      "baseChinese": "戒瘾治疗",
+      "baseEnglish": "addiction treatment",
+      "type": "adjective",
+      "original": "long-term addiction treatment",
+      "focus": "long-term",
+      "options": [
+        {
+          "phrase": "evidence-based addiction treatment",
+          "term": "evidence-based",
+          "zh": "循证戒瘾治疗",
+          "stance": "Positive",
+          "tone": "适合强调治疗方法有研究证据支持，而不是依赖惩罚或偏见。"
+        },
+        {
+          "phrase": "residential addiction treatment",
+          "term": "residential",
+          "zh": "住院式戒瘾治疗",
+          "stance": "Neutral",
+          "tone": "适合描述患者在专业机构中接受密集治疗和监督。"
+        },
+        {
+          "phrase": "inadequate addiction treatment",
+          "term": "inadequate",
+          "zh": "不足的戒瘾治疗",
+          "stance": "Negative",
+          "tone": "适合批判治疗资源少、周期短或缺乏心理支持导致复发风险上升。"
+        }
+      ]
+    }
+  ],
+  "deferred": []
+}

@@ -1,0 +1,809 @@
+{
+  "topic": "Economy",
+  "guidance": "project-docs/synonym-curation-guidelines.md",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "issueCount": 48,
+  "issueCardCount": 27,
+  "issueRows": [
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "全球贸易增长率",
+      "baseEnglish": "global trade growth rate",
+      "focus": "boost",
+      "original": "boost global trade growth rate",
+      "term": "maintain",
+      "phrase": "maintain global trade growth rate",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "全球贸易增长率",
+      "baseEnglish": "global trade growth rate",
+      "focus": "boost",
+      "original": "boost global trade growth rate",
+      "term": "assess",
+      "phrase": "assess global trade growth rate",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "全球贸易增长率",
+      "baseEnglish": "global trade growth rate",
+      "focus": "boost",
+      "original": "boost global trade growth rate",
+      "term": "overlook",
+      "phrase": "overlook global trade growth rate",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "adjective",
+      "baseChinese": "海外生产",
+      "baseEnglish": "offshore production",
+      "focus": "cost-effective",
+      "original": "cost-effective offshore production",
+      "term": "measurable",
+      "phrase": "measurable offshore production",
+      "zh": "可衡量的",
+      "tone": "中性，适合数据分析。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "自由贸易区",
+      "baseEnglish": "free trade zone",
+      "focus": "establish",
+      "original": "establish a free trade zone",
+      "term": "establish",
+      "phrase": "establish a free trade zone",
+      "zh": "建立",
+      "tone": "这条搭配适合讲通过自由贸易区促进贸易便利化。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "adjective",
+      "baseChinese": "外国直接投资",
+      "baseEnglish": "foreign direct investment",
+      "focus": "substantial",
+      "original": "substantial foreign direct investment",
+      "term": "measurable",
+      "phrase": "measurable foreign direct investment",
+      "zh": "可衡量的",
+      "tone": "中性，适合数据分析。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "外国直接投资",
+      "baseEnglish": "foreign direct investment",
+      "focus": "attract",
+      "original": "attract foreign direct investment",
+      "term": "attract",
+      "phrase": "attract foreign direct investment",
+      "zh": "吸引",
+      "tone": "这条搭配适合讲通过稳定政策和营商环境增强经济吸引力。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "货币波动",
+      "baseEnglish": "currency fluctuation",
+      "focus": "stabilize",
+      "original": "stabilize currency fluctuations",
+      "term": "stabilize",
+      "phrase": "stabilize currency fluctuations",
+      "zh": "稳定",
+      "tone": "这条搭配适合讲通过政策、储备或市场信心降低货币波动。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "生活成本",
+      "baseEnglish": "cost of living",
+      "focus": "reduce",
+      "original": "reduce the cost of living",
+      "term": "assess",
+      "phrase": "assess the cost of living",
+      "zh": "评估",
+      "tone": "中性，适合政策分析。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "信贷消费",
+      "baseEnglish": "credit-based spending",
+      "focus": "discourage",
+      "original": "discourage credit-based spending",
+      "term": "develop",
+      "phrase": "develop credit-based spending",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "信贷消费",
+      "baseEnglish": "credit-based spending",
+      "focus": "discourage",
+      "original": "discourage credit-based spending",
+      "term": "discuss",
+      "phrase": "discuss credit-based spending",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "信贷消费",
+      "baseEnglish": "credit-based spending",
+      "focus": "discourage",
+      "original": "discourage credit-based spending",
+      "term": "overlook",
+      "phrase": "overlook credit-based spending",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "节俭",
+      "baseEnglish": "frugality",
+      "focus": "practice",
+      "original": "practice frugality",
+      "term": "maintain",
+      "phrase": "maintain frugality",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "节俭",
+      "baseEnglish": "frugality",
+      "focus": "practice",
+      "original": "practice frugality",
+      "term": "assess",
+      "phrase": "assess frugality",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "节俭",
+      "baseEnglish": "frugality",
+      "focus": "practice",
+      "original": "practice frugality",
+      "term": "undermine",
+      "phrase": "undermine frugality",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "财务规划",
+      "baseEnglish": "financial planning",
+      "focus": "improve",
+      "original": "improve financial planning",
+      "term": "analyse",
+      "phrase": "analyse financial planning",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "财务规划",
+      "baseEnglish": "financial planning",
+      "focus": "improve",
+      "original": "improve financial planning",
+      "term": "sideline",
+      "phrase": "sideline financial planning",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "储蓄意识",
+      "baseEnglish": "saving awareness",
+      "focus": "raise",
+      "original": "raise saving awareness",
+      "term": "develop",
+      "phrase": "develop saving awareness",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "储蓄意识",
+      "baseEnglish": "saving awareness",
+      "focus": "raise",
+      "original": "raise saving awareness",
+      "term": "assess",
+      "phrase": "assess saving awareness",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "储蓄意识",
+      "baseEnglish": "saving awareness",
+      "focus": "raise",
+      "original": "raise saving awareness",
+      "term": "undermine",
+      "phrase": "undermine saving awareness",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "adjective",
+      "baseChinese": "金融素养",
+      "baseEnglish": "financial literacy",
+      "focus": "basic",
+      "original": "basic financial literacy",
+      "term": "measurable",
+      "phrase": "measurable financial literacy",
+      "zh": "可衡量的",
+      "tone": "中性，适合数据分析。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "金融素养",
+      "baseEnglish": "financial literacy",
+      "focus": "enhance",
+      "original": "enhance financial literacy",
+      "term": "promote",
+      "phrase": "promote financial literacy",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "金融素养",
+      "baseEnglish": "financial literacy",
+      "focus": "enhance",
+      "original": "enhance financial literacy",
+      "term": "analyse",
+      "phrase": "analyse financial literacy",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "金融素养",
+      "baseEnglish": "financial literacy",
+      "focus": "enhance",
+      "original": "enhance financial literacy",
+      "term": "sideline",
+      "phrase": "sideline financial literacy",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    }
+  ],
+  "cardsToReview": [
+    {
+      "cardKey": "Economy::verb::boost global trade growth rate",
+      "topic": "Economy",
+      "baseChinese": "全球贸易增长率",
+      "baseEnglish": "global trade growth rate",
+      "type": "verb",
+      "original": "boost global trade growth rate",
+      "focus": "boost",
+      "currentOptions": [
+        {
+          "phrase": "maintain global trade growth rate",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess global trade growth rate",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook global trade growth rate",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::cost-effective offshore production",
+      "topic": "Economy",
+      "baseChinese": "海外生产",
+      "baseEnglish": "offshore production",
+      "type": "adjective",
+      "original": "cost-effective offshore production",
+      "focus": "cost-effective",
+      "currentOptions": [
+        {
+          "phrase": "stable offshore production",
+          "term": "stable",
+          "zh": "稳定的",
+          "stance": "Positive",
+          "tone": "积极，适合经济指标和市场。"
+        },
+        {
+          "phrase": "measurable offshore production",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "中性，适合数据分析。"
+        },
+        {
+          "phrase": "volatile offshore production",
+          "term": "volatile",
+          "zh": "波动大的",
+          "stance": "Negative",
+          "tone": "消极，适合市场和价格。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::establish a free trade zone",
+      "topic": "Economy",
+      "baseChinese": "自由贸易区",
+      "baseEnglish": "free trade zone",
+      "type": "verb",
+      "original": "establish a free trade zone",
+      "focus": "establish",
+      "currentOptions": [
+        {
+          "phrase": "establish a free trade zone",
+          "term": "establish",
+          "zh": "建立",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲通过自由贸易区促进贸易便利化。"
+        },
+        {
+          "phrase": "evaluate a free trade zone",
+          "term": "evaluate",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观分析自由贸易区的规则、成本和收益。"
+        },
+        {
+          "phrase": "mismanage a free trade zone",
+          "term": "mismanage",
+          "zh": "管理不善",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判治理不到位削弱自由贸易区的效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::substantial foreign direct investment",
+      "topic": "Economy",
+      "baseChinese": "外国直接投资",
+      "baseEnglish": "foreign direct investment",
+      "type": "adjective",
+      "original": "substantial foreign direct investment",
+      "focus": "substantial",
+      "currentOptions": [
+        {
+          "phrase": "stable foreign direct investment",
+          "term": "stable",
+          "zh": "稳定的",
+          "stance": "Positive",
+          "tone": "积极，适合经济指标和市场。"
+        },
+        {
+          "phrase": "measurable foreign direct investment",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "中性，适合数据分析。"
+        },
+        {
+          "phrase": "volatile foreign direct investment",
+          "term": "volatile",
+          "zh": "波动大的",
+          "stance": "Negative",
+          "tone": "消极，适合市场和价格。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::attract foreign direct investment",
+      "topic": "Economy",
+      "baseChinese": "外国直接投资",
+      "baseEnglish": "foreign direct investment",
+      "type": "verb",
+      "original": "attract foreign direct investment",
+      "focus": "attract",
+      "currentOptions": [
+        {
+          "phrase": "attract foreign direct investment",
+          "term": "attract",
+          "zh": "吸引",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲通过稳定政策和营商环境增强经济吸引力。"
+        },
+        {
+          "phrase": "evaluate foreign direct investment",
+          "term": "evaluate",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观分析资本流入对就业、产业和监管的影响。"
+        },
+        {
+          "phrase": "discourage foreign direct investment",
+          "term": "discourage",
+          "zh": "抑制",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判政策不稳或市场壁垒让外资却步。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::stabilize currency fluctuations",
+      "topic": "Economy",
+      "baseChinese": "货币波动",
+      "baseEnglish": "currency fluctuation",
+      "type": "verb",
+      "original": "stabilize currency fluctuations",
+      "focus": "stabilize",
+      "currentOptions": [
+        {
+          "phrase": "stabilize currency fluctuations",
+          "term": "stabilize",
+          "zh": "稳定",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲通过政策、储备或市场信心降低货币波动。"
+        },
+        {
+          "phrase": "track currency fluctuations",
+          "term": "track",
+          "zh": "追踪",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观观察汇率变化和市场反应。"
+        },
+        {
+          "phrase": "trigger currency fluctuations",
+          "term": "trigger",
+          "zh": "引发",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判政策冲击或投机行为造成货币波动。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::reduce the cost of living",
+      "topic": "Economy",
+      "baseChinese": "生活成本",
+      "baseEnglish": "cost of living",
+      "type": "verb",
+      "original": "reduce the cost of living",
+      "focus": "reduce",
+      "currentOptions": [
+        {
+          "phrase": "minimize the cost of living",
+          "term": "minimize",
+          "zh": "尽量降低",
+          "stance": "Positive",
+          "tone": "积极，强调减轻生活压力。"
+        },
+        {
+          "phrase": "assess the cost of living",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性，适合政策分析。"
+        },
+        {
+          "phrase": "push up the cost of living",
+          "term": "push up",
+          "zh": "推高",
+          "stance": "Negative",
+          "tone": "消极，强调价格压力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::discourage credit-based spending",
+      "topic": "Economy",
+      "baseChinese": "信贷消费",
+      "baseEnglish": "credit-based spending",
+      "type": "verb",
+      "original": "discourage credit-based spending",
+      "focus": "discourage",
+      "currentOptions": [
+        {
+          "phrase": "develop credit-based spending",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss credit-based spending",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook credit-based spending",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::practice frugality",
+      "topic": "Economy",
+      "baseChinese": "节俭",
+      "baseEnglish": "frugality",
+      "type": "verb",
+      "original": "practice frugality",
+      "focus": "practice",
+      "currentOptions": [
+        {
+          "phrase": "maintain frugality",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess frugality",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine frugality",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::improve financial planning",
+      "topic": "Economy",
+      "baseChinese": "财务规划",
+      "baseEnglish": "financial planning",
+      "type": "verb",
+      "original": "improve financial planning",
+      "focus": "improve",
+      "currentOptions": [
+        {
+          "phrase": "enhance financial planning",
+          "term": "enhance",
+          "zh": "提升",
+          "stance": "Positive",
+          "tone": "更正式，适合质量、能力和服务。"
+        },
+        {
+          "phrase": "analyse financial planning",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline financial planning",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::raise saving awareness",
+      "topic": "Economy",
+      "baseChinese": "储蓄意识",
+      "baseEnglish": "saving awareness",
+      "type": "verb",
+      "original": "raise saving awareness",
+      "focus": "raise",
+      "currentOptions": [
+        {
+          "phrase": "develop saving awareness",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "assess saving awareness",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine saving awareness",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::basic financial literacy",
+      "topic": "Economy",
+      "baseChinese": "金融素养",
+      "baseEnglish": "financial literacy",
+      "type": "adjective",
+      "original": "basic financial literacy",
+      "focus": "basic",
+      "currentOptions": [
+        {
+          "phrase": "stable financial literacy",
+          "term": "stable",
+          "zh": "稳定的",
+          "stance": "Positive",
+          "tone": "积极，适合经济指标和市场。"
+        },
+        {
+          "phrase": "measurable financial literacy",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "中性，适合数据分析。"
+        },
+        {
+          "phrase": "volatile financial literacy",
+          "term": "volatile",
+          "zh": "波动大的",
+          "stance": "Negative",
+          "tone": "消极，适合市场和价格。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::enhance financial literacy",
+      "topic": "Economy",
+      "baseChinese": "金融素养",
+      "baseEnglish": "financial literacy",
+      "type": "verb",
+      "original": "enhance financial literacy",
+      "focus": "enhance",
+      "currentOptions": [
+        {
+          "phrase": "promote financial literacy",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "analyse financial literacy",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline financial literacy",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    }
+  ],
+  "part": "part2"
+}
