@@ -40,13 +40,6 @@ struct Flashcard: Decodable, Identifiable, Hashable {
     let highlightChinese: String
     let highlightEnglish: String
     let synonymNetworks: [SynonymNetwork]
-
-    var searchableText: String {
-        ([topic, type.rawValue, frontChinese, backEnglish, baseChinese, baseEnglish, highlightChinese, highlightEnglish] +
-         synonymNetworks.flatMap(\.searchableTerms))
-            .joined(separator: " ")
-            .lowercased()
-    }
 }
 
 enum CardType: String, Decodable, Hashable {
@@ -66,10 +59,6 @@ struct SynonymNetwork: Decodable, Hashable {
     let coreExpression: String
     let role: String
     let options: [SynonymOption]
-
-    var searchableTerms: [String] {
-        [core, coreExpression, role] + options.flatMap(\.searchableTerms)
-    }
 }
 
 struct SynonymOption: Decodable, Identifiable, Hashable {
@@ -82,10 +71,6 @@ struct SynonymOption: Decodable, Identifiable, Hashable {
     let phrase: String?
     let microContext: String?
     let example: String?
-
-    var searchableTerms: [String] {
-        [term, zh, tone, stance, phrase ?? "", microContext ?? "", example ?? ""]
-    }
 }
 
 struct RecentTopic: Decodable, Identifiable, Hashable {
@@ -100,6 +85,72 @@ struct RecentSubtopic: Decodable, Identifiable, Hashable {
     let title: String
     let zh: String
     let phrases: [String]
+}
+
+struct DailyStudySession: Codable, Equatable {
+    let targetCardIds: [String]
+    var completedCardIds: Set<String>
+
+    init(targetCardIds: [String], completedCardIds: Set<String> = []) {
+        var seen: Set<String> = []
+        self.targetCardIds = targetCardIds.filter { seen.insert($0).inserted }
+        self.completedCardIds = completedCardIds.intersection(seen)
+    }
+
+    var pendingCardIds: [String] {
+        targetCardIds.filter { !completedCardIds.contains($0) }
+    }
+
+    var fractionComplete: Double {
+        guard !targetCardIds.isEmpty else { return 1 }
+        return Double(completedCardIds.count) / Double(targetCardIds.count)
+    }
+
+    var isComplete: Bool {
+        pendingCardIds.isEmpty
+    }
+
+    @discardableResult
+    mutating func complete(_ cardId: String) -> Bool {
+        guard targetCardIds.contains(cardId) else { return false }
+        return completedCardIds.insert(cardId).inserted
+    }
+}
+
+struct DailyStudyProgress: Codable, Equatable {
+    var dateKey: String
+    private(set) var sessions: [String: DailyStudySession]
+
+    init(dateKey: String, sessions: [String: DailyStudySession] = [:]) {
+        self.dateKey = dateKey
+        self.sessions = sessions
+    }
+
+    @discardableResult
+    mutating func prepareSession(topicId: String, dateKey: String, dueCardIds: [String]) -> DailyStudySession {
+        if self.dateKey != dateKey {
+            self = DailyStudyProgress(dateKey: dateKey)
+        }
+        if let existing = sessions[topicId] {
+            return existing
+        }
+        let session = DailyStudySession(targetCardIds: dueCardIds)
+        sessions[topicId] = session
+        return session
+    }
+
+    func session(topicId: String) -> DailyStudySession? {
+        sessions[topicId]
+    }
+
+    @discardableResult
+    mutating func complete(topicId: String, cardId: String) -> Bool {
+        guard var session = sessions[topicId], session.complete(cardId) else {
+            return false
+        }
+        sessions[topicId] = session
+        return true
+    }
 }
 
 struct ReviewRecord: Codable, Equatable {

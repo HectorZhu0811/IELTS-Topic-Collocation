@@ -8,11 +8,13 @@ final class LearningStore: ObservableObject {
     @Published var reviewLog: [ReviewLogEntry] = []
     @Published var markedCardIds: Set<String> = []
     @Published var lastTopicId: String = "Education"
+    @Published private(set) var dailyStudyProgress = DailyStudyProgress(dateKey: "")
 
     private let recordsKey = "native-review-records-v1"
     private let logKey = "native-review-log-v1"
     private let bankKey = "native-marked-card-ids-v1"
     private let lastTopicKey = "native-last-topic-v1"
+    private let dailyStudyProgressKey = "native-daily-study-progress-v1"
     private let encoder = JSONEncoder()
     private let decoder = JSONDecoder()
 
@@ -39,20 +41,24 @@ final class LearningStore: ObservableObject {
         cards.filter { $0.topic == topicId }
     }
 
-    func filteredCards(topicId: String, query: String, mode: PracticeMode = .all) -> [Flashcard] {
-        var result = cards(for: topicId)
-        switch mode {
-        case .all:
-            break
-        case .due:
-            result = result.filter { isDue($0) }
-        case .weak:
-            result = result.filter { isWeak($0) || isMarked($0) }
-        }
+    func card(id: String) -> Flashcard? {
+        cards.first { $0.id == id }
+    }
 
-        let trimmed = query.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-        guard !trimmed.isEmpty else { return result }
-        return result.filter { $0.searchableText.contains(trimmed) }
+    func card(topicId: String, englishPhrase: String) -> Flashcard? {
+        let phrase = englishPhrase.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !phrase.isEmpty else { return nil }
+        return cards.first {
+            guard $0.topic == topicId else { return false }
+            let candidates = [$0.backEnglish, $0.baseEnglish, $0.highlightEnglish] +
+                $0.synonymNetworks.flatMap { network in
+                    [network.core, network.coreExpression] +
+                        network.options.flatMap { option in [option.term, option.phrase ?? ""] }
+                }
+            return candidates.contains {
+                $0.compare(phrase, options: [.caseInsensitive, .diacriticInsensitive]) == .orderedSame
+            }
+        }
     }
 
     func dueCount(topicId: String) -> Int {
@@ -65,6 +71,50 @@ final class LearningStore: ObservableObject {
 
     func knownCount(topicId: String) -> Int {
         cards(for: topicId).filter { record(for: $0).status == .known }.count
+    }
+
+    @discardableResult
+    func prepareDailySession(topicId: String, now: Date = Date()) -> DailyStudySession {
+        let dateKey = localDateKey(for: now)
+        let dueCardIds = cards(for: topicId).filter(isDue).map(\.id)
+        let previous = dailyStudyProgress
+        let session = dailyStudyProgress.prepareSession(
+            topicId: topicId,
+            dateKey: dateKey,
+            dueCardIds: dueCardIds
+        )
+        if dailyStudyProgress != previous {
+            persistDailyStudyProgress()
+        }
+        return session
+    }
+
+    func dailySession(topicId: String) -> DailyStudySession? {
+        dailyStudyProgress.session(topicId: topicId)
+    }
+
+    func nextDailyCard(topicId: String) -> Flashcard? {
+        guard let nextId = dailySession(topicId: topicId)?.pendingCardIds.first else {
+            return nil
+        }
+        return card(id: nextId)
+    }
+
+    func dailyProgressFraction(topicId: String) -> Double {
+        dailySession(topicId: topicId)?.fractionComplete ?? 0
+    }
+
+    func dailyTargetContains(topicId: String, cardId: String) -> Bool {
+        dailySession(topicId: topicId)?.targetCardIds.contains(cardId) == true
+    }
+
+    @discardableResult
+    func completeDailyCard(topicId: String, cardId: String) -> Bool {
+        let inserted = dailyStudyProgress.complete(topicId: topicId, cardId: cardId)
+        if inserted {
+            persistDailyStudyProgress()
+        }
+        return inserted
     }
 
     func reviewRecord(for cardId: String) -> ReviewRecord {
@@ -295,6 +345,10 @@ final class LearningStore: ObservableObject {
            let ids = try? decoder.decode(Set<String>.self, from: data) {
             markedCardIds = ids
         }
+        if let data = UserDefaults.standard.data(forKey: dailyStudyProgressKey),
+           let progress = try? decoder.decode(DailyStudyProgress.self, from: data) {
+            dailyStudyProgress = progress
+        }
     }
 
     private func persistState() {
@@ -321,27 +375,28 @@ final class LearningStore: ObservableObject {
         }
     }
 
+    private func persistDailyStudyProgress() {
+        if let data = try? encoder.encode(dailyStudyProgress) {
+            UserDefaults.standard.set(data, forKey: dailyStudyProgressKey)
+        }
+    }
+
+    private func localDateKey(for date: Date) -> String {
+        let startOfDay = Calendar.current.startOfDay(for: date)
+        let components = Calendar.current.dateComponents([.year, .month, .day], from: startOfDay)
+        return String(
+            format: "%04d-%02d-%02d",
+            components.year ?? 0,
+            components.month ?? 0,
+            components.day ?? 0
+        )
+    }
+
     private func nowMillis() -> Int64 {
         Int64(Date().timeIntervalSince1970 * 1000)
     }
 
     private func addDays(_ value: Int64, _ days: Int) -> Int64 {
         value + Int64(days) * 24 * 60 * 60 * 1000
-    }
-}
-
-enum PracticeMode: String, CaseIterable, Identifiable {
-    case all
-    case due
-    case weak
-
-    var id: String { rawValue }
-
-    var label: String {
-        switch self {
-        case .all: "All"
-        case .due: "Due"
-        case .weak: "Weak"
-        }
     }
 }

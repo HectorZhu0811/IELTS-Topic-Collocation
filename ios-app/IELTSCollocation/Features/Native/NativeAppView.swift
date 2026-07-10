@@ -3,10 +3,9 @@ import UniformTypeIdentifiers
 
 enum AppRoute: Hashable {
     case topic(String)
-    case topicSearch(topicId: String, query: String)
+    case topicCard(topicId: String, cardId: String)
     case recent(String)
     case memoryBank
-    case zen(topicId: String, query: String)
     case settings
 }
 
@@ -36,14 +35,12 @@ struct NativeAppView: View {
         switch route {
         case .topic(let topicId):
             TopicStudyView(store: store, path: $path, topicId: topicId)
-        case .topicSearch(let topicId, let query):
-            TopicStudyView(store: store, path: $path, topicId: topicId, initialQuery: query)
+        case .topicCard(let topicId, let cardId):
+            TopicStudyView(store: store, path: $path, topicId: topicId, startingCardId: cardId)
         case .recent(let topicId):
             RecentTopicView(store: store, path: $path, topicId: topicId)
         case .memoryBank:
             MemoryBankView(store: store, path: $path)
-        case .zen(let topicId, let query):
-            ZenModeView(store: store, topicId: topicId, query: query)
         case .settings:
             SettingsView(store: store)
         }
@@ -96,7 +93,7 @@ struct HomeView: View {
                 .foregroundStyle(featureTopic?.tint ?? .secondary)
                 .textCase(.uppercase)
 
-            Text("Pick a topic, review weak cards, or jump into Zen mode.")
+            Text("Pick a topic and review today's due cards.")
                 .font(.title2.weight(.heavy))
                 .lineLimit(3)
                 .minimumScaleFactor(0.82)
@@ -155,45 +152,70 @@ struct TopicStudyView: View {
     @ObservedObject var store: LearningStore
     @Binding var path: [AppRoute]
     let topicId: String
-    let initialQuery: String
+    let startingCardId: String?
 
-    @State private var query = ""
-    @State private var mode: PracticeMode = .all
+    @State private var revealed = false
+    @State private var consumedStartingCard = false
+    @State private var showGalleryPlaceholder = false
 
-    init(store: LearningStore, path: Binding<[AppRoute]>, topicId: String, initialQuery: String = "") {
+    init(store: LearningStore, path: Binding<[AppRoute]>, topicId: String, startingCardId: String? = nil) {
         self.store = store
         self._path = path
         self.topicId = topicId
-        self.initialQuery = initialQuery
+        self.startingCardId = startingCardId
     }
 
     private var topic: Topic? { store.topic(id: topicId) }
-    private var filteredCards: [Flashcard] {
-        store.filteredCards(topicId: topicId, query: query, mode: mode)
+
+    private var currentCard: Flashcard? {
+        if !consumedStartingCard,
+           let startingCardId,
+           let card = store.card(id: startingCardId),
+           card.topic == topicId {
+            return card
+        }
+        return store.nextDailyCard(topicId: topicId)
     }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                AppHeader(
+                TopicProgressHeader(
                     title: topic?.title ?? topicId,
-                    subtitle: "Selected · \(topic?.zh ?? "")",
-                    actionIcon: "square.grid.2x2",
-                    actionLabel: "Recent Topic"
-                ) {
-                    path.append(.recent(topicId))
+                    topic: topic,
+                    progress: store.dailyProgressFraction(topicId: topicId)
+                )
+
+                HStack(spacing: 12) {
+                    Button {
+                        path.append(.recent(topicId))
+                    } label: {
+                        Label("Recent Topic", systemImage: "clock")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(SecondaryGlassButtonStyle())
+
+                    Button {
+                        path.append(.memoryBank)
+                    } label: {
+                        Label("Memory Bank", systemImage: "bookmark")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(SecondaryGlassButtonStyle())
                 }
 
-                controls
-
-                if filteredCards.isEmpty {
-                    EmptyStateView(title: "No cards found", message: "Try another search or switch practice mode.")
+                if let card = currentCard {
+                    SingleCardStudyView(
+                        card: card,
+                        topic: topic,
+                        revealed: $revealed,
+                        onRate: { rating in rate(card, as: rating) }
+                    )
                 } else {
-                    LazyVStack(spacing: 12) {
-                        ForEach(filteredCards) { card in
-                            FlashcardView(store: store, card: card)
-                        }
-                    }
+                    NoDueTopicView(
+                        chooseAnotherTopic: { path.removeAll() },
+                        showGalleryPlaceholder: { showGalleryPlaceholder = true }
+                    )
                 }
             }
             .padding(.horizontal, 16)
@@ -203,66 +225,118 @@ struct TopicStudyView: View {
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             store.rememberTopic(topicId)
-            if query.isEmpty, !initialQuery.isEmpty {
-                query = initialQuery
-            }
+            store.prepareDailySession(topicId: topicId)
+        }
+        .onReceive(NotificationCenter.default.publisher(for: Notification.Name.NSCalendarDayChanged)) { _ in
+            consumedStartingCard = false
+            revealed = false
+            store.prepareDailySession(topicId: topicId)
+        }
+        .alert("Card Gallery 即将上线", isPresented: $showGalleryPlaceholder) {
+            Button("知道了", role: .cancel) {}
+        } message: {
+            Text("全部卡片 Gallery 将在后续版本提供。")
         }
     }
 
-    private var controls: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack(spacing: 12) {
-                TextField("中文 / English / tone", text: $query)
-                    .textInputAutocapitalization(.never)
-                    .autocorrectionDisabled()
-                    .padding(.horizontal, 14)
-                    .frame(height: 52)
-                    .background(.white.opacity(0.78), in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-
-                Button {
-                    query = ""
-                } label: {
-                    Image(systemName: "xmark")
-                        .frame(width: 42, height: 42)
-                }
-                .buttonStyle(SecondaryGlassButtonStyle())
-                .accessibilityLabel("Clear search")
+    private func rate(_ card: Flashcard, as rating: ReviewRating) {
+        let isStartingCard = card.id == startingCardId && !consumedStartingCard
+        withAnimation(.snappy) {
+            _ = store.scheduleReview(card: card, rating: rating)
+            if !isStartingCard {
+                _ = store.completeDailyCard(topicId: topicId, cardId: card.id)
             }
-
-            Picker("Practice mode", selection: $mode) {
-                ForEach(PracticeMode.allCases) { mode in
-                    Text(mode.label).tag(mode)
-                }
+            if isStartingCard {
+                consumedStartingCard = true
             }
-            .pickerStyle(.segmented)
-
-            HStack(spacing: 12) {
-                SummaryPill(value: "\(filteredCards.count)", label: "visible")
-                SummaryPill(value: "\(store.dueCount(topicId: topicId))", label: "due")
-                SummaryPill(value: "\(store.weakCount(topicId: topicId))", label: "weak")
-            }
-
-            HStack(spacing: 12) {
-                Button {
-                    path.append(.memoryBank)
-                } label: {
-                    Label("Memory", systemImage: "building.columns.fill")
-                        .frame(maxWidth: .infinity)
-                }
-                .buttonStyle(SecondaryGlassButtonStyle())
-
-                Button {
-                    path.append(.zen(topicId: topicId, query: query))
-                } label: {
-                    Label("Zen mode", systemImage: "sun.max.fill")
-                        .frame(maxWidth: .infinity)
-                }
-                .buttonStyle(PrimaryGlassButtonStyle(tint: topic?.tint ?? .green, accent: topic?.accentTint))
-            }
+            revealed = false
         }
-        .padding(14)
+    }
+}
+
+struct TopicProgressHeader: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    let title: String
+    let topic: Topic?
+    let progress: Double
+
+    private let cornerRadius: CGFloat = 24
+
+    private var clampedProgress: Double {
+        min(max(progress, 0), 1)
+    }
+
+    var body: some View {
+        ZStack(alignment: .leading) {
+            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                .fill(.ultraThinMaterial)
+
+            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                .fill(.white.opacity(0.48))
+
+            GeometryReader { proxy in
+                HStack(spacing: 0) {
+                    LinearGradient(
+                        colors: [
+                            (topic?.tint ?? .green).opacity(0.22),
+                            (topic?.accentTint ?? .green).opacity(0.14)
+                        ],
+                        startPoint: .leading,
+                        endPoint: .trailing
+                    )
+                        .frame(width: proxy.size.width * clampedProgress)
+                    Spacer(minLength: 0)
+                }
+                .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
+            }
+
+            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                .strokeBorder((topic?.tint ?? .green).opacity(0.16), lineWidth: 1)
+
+            Text(title)
+                .font(.largeTitle.weight(.heavy))
+                .lineLimit(1)
+                .minimumScaleFactor(0.68)
+                .padding(.horizontal, 22)
+        }
+        .frame(maxWidth: .infinity, minHeight: 108)
+        .shadow(color: .black.opacity(0.055), radius: 18, x: 0, y: 12)
+        .animation(reduceMotion ? nil : .snappy, value: clampedProgress)
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel(title)
+        .accessibilityValue("今日学习进度 \(Int((clampedProgress * 100).rounded()))%")
+    }
+}
+
+struct NoDueTopicView: View {
+    let chooseAnotherTopic: () -> Void
+    let showGalleryPlaceholder: () -> Void
+
+    var body: some View {
+        VStack(spacing: 18) {
+            Image(systemName: "checkmark.circle.fill")
+                .font(.system(size: 44, weight: .bold))
+                .foregroundStyle(.green)
+
+            Text("今天没有待复习卡片")
+                .font(.title2.weight(.heavy))
+
+            Text("可以学习其他话题，或稍后查看全部卡片。")
+                .font(.body)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+
+            Button("学习其他话题", action: chooseAnotherTopic)
+                .buttonStyle(PrimaryGlassButtonStyle(tint: .green))
+
+            Button("查看全部卡片", action: showGalleryPlaceholder)
+                .buttonStyle(SecondaryGlassButtonStyle())
+        }
+        .frame(maxWidth: .infinity, minHeight: 360)
+        .padding(24)
         .background {
-            TopicSoftCardBackground(topic: topic, cornerRadius: 24)
+            TopicSoftCardBackground(topic: nil, cornerRadius: 24)
         }
     }
 }
@@ -304,7 +378,9 @@ struct FlashcardView: View {
                 FlippableStudyCard(card: card, topic: topic, revealed: revealed)
             }
             .buttonStyle(.plain)
-            .accessibilityLabel(revealed ? "Hide answer" : "Reveal answer")
+            .accessibilityLabel(
+                revealed ? "\(card.backEnglish). Hide answer" : "\(card.frontChinese). Reveal answer"
+            )
 
             if revealed {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 86), spacing: 8)], spacing: 8) {
@@ -328,11 +404,55 @@ struct FlashcardView: View {
     }
 }
 
+struct SingleCardStudyView: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    let card: Flashcard
+    let topic: Topic?
+    @Binding var revealed: Bool
+    let onRate: (ReviewRating) -> Void
+
+    var body: some View {
+        VStack(spacing: 14) {
+            Button {
+                withAnimation(reduceMotion ? nil : .spring(response: 0.48, dampingFraction: 0.84)) {
+                    revealed.toggle()
+                }
+            } label: {
+                FlippableStudyCard(
+                    card: card,
+                    topic: topic,
+                    revealed: revealed,
+                    minHeight: 390,
+                    frontSubtitle: "Tap to reveal"
+                )
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel(
+                revealed ? "\(card.backEnglish). Hide answer" : "\(card.frontChinese). Reveal answer"
+            )
+
+            if revealed {
+                HStack(spacing: 8) {
+                    ForEach(ReviewRating.allCases) { rating in
+                        Button(rating.label) {
+                            onRate(rating)
+                        }
+                        .buttonStyle(RatingButtonStyle(rating: rating))
+                    }
+                }
+                .transition(.move(edge: .bottom).combined(with: .opacity))
+            }
+        }
+    }
+}
+
 struct FlippableStudyCard: View {
     let card: Flashcard
     let topic: Topic?
     let revealed: Bool
     var minHeight: CGFloat = 220
+    var frontSubtitle: String? = nil
 
     private var tint: Color { topic?.tint ?? .green }
 
@@ -340,7 +460,7 @@ struct FlippableStudyCard: View {
         ZStack {
             StudyCardFace(
                 title: card.highlightedFront(tint: tint),
-                subtitle: nil,
+                subtitle: frontSubtitle,
                 topic: topic,
                 minHeight: minHeight
             )
@@ -457,75 +577,6 @@ struct MemoryBankView: View {
     }
 }
 
-struct ZenModeView: View {
-    @ObservedObject var store: LearningStore
-    let topicId: String
-    let query: String
-
-    @State private var index = 0
-    @State private var revealed = false
-
-    private var cards: [Flashcard] {
-        let dueCards = store.filteredCards(topicId: topicId, query: query, mode: .due)
-        return dueCards.isEmpty ? store.filteredCards(topicId: topicId, query: query, mode: .all) : dueCards
-    }
-
-    private var card: Flashcard? {
-        cards.isEmpty ? nil : cards[min(index, cards.count - 1)]
-    }
-
-    var body: some View {
-        VStack(spacing: 16) {
-            if let card {
-                Spacer(minLength: 8)
-
-                Text("\(topicId) · \(index + 1)/\(cards.count)")
-                    .font(.caption.weight(.heavy))
-                    .foregroundStyle(.secondary)
-
-                Button {
-                    withAnimation(.snappy) { revealed.toggle() }
-                } label: {
-                    FlippableStudyCard(card: card, topic: store.topic(id: topicId), revealed: revealed, minHeight: 300)
-                }
-                .buttonStyle(.plain)
-
-                if revealed {
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 88), spacing: 8)], spacing: 8) {
-                        ForEach(ReviewRating.allCases) { rating in
-                            Button(rating.label) {
-                                _ = store.scheduleReview(card: card, rating: rating)
-                                advance()
-                            }
-                            .buttonStyle(RatingButtonStyle(rating: rating))
-                        }
-                    }
-                    .transition(.move(edge: .bottom).combined(with: .opacity))
-                }
-
-                Spacer(minLength: 10)
-            } else {
-                EmptyStateView(title: "No Zen cards", message: "This topic has no available cards.")
-            }
-        }
-        .padding(16)
-        .background(AppBackground(topic: store.topic(id: topicId)))
-        .navigationTitle("Zen mode")
-        .navigationBarTitleDisplayMode(.inline)
-    }
-
-    private func advance() {
-        withAnimation(.snappy) {
-            revealed = false
-            if index < cards.count - 1 {
-                index += 1
-            } else {
-                index = 0
-            }
-        }
-    }
-}
-
 struct RecentTopicView: View {
     @ObservedObject var store: LearningStore
     @Binding var path: [AppRoute]
@@ -542,25 +593,37 @@ struct RecentTopicView: View {
                 }
 
                 ForEach(recentTopic?.subtopics ?? []) { subtopic in
-                    Button {
-                        path.append(.topicSearch(topicId: topicId, query: subtopic.phrases.first ?? subtopic.title))
-                    } label: {
-                        VStack(alignment: .leading, spacing: 12) {
-                            Text(subtopic.zh)
-                                .font(.caption.weight(.heavy))
-                                .foregroundStyle(topic?.tint ?? .green)
-                            Text(subtopic.title)
-                                .font(.title3.weight(.heavy))
-                                .multilineTextAlignment(.leading)
-                            FlowPhrases(phrases: subtopic.phrases)
-                        }
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(16)
-                        .background {
-                            TopicSoftCardBackground(topic: topic, cornerRadius: 24)
+                    VStack(alignment: .leading, spacing: 12) {
+                        Text(subtopic.zh)
+                            .font(.caption.weight(.heavy))
+                            .foregroundStyle(topic?.tint ?? .green)
+                        Text(subtopic.title)
+                            .font(.title3.weight(.heavy))
+                            .multilineTextAlignment(.leading)
+
+                        LazyVGrid(columns: [GridItem(.adaptive(minimum: 132), spacing: 8)], alignment: .leading, spacing: 8) {
+                            ForEach(subtopic.phrases, id: \.self) { phrase in
+                                Button {
+                                    openRecentPhrase(phrase)
+                                } label: {
+                                    Text(phrase)
+                                        .font(.caption.weight(.semibold))
+                                        .lineLimit(2)
+                                        .frame(maxWidth: .infinity, alignment: .leading)
+                                        .padding(.horizontal, 10)
+                                        .padding(.vertical, 8)
+                                        .background(.white.opacity(0.68), in: Capsule())
+                                }
+                                .buttonStyle(.plain)
+                                .accessibilityLabel("Study \(phrase)")
+                            }
                         }
                     }
-                    .buttonStyle(.plain)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(16)
+                    .background {
+                        TopicSoftCardBackground(topic: topic, cornerRadius: 24)
+                    }
                 }
             }
             .padding(.horizontal, 16)
@@ -568,6 +631,14 @@ struct RecentTopicView: View {
         }
         .background(AppBackground(topic: topic))
         .navigationBarTitleDisplayMode(.inline)
+    }
+
+    private func openRecentPhrase(_ phrase: String) {
+        if let card = store.card(topicId: topicId, englishPhrase: phrase) {
+            path.append(.topicCard(topicId: topicId, cardId: card.id))
+        } else {
+            path.append(.topic(topicId))
+        }
     }
 }
 
@@ -749,23 +820,6 @@ struct SummaryPill: View {
         .padding(.horizontal, 10)
         .padding(.vertical, 8)
         .background(inverted ? .white.opacity(0.18) : .white.opacity(0.74), in: Capsule())
-    }
-}
-
-struct FlowPhrases: View {
-    let phrases: [String]
-
-    var body: some View {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 132), spacing: 8)], alignment: .leading, spacing: 8) {
-            ForEach(phrases, id: \.self) { phrase in
-                Text(phrase)
-                    .font(.caption.weight(.semibold))
-                    .lineLimit(2)
-                    .padding(.horizontal, 10)
-                    .padding(.vertical, 8)
-                    .background(.white.opacity(0.68), in: Capsule())
-            }
-        }
     }
 }
 
