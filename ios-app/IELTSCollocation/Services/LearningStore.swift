@@ -26,15 +26,10 @@ final class LearningStore: ObservableObject {
 
     var topics: [Topic] { content?.topics ?? [] }
     var cards: [Flashcard] { content?.cards ?? [] }
-    var recentTopics: [RecentTopic] { content?.recentTopics ?? [] }
     var metadata: ContentMetadata? { content?.metadata }
 
     func topic(id: String) -> Topic? {
         topics.first { $0.id == id }
-    }
-
-    func recentTopic(id: String) -> RecentTopic? {
-        recentTopics.first { $0.id == id }
     }
 
     func cards(for topicId: String) -> [Flashcard] {
@@ -43,22 +38,6 @@ final class LearningStore: ObservableObject {
 
     func card(id: String) -> Flashcard? {
         cards.first { $0.id == id }
-    }
-
-    func card(topicId: String, englishPhrase: String) -> Flashcard? {
-        let phrase = englishPhrase.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !phrase.isEmpty else { return nil }
-        return cards.first {
-            guard $0.topic == topicId else { return false }
-            let candidates = [$0.backEnglish, $0.baseEnglish, $0.highlightEnglish] +
-                $0.synonymNetworks.flatMap { network in
-                    [network.core, network.coreExpression] +
-                        network.options.flatMap { option in [option.term, option.phrase ?? ""] }
-                }
-            return candidates.contains {
-                $0.compare(phrase, options: [.caseInsensitive, .diacriticInsensitive]) == .orderedSame
-            }
-        }
     }
 
     func dueCount(topicId: String) -> Int {
@@ -115,6 +94,15 @@ final class LearningStore: ObservableObject {
             persistDailyStudyProgress()
         }
         return inserted
+    }
+
+    @discardableResult
+    func deferDailyCard(topicId: String, cardId: String) -> Bool {
+        let deferred = dailyStudyProgress.deferCard(topicId: topicId, cardId: cardId)
+        if deferred {
+            persistDailyStudyProgress()
+        }
+        return deferred
     }
 
     func reviewRecord(for cardId: String) -> ReviewRecord {
@@ -278,10 +266,7 @@ final class LearningStore: ObservableObject {
 
     func importMemoryData(_ data: Data) throws {
         let payload = try decoder.decode(MemoryExport.self, from: data)
-        var importedRecords = reviewRecords
-        payload.tables.reviewState.forEach { importedRecords[$0.cardId] = $0 }
-        payload.reviews.forEach { importedRecords[$0.key] = $0.value }
-        reviewRecords = importedRecords
+        reviewRecords = MemoryImportMerger.reviewRecords(existing: reviewRecords, payload: payload)
 
         let existingLogIds = Set(reviewLog.map(\.id))
         reviewLog.append(contentsOf: payload.tables.reviewLog.filter { !existingLogIds.contains($0.id) })

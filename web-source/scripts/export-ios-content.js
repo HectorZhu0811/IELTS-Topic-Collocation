@@ -6,7 +6,7 @@ globalThis.window = globalThis;
 
 require(path.join(root, "web-source", "synonym-curation.js"));
 require(path.join(root, "web-source", "data.js"));
-const { topics } = require(path.join(root, "web-source", "subtopics.js"));
+const recentTopicTranslations = require(path.join(root, "web-source", "recent-topic-card-translations.js"));
 
 const topicOrder = [
   "Technology",
@@ -53,20 +53,39 @@ function normalizeCard(card) {
   };
 }
 
-const cards = (globalThis.FLASHCARD_DATA || []).map(normalizeCard);
-const recentTopics = topics.map((topic) => ({
-  id: topic.id,
-  zh: topic.zh,
-  subtopics: topic.subtopics.map(([title, zh, phrases]) => ({ title, zh, phrases }))
-}));
+function normalizedPhrase(value) {
+  return value
+    .trim()
+    .normalize("NFKD")
+    .replace(/\p{M}/gu, "")
+    .toLocaleLowerCase("en");
+}
+
+const originalCards = (globalThis.FLASHCARD_DATA || []).map(normalizeCard);
+const standaloneKeys = new Set(
+  originalCards.map((card) => `${card.topic}::${normalizedPhrase(card.backEnglish)}`)
+);
+const addedCards = recentTopicTranslations.cards
+  .filter((row) => !standaloneKeys.has(`${row.topic}::${normalizedPhrase(row.english)}`))
+  .map((row) => normalizeCard({
+    topic: row.topic,
+    type: row.type,
+    frontChinese: row.chinese,
+    backEnglish: row.english,
+    baseChinese: row.chinese,
+    baseEnglish: row.english,
+    highlightChinese: row.highlightChinese,
+    highlightEnglish: row.highlightEnglish,
+    synonymNetworks: []
+  }));
+const cards = [...originalCards, ...addedCards];
 
 const content = {
-  schemaId: "ielts-collocation-ios-content-v1",
+  schemaId: "ielts-collocation-ios-content-v2",
   exportedAt: new Date().toISOString(),
   metadata: {
     cardCount: cards.length,
     topicCount: topicOrder.length,
-    subtopicCount: recentTopics.reduce((sum, topic) => sum + topic.subtopics.length, 0),
     synonymOptionCount: cards.reduce((sum, card) => (
       sum + card.synonymNetworks.reduce((groupSum, group) => groupSum + (group.options || []).length, 0)
     ), 0)
@@ -78,12 +97,11 @@ const content = {
     accent: topicMeta[id].accent,
     cardCount: cards.filter((card) => card.topic === id).length
   })),
-  cards,
-  recentTopics
+  cards
 };
 
 const output = path.join(root, "ios-app", "IELTSCollocation", "Resources", "Content", "ios-content.json");
 fs.mkdirSync(path.dirname(output), { recursive: true });
 fs.writeFileSync(output, `${JSON.stringify(content, null, 2)}\n`, "utf8");
 
-console.log(`Exported ${cards.length} cards, ${content.metadata.subtopicCount} subtopics, ${content.metadata.synonymOptionCount} synonym options to ${output}`);
+console.log(`Exported ${cards.length} cards (${addedCards.length} merged Recent Topic cards), ${content.metadata.synonymOptionCount} synonym options to ${output}`);

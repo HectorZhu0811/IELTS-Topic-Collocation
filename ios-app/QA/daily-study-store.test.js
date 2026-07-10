@@ -24,7 +24,7 @@ for (const required of [
   "dailySession(topicId:",
   "nextDailyCard(topicId:",
   "completeDailyCard(topicId:",
-  "card(topicId: String, englishPhrase: String)",
+  "deferDailyCard(topicId:",
   "persistDailyStudyProgress()",
 ]) {
   expect(store.includes(required), `LearningStore should provide ${required}`);
@@ -45,6 +45,14 @@ expect(
 expect(
   !models.includes("searchableText") && !models.includes("searchableTerms"),
   "Deleted topic search should not leave obsolete search indexes in the card models."
+);
+expect(
+  !store.includes("recentTopic(id:") && !store.includes("card(topicId: String, englishPhrase: String)"),
+  "LearningStore should not retain Recent Topic lookup APIs."
+);
+expect(
+  !models.includes("struct RecentTopic") && !models.includes("struct RecentSubtopic"),
+  "Runtime models should not retain Recent Topic payload types."
 );
 
 console.log("Daily study store checks passed.");

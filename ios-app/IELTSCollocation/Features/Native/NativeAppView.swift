@@ -3,8 +3,6 @@ import UniformTypeIdentifiers
 
 enum AppRoute: Hashable {
     case topic(String)
-    case topicCard(topicId: String, cardId: String)
-    case recent(String)
     case memoryBank
     case settings
 }
@@ -35,10 +33,6 @@ struct NativeAppView: View {
         switch route {
         case .topic(let topicId):
             TopicStudyView(store: store, path: $path, topicId: topicId)
-        case .topicCard(let topicId, let cardId):
-            TopicStudyView(store: store, path: $path, topicId: topicId, startingCardId: cardId)
-        case .recent(let topicId):
-            RecentTopicView(store: store, path: $path, topicId: topicId)
         case .memoryBank:
             MemoryBankView(store: store, path: $path)
         case .settings:
@@ -101,7 +95,6 @@ struct HomeView: View {
             HStack(spacing: 10) {
                 SummaryPill(value: "\(store.cards.filter(store.isDue).count)", label: "due")
                 SummaryPill(value: "\(store.memoryBankCards().count)", label: "saved")
-                SummaryPill(value: "\(store.metadata?.subtopicCount ?? 0)", label: "recent")
             }
 
             HStack(spacing: 12) {
@@ -152,29 +145,14 @@ struct TopicStudyView: View {
     @ObservedObject var store: LearningStore
     @Binding var path: [AppRoute]
     let topicId: String
-    let startingCardId: String?
 
     @State private var revealed = false
-    @State private var consumedStartingCard = false
     @State private var showGalleryPlaceholder = false
-
-    init(store: LearningStore, path: Binding<[AppRoute]>, topicId: String, startingCardId: String? = nil) {
-        self.store = store
-        self._path = path
-        self.topicId = topicId
-        self.startingCardId = startingCardId
-    }
 
     private var topic: Topic? { store.topic(id: topicId) }
 
     private var currentCard: Flashcard? {
-        if !consumedStartingCard,
-           let startingCardId,
-           let card = store.card(id: startingCardId),
-           card.topic == topicId {
-            return card
-        }
-        return store.nextDailyCard(topicId: topicId)
+        store.nextDailyCard(topicId: topicId)
     }
 
     var body: some View {
@@ -185,24 +163,6 @@ struct TopicStudyView: View {
                     topic: topic,
                     progress: store.dailyProgressFraction(topicId: topicId)
                 )
-
-                HStack(spacing: 12) {
-                    Button {
-                        path.append(.recent(topicId))
-                    } label: {
-                        Label("Recent Topic", systemImage: "clock")
-                            .frame(maxWidth: .infinity)
-                    }
-                    .buttonStyle(SecondaryGlassButtonStyle())
-
-                    Button {
-                        path.append(.memoryBank)
-                    } label: {
-                        Label("Memory Bank", systemImage: "bookmark")
-                            .frame(maxWidth: .infinity)
-                    }
-                    .buttonStyle(SecondaryGlassButtonStyle())
-                }
 
                 if let card = currentCard {
                     SingleCardStudyView(
@@ -223,12 +183,21 @@ struct TopicStudyView: View {
         }
         .background(AppBackground(topic: topic))
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    path.append(.memoryBank)
+                } label: {
+                    Image(systemName: "bookmark")
+                }
+                .accessibilityLabel("Memory Bank")
+            }
+        }
         .onAppear {
             store.rememberTopic(topicId)
             store.prepareDailySession(topicId: topicId)
         }
         .onReceive(NotificationCenter.default.publisher(for: Notification.Name.NSCalendarDayChanged)) { _ in
-            consumedStartingCard = false
             revealed = false
             store.prepareDailySession(topicId: topicId)
         }
@@ -240,14 +209,13 @@ struct TopicStudyView: View {
     }
 
     private func rate(_ card: Flashcard, as rating: ReviewRating) {
-        let isStartingCard = card.id == startingCardId && !consumedStartingCard
         withAnimation(.snappy) {
             _ = store.scheduleReview(card: card, rating: rating)
-            if !isStartingCard {
+            switch rating {
+            case .again, .hard:
+                _ = store.deferDailyCard(topicId: topicId, cardId: card.id)
+            case .good, .easy:
                 _ = store.completeDailyCard(topicId: topicId, cardId: card.id)
-            }
-            if isStartingCard {
-                consumedStartingCard = true
             }
             revealed = false
         }
@@ -577,71 +545,6 @@ struct MemoryBankView: View {
     }
 }
 
-struct RecentTopicView: View {
-    @ObservedObject var store: LearningStore
-    @Binding var path: [AppRoute]
-    let topicId: String
-
-    private var topic: Topic? { store.topic(id: topicId) }
-    private var recentTopic: RecentTopic? { store.recentTopic(id: topicId) }
-
-    var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                AppHeader(title: "Recent Topic", subtitle: "\(topicId) · \(recentTopic?.zh ?? "")", actionIcon: "play.fill", actionLabel: "Start topic") {
-                    path.append(.topic(topicId))
-                }
-
-                ForEach(recentTopic?.subtopics ?? []) { subtopic in
-                    VStack(alignment: .leading, spacing: 12) {
-                        Text(subtopic.zh)
-                            .font(.caption.weight(.heavy))
-                            .foregroundStyle(topic?.tint ?? .green)
-                        Text(subtopic.title)
-                            .font(.title3.weight(.heavy))
-                            .multilineTextAlignment(.leading)
-
-                        LazyVGrid(columns: [GridItem(.adaptive(minimum: 132), spacing: 8)], alignment: .leading, spacing: 8) {
-                            ForEach(subtopic.phrases, id: \.self) { phrase in
-                                Button {
-                                    openRecentPhrase(phrase)
-                                } label: {
-                                    Text(phrase)
-                                        .font(.caption.weight(.semibold))
-                                        .lineLimit(2)
-                                        .frame(maxWidth: .infinity, alignment: .leading)
-                                        .padding(.horizontal, 10)
-                                        .padding(.vertical, 8)
-                                        .background(.white.opacity(0.68), in: Capsule())
-                                }
-                                .buttonStyle(.plain)
-                                .accessibilityLabel("Study \(phrase)")
-                            }
-                        }
-                    }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(16)
-                    .background {
-                        TopicSoftCardBackground(topic: topic, cornerRadius: 24)
-                    }
-                }
-            }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 14)
-        }
-        .background(AppBackground(topic: topic))
-        .navigationBarTitleDisplayMode(.inline)
-    }
-
-    private func openRecentPhrase(_ phrase: String) {
-        if let card = store.card(topicId: topicId, englishPhrase: phrase) {
-            path.append(.topicCard(topicId: topicId, cardId: card.id))
-        } else {
-            path.append(.topic(topicId))
-        }
-    }
-}
-
 struct SettingsView: View {
     @ObservedObject var store: LearningStore
     @State private var exportURL: URL?
@@ -653,7 +556,6 @@ struct SettingsView: View {
             Section("Content") {
                 LabeledContent("Cards", value: "\(store.metadata?.cardCount ?? 0)")
                 LabeledContent("Topics", value: "\(store.metadata?.topicCount ?? 0)")
-                LabeledContent("Recent subtopics", value: "\(store.metadata?.subtopicCount ?? 0)")
             }
 
             Section("Memory") {

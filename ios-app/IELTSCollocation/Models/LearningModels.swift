@@ -7,13 +7,11 @@ struct AppContent: Decodable {
     let metadata: ContentMetadata
     let topics: [Topic]
     let cards: [Flashcard]
-    let recentTopics: [RecentTopic]
 }
 
 struct ContentMetadata: Decodable {
     let cardCount: Int
     let topicCount: Int
-    let subtopicCount: Int
     let synonymOptionCount: Int
 }
 
@@ -73,22 +71,8 @@ struct SynonymOption: Decodable, Identifiable, Hashable {
     let example: String?
 }
 
-struct RecentTopic: Decodable, Identifiable, Hashable {
-    let id: String
-    let zh: String
-    let subtopics: [RecentSubtopic]
-}
-
-struct RecentSubtopic: Decodable, Identifiable, Hashable {
-    var id: String { title }
-
-    let title: String
-    let zh: String
-    let phrases: [String]
-}
-
 struct DailyStudySession: Codable, Equatable {
-    let targetCardIds: [String]
+    var targetCardIds: [String]
     var completedCardIds: Set<String>
 
     init(targetCardIds: [String], completedCardIds: Set<String> = []) {
@@ -114,6 +98,16 @@ struct DailyStudySession: Codable, Equatable {
     mutating func complete(_ cardId: String) -> Bool {
         guard targetCardIds.contains(cardId) else { return false }
         return completedCardIds.insert(cardId).inserted
+    }
+
+    @discardableResult
+    mutating func deferCard(_ cardId: String) -> Bool {
+        guard !completedCardIds.contains(cardId),
+              let index = targetCardIds.firstIndex(of: cardId) else {
+            return false
+        }
+        targetCardIds.append(targetCardIds.remove(at: index))
+        return true
     }
 }
 
@@ -146,6 +140,15 @@ struct DailyStudyProgress: Codable, Equatable {
     @discardableResult
     mutating func complete(topicId: String, cardId: String) -> Bool {
         guard var session = sessions[topicId], session.complete(cardId) else {
+            return false
+        }
+        sessions[topicId] = session
+        return true
+    }
+
+    @discardableResult
+    mutating func deferCard(topicId: String, cardId: String) -> Bool {
+        guard var session = sessions[topicId], session.deferCard(cardId) else {
             return false
         }
         sessions[topicId] = session
@@ -237,6 +240,18 @@ struct MemoryExport: Codable {
     let bank: [String]
     let reviewLog: [ReviewLogEntry]
     let reviews: [String: ReviewRecord]
+}
+
+enum MemoryImportMerger {
+    static func reviewRecords(
+        existing: [String: ReviewRecord],
+        payload: MemoryExport
+    ) -> [String: ReviewRecord] {
+        var merged = existing
+        payload.tables.reviewState.forEach { merged[$0.cardId] = $0 }
+        payload.reviews.forEach { merged[$0.key] = $0.value }
+        return merged
+    }
 }
 
 struct MemoryTables: Codable {

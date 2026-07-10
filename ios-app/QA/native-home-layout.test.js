@@ -31,8 +31,8 @@ expect(
   "The standalone Zen route should not remain after single-card study becomes the default."
 );
 expect(
-  source.includes("case topicCard(topicId: String, cardId: String)"),
-  "Recent Topic should have an explicit single-card route."
+  !source.includes("case topicCard") && !source.includes("case recent"),
+  "Recent Topic routes should be removed after their cards join the main decks."
 );
 
 expect(
@@ -77,8 +77,13 @@ for (const removed of ["TextField(", "Picker(", "LazyVStack", "SummaryPill", "Fl
 expect(source.includes("struct TopicProgressHeader: View"), "Topic page should render progress inside its title card.");
 expect(source.includes("struct SingleCardStudyView: View"), "Topic page should render exactly one dedicated study card.");
 expect(source.includes("struct NoDueTopicView: View"), "Topic page should provide a no-due/completed state.");
-expect(source.includes('Label("Recent Topic"'), "Recent Topic should remain the first topic action.");
-expect(source.includes('Label("Memory Bank"'), "Memory Bank should sit beside Recent Topic.");
+expect(!source.includes('Label("Recent Topic"'), "Topic study should not expose a Recent Topic button.");
+expect(
+  topicStudySection[1].includes("ToolbarItem(placement: .topBarTrailing)") &&
+    topicStudySection[1].includes('Image(systemName: "bookmark")') &&
+    topicStudySection[1].includes('.accessibilityLabel("Memory Bank")'),
+  "Memory Bank should use an accessible trailing navigation-bar button."
+);
 expect(source.includes("今天没有待复习卡片"), "No-due state should explain that today's queue is empty.");
 expect(source.includes("学习其他话题"), "No-due state should offer a route back to topic selection.");
 expect(source.includes("查看全部卡片"), "No-due state should include the future gallery placeholder.");
@@ -87,10 +92,12 @@ expect(
   topicStudySection[1].includes("Notification.Name.NSCalendarDayChanged"),
   "An open topic should rebuild its daily queue when the local calendar day changes."
 );
+expect(!topicStudySection[1].includes("startingCardId"), "Topic study should no longer special-case Recent Topic cards.");
 expect(
-  topicStudySection[1].includes("let isStartingCard = card.id == startingCardId && !consumedStartingCard") &&
-    topicStudySection[1].includes("if !isStartingCard"),
-  "A card opened from Recent Topic should never increment the daily Due progress."
+  topicStudySection[1].includes("case .again, .hard:") &&
+    topicStudySection[1].includes("deferDailyCard(topicId:") &&
+    topicStudySection[1].includes("case .good, .easy:"),
+  "Again and Hard should defer the card, while Good and Easy complete it."
 );
 
 const progressHeaderSection = source.match(/struct TopicProgressHeader: View \{([\s\S]*?)\n\}\n\nstruct NoDueTopicView/);
@@ -117,15 +124,7 @@ expect(
   "Single-card ratings should stay in one ordered row on narrow phones."
 );
 
-const recentTopicSection = source.match(/struct RecentTopicView: View \{([\s\S]*?)\n\}\n\nstruct SettingsView/);
-expect(recentTopicSection, "RecentTopicView should be present.");
-expect(
-  recentTopicSection[1].includes("ForEach(subtopic.phrases, id: \\.self) { phrase in"),
-  "Each Recent Topic phrase should be independently selectable."
-);
-expect(
-  recentTopicSection[1].includes("openRecentPhrase(phrase)"),
-  "Selecting a Recent Topic phrase should use the single-card resolver."
-);
+expect(!source.includes("struct RecentTopicView"), "RecentTopicView should be removed.");
+expect(!source.includes('label: "recent"'), "Home hero should not display a Recent count.");
 
 console.log("Native single-card topic layout checks passed.");
