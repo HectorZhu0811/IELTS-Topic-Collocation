@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zen Card Transition Animation Previews</title>
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --ink: #1d1d1f;
+      --muted: #6e6e73;
+      --panel: #ffffff;
+      --line: #d8d8df;
+      --topic: #059669;
+      --shadow: 0 22px 54px rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Noto Sans SC", sans-serif;
+    }
+
+    header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 44px clamp(20px, 5vw, 72px) 24px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 5vw, 68px);
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .header-copy {
+      max-width: 760px;
+      margin: 14px 0 0;
+      color: var(--muted);
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+    main {
+      display: grid;
+      gap: 22px;
+      padding: 0 clamp(16px, 4vw, 56px) 56px;
+    }
+
+    .preview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .preview {
+      --rating: #16a34a;
+      position: relative;
+      display: grid;
+      gap: 16px;
+      min-height: 720px;
+      padding: 20px;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      border-radius: 24px;
+      background: var(--panel);
+      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.06);
+      overflow: hidden;
+    }
+
+    .preview-head {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .preview-copy {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    button {
+      height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0 16px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+      font-weight: 850;
+      cursor: pointer;
+      transition: transform 180ms ease, border-color 180ms ease, color 180ms ease, background 180ms ease;
+    }
+
+    button:hover,
+    button:focus-visible {
+      transform: translateY(-1px);
+      border-color: var(--topic);
+      color: var(--topic);
+      outline: 0;
+    }
+
+    .play-button {
+      flex: 0 0 auto;
+      border-color: #0071e3;
+      background: #0071e3;
+      color: #fff;
+    }
+
+    .play-button:hover,
+    .play-button:focus-visible {
+      color: #fff;
+    }
+
+    .stage {
+      position: relative;
+      display: grid;
+      align-items: stretch;
+      min-height: 420px;
+      border-radius: 20px;
+      background:
+        linear-gradient(135deg, color-mix(in srgb, var(--topic), #fff 91%), #fff 60%);
+      overflow: hidden;
+    }
+
+    .card {
+      position: absolute;
+      inset: 18px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 18px;
+      padding: clamp(22px, 4vw, 44px);
+      border: 1px solid color-mix(in srgb, var(--topic), #fff 55%);
+      border-radius: 18px;
+      background: #fff;
+      box-shadow: 0 18px 38px rgba(0, 0, 0, 0.08);
+      transform-origin: center;
+    }
+
+    .next-card {
+      opacity: 0;
+      transform: translateX(38px) scale(0.96);
+    }
+
+    .card-label {
+      color: var(--topic);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .card-text {
+      align-self: center;
+      max-width: 100%;
+      font-size: clamp(30px, 3.8vw, 54px);
+      line-height: 1.06;
+      font-weight: 850;
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    .card-text span {
+      color: var(--topic);
+    }
+
+    .card-hint {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .review-row {
+      position: relative;
+      z-index: 3;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      padding: 12px;
+      border: 1px solid color-mix(in srgb, var(--topic), #fff 70%);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+    }
+
+    .rating {
+      display: grid;
+      place-items: center;
+      height: 54px;
+      border-radius: 14px;
+      background: #fff;
+    }
+
+    .rating small {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .rating[data-rating="again"] {
+      --rating-color: #dc2626;
+    }
+
+    .rating[data-rating="hard"] {
+      --rating-color: #ea580c;
+    }
+
+    .rating[data-rating="good"] {
+      --rating-color: #16a34a;
+    }
+
+    .rating[data-rating="easy"] {
+      --rating-color: #0071e3;
+    }
+
+    .selected {
+      --rating: var(--rating-color);
+      border-color: var(--rating-color);
+      color: var(--rating-color);
+    }
+
+    .mastery-fill,
+    .mastery-pill,
+    .mastery-ribbon {
+      pointer-events: none;
+      position: absolute;
+      z-index: 2;
+      color: #fff;
+      font-weight: 950;
+    }
+
+    .mastery-fill {
+      inset: auto 18px 18px;
+      display: grid;
+      place-items: center;
+      height: 54px;
+      border-radius: 18px;
+      background: var(--rating);
+      transform: translateY(86px) scale(0.86);
+      opacity: 0;
+    }
+
+    .mastery-pill {
+      left: 50%;
+      bottom: 98px;
+      display: inline-grid;
+      place-items: center;
+      min-width: 150px;
+      height: 54px;
+      border-radius: 999px;
+      background: var(--rating);
+      transform: translate(-50%, 18px) scale(0.8);
+      opacity: 0;
+      box-shadow: 0 16px 38px color-mix(in srgb, var(--rating), transparent 58%);
+    }
+
+    .mastery-ribbon {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: grid;
+      align-items: center;
+      height: 0;
+      padding: 0 26px;
+      background: var(--rating);
+      opacity: 0;
+      overflow: hidden;
+    }
+
+    .mastery-ribbon span {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .preview.is-running .review-row .rating {
+      animation: optionFade 760ms ease forwards;
+    }
+
+    .preview.is-running .review-row .rating.selected {
+      animation: selectedHold 760ms ease forwards;
+    }
+
+    .preview.is-running .current-card {
+      animation: cardBreathe 760ms ease forwards;
+    }
+
+    .preview.is-running .next-card {
+      animation: nextCardIn 760ms ease 540ms forwards;
+    }
+
+    .preview.fill.is-running .mastery-fill {
+      animation: fillUp 920ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    }
+
+    .preview.pill.is-running .mastery-pill {
+      animation: pillFloat 920ms cubic-bezier(0.18, 0.9, 0.2, 1) forwards;
+    }
+
+    .preview.ribbon.is-running .mastery-ribbon {
+      animation: ribbonRise 920ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    }
+
+    .preview.pill.is-running .current-card {
+      animation: cardSink 760ms ease forwards;
+    }
+
+    .preview.ribbon.is-running .current-card {
+      animation: cardSlideLeft 820ms ease forwards;
+    }
+
+    @keyframes optionFade {
+      to {
+        opacity: 0;
+        transform: scale(0.88);
+      }
+    }
+
+    @keyframes selectedHold {
+      0% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      45% {
+        opacity: 1;
+        transform: scale(1.08);
+      }
+
+      100% {
+        opacity: 0;
+        transform: scale(1.18);
+      }
+    }
+
+    @keyframes cardBreathe {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      55% {
+        transform: scale(0.975);
+        opacity: 0.92;
+      }
+
+      100% {
+        transform: translateY(-12px) scale(0.96);
+        opacity: 0;
+      }
+    }
+
+    @keyframes cardSink {
+      0% {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(18px) scale(0.94);
+        opacity: 0;
+      }
+    }
+
+    @keyframes cardSlideLeft {
+      0% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateX(-44px) scale(0.96);
+        opacity: 0;
+      }
+    }
+
+    @keyframes nextCardIn {
+      to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+      }
+    }
+
+    @keyframes fillUp {
+      0% {
+        opacity: 0;
+        transform: translateY(86px) scale(0.86);
+      }
+
+      45% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+
+      100% {
+        inset: 18px;
+        height: auto;
+        border-radius: 18px;
+        opacity: 0.96;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes pillFloat {
+      0% {
+        opacity: 0;
+        transform: translate(-50%, 18px) scale(0.8);
+      }
+
+      45% {
+        opacity: 1;
+        transform: translate(-50%, 0) scale(1.08);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translate(-50%, -84px) scale(0.92);
+      }
+    }
+
+    @keyframes ribbonRise {
+      0% {
+        height: 0;
+        opacity: 0;
+      }
+
+      42% {
+        height: 88px;
+        opacity: 1;
+      }
+
+      100% {
+        height: 100%;
+        opacity: 0.96;
+      }
+    }
+
+    .notes {
+      display: grid;
+      gap: 10px;
+      padding: 18px 20px;
+      border-radius: 20px;
+      background: #fff;
+      color: var(--muted);
+      line-height: 1.55;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+    }
+
+    .notes strong {
+      color: var(--ink);
+    }
+
+    @media (max-width: 1180px) {
+      .preview-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .preview {
+        min-height: 660px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      header {
+        align-items: start;
+        flex-direction: column;
+      }
+
+      .preview {
+        min-height: 620px;
+        padding: 14px;
+        border-radius: 18px;
+      }
+
+      .preview-head {
+        flex-direction: column;
+      }
+
+      .play-button {
+        width: 100%;
+      }
+
+      .stage {
+        min-height: 360px;
+      }
+
+      .card {
+        inset: 12px;
+        padding: 18px;
+      }
+
+      .card-text {
+        font-size: clamp(30px, 10vw, 48px);
+      }
+
+      .review-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">Zen transition previews</p>
+      <h1>把掌握情况变成下一张卡片的过渡。</h1>
+      <p class="header-copy">三种方案都从同一个动作开始：英文面出现后，学生再次按空格或点击掌握按钮，先看到掌握反馈，再进入下一张。</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="preview-grid" aria-label="Animation options">
+      <article class="preview fill" data-default-rating="good">
+        <div class="preview-head">
+          <div>
+            <p class="eyebrow">Option 1</p>
+            <h2>Mastery Fill</h2>
+            <p class="preview-copy">最贴近你的想法：选中的掌握按钮放大成整张反馈层，其他三个选项淡出。反馈非常明确，适合主方案。</p>
+          </div>
+          <button class="play-button" type="button">Play</button>
+        </div>
+        <div class="stage">
+          <div class="card current-card">
+            <span class="card-label">English back</span>
+            <strong class="card-text"><span>accelerating</span><br>climate change</strong>
+            <span class="card-hint">Press Space again to rate and move on.</span>
+          </div>
+          <div class="card next-card">
+            <span class="card-label">Next card</span>
+            <strong class="card-text"><span>reduce</span><br>carbon emissions</strong>
+            <span class="card-hint">Ready for recall.</span>
+          </div>
+          <div class="mastery-fill">认识 · 下次 1 天后</div>
+        </div>
+        <div class="review-row">
+          <button class="rating" data-rating="again" type="button">不会<small>今天</small></button>
+          <button class="rating" data-rating="hard" type="button">模糊<small>1天</small></button>
+          <button class="rating selected" data-rating="good" type="button">认识<small>1天</small></button>
+          <button class="rating" data-rating="easy" type="button">熟练<small>4天</small></button>
+        </div>
+      </article>
+
+      <article class="preview pill" data-default-rating="easy">
+        <div class="preview-head">
+          <div>
+            <p class="eyebrow">Option 2</p>
+            <h2>Floating Status</h2>
+            <p class="preview-copy">选中状态变成一个轻盈的胶囊提示，上浮后消失，卡片向后收起。它更克制，适合高频刷卡，不容易疲劳。</p>
+          </div>
+          <button class="play-button" type="button">Play</button>
+        </div>
+        <div class="stage">
+          <div class="card current-card">
+            <span class="card-label">English back</span>
+            <strong class="card-text"><span>promote</span><br>renewable energy</strong>
+            <span class="card-hint">A fast, quiet confirmation before the next card.</span>
+          </div>
+          <div class="card next-card">
+            <span class="card-label">Next card</span>
+            <strong class="card-text"><span>strict</span><br>environmental rules</strong>
+            <span class="card-hint">No break in practice rhythm.</span>
+          </div>
+          <div class="mastery-pill">熟练 · 4 天后</div>
+        </div>
+        <div class="review-row">
+          <button class="rating" data-rating="again" type="button">不会<small>今天</small></button>
+          <button class="rating" data-rating="hard" type="button">模糊<small>1天</small></button>
+          <button class="rating" data-rating="good" type="button">认识<small>1天</small></button>
+          <button class="rating selected" data-rating="easy" type="button">熟练<small>4天</small></button>
+        </div>
+      </article>
+
+      <article class="preview ribbon" data-default-rating="hard">
+        <div class="preview-head">
+          <div>
+            <p class="eyebrow">Option 3</p>
+            <h2>Review Ribbon</h2>
+            <p class="preview-copy">底部复习条上升成彩色过渡幕，像把本张卡片“归档”。它更有仪式感，适合完成感强的学习场景。</p>
+          </div>
+          <button class="play-button" type="button">Play</button>
+        </div>
+        <div class="stage">
+          <div class="card current-card">
+            <span class="card-label">English back</span>
+            <strong class="card-text"><span>sustainable</span><br>development</strong>
+            <span class="card-hint">The review row becomes the transition itself.</span>
+          </div>
+          <div class="card next-card">
+            <span class="card-label">Next card</span>
+            <strong class="card-text"><span>tackle</span><br>air pollution</strong>
+            <span class="card-hint">The next task arrives from the right.</span>
+          </div>
+          <div class="mastery-ribbon"><span><strong>模糊</strong><em>加入弱项 · 1 天后复习</em></span></div>
+        </div>
+        <div class="review-row">
+          <button class="rating" data-rating="again" type="button">不会<small>今天</small></button>
+          <button class="rating selected" data-rating="hard" type="button">模糊<small>1天</small></button>
+          <button class="rating" data-rating="good" type="button">认识<small>1天</small></button>
+          <button class="rating" data-rating="easy" type="button">熟练<small>4天</small></button>
+        </div>
+      </article>
+    </section>
+
+    <section class="notes">
+      <strong>建议优先级：</strong>
+      <span>我建议先落地 Option 1，因为它最符合你“放大填充、隐去其他选项”的想法，而且学生能立刻明白这一步是在记录掌握情况。Option 2 更适合后续做“快速复习模式”，Option 3 可以留给 session 完成或阶段总结时使用。</span>
+    </section>
+  </main>
+
+  <script>
+    const ratingColors = {
+      again: "#dc2626",
+      hard: "#ea580c",
+      good: "#16a34a",
+      easy: "#0071e3"
+    };
+
+    function resetPreview(preview) {
+      preview.classList.remove("is-running");
+      preview.querySelectorAll(".rating").forEach((button) => button.classList.remove("selected"));
+    }
+
+    function playPreview(preview, rating) {
+      resetPreview(preview);
+      const selected = preview.querySelector(`[data-rating="${rating}"]`);
+      if (selected) selected.classList.add("selected");
+      preview.style.setProperty("--rating", ratingColors[rating] || ratingColors.good);
+      void preview.offsetWidth;
+      preview.classList.add("is-running");
+      window.setTimeout(() => preview.classList.remove("is-running"), 1700);
+    }
+
+    document.querySelectorAll(".preview").forEach((preview) => {
+      const defaultRating = preview.dataset.defaultRating || "good";
+      preview.querySelector(".play-button").addEventListener("click", () => playPreview(preview, defaultRating));
+      preview.querySelectorAll(".rating").forEach((button) => {
+        button.addEventListener("click", () => playPreview(preview, button.dataset.rating));
+      });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.code !== "Space") return;
+      event.preventDefault();
+      const first = document.querySelector(".preview");
+      playPreview(first, first.dataset.defaultRating || "good");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,2454 @@
+{
+  "topic": "Society",
+  "guidance": "project-docs/synonym-curation-guidelines.md",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "issueCount": 84,
+  "issueCardCount": 34,
+  "issueRows": [
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "人口老龄化",
+      "baseEnglish": "aging population",
+      "focus": "rapidly growing",
+      "original": "rapidly growing aging population",
+      "term": "context-specific",
+      "phrase": "context-specific aging population",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "人口老龄化",
+      "baseEnglish": "aging population",
+      "focus": "rapidly growing",
+      "original": "rapidly growing aging population",
+      "term": "controversial",
+      "phrase": "controversial aging population",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "人口老龄化",
+      "baseEnglish": "aging population",
+      "focus": "address",
+      "original": "address aging population",
+      "term": "maintain",
+      "phrase": "maintain aging population",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "人口老龄化",
+      "baseEnglish": "aging population",
+      "focus": "address",
+      "original": "address aging population",
+      "term": "assess",
+      "phrase": "assess aging population",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "人口老龄化",
+      "baseEnglish": "aging population",
+      "focus": "address",
+      "original": "address aging population",
+      "term": "overlook",
+      "phrase": "overlook aging population",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "出生率",
+      "baseEnglish": "birth rate",
+      "focus": "persistently low",
+      "original": "persistently low birth rate",
+      "term": "valuable",
+      "phrase": "valuable birth rate",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "出生率",
+      "baseEnglish": "birth rate",
+      "focus": "persistently low",
+      "original": "persistently low birth rate",
+      "term": "long-term",
+      "phrase": "long-term birth rate",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "出生率",
+      "baseEnglish": "birth rate",
+      "focus": "persistently low",
+      "original": "persistently low birth rate",
+      "term": "problematic",
+      "phrase": "problematic birth rate",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "出生率",
+      "baseEnglish": "birth rate",
+      "focus": "reverse",
+      "original": "reverse a low birth rate",
+      "term": "reverse",
+      "phrase": "reverse a low birth rate",
+      "zh": "扭转",
+      "tone": "这条搭配适合讲通过家庭支持、育儿补贴或住房政策改善低出生率。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "出生率",
+      "baseEnglish": "birth rate",
+      "focus": "reverse",
+      "original": "reverse a low birth rate",
+      "term": "analyse",
+      "phrase": "analyse a low birth rate",
+      "zh": "分析",
+      "tone": "这条搭配适合把低出生率作为人口趋势来客观研究。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "单亲家庭",
+      "baseEnglish": "single-parent family",
+      "focus": "vulnerable",
+      "original": "vulnerable single-parent family",
+      "term": "context-specific",
+      "phrase": "context-specific single-parent family",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "单亲家庭",
+      "baseEnglish": "single-parent family",
+      "focus": "vulnerable",
+      "original": "vulnerable single-parent family",
+      "term": "controversial",
+      "phrase": "controversial single-parent family",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "单亲家庭",
+      "baseEnglish": "single-parent family",
+      "focus": "support",
+      "original": "support single-parent families",
+      "term": "maintain",
+      "phrase": "maintain single-parent families",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "单亲家庭",
+      "baseEnglish": "single-parent family",
+      "focus": "support",
+      "original": "support single-parent families",
+      "term": "discuss",
+      "phrase": "discuss single-parent families",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "单亲家庭",
+      "baseEnglish": "single-parent family",
+      "focus": "support",
+      "original": "support single-parent families",
+      "term": "overlook",
+      "phrase": "overlook single-parent families",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "核心家庭",
+      "baseEnglish": "nuclear family",
+      "focus": "typical",
+      "original": "typical nuclear family",
+      "term": "meaningful",
+      "phrase": "meaningful nuclear family",
+      "zh": "有意义的",
+      "tone": "这条搭配适合强调真实价值或影响。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "核心家庭",
+      "baseEnglish": "nuclear family",
+      "focus": "typical",
+      "original": "typical nuclear family",
+      "term": "measurable",
+      "phrase": "measurable nuclear family",
+      "zh": "可衡量的",
+      "tone": "这条搭配适合数据或效果评估语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "核心家庭",
+      "baseEnglish": "nuclear family",
+      "focus": "typical",
+      "original": "typical nuclear family",
+      "term": "limited",
+      "phrase": "limited nuclear family",
+      "zh": "有限的",
+      "tone": "这条搭配适合批判作用或覆盖面不足。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "核心家庭",
+      "baseEnglish": "nuclear family",
+      "focus": "form",
+      "original": "form a nuclear family",
+      "term": "develop",
+      "phrase": "develop a nuclear family",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "核心家庭",
+      "baseEnglish": "nuclear family",
+      "focus": "form",
+      "original": "form a nuclear family",
+      "term": "discuss",
+      "phrase": "discuss a nuclear family",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "核心家庭",
+      "baseEnglish": "nuclear family",
+      "focus": "form",
+      "original": "form a nuclear family",
+      "term": "undermine",
+      "phrase": "undermine a nuclear family",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "代际关系",
+      "baseEnglish": "intergenerational relationship",
+      "focus": "harmonious",
+      "original": "harmonious intergenerational relationship",
+      "term": "meaningful",
+      "phrase": "meaningful intergenerational relationship",
+      "zh": "有意义的",
+      "tone": "这条搭配适合强调真实价值或影响。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "代际关系",
+      "baseEnglish": "intergenerational relationship",
+      "focus": "harmonious",
+      "original": "harmonious intergenerational relationship",
+      "term": "measurable",
+      "phrase": "measurable intergenerational relationship",
+      "zh": "可衡量的",
+      "tone": "这条搭配适合数据或效果评估语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "代际关系",
+      "baseEnglish": "intergenerational relationship",
+      "focus": "harmonious",
+      "original": "harmonious intergenerational relationship",
+      "term": "limited",
+      "phrase": "limited intergenerational relationship",
+      "zh": "有限的",
+      "tone": "这条搭配适合批判作用或覆盖面不足。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "代际关系",
+      "baseEnglish": "intergenerational relationship",
+      "focus": "improve",
+      "original": "improve intergenerational relationships",
+      "term": "maintain",
+      "phrase": "maintain intergenerational relationships",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "代际关系",
+      "baseEnglish": "intergenerational relationship",
+      "focus": "improve",
+      "original": "improve intergenerational relationships",
+      "term": "discuss",
+      "phrase": "discuss intergenerational relationships",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "代际关系",
+      "baseEnglish": "intergenerational relationship",
+      "focus": "improve",
+      "original": "improve intergenerational relationships",
+      "term": "overlook",
+      "phrase": "overlook intergenerational relationships",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "贫富差距",
+      "baseEnglish": "wealth gap",
+      "focus": "widening",
+      "original": "widening wealth gap",
+      "term": "meaningful",
+      "phrase": "meaningful wealth gap",
+      "zh": "有意义的",
+      "tone": "这条搭配适合强调真实价值或影响。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "贫富差距",
+      "baseEnglish": "wealth gap",
+      "focus": "widening",
+      "original": "widening wealth gap",
+      "term": "measurable",
+      "phrase": "measurable wealth gap",
+      "zh": "可衡量的",
+      "tone": "这条搭配适合数据或效果评估语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "贫富差距",
+      "baseEnglish": "wealth gap",
+      "focus": "widening",
+      "original": "widening wealth gap",
+      "term": "limited",
+      "phrase": "limited wealth gap",
+      "zh": "有限的",
+      "tone": "这条搭配适合批判作用或覆盖面不足。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "贫富差距",
+      "baseEnglish": "wealth gap",
+      "focus": "narrow",
+      "original": "narrow the wealth gap",
+      "term": "develop",
+      "phrase": "develop the wealth gap",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "贫富差距",
+      "baseEnglish": "wealth gap",
+      "focus": "narrow",
+      "original": "narrow the wealth gap",
+      "term": "discuss",
+      "phrase": "discuss the wealth gap",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "贫富差距",
+      "baseEnglish": "wealth gap",
+      "focus": "narrow",
+      "original": "narrow the wealth gap",
+      "term": "overlook",
+      "phrase": "overlook the wealth gap",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "社会流动性",
+      "baseEnglish": "social mobility",
+      "focus": "upward",
+      "original": "upward social mobility",
+      "term": "meaningful",
+      "phrase": "meaningful social mobility",
+      "zh": "有意义的",
+      "tone": "这条搭配适合强调真实价值或影响。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "社会流动性",
+      "baseEnglish": "social mobility",
+      "focus": "upward",
+      "original": "upward social mobility",
+      "term": "measurable",
+      "phrase": "measurable social mobility",
+      "zh": "可衡量的",
+      "tone": "这条搭配适合数据或效果评估语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "社会流动性",
+      "baseEnglish": "social mobility",
+      "focus": "upward",
+      "original": "upward social mobility",
+      "term": "limited",
+      "phrase": "limited social mobility",
+      "zh": "有限的",
+      "tone": "这条搭配适合批判作用或覆盖面不足。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "最低工资",
+      "baseEnglish": "minimum wage",
+      "focus": "statutory",
+      "original": "statutory minimum wage",
+      "term": "valuable",
+      "phrase": "valuable minimum wage",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "最低工资",
+      "baseEnglish": "minimum wage",
+      "focus": "statutory",
+      "original": "statutory minimum wage",
+      "term": "long-term",
+      "phrase": "long-term minimum wage",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "最低工资",
+      "baseEnglish": "minimum wage",
+      "focus": "statutory",
+      "original": "statutory minimum wage",
+      "term": "problematic",
+      "phrase": "problematic minimum wage",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "最低工资",
+      "baseEnglish": "minimum wage",
+      "focus": "raise",
+      "original": "raise the minimum wage",
+      "term": "raise",
+      "phrase": "raise the minimum wage",
+      "zh": "提高",
+      "tone": "这条搭配适合讲改善低收入劳动者的收入保障。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "基本生活保障",
+      "baseEnglish": "basic living security",
+      "focus": "adequate",
+      "original": "adequate basic living security",
+      "term": "context-specific",
+      "phrase": "context-specific basic living security",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "基本生活保障",
+      "baseEnglish": "basic living security",
+      "focus": "adequate",
+      "original": "adequate basic living security",
+      "term": "controversial",
+      "phrase": "controversial basic living security",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "基本生活保障",
+      "baseEnglish": "basic living security",
+      "focus": "ensure",
+      "original": "ensure basic living security",
+      "term": "promote",
+      "phrase": "promote basic living security",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "基本生活保障",
+      "baseEnglish": "basic living security",
+      "focus": "ensure",
+      "original": "ensure basic living security",
+      "term": "analyse",
+      "phrase": "analyse basic living security",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "基本生活保障",
+      "baseEnglish": "basic living security",
+      "focus": "ensure",
+      "original": "ensure basic living security",
+      "term": "sideline",
+      "phrase": "sideline basic living security",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "残障歧视",
+      "baseEnglish": "disability discrimination",
+      "focus": "prevent",
+      "original": "prevent disability discrimination",
+      "term": "prevent",
+      "phrase": "prevent disability discrimination",
+      "zh": "预防",
+      "tone": "积极语气，强调主动减少风险。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "性别平等",
+      "baseEnglish": "gender equality",
+      "focus": "genuine",
+      "original": "genuine gender equality",
+      "term": "meaningful",
+      "phrase": "meaningful gender equality",
+      "zh": "有意义的",
+      "tone": "这条搭配适合强调真实价值或影响。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "性别平等",
+      "baseEnglish": "gender equality",
+      "focus": "genuine",
+      "original": "genuine gender equality",
+      "term": "measurable",
+      "phrase": "measurable gender equality",
+      "zh": "可衡量的",
+      "tone": "这条搭配适合数据或效果评估语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "性别平等",
+      "baseEnglish": "gender equality",
+      "focus": "genuine",
+      "original": "genuine gender equality",
+      "term": "limited",
+      "phrase": "limited gender equality",
+      "zh": "有限的",
+      "tone": "这条搭配适合批判作用或覆盖面不足。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "性别平等",
+      "baseEnglish": "gender equality",
+      "focus": "promote",
+      "original": "promote gender equality",
+      "term": "discuss",
+      "phrase": "discuss gender equality",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "性别平等",
+      "baseEnglish": "gender equality",
+      "focus": "promote",
+      "original": "promote gender equality",
+      "term": "overlook",
+      "phrase": "overlook gender equality",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "包容社会",
+      "baseEnglish": "inclusive society",
+      "focus": "truly inclusive",
+      "original": "truly inclusive society",
+      "term": "context-specific",
+      "phrase": "context-specific society",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "包容社会",
+      "baseEnglish": "inclusive society",
+      "focus": "truly inclusive",
+      "original": "truly inclusive society",
+      "term": "controversial",
+      "phrase": "controversial society",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "包容社会",
+      "baseEnglish": "inclusive society",
+      "focus": "build",
+      "original": "build an inclusive society",
+      "term": "build",
+      "phrase": "build an inclusive society",
+      "zh": "建设",
+      "tone": "这条搭配适合讲让不同群体都能公平参与社会生活。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "包容社会",
+      "baseEnglish": "inclusive society",
+      "focus": "build",
+      "original": "build an inclusive society",
+      "term": "discuss",
+      "phrase": "discuss social inclusion",
+      "zh": "讨论社会包容",
+      "tone": "这条搭配适合客观分析包容政策和社会参与。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "包容社会",
+      "baseEnglish": "inclusive society",
+      "focus": "build",
+      "original": "build an inclusive society",
+      "term": "undermine",
+      "phrase": "undermine social inclusion",
+      "zh": "削弱社会包容",
+      "tone": "这条搭配适合批判某些做法使弱势群体更难融入社会。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "多元文化",
+      "baseEnglish": "multiculturalism",
+      "focus": "vibrant",
+      "original": "vibrant multiculturalism",
+      "term": "valuable",
+      "phrase": "valuable multiculturalism",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "多元文化",
+      "baseEnglish": "multiculturalism",
+      "focus": "vibrant",
+      "original": "vibrant multiculturalism",
+      "term": "long-term",
+      "phrase": "long-term multiculturalism",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "多元文化",
+      "baseEnglish": "multiculturalism",
+      "focus": "vibrant",
+      "original": "vibrant multiculturalism",
+      "term": "problematic",
+      "phrase": "problematic multiculturalism",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "多元文化",
+      "baseEnglish": "multiculturalism",
+      "focus": "embrace",
+      "original": "embrace multiculturalism",
+      "term": "promote",
+      "phrase": "promote multiculturalism",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "多元文化",
+      "baseEnglish": "multiculturalism",
+      "focus": "embrace",
+      "original": "embrace multiculturalism",
+      "term": "analyse",
+      "phrase": "analyse multiculturalism",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "多元文化",
+      "baseEnglish": "multiculturalism",
+      "focus": "embrace",
+      "original": "embrace multiculturalism",
+      "term": "sideline",
+      "phrase": "sideline multiculturalism",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "青少年犯罪",
+      "baseEnglish": "juvenile delinquency",
+      "focus": "prevent",
+      "original": "prevent juvenile delinquency",
+      "term": "prevent",
+      "phrase": "prevent juvenile delinquency",
+      "zh": "预防",
+      "tone": "积极语气，强调主动减少风险。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "监禁",
+      "baseEnglish": "imprisonment",
+      "focus": "long-term",
+      "original": "long-term imprisonment",
+      "term": "context-specific",
+      "phrase": "context-specific imprisonment",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "监禁",
+      "baseEnglish": "imprisonment",
+      "focus": "long-term",
+      "original": "long-term imprisonment",
+      "term": "controversial",
+      "phrase": "controversial imprisonment",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "监禁",
+      "baseEnglish": "imprisonment",
+      "focus": "impose",
+      "original": "impose imprisonment",
+      "term": "maintain",
+      "phrase": "maintain imprisonment",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "监禁",
+      "baseEnglish": "imprisonment",
+      "focus": "impose",
+      "original": "impose imprisonment",
+      "term": "assess",
+      "phrase": "assess imprisonment",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "监禁",
+      "baseEnglish": "imprisonment",
+      "focus": "impose",
+      "original": "impose imprisonment",
+      "term": "undermine",
+      "phrase": "undermine imprisonment",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "改造",
+      "baseEnglish": "rehabilitation",
+      "focus": "provide",
+      "original": "provide rehabilitation",
+      "term": "sideline",
+      "phrase": "sideline rehabilitation",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "公民意识",
+      "baseEnglish": "civic awareness",
+      "focus": "strong",
+      "original": "strong civic awareness",
+      "term": "strong",
+      "phrase": "strong civic awareness",
+      "zh": "强烈的",
+      "tone": "这条搭配适合强调学生理解公共责任和公民参与。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "公民意识",
+      "baseEnglish": "civic awareness",
+      "focus": "raise",
+      "original": "raise civic awareness",
+      "term": "raise",
+      "phrase": "raise civic awareness",
+      "zh": "提升",
+      "tone": "这条搭配适合讲教育或公共活动如何培养公民责任感。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "公民意识",
+      "baseEnglish": "civic awareness",
+      "focus": "raise",
+      "original": "raise civic awareness",
+      "term": "assess",
+      "phrase": "assess civic awareness",
+      "zh": "评估",
+      "tone": "这条搭配适合客观衡量学生或公众的公民意识水平。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "公民意识",
+      "baseEnglish": "civic awareness",
+      "focus": "raise",
+      "original": "raise civic awareness",
+      "term": "sideline",
+      "phrase": "sideline civic education",
+      "zh": "边缘化公民教育",
+      "tone": "这条搭配适合批判教育体系把公民意识培养放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "志愿服务",
+      "baseEnglish": "voluntary work / community service",
+      "focus": "meaningful",
+      "original": "meaningful voluntary work",
+      "term": "valuable",
+      "phrase": "valuable voluntary work",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "志愿服务",
+      "baseEnglish": "voluntary work / community service",
+      "focus": "meaningful",
+      "original": "meaningful voluntary work",
+      "term": "long-term",
+      "phrase": "long-term voluntary work",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "志愿服务",
+      "baseEnglish": "voluntary work / community service",
+      "focus": "meaningful",
+      "original": "meaningful voluntary work",
+      "term": "problematic",
+      "phrase": "problematic voluntary work",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "政治参与",
+      "baseEnglish": "political participation",
+      "focus": "active",
+      "original": "active political participation",
+      "term": "valuable",
+      "phrase": "valuable political participation",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "政治参与",
+      "baseEnglish": "political participation",
+      "focus": "active",
+      "original": "active political participation",
+      "term": "long-term",
+      "phrase": "long-term political participation",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "政治参与",
+      "baseEnglish": "political participation",
+      "focus": "active",
+      "original": "active political participation",
+      "term": "problematic",
+      "phrase": "problematic political participation",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "公共抗议",
+      "baseEnglish": "public protest",
+      "focus": "peaceful",
+      "original": "peaceful public protest",
+      "term": "valuable",
+      "phrase": "valuable public protest",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "公共抗议",
+      "baseEnglish": "public protest",
+      "focus": "peaceful",
+      "original": "peaceful public protest",
+      "term": "long-term",
+      "phrase": "long-term public protest",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "adjective",
+      "baseChinese": "公共抗议",
+      "baseEnglish": "public protest",
+      "focus": "peaceful",
+      "original": "peaceful public protest",
+      "term": "problematic",
+      "phrase": "problematic public protest",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "公共抗议",
+      "baseEnglish": "public protest",
+      "focus": "organize",
+      "original": "organize public protests",
+      "term": "organize",
+      "phrase": "organize peaceful public protests",
+      "zh": "组织和平公共抗议",
+      "tone": "这条搭配适合讲以合法和平方式表达公共诉求。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Society",
+      "type": "verb",
+      "baseChinese": "公共抗议",
+      "baseEnglish": "public protest",
+      "focus": "organize",
+      "original": "organize public protests",
+      "term": "analyse",
+      "phrase": "analyse public protests",
+      "zh": "分析公共抗议",
+      "tone": "这条搭配适合研究抗议的原因、规模和社会影响。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    }
+  ],
+  "cardsToReview": [
+    {
+      "cardKey": "Society::adjective::rapidly growing aging population",
+      "topic": "Society",
+      "baseChinese": "人口老龄化",
+      "baseEnglish": "aging population",
+      "type": "adjective",
+      "original": "rapidly growing aging population",
+      "focus": "rapidly growing",
+      "currentOptions": [
+        {
+          "phrase": "practical aging population",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific aging population",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial aging population",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::address aging population",
+      "topic": "Society",
+      "baseChinese": "人口老龄化",
+      "baseEnglish": "aging population",
+      "type": "verb",
+      "original": "address aging population",
+      "focus": "address",
+      "currentOptions": [
+        {
+          "phrase": "maintain aging population",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess aging population",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook aging population",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::persistently low birth rate",
+      "topic": "Society",
+      "baseChinese": "出生率",
+      "baseEnglish": "birth rate",
+      "type": "adjective",
+      "original": "persistently low birth rate",
+      "focus": "persistently low",
+      "currentOptions": [
+        {
+          "phrase": "valuable birth rate",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term birth rate",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic birth rate",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::reverse a low birth rate",
+      "topic": "Society",
+      "baseChinese": "出生率",
+      "baseEnglish": "birth rate",
+      "type": "verb",
+      "original": "reverse a low birth rate",
+      "focus": "reverse",
+      "currentOptions": [
+        {
+          "phrase": "reverse a low birth rate",
+          "term": "reverse",
+          "zh": "扭转",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲通过家庭支持、育儿补贴或住房政策改善低出生率。"
+        },
+        {
+          "phrase": "analyse a low birth rate",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "这条搭配适合把低出生率作为人口趋势来客观研究。"
+        },
+        {
+          "phrase": "ignore a low birth rate",
+          "term": "ignore",
+          "zh": "忽视",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判政府或社会没有正视低出生率的长期压力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::vulnerable single-parent family",
+      "topic": "Society",
+      "baseChinese": "单亲家庭",
+      "baseEnglish": "single-parent family",
+      "type": "adjective",
+      "original": "vulnerable single-parent family",
+      "focus": "vulnerable",
+      "currentOptions": [
+        {
+          "phrase": "practical single-parent family",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific single-parent family",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial single-parent family",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::support single-parent families",
+      "topic": "Society",
+      "baseChinese": "单亲家庭",
+      "baseEnglish": "single-parent family",
+      "type": "verb",
+      "original": "support single-parent families",
+      "focus": "support",
+      "currentOptions": [
+        {
+          "phrase": "maintain single-parent families",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "discuss single-parent families",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook single-parent families",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::typical nuclear family",
+      "topic": "Society",
+      "baseChinese": "核心家庭",
+      "baseEnglish": "nuclear family",
+      "type": "adjective",
+      "original": "typical nuclear family",
+      "focus": "typical",
+      "currentOptions": [
+        {
+          "phrase": "meaningful nuclear family",
+          "term": "meaningful",
+          "zh": "有意义的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调真实价值或影响。"
+        },
+        {
+          "phrase": "measurable nuclear family",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合数据或效果评估语境。"
+        },
+        {
+          "phrase": "limited nuclear family",
+          "term": "limited",
+          "zh": "有限的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判作用或覆盖面不足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::form a nuclear family",
+      "topic": "Society",
+      "baseChinese": "核心家庭",
+      "baseEnglish": "nuclear family",
+      "type": "verb",
+      "original": "form a nuclear family",
+      "focus": "form",
+      "currentOptions": [
+        {
+          "phrase": "develop a nuclear family",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss a nuclear family",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "undermine a nuclear family",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::harmonious intergenerational relationship",
+      "topic": "Society",
+      "baseChinese": "代际关系",
+      "baseEnglish": "intergenerational relationship",
+      "type": "adjective",
+      "original": "harmonious intergenerational relationship",
+      "focus": "harmonious",
+      "currentOptions": [
+        {
+          "phrase": "meaningful intergenerational relationship",
+          "term": "meaningful",
+          "zh": "有意义的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调真实价值或影响。"
+        },
+        {
+          "phrase": "measurable intergenerational relationship",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合数据或效果评估语境。"
+        },
+        {
+          "phrase": "limited intergenerational relationship",
+          "term": "limited",
+          "zh": "有限的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判作用或覆盖面不足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::improve intergenerational relationships",
+      "topic": "Society",
+      "baseChinese": "代际关系",
+      "baseEnglish": "intergenerational relationship",
+      "type": "verb",
+      "original": "improve intergenerational relationships",
+      "focus": "improve",
+      "currentOptions": [
+        {
+          "phrase": "maintain intergenerational relationships",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "discuss intergenerational relationships",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook intergenerational relationships",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::widening wealth gap",
+      "topic": "Society",
+      "baseChinese": "贫富差距",
+      "baseEnglish": "wealth gap",
+      "type": "adjective",
+      "original": "widening wealth gap",
+      "focus": "widening",
+      "currentOptions": [
+        {
+          "phrase": "meaningful wealth gap",
+          "term": "meaningful",
+          "zh": "有意义的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调真实价值或影响。"
+        },
+        {
+          "phrase": "measurable wealth gap",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合数据或效果评估语境。"
+        },
+        {
+          "phrase": "limited wealth gap",
+          "term": "limited",
+          "zh": "有限的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判作用或覆盖面不足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::narrow the wealth gap",
+      "topic": "Society",
+      "baseChinese": "贫富差距",
+      "baseEnglish": "wealth gap",
+      "type": "verb",
+      "original": "narrow the wealth gap",
+      "focus": "narrow",
+      "currentOptions": [
+        {
+          "phrase": "develop the wealth gap",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss the wealth gap",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook the wealth gap",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::upward social mobility",
+      "topic": "Society",
+      "baseChinese": "社会流动性",
+      "baseEnglish": "social mobility",
+      "type": "adjective",
+      "original": "upward social mobility",
+      "focus": "upward",
+      "currentOptions": [
+        {
+          "phrase": "meaningful social mobility",
+          "term": "meaningful",
+          "zh": "有意义的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调真实价值或影响。"
+        },
+        {
+          "phrase": "measurable social mobility",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合数据或效果评估语境。"
+        },
+        {
+          "phrase": "limited social mobility",
+          "term": "limited",
+          "zh": "有限的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判作用或覆盖面不足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::statutory minimum wage",
+      "topic": "Society",
+      "baseChinese": "最低工资",
+      "baseEnglish": "minimum wage",
+      "type": "adjective",
+      "original": "statutory minimum wage",
+      "focus": "statutory",
+      "currentOptions": [
+        {
+          "phrase": "valuable minimum wage",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term minimum wage",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic minimum wage",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::raise the minimum wage",
+      "topic": "Society",
+      "baseChinese": "最低工资",
+      "baseEnglish": "minimum wage",
+      "type": "verb",
+      "original": "raise the minimum wage",
+      "focus": "raise",
+      "currentOptions": [
+        {
+          "phrase": "raise the minimum wage",
+          "term": "raise",
+          "zh": "提高",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲改善低收入劳动者的收入保障。"
+        },
+        {
+          "phrase": "review the minimum wage",
+          "term": "review",
+          "zh": "审查",
+          "stance": "Neutral",
+          "tone": "这条搭配适合根据物价、就业和企业成本重新评估最低工资。"
+        },
+        {
+          "phrase": "freeze the minimum wage",
+          "term": "freeze",
+          "zh": "冻结",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判最低工资长期不变会削弱购买力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::adequate basic living security",
+      "topic": "Society",
+      "baseChinese": "基本生活保障",
+      "baseEnglish": "basic living security",
+      "type": "adjective",
+      "original": "adequate basic living security",
+      "focus": "adequate",
+      "currentOptions": [
+        {
+          "phrase": "practical basic living security",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific basic living security",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial basic living security",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::ensure basic living security",
+      "topic": "Society",
+      "baseChinese": "基本生活保障",
+      "baseEnglish": "basic living security",
+      "type": "verb",
+      "original": "ensure basic living security",
+      "focus": "ensure",
+      "currentOptions": [
+        {
+          "phrase": "promote basic living security",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "analyse basic living security",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline basic living security",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::prevent disability discrimination",
+      "topic": "Society",
+      "baseChinese": "残障歧视",
+      "baseEnglish": "disability discrimination",
+      "type": "verb",
+      "original": "prevent disability discrimination",
+      "focus": "prevent",
+      "currentOptions": [
+        {
+          "phrase": "prevent disability discrimination",
+          "term": "prevent",
+          "zh": "预防",
+          "stance": "Positive",
+          "tone": "积极语气，强调主动减少风险。"
+        },
+        {
+          "phrase": "monitor disability discrimination",
+          "term": "monitor",
+          "zh": "监测 / 关注",
+          "stance": "Neutral",
+          "tone": "中性语气，适合描述持续观察。"
+        },
+        {
+          "phrase": "worsen disability discrimination",
+          "term": "worsen",
+          "zh": "使……恶化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判不良政策或行为的后果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::genuine gender equality",
+      "topic": "Society",
+      "baseChinese": "性别平等",
+      "baseEnglish": "gender equality",
+      "type": "adjective",
+      "original": "genuine gender equality",
+      "focus": "genuine",
+      "currentOptions": [
+        {
+          "phrase": "meaningful gender equality",
+          "term": "meaningful",
+          "zh": "有意义的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调真实价值或影响。"
+        },
+        {
+          "phrase": "measurable gender equality",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合数据或效果评估语境。"
+        },
+        {
+          "phrase": "limited gender equality",
+          "term": "limited",
+          "zh": "有限的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判作用或覆盖面不足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::promote gender equality",
+      "topic": "Society",
+      "baseChinese": "性别平等",
+      "baseEnglish": "gender equality",
+      "type": "verb",
+      "original": "promote gender equality",
+      "focus": "promote",
+      "currentOptions": [
+        {
+          "phrase": "encourage gender equality",
+          "term": "encourage",
+          "zh": "鼓励",
+          "stance": "Positive",
+          "tone": "强调让人愿意去做。"
+        },
+        {
+          "phrase": "discuss gender equality",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook gender equality",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::truly inclusive society",
+      "topic": "Society",
+      "baseChinese": "包容社会",
+      "baseEnglish": "inclusive society",
+      "type": "adjective",
+      "original": "truly inclusive society",
+      "focus": "truly inclusive",
+      "currentOptions": [
+        {
+          "phrase": "practical society",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific society",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial society",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::build an inclusive society",
+      "topic": "Society",
+      "baseChinese": "包容社会",
+      "baseEnglish": "inclusive society",
+      "type": "verb",
+      "original": "build an inclusive society",
+      "focus": "build",
+      "currentOptions": [
+        {
+          "phrase": "build an inclusive society",
+          "term": "build",
+          "zh": "建设",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲让不同群体都能公平参与社会生活。"
+        },
+        {
+          "phrase": "discuss social inclusion",
+          "term": "discuss",
+          "zh": "讨论社会包容",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观分析包容政策和社会参与。"
+        },
+        {
+          "phrase": "undermine social inclusion",
+          "term": "undermine",
+          "zh": "削弱社会包容",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判某些做法使弱势群体更难融入社会。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::vibrant multiculturalism",
+      "topic": "Society",
+      "baseChinese": "多元文化",
+      "baseEnglish": "multiculturalism",
+      "type": "adjective",
+      "original": "vibrant multiculturalism",
+      "focus": "vibrant",
+      "currentOptions": [
+        {
+          "phrase": "valuable multiculturalism",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term multiculturalism",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic multiculturalism",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::embrace multiculturalism",
+      "topic": "Society",
+      "baseChinese": "多元文化",
+      "baseEnglish": "multiculturalism",
+      "type": "verb",
+      "original": "embrace multiculturalism",
+      "focus": "embrace",
+      "currentOptions": [
+        {
+          "phrase": "promote multiculturalism",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "analyse multiculturalism",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline multiculturalism",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::prevent juvenile delinquency",
+      "topic": "Society",
+      "baseChinese": "青少年犯罪",
+      "baseEnglish": "juvenile delinquency",
+      "type": "verb",
+      "original": "prevent juvenile delinquency",
+      "focus": "prevent",
+      "currentOptions": [
+        {
+          "phrase": "prevent juvenile delinquency",
+          "term": "prevent",
+          "zh": "预防",
+          "stance": "Positive",
+          "tone": "积极语气，强调主动减少风险。"
+        },
+        {
+          "phrase": "monitor juvenile delinquency",
+          "term": "monitor",
+          "zh": "监测 / 关注",
+          "stance": "Neutral",
+          "tone": "中性语气，适合描述持续观察。"
+        },
+        {
+          "phrase": "worsen juvenile delinquency",
+          "term": "worsen",
+          "zh": "使……恶化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判不良政策或行为的后果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::long-term imprisonment",
+      "topic": "Society",
+      "baseChinese": "监禁",
+      "baseEnglish": "imprisonment",
+      "type": "adjective",
+      "original": "long-term imprisonment",
+      "focus": "long-term",
+      "currentOptions": [
+        {
+          "phrase": "practical imprisonment",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific imprisonment",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial imprisonment",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::impose imprisonment",
+      "topic": "Society",
+      "baseChinese": "监禁",
+      "baseEnglish": "imprisonment",
+      "type": "verb",
+      "original": "impose imprisonment",
+      "focus": "impose",
+      "currentOptions": [
+        {
+          "phrase": "maintain imprisonment",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess imprisonment",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine imprisonment",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::provide rehabilitation",
+      "topic": "Society",
+      "baseChinese": "改造",
+      "baseEnglish": "rehabilitation",
+      "type": "verb",
+      "original": "provide rehabilitation",
+      "focus": "provide",
+      "currentOptions": [
+        {
+          "phrase": "offer rehabilitation",
+          "term": "offer",
+          "zh": "提供",
+          "stance": "Positive",
+          "tone": "服务语境中自然。"
+        },
+        {
+          "phrase": "supply rehabilitation",
+          "term": "supply",
+          "zh": "供应",
+          "stance": "Neutral",
+          "tone": "适合资源、设备和资金。"
+        },
+        {
+          "phrase": "sideline rehabilitation",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::strong civic awareness",
+      "topic": "Society",
+      "baseChinese": "公民意识",
+      "baseEnglish": "civic awareness",
+      "type": "adjective",
+      "original": "strong civic awareness",
+      "focus": "strong",
+      "currentOptions": [
+        {
+          "phrase": "strong civic awareness",
+          "term": "strong",
+          "zh": "强烈的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调学生理解公共责任和公民参与。"
+        },
+        {
+          "phrase": "developing civic awareness",
+          "term": "developing",
+          "zh": "正在形成的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观描述公民意识仍在培养中。"
+        },
+        {
+          "phrase": "weak civic awareness",
+          "term": "weak",
+          "zh": "薄弱的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判教育缺少公民意识培养。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::raise civic awareness",
+      "topic": "Society",
+      "baseChinese": "公民意识",
+      "baseEnglish": "civic awareness",
+      "type": "verb",
+      "original": "raise civic awareness",
+      "focus": "raise",
+      "currentOptions": [
+        {
+          "phrase": "raise civic awareness",
+          "term": "raise",
+          "zh": "提升",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲教育或公共活动如何培养公民责任感。"
+        },
+        {
+          "phrase": "assess civic awareness",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观衡量学生或公众的公民意识水平。"
+        },
+        {
+          "phrase": "sideline civic education",
+          "term": "sideline",
+          "zh": "边缘化公民教育",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判教育体系把公民意识培养放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::meaningful voluntary work",
+      "topic": "Society",
+      "baseChinese": "志愿服务",
+      "baseEnglish": "voluntary work / community service",
+      "type": "adjective",
+      "original": "meaningful voluntary work",
+      "focus": "meaningful",
+      "currentOptions": [
+        {
+          "phrase": "valuable voluntary work",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term voluntary work",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic voluntary work",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::active political participation",
+      "topic": "Society",
+      "baseChinese": "政治参与",
+      "baseEnglish": "political participation",
+      "type": "adjective",
+      "original": "active political participation",
+      "focus": "active",
+      "currentOptions": [
+        {
+          "phrase": "valuable political participation",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term political participation",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic political participation",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::peaceful public protest",
+      "topic": "Society",
+      "baseChinese": "公共抗议",
+      "baseEnglish": "public protest",
+      "type": "adjective",
+      "original": "peaceful public protest",
+      "focus": "peaceful",
+      "currentOptions": [
+        {
+          "phrase": "valuable public protest",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term public protest",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic public protest",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::organize public protests",
+      "topic": "Society",
+      "baseChinese": "公共抗议",
+      "baseEnglish": "public protest",
+      "type": "verb",
+      "original": "organize public protests",
+      "focus": "organize",
+      "currentOptions": [
+        {
+          "phrase": "organize peaceful public protests",
+          "term": "organize",
+          "zh": "组织和平公共抗议",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲以合法和平方式表达公共诉求。"
+        },
+        {
+          "phrase": "analyse public protests",
+          "term": "analyse",
+          "zh": "分析公共抗议",
+          "stance": "Neutral",
+          "tone": "这条搭配适合研究抗议的原因、规模和社会影响。"
+        },
+        {
+          "phrase": "suppress public protests",
+          "term": "suppress",
+          "zh": "压制公共抗议",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判限制公众表达诉求的空间。"
+        }
+      ]
+    }
+  ]
+}

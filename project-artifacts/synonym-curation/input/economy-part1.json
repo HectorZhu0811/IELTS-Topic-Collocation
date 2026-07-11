@@ -1,0 +1,844 @@
+{
+  "topic": "Economy",
+  "guidance": "project-docs/synonym-curation-guidelines.md",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "issueCount": 48,
+  "issueCardCount": 27,
+  "issueRows": [
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "经济增长",
+      "baseEnglish": "economic growth",
+      "focus": "stimulate",
+      "original": "stimulate economic growth",
+      "term": "maintain",
+      "phrase": "maintain economic growth",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "经济增长",
+      "baseEnglish": "economic growth",
+      "focus": "stimulate",
+      "original": "stimulate economic growth",
+      "term": "assess",
+      "phrase": "assess economic growth",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "经济增长",
+      "baseEnglish": "economic growth",
+      "focus": "stimulate",
+      "original": "stimulate economic growth",
+      "term": "undermine",
+      "phrase": "undermine economic growth",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "通货膨胀",
+      "baseEnglish": "inflation",
+      "focus": "curb",
+      "original": "curb inflation",
+      "term": "assess",
+      "phrase": "assess inflation",
+      "zh": "评估",
+      "tone": "中性，强调经济分析。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "adjective",
+      "baseChinese": "国内生产总值",
+      "baseEnglish": "gross domestic product",
+      "focus": "annual",
+      "original": "annual gross domestic product",
+      "term": "measurable",
+      "phrase": "measurable gross domestic product",
+      "zh": "可衡量的",
+      "tone": "中性，适合数据分析。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "国内生产总值",
+      "baseEnglish": "gross domestic product",
+      "focus": "increase",
+      "original": "increase gross domestic product",
+      "term": "maintain",
+      "phrase": "maintain gross domestic product",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "国内生产总值",
+      "baseEnglish": "gross domestic product",
+      "focus": "increase",
+      "original": "increase gross domestic product",
+      "term": "discuss",
+      "phrase": "discuss gross domestic product",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "国内生产总值",
+      "baseEnglish": "gross domestic product",
+      "focus": "increase",
+      "original": "increase gross domestic product",
+      "term": "overlook",
+      "phrase": "overlook gross domestic product",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "失业率",
+      "baseEnglish": "unemployment rate",
+      "focus": "lower",
+      "original": "lower the unemployment rate",
+      "term": "discuss",
+      "phrase": "discuss the unemployment rate",
+      "zh": "讨论",
+      "tone": "中性，适合经济分析。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "经济危机",
+      "baseEnglish": "economic crisis",
+      "focus": "weather",
+      "original": "weather an economic crisis",
+      "term": "analyse",
+      "phrase": "analyse an economic crisis",
+      "zh": "分析",
+      "tone": "这条搭配适合客观分析经济危机的原因、传导路径和影响。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "贸易顺差",
+      "baseEnglish": "trade surplus",
+      "focus": "maintain",
+      "original": "maintain a trade surplus",
+      "term": "develop",
+      "phrase": "develop a trade surplus",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "贸易顺差",
+      "baseEnglish": "trade surplus",
+      "focus": "maintain",
+      "original": "maintain a trade surplus",
+      "term": "discuss",
+      "phrase": "discuss a trade surplus",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "贸易顺差",
+      "baseEnglish": "trade surplus",
+      "focus": "maintain",
+      "original": "maintain a trade surplus",
+      "term": "undermine",
+      "phrase": "undermine a trade surplus",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "贸易逆差",
+      "baseEnglish": "trade deficit",
+      "focus": "reduce",
+      "original": "reduce a trade deficit",
+      "term": "assess",
+      "phrase": "assess a trade deficit",
+      "zh": "评估",
+      "tone": "中性经济语气。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "adjective",
+      "baseChinese": "经济结构调整",
+      "baseEnglish": "economic restructuring",
+      "focus": "deep",
+      "original": "deep economic restructuring",
+      "term": "measurable",
+      "phrase": "measurable economic restructuring",
+      "zh": "可衡量的",
+      "tone": "中性，适合数据分析。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "经济结构调整",
+      "baseEnglish": "economic restructuring",
+      "focus": "promote",
+      "original": "promote economic restructuring",
+      "term": "promote",
+      "phrase": "promote economic restructuring",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "经济结构调整",
+      "baseEnglish": "economic restructuring",
+      "focus": "promote",
+      "original": "promote economic restructuring",
+      "term": "discuss",
+      "phrase": "discuss economic restructuring",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "经济结构调整",
+      "baseEnglish": "economic restructuring",
+      "focus": "promote",
+      "original": "promote economic restructuring",
+      "term": "undermine",
+      "phrase": "undermine economic restructuring",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "adjective",
+      "baseChinese": "刺激措施",
+      "baseEnglish": "stimulus measures",
+      "focus": "temporary",
+      "original": "temporary stimulus measures",
+      "term": "measurable",
+      "phrase": "measurable stimulus measures",
+      "zh": "可衡量的",
+      "tone": "中性，适合数据分析。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "刺激措施",
+      "baseEnglish": "stimulus measures",
+      "focus": "introduce",
+      "original": "introduce stimulus measures",
+      "term": "introduce",
+      "phrase": "introduce stimulus measures",
+      "zh": "推出",
+      "tone": "这条搭配适合讲政府用政策支持经济恢复或稳定就业。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "经济相互依赖",
+      "baseEnglish": "economic interdependence",
+      "focus": "increase",
+      "original": "increase economic interdependence",
+      "term": "maintain",
+      "phrase": "maintain economic interdependence",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "经济相互依赖",
+      "baseEnglish": "economic interdependence",
+      "focus": "increase",
+      "original": "increase economic interdependence",
+      "term": "assess",
+      "phrase": "assess economic interdependence",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "verb",
+      "baseChinese": "经济相互依赖",
+      "baseEnglish": "economic interdependence",
+      "focus": "increase",
+      "original": "increase economic interdependence",
+      "term": "overlook",
+      "phrase": "overlook economic interdependence",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Economy",
+      "type": "adjective",
+      "baseChinese": "全球贸易增长率",
+      "baseEnglish": "global trade growth rate",
+      "focus": "sluggish",
+      "original": "sluggish global trade growth rate",
+      "term": "measurable",
+      "phrase": "measurable global trade growth rate",
+      "zh": "可衡量的",
+      "tone": "中性，适合数据分析。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    }
+  ],
+  "cardsToReview": [
+    {
+      "cardKey": "Economy::verb::stimulate economic growth",
+      "topic": "Economy",
+      "baseChinese": "经济增长",
+      "baseEnglish": "economic growth",
+      "type": "verb",
+      "original": "stimulate economic growth",
+      "focus": "stimulate",
+      "currentOptions": [
+        {
+          "phrase": "maintain economic growth",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess economic growth",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine economic growth",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::curb inflation",
+      "topic": "Economy",
+      "baseChinese": "通货膨胀",
+      "baseEnglish": "inflation",
+      "type": "verb",
+      "original": "curb inflation",
+      "focus": "curb",
+      "currentOptions": [
+        {
+          "phrase": "contain inflation",
+          "term": "contain",
+          "zh": "控制",
+          "stance": "Positive",
+          "tone": "积极，强调压住上涨。"
+        },
+        {
+          "phrase": "assess inflation",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性，强调经济分析。"
+        },
+        {
+          "phrase": "fuel inflation",
+          "term": "fuel",
+          "zh": "助推",
+          "stance": "Negative",
+          "tone": "消极，强调推高通胀。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::annual gross domestic product",
+      "topic": "Economy",
+      "baseChinese": "国内生产总值",
+      "baseEnglish": "gross domestic product",
+      "type": "adjective",
+      "original": "annual gross domestic product",
+      "focus": "annual",
+      "currentOptions": [
+        {
+          "phrase": "stable gross domestic product",
+          "term": "stable",
+          "zh": "稳定的",
+          "stance": "Positive",
+          "tone": "积极，适合经济指标和市场。"
+        },
+        {
+          "phrase": "measurable gross domestic product",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "中性，适合数据分析。"
+        },
+        {
+          "phrase": "volatile gross domestic product",
+          "term": "volatile",
+          "zh": "波动大的",
+          "stance": "Negative",
+          "tone": "消极，适合市场和价格。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::increase gross domestic product",
+      "topic": "Economy",
+      "baseChinese": "国内生产总值",
+      "baseEnglish": "gross domestic product",
+      "type": "verb",
+      "original": "increase gross domestic product",
+      "focus": "increase",
+      "currentOptions": [
+        {
+          "phrase": "maintain gross domestic product",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "discuss gross domestic product",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook gross domestic product",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::lower the unemployment rate",
+      "topic": "Economy",
+      "baseChinese": "失业率",
+      "baseEnglish": "unemployment rate",
+      "type": "verb",
+      "original": "lower the unemployment rate",
+      "focus": "lower",
+      "currentOptions": [
+        {
+          "phrase": "reduce the unemployment rate",
+          "term": "reduce",
+          "zh": "降低",
+          "stance": "Positive",
+          "tone": "积极，强调改善就业。"
+        },
+        {
+          "phrase": "discuss the unemployment rate",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性，适合经济分析。"
+        },
+        {
+          "phrase": "worsen the unemployment rate",
+          "term": "worsen",
+          "zh": "使恶化",
+          "stance": "Negative",
+          "tone": "消极，强调失业上升。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::weather an economic crisis",
+      "topic": "Economy",
+      "baseChinese": "经济危机",
+      "baseEnglish": "economic crisis",
+      "type": "verb",
+      "original": "weather an economic crisis",
+      "focus": "weather",
+      "currentOptions": [
+        {
+          "phrase": "withstand an economic crisis",
+          "term": "withstand",
+          "zh": "经受住",
+          "stance": "Positive",
+          "tone": "积极，强调韧性。"
+        },
+        {
+          "phrase": "analyse an economic crisis",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观分析经济危机的原因、传导路径和影响。"
+        },
+        {
+          "phrase": "deepen an economic crisis",
+          "term": "deepen",
+          "zh": "加深",
+          "stance": "Negative",
+          "tone": "消极，强调危机恶化。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::maintain a trade surplus",
+      "topic": "Economy",
+      "baseChinese": "贸易顺差",
+      "baseEnglish": "trade surplus",
+      "type": "verb",
+      "original": "maintain a trade surplus",
+      "focus": "maintain",
+      "currentOptions": [
+        {
+          "phrase": "develop a trade surplus",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss a trade surplus",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "undermine a trade surplus",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::reduce a trade deficit",
+      "topic": "Economy",
+      "baseChinese": "贸易逆差",
+      "baseEnglish": "trade deficit",
+      "type": "verb",
+      "original": "reduce a trade deficit",
+      "focus": "reduce",
+      "currentOptions": [
+        {
+          "phrase": "narrow a trade deficit",
+          "term": "narrow",
+          "zh": "缩小",
+          "stance": "Positive",
+          "tone": "积极，强调改善贸易差额。"
+        },
+        {
+          "phrase": "assess a trade deficit",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性经济语气。"
+        },
+        {
+          "phrase": "widen a trade deficit",
+          "term": "widen",
+          "zh": "扩大",
+          "stance": "Negative",
+          "tone": "消极，强调赤字增加。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::deep economic restructuring",
+      "topic": "Economy",
+      "baseChinese": "经济结构调整",
+      "baseEnglish": "economic restructuring",
+      "type": "adjective",
+      "original": "deep economic restructuring",
+      "focus": "deep",
+      "currentOptions": [
+        {
+          "phrase": "stable economic restructuring",
+          "term": "stable",
+          "zh": "稳定的",
+          "stance": "Positive",
+          "tone": "积极，适合经济指标和市场。"
+        },
+        {
+          "phrase": "measurable economic restructuring",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "中性，适合数据分析。"
+        },
+        {
+          "phrase": "volatile economic restructuring",
+          "term": "volatile",
+          "zh": "波动大的",
+          "stance": "Negative",
+          "tone": "消极，适合市场和价格。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::promote economic restructuring",
+      "topic": "Economy",
+      "baseChinese": "经济结构调整",
+      "baseEnglish": "economic restructuring",
+      "type": "verb",
+      "original": "promote economic restructuring",
+      "focus": "promote",
+      "currentOptions": [
+        {
+          "phrase": "promote economic restructuring",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "discuss economic restructuring",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "undermine economic restructuring",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::temporary stimulus measures",
+      "topic": "Economy",
+      "baseChinese": "刺激措施",
+      "baseEnglish": "stimulus measures",
+      "type": "adjective",
+      "original": "temporary stimulus measures",
+      "focus": "temporary",
+      "currentOptions": [
+        {
+          "phrase": "stable stimulus measures",
+          "term": "stable",
+          "zh": "稳定的",
+          "stance": "Positive",
+          "tone": "积极，适合经济指标和市场。"
+        },
+        {
+          "phrase": "measurable stimulus measures",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "中性，适合数据分析。"
+        },
+        {
+          "phrase": "volatile stimulus measures",
+          "term": "volatile",
+          "zh": "波动大的",
+          "stance": "Negative",
+          "tone": "消极，适合市场和价格。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::introduce stimulus measures",
+      "topic": "Economy",
+      "baseChinese": "刺激措施",
+      "baseEnglish": "stimulus measures",
+      "type": "verb",
+      "original": "introduce stimulus measures",
+      "focus": "introduce",
+      "currentOptions": [
+        {
+          "phrase": "introduce stimulus measures",
+          "term": "introduce",
+          "zh": "推出",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲政府用政策支持经济恢复或稳定就业。"
+        },
+        {
+          "phrase": "evaluate stimulus measures",
+          "term": "evaluate",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观分析刺激措施的成本、效果和副作用。"
+        },
+        {
+          "phrase": "withdraw stimulus measures too early",
+          "term": "withdraw",
+          "zh": "过早撤回刺激措施",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判政策退出过快导致经济承压。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::verb::increase economic interdependence",
+      "topic": "Economy",
+      "baseChinese": "经济相互依赖",
+      "baseEnglish": "economic interdependence",
+      "type": "verb",
+      "original": "increase economic interdependence",
+      "focus": "increase",
+      "currentOptions": [
+        {
+          "phrase": "maintain economic interdependence",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess economic interdependence",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook economic interdependence",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Economy::adjective::sluggish global trade growth rate",
+      "topic": "Economy",
+      "baseChinese": "全球贸易增长率",
+      "baseEnglish": "global trade growth rate",
+      "type": "adjective",
+      "original": "sluggish global trade growth rate",
+      "focus": "sluggish",
+      "currentOptions": [
+        {
+          "phrase": "stable global trade growth rate",
+          "term": "stable",
+          "zh": "稳定的",
+          "stance": "Positive",
+          "tone": "积极，适合经济指标和市场。"
+        },
+        {
+          "phrase": "measurable global trade growth rate",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "中性，适合数据分析。"
+        },
+        {
+          "phrase": "volatile global trade growth rate",
+          "term": "volatile",
+          "zh": "波动大的",
+          "stance": "Negative",
+          "tone": "消极，适合市场和价格。"
+        }
+      ]
+    }
+  ],
+  "part": "part1"
+}

@@ -1,5 +1,13 @@
 node_modules/
 screenshots/
+web-source/screenshots/
+project-artifacts/screenshots/qa/
+project-artifacts/ios-derived-data/
+project-artifacts/ios-archives/
+project-artifacts/simulator-browser/serve-sim.*
+__pycache__/
+*.pyc
+*.xcuserstate
 .DS_Store
 Thumbs.db
 npm-debug.log*

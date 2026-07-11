@@ -1,0 +1,1414 @@
+{
+  "topic": "Technology",
+  "guidance": "project-docs/synonym-curation-guidelines.md",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "issueCount": 47,
+  "issueCardCount": 20,
+  "issueRows": [
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "技术革命",
+      "baseEnglish": "technological revolution",
+      "focus": "major",
+      "original": "major technological revolution",
+      "term": "valuable",
+      "phrase": "valuable technological revolution",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "技术革命",
+      "baseEnglish": "technological revolution",
+      "focus": "major",
+      "original": "major technological revolution",
+      "term": "long-term",
+      "phrase": "long-term technological revolution",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "技术革命",
+      "baseEnglish": "technological revolution",
+      "focus": "major",
+      "original": "major technological revolution",
+      "term": "problematic",
+      "phrase": "problematic technological revolution",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "颠覆性创新",
+      "baseEnglish": "disruptive innovation",
+      "focus": "radical",
+      "original": "radical disruptive innovation",
+      "term": "context-specific",
+      "phrase": "context-specific disruptive innovation",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "颠覆性创新",
+      "baseEnglish": "disruptive innovation",
+      "focus": "radical",
+      "original": "radical disruptive innovation",
+      "term": "controversial",
+      "phrase": "controversial disruptive innovation",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "网络安全",
+      "baseEnglish": "cybersecurity",
+      "focus": "robust",
+      "original": "robust cybersecurity",
+      "term": "valuable",
+      "phrase": "valuable cybersecurity",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "网络安全",
+      "baseEnglish": "cybersecurity",
+      "focus": "robust",
+      "original": "robust cybersecurity",
+      "term": "long-term",
+      "phrase": "long-term cybersecurity",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "网络安全",
+      "baseEnglish": "cybersecurity",
+      "focus": "robust",
+      "original": "robust cybersecurity",
+      "term": "problematic",
+      "phrase": "problematic cybersecurity",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "网络安全",
+      "baseEnglish": "cybersecurity",
+      "focus": "strengthen",
+      "original": "strengthen cybersecurity",
+      "term": "strengthen",
+      "phrase": "strengthen cybersecurity",
+      "zh": "加强",
+      "tone": "这条搭配适合讲通过加密、培训或监管提高网络安全。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "数据泄露",
+      "baseEnglish": "data breach / data leak",
+      "focus": "prevent",
+      "original": "prevent data breaches",
+      "term": "prevent",
+      "phrase": "prevent data breaches",
+      "zh": "预防",
+      "tone": "积极语气，强调主动减少风险。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "AI助教",
+      "baseEnglish": "AI-powered tutor / AI assistant",
+      "focus": "deploy",
+      "original": "deploy AI assistants",
+      "term": "deploy",
+      "phrase": "deploy AI assistants",
+      "zh": "部署",
+      "tone": "这条搭配适合讲学校或平台把 AI 助教投入实际教学场景。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "视频会议",
+      "baseEnglish": "video conferencing",
+      "focus": "seamless",
+      "original": "seamless video conferencing",
+      "term": "context-specific",
+      "phrase": "context-specific video conferencing",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "视频会议",
+      "baseEnglish": "video conferencing",
+      "focus": "seamless",
+      "original": "seamless video conferencing",
+      "term": "controversial",
+      "phrase": "controversial video conferencing",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "视频会议",
+      "baseEnglish": "video conferencing",
+      "focus": "use",
+      "original": "use video conferencing",
+      "term": "develop",
+      "phrase": "develop video conferencing",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "视频会议",
+      "baseEnglish": "video conferencing",
+      "focus": "use",
+      "original": "use video conferencing",
+      "term": "undermine",
+      "phrase": "undermine video conferencing",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "科学研究",
+      "baseEnglish": "scientific research",
+      "focus": "rigorous",
+      "original": "rigorous scientific research",
+      "term": "valuable",
+      "phrase": "valuable scientific research",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "科学研究",
+      "baseEnglish": "scientific research",
+      "focus": "rigorous",
+      "original": "rigorous scientific research",
+      "term": "long-term",
+      "phrase": "long-term scientific research",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "科学研究",
+      "baseEnglish": "scientific research",
+      "focus": "rigorous",
+      "original": "rigorous scientific research",
+      "term": "problematic",
+      "phrase": "problematic scientific research",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "基因编辑",
+      "baseEnglish": "gene editing",
+      "focus": "precise",
+      "original": "precise gene editing",
+      "term": "context-specific",
+      "phrase": "context-specific gene editing",
+      "zh": "因语境而异的",
+      "tone": "这条搭配适合中性分析不同场景。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "基因编辑",
+      "baseEnglish": "gene editing",
+      "focus": "precise",
+      "original": "precise gene editing",
+      "term": "controversial",
+      "phrase": "controversial gene editing",
+      "zh": "有争议的",
+      "tone": "这条搭配适合公共讨论语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "基因编辑",
+      "baseEnglish": "gene editing",
+      "focus": "regulate",
+      "original": "regulate gene editing",
+      "term": "regulate",
+      "phrase": "regulate gene editing",
+      "zh": "监管",
+      "tone": "这条搭配适合讲通过法律和伦理审查限定基因编辑的边界。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "远程医疗",
+      "baseEnglish": "telemedicine",
+      "focus": "expand",
+      "original": "expand telemedicine",
+      "term": "assess",
+      "phrase": "assess telemedicine",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "远程医疗",
+      "baseEnglish": "telemedicine",
+      "focus": "expand",
+      "original": "expand telemedicine",
+      "term": "overlook",
+      "phrase": "overlook telemedicine",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "疫苗开发",
+      "baseEnglish": "vaccine development",
+      "focus": "accelerate",
+      "original": "accelerate vaccine development",
+      "term": "maintain",
+      "phrase": "maintain vaccine development",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "疫苗开发",
+      "baseEnglish": "vaccine development",
+      "focus": "accelerate",
+      "original": "accelerate vaccine development",
+      "term": "discuss",
+      "phrase": "discuss vaccine development",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "疫苗开发",
+      "baseEnglish": "vaccine development",
+      "focus": "accelerate",
+      "original": "accelerate vaccine development",
+      "term": "overlook",
+      "phrase": "overlook vaccine development",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "人工器官",
+      "baseEnglish": "artificial organs",
+      "focus": "biocompatible",
+      "original": "biocompatible artificial organs",
+      "term": "valuable",
+      "phrase": "valuable artificial organs",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "人工器官",
+      "baseEnglish": "artificial organs",
+      "focus": "biocompatible",
+      "original": "biocompatible artificial organs",
+      "term": "long-term",
+      "phrase": "long-term artificial organs",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "人工器官",
+      "baseEnglish": "artificial organs",
+      "focus": "biocompatible",
+      "original": "biocompatible artificial organs",
+      "term": "problematic",
+      "phrase": "problematic artificial organs",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "人工器官",
+      "baseEnglish": "artificial organs",
+      "focus": "implant",
+      "original": "implant artificial organs",
+      "term": "develop",
+      "phrase": "develop artificial organs",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "人工器官",
+      "baseEnglish": "artificial organs",
+      "focus": "implant",
+      "original": "implant artificial organs",
+      "term": "assess",
+      "phrase": "assess artificial organs",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "人工器官",
+      "baseEnglish": "artificial organs",
+      "focus": "implant",
+      "original": "implant artificial organs",
+      "term": "undermine",
+      "phrase": "undermine artificial organs",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "机器人手术",
+      "baseEnglish": "robotic surgery",
+      "focus": "minimally invasive",
+      "original": "minimally invasive robotic surgery",
+      "term": "meaningful",
+      "phrase": "meaningful robotic surgery",
+      "zh": "有意义的",
+      "tone": "这条搭配适合强调真实价值或影响。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "机器人手术",
+      "baseEnglish": "robotic surgery",
+      "focus": "minimally invasive",
+      "original": "minimally invasive robotic surgery",
+      "term": "measurable",
+      "phrase": "measurable robotic surgery",
+      "zh": "可衡量的",
+      "tone": "这条搭配适合数据或效果评估语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "机器人手术",
+      "baseEnglish": "robotic surgery",
+      "focus": "minimally invasive",
+      "original": "minimally invasive robotic surgery",
+      "term": "limited",
+      "phrase": "limited robotic surgery",
+      "zh": "有限的",
+      "tone": "这条搭配适合批判作用或覆盖面不足。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "机器人手术",
+      "baseEnglish": "robotic surgery",
+      "focus": "perform",
+      "original": "perform robotic surgery",
+      "term": "develop",
+      "phrase": "develop robotic surgery",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "机器人手术",
+      "baseEnglish": "robotic surgery",
+      "focus": "perform",
+      "original": "perform robotic surgery",
+      "term": "assess",
+      "phrase": "assess robotic surgery",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "机器人手术",
+      "baseEnglish": "robotic surgery",
+      "focus": "perform",
+      "original": "perform robotic surgery",
+      "term": "undermine",
+      "phrase": "undermine robotic surgery",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "智能家居",
+      "baseEnglish": "smart home",
+      "focus": "automated",
+      "original": "automated smart home",
+      "term": "valuable",
+      "phrase": "valuable smart home",
+      "zh": "有价值的",
+      "tone": "这条搭配适合强调实际作用。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "智能家居",
+      "baseEnglish": "smart home",
+      "focus": "automated",
+      "original": "automated smart home",
+      "term": "long-term",
+      "phrase": "long-term smart home",
+      "zh": "长期的",
+      "tone": "这条搭配适合强调时间维度。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "智能家居",
+      "baseEnglish": "smart home",
+      "focus": "automated",
+      "original": "automated smart home",
+      "term": "problematic",
+      "phrase": "problematic smart home",
+      "zh": "有问题的",
+      "tone": "这条搭配适合批判性论述。",
+      "reasons": [
+        "generic-adjective-bank",
+        "generic-tone",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "智能家居",
+      "baseEnglish": "smart home",
+      "focus": "install",
+      "original": "install smart home devices",
+      "term": "develop",
+      "phrase": "develop smart home devices",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "智能家居",
+      "baseEnglish": "smart home",
+      "focus": "install",
+      "original": "install smart home devices",
+      "term": "discuss",
+      "phrase": "discuss smart home devices",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "verb",
+      "baseChinese": "智能家居",
+      "baseEnglish": "smart home",
+      "focus": "install",
+      "original": "install smart home devices",
+      "term": "overlook",
+      "phrase": "overlook smart home devices",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "无人机配送",
+      "baseEnglish": "drone delivery",
+      "focus": "fast",
+      "original": "fast drone delivery",
+      "term": "meaningful",
+      "phrase": "meaningful drone delivery",
+      "zh": "有意义的",
+      "tone": "这条搭配适合强调真实价值或影响。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "无人机配送",
+      "baseEnglish": "drone delivery",
+      "focus": "fast",
+      "original": "fast drone delivery",
+      "term": "measurable",
+      "phrase": "measurable drone delivery",
+      "zh": "可衡量的",
+      "tone": "这条搭配适合数据或效果评估语境。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    },
+    {
+      "topic": "Technology",
+      "type": "adjective",
+      "baseChinese": "无人机配送",
+      "baseEnglish": "drone delivery",
+      "focus": "fast",
+      "original": "fast drone delivery",
+      "term": "limited",
+      "phrase": "limited drone delivery",
+      "zh": "有限的",
+      "tone": "这条搭配适合批判作用或覆盖面不足。",
+      "reasons": [
+        "generic-adjective-bank",
+        "formulaic-adjective-phrase"
+      ]
+    }
+  ],
+  "cardsToReview": [
+    {
+      "cardKey": "Technology::adjective::major technological revolution",
+      "topic": "Technology",
+      "baseChinese": "技术革命",
+      "baseEnglish": "technological revolution",
+      "type": "adjective",
+      "original": "major technological revolution",
+      "focus": "major",
+      "currentOptions": [
+        {
+          "phrase": "valuable technological revolution",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term technological revolution",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic technological revolution",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::radical disruptive innovation",
+      "topic": "Technology",
+      "baseChinese": "颠覆性创新",
+      "baseEnglish": "disruptive innovation",
+      "type": "adjective",
+      "original": "radical disruptive innovation",
+      "focus": "radical",
+      "currentOptions": [
+        {
+          "phrase": "practical disruptive innovation",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific disruptive innovation",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial disruptive innovation",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::robust cybersecurity",
+      "topic": "Technology",
+      "baseChinese": "网络安全",
+      "baseEnglish": "cybersecurity",
+      "type": "adjective",
+      "original": "robust cybersecurity",
+      "focus": "robust",
+      "currentOptions": [
+        {
+          "phrase": "valuable cybersecurity",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term cybersecurity",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic cybersecurity",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::strengthen cybersecurity",
+      "topic": "Technology",
+      "baseChinese": "网络安全",
+      "baseEnglish": "cybersecurity",
+      "type": "verb",
+      "original": "strengthen cybersecurity",
+      "focus": "strengthen",
+      "currentOptions": [
+        {
+          "phrase": "strengthen cybersecurity",
+          "term": "strengthen",
+          "zh": "加强",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲通过加密、培训或监管提高网络安全。"
+        },
+        {
+          "phrase": "audit cybersecurity",
+          "term": "audit",
+          "zh": "审查",
+          "stance": "Neutral",
+          "tone": "这条搭配适合讲检查系统漏洞、合规性和安全防护水平。"
+        },
+        {
+          "phrase": "compromise cybersecurity",
+          "term": "compromise",
+          "zh": "损害",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判弱密码、软件漏洞或管理疏忽损害网络安全。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::prevent data breaches",
+      "topic": "Technology",
+      "baseChinese": "数据泄露",
+      "baseEnglish": "data breach / data leak",
+      "type": "verb",
+      "original": "prevent data breaches",
+      "focus": "prevent",
+      "currentOptions": [
+        {
+          "phrase": "prevent data breaches",
+          "term": "prevent",
+          "zh": "预防",
+          "stance": "Positive",
+          "tone": "积极语气，强调主动减少风险。"
+        },
+        {
+          "phrase": "monitor data breaches",
+          "term": "monitor",
+          "zh": "监测 / 关注",
+          "stance": "Neutral",
+          "tone": "中性语气，适合描述持续观察。"
+        },
+        {
+          "phrase": "worsen data breaches",
+          "term": "worsen",
+          "zh": "使……恶化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判不良政策或行为的后果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::deploy AI assistants",
+      "topic": "Technology",
+      "baseChinese": "AI助教",
+      "baseEnglish": "AI-powered tutor / AI assistant",
+      "type": "verb",
+      "original": "deploy AI assistants",
+      "focus": "deploy",
+      "currentOptions": [
+        {
+          "phrase": "deploy AI assistants",
+          "term": "deploy",
+          "zh": "部署",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲学校或平台把 AI 助教投入实际教学场景。"
+        },
+        {
+          "phrase": "trial AI assistants",
+          "term": "trial",
+          "zh": "试用",
+          "stance": "Neutral",
+          "tone": "这条搭配适合讲在小范围内测试 AI 助教的效果。"
+        },
+        {
+          "phrase": "over-rely on AI assistants",
+          "term": "over-rely on",
+          "zh": "过度依赖",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判学生或学校过度依赖 AI 助教而削弱人际指导。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::seamless video conferencing",
+      "topic": "Technology",
+      "baseChinese": "视频会议",
+      "baseEnglish": "video conferencing",
+      "type": "adjective",
+      "original": "seamless video conferencing",
+      "focus": "seamless",
+      "currentOptions": [
+        {
+          "phrase": "practical video conferencing",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific video conferencing",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial video conferencing",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::use video conferencing",
+      "topic": "Technology",
+      "baseChinese": "视频会议",
+      "baseEnglish": "video conferencing",
+      "type": "verb",
+      "original": "use video conferencing",
+      "focus": "use",
+      "currentOptions": [
+        {
+          "phrase": "develop video conferencing",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "employ video conferencing",
+          "term": "employ",
+          "zh": "采用 / 使用",
+          "stance": "Neutral",
+          "tone": "比 use 更正式。"
+        },
+        {
+          "phrase": "undermine video conferencing",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::rigorous scientific research",
+      "topic": "Technology",
+      "baseChinese": "科学研究",
+      "baseEnglish": "scientific research",
+      "type": "adjective",
+      "original": "rigorous scientific research",
+      "focus": "rigorous",
+      "currentOptions": [
+        {
+          "phrase": "valuable scientific research",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term scientific research",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic scientific research",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::precise gene editing",
+      "topic": "Technology",
+      "baseChinese": "基因编辑",
+      "baseEnglish": "gene editing",
+      "type": "adjective",
+      "original": "precise gene editing",
+      "focus": "precise",
+      "currentOptions": [
+        {
+          "phrase": "practical gene editing",
+          "term": "practical",
+          "zh": "实用的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调可执行性。"
+        },
+        {
+          "phrase": "context-specific gene editing",
+          "term": "context-specific",
+          "zh": "因语境而异的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合中性分析不同场景。"
+        },
+        {
+          "phrase": "controversial gene editing",
+          "term": "controversial",
+          "zh": "有争议的",
+          "stance": "Negative",
+          "tone": "这条搭配适合公共讨论语境。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::regulate gene editing",
+      "topic": "Technology",
+      "baseChinese": "基因编辑",
+      "baseEnglish": "gene editing",
+      "type": "verb",
+      "original": "regulate gene editing",
+      "focus": "regulate",
+      "currentOptions": [
+        {
+          "phrase": "advance gene editing",
+          "term": "advance",
+          "zh": "推进",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲科学家用基因编辑改善医疗或农业成果。"
+        },
+        {
+          "phrase": "regulate gene editing",
+          "term": "regulate",
+          "zh": "监管",
+          "stance": "Neutral",
+          "tone": "这条搭配适合讲通过法律和伦理审查限定基因编辑的边界。"
+        },
+        {
+          "phrase": "abuse gene editing",
+          "term": "abuse",
+          "zh": "滥用",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判把基因编辑用于优生、商业噱头或不平等目的。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::expand telemedicine",
+      "topic": "Technology",
+      "baseChinese": "远程医疗",
+      "baseEnglish": "telemedicine",
+      "type": "verb",
+      "original": "expand telemedicine",
+      "focus": "expand",
+      "currentOptions": [
+        {
+          "phrase": "scale up telemedicine",
+          "term": "scale up",
+          "zh": "扩大规模",
+          "stance": "Positive",
+          "tone": "适合项目和政策试点。"
+        },
+        {
+          "phrase": "assess telemedicine",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook telemedicine",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::accelerate vaccine development",
+      "topic": "Technology",
+      "baseChinese": "疫苗开发",
+      "baseEnglish": "vaccine development",
+      "type": "verb",
+      "original": "accelerate vaccine development",
+      "focus": "accelerate",
+      "currentOptions": [
+        {
+          "phrase": "maintain vaccine development",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "discuss vaccine development",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook vaccine development",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::biocompatible artificial organs",
+      "topic": "Technology",
+      "baseChinese": "人工器官",
+      "baseEnglish": "artificial organs",
+      "type": "adjective",
+      "original": "biocompatible artificial organs",
+      "focus": "biocompatible",
+      "currentOptions": [
+        {
+          "phrase": "valuable artificial organs",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term artificial organs",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic artificial organs",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::implant artificial organs",
+      "topic": "Technology",
+      "baseChinese": "人工器官",
+      "baseEnglish": "artificial organs",
+      "type": "verb",
+      "original": "implant artificial organs",
+      "focus": "implant",
+      "currentOptions": [
+        {
+          "phrase": "develop artificial organs",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "assess artificial organs",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine artificial organs",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::minimally invasive robotic surgery",
+      "topic": "Technology",
+      "baseChinese": "机器人手术",
+      "baseEnglish": "robotic surgery",
+      "type": "adjective",
+      "original": "minimally invasive robotic surgery",
+      "focus": "minimally invasive",
+      "currentOptions": [
+        {
+          "phrase": "meaningful robotic surgery",
+          "term": "meaningful",
+          "zh": "有意义的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调真实价值或影响。"
+        },
+        {
+          "phrase": "measurable robotic surgery",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合数据或效果评估语境。"
+        },
+        {
+          "phrase": "limited robotic surgery",
+          "term": "limited",
+          "zh": "有限的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判作用或覆盖面不足。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::perform robotic surgery",
+      "topic": "Technology",
+      "baseChinese": "机器人手术",
+      "baseEnglish": "robotic surgery",
+      "type": "verb",
+      "original": "perform robotic surgery",
+      "focus": "perform",
+      "currentOptions": [
+        {
+          "phrase": "develop robotic surgery",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "assess robotic surgery",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine robotic surgery",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::automated smart home",
+      "topic": "Technology",
+      "baseChinese": "智能家居",
+      "baseEnglish": "smart home",
+      "type": "adjective",
+      "original": "automated smart home",
+      "focus": "automated",
+      "currentOptions": [
+        {
+          "phrase": "valuable smart home",
+          "term": "valuable",
+          "zh": "有价值的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调实际作用。"
+        },
+        {
+          "phrase": "long-term smart home",
+          "term": "long-term",
+          "zh": "长期的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合强调时间维度。"
+        },
+        {
+          "phrase": "problematic smart home",
+          "term": "problematic",
+          "zh": "有问题的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判性论述。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::install smart home devices",
+      "topic": "Technology",
+      "baseChinese": "智能家居",
+      "baseEnglish": "smart home",
+      "type": "verb",
+      "original": "install smart home devices",
+      "focus": "install",
+      "currentOptions": [
+        {
+          "phrase": "develop smart home devices",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss smart home devices",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook smart home devices",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::fast drone delivery",
+      "topic": "Technology",
+      "baseChinese": "无人机配送",
+      "baseEnglish": "drone delivery",
+      "type": "adjective",
+      "original": "fast drone delivery",
+      "focus": "fast",
+      "currentOptions": [
+        {
+          "phrase": "meaningful drone delivery",
+          "term": "meaningful",
+          "zh": "有意义的",
+          "stance": "Positive",
+          "tone": "这条搭配适合强调真实价值或影响。"
+        },
+        {
+          "phrase": "measurable drone delivery",
+          "term": "measurable",
+          "zh": "可衡量的",
+          "stance": "Neutral",
+          "tone": "这条搭配适合数据或效果评估语境。"
+        },
+        {
+          "phrase": "limited drone delivery",
+          "term": "limited",
+          "zh": "有限的",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判作用或覆盖面不足。"
+        }
+      ]
+    }
+  ]
+}

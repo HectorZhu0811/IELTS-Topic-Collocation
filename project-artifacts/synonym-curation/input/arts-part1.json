@@ -1,0 +1,840 @@
+{
+  "topic": "Arts",
+  "guidance": "project-docs/synonym-curation-guidelines.md",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "issueCount": 54,
+  "issueCardCount": 24,
+  "issueRows": [
+    {
+      "topic": "Arts",
+      "type": "adjective",
+      "baseChinese": "表演艺术",
+      "baseEnglish": "performing arts",
+      "focus": "traditional",
+      "original": "traditional performing arts",
+      "term": "traditional",
+      "phrase": "traditional performing arts",
+      "zh": "传统的",
+      "tone": "中性，强调文化来源。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "表演艺术",
+      "baseEnglish": "performing arts",
+      "focus": "promote",
+      "original": "promote performing arts",
+      "term": "analyse",
+      "phrase": "analyse performing arts",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "表演艺术",
+      "baseEnglish": "performing arts",
+      "focus": "promote",
+      "original": "promote performing arts",
+      "term": "sideline",
+      "phrase": "sideline performing arts",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "即兴戏剧",
+      "baseEnglish": "improv theatre",
+      "focus": "stage",
+      "original": "stage improv theatre",
+      "term": "maintain",
+      "phrase": "maintain improv theatre",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "即兴戏剧",
+      "baseEnglish": "improv theatre",
+      "focus": "stage",
+      "original": "stage improv theatre",
+      "term": "discuss",
+      "phrase": "discuss improv theatre",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "即兴戏剧",
+      "baseEnglish": "improv theatre",
+      "focus": "stage",
+      "original": "stage improv theatre",
+      "term": "overlook",
+      "phrase": "overlook improv theatre",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "舞蹈表演",
+      "baseEnglish": "dance performances",
+      "focus": "attend",
+      "original": "attend dance performances",
+      "term": "attend",
+      "phrase": "attend dance performances",
+      "zh": "观看",
+      "tone": "这条搭配适合讲参与和支持现场艺术活动。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "舞蹈表演",
+      "baseEnglish": "dance performances",
+      "focus": "attend",
+      "original": "attend dance performances",
+      "term": "analyse",
+      "phrase": "analyse dance performances",
+      "zh": "赏析",
+      "tone": "这条搭配适合从动作、舞台和文化表达角度分析舞蹈表演。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "戏剧表演",
+      "baseEnglish": "theatrical performances",
+      "focus": "watch",
+      "original": "watch theatrical performances",
+      "term": "maintain",
+      "phrase": "maintain theatrical performances",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "戏剧表演",
+      "baseEnglish": "theatrical performances",
+      "focus": "watch",
+      "original": "watch theatrical performances",
+      "term": "discuss",
+      "phrase": "discuss theatrical performances",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "戏剧表演",
+      "baseEnglish": "theatrical performances",
+      "focus": "watch",
+      "original": "watch theatrical performances",
+      "term": "overlook",
+      "phrase": "overlook theatrical performances",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "视觉艺术",
+      "baseEnglish": "visual arts",
+      "focus": "appreciate",
+      "original": "appreciate visual arts",
+      "term": "promote",
+      "phrase": "promote visual arts",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "视觉艺术",
+      "baseEnglish": "visual arts",
+      "focus": "appreciate",
+      "original": "appreciate visual arts",
+      "term": "analyse",
+      "phrase": "analyse visual arts",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "视觉艺术",
+      "baseEnglish": "visual arts",
+      "focus": "appreciate",
+      "original": "appreciate visual arts",
+      "term": "sideline",
+      "phrase": "sideline visual arts",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "抽象画",
+      "baseEnglish": "abstract painting",
+      "focus": "create",
+      "original": "create abstract paintings",
+      "term": "create",
+      "phrase": "create abstract paintings",
+      "zh": "创作",
+      "tone": "这条搭配适合讲艺术家进行抽象画创作。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "当代雕塑",
+      "baseEnglish": "contemporary sculpture",
+      "focus": "exhibit",
+      "original": "exhibit contemporary sculpture",
+      "term": "maintain",
+      "phrase": "maintain contemporary sculpture",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "当代雕塑",
+      "baseEnglish": "contemporary sculpture",
+      "focus": "exhibit",
+      "original": "exhibit contemporary sculpture",
+      "term": "assess",
+      "phrase": "assess contemporary sculpture",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "当代雕塑",
+      "baseEnglish": "contemporary sculpture",
+      "focus": "exhibit",
+      "original": "exhibit contemporary sculpture",
+      "term": "undermine",
+      "phrase": "undermine contemporary sculpture",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "数字装置",
+      "baseEnglish": "digital installations",
+      "focus": "design",
+      "original": "design digital installations",
+      "term": "develop",
+      "phrase": "develop digital installations",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "数字装置",
+      "baseEnglish": "digital installations",
+      "focus": "design",
+      "original": "design digital installations",
+      "term": "discuss",
+      "phrase": "discuss digital installations",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "数字装置",
+      "baseEnglish": "digital installations",
+      "focus": "design",
+      "original": "design digital installations",
+      "term": "undermine",
+      "phrase": "undermine digital installations",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "沉浸式投影",
+      "baseEnglish": "immersive projections",
+      "focus": "use",
+      "original": "use immersive projections",
+      "term": "use",
+      "phrase": "use immersive projections",
+      "zh": "使用",
+      "tone": "这条搭配适合讲借助沉浸式投影增强艺术体验。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "抽象艺术",
+      "baseEnglish": "abstract art",
+      "focus": "interpret",
+      "original": "interpret abstract art",
+      "term": "promote",
+      "phrase": "promote abstract art",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "抽象艺术",
+      "baseEnglish": "abstract art",
+      "focus": "interpret",
+      "original": "interpret abstract art",
+      "term": "analyse",
+      "phrase": "analyse abstract art",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "抽象艺术",
+      "baseEnglish": "abstract art",
+      "focus": "interpret",
+      "original": "interpret abstract art",
+      "term": "sideline",
+      "phrase": "sideline abstract art",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "当代艺术",
+      "baseEnglish": "contemporary art",
+      "focus": "support",
+      "original": "support contemporary art",
+      "term": "develop",
+      "phrase": "develop contemporary art",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "当代艺术",
+      "baseEnglish": "contemporary art",
+      "focus": "support",
+      "original": "support contemporary art",
+      "term": "discuss",
+      "phrase": "discuss contemporary art",
+      "zh": "讨论",
+      "tone": "中性语气，适合引出议题或观点对比。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Arts",
+      "type": "verb",
+      "baseChinese": "当代艺术",
+      "baseEnglish": "contemporary art",
+      "focus": "support",
+      "original": "support contemporary art",
+      "term": "undermine",
+      "phrase": "undermine contemporary art",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    }
+  ],
+  "cardsToReview": [
+    {
+      "cardKey": "Arts::adjective::traditional performing arts",
+      "topic": "Arts",
+      "baseChinese": "表演艺术",
+      "baseEnglish": "performing arts",
+      "type": "adjective",
+      "original": "traditional performing arts",
+      "focus": "traditional",
+      "currentOptions": [
+        {
+          "phrase": "vibrant performing arts",
+          "term": "vibrant",
+          "zh": "有活力的",
+          "stance": "Positive",
+          "tone": "积极，强调文化生命力。"
+        },
+        {
+          "phrase": "traditional performing arts",
+          "term": "traditional",
+          "zh": "传统的",
+          "stance": "Neutral",
+          "tone": "中性，强调文化来源。"
+        },
+        {
+          "phrase": "commercialized performing arts",
+          "term": "commercialized",
+          "zh": "商业化的",
+          "stance": "Negative",
+          "tone": "消极，适合批判艺术商品化。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::promote performing arts",
+      "topic": "Arts",
+      "baseChinese": "表演艺术",
+      "baseEnglish": "performing arts",
+      "type": "verb",
+      "original": "promote performing arts",
+      "focus": "promote",
+      "currentOptions": [
+        {
+          "phrase": "advance performing arts",
+          "term": "advance",
+          "zh": "推进",
+          "stance": "Positive",
+          "tone": "更正式，强调向前发展。"
+        },
+        {
+          "phrase": "analyse performing arts",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline performing arts",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::stage improv theatre",
+      "topic": "Arts",
+      "baseChinese": "即兴戏剧",
+      "baseEnglish": "improv theatre",
+      "type": "verb",
+      "original": "stage improv theatre",
+      "focus": "stage",
+      "currentOptions": [
+        {
+          "phrase": "maintain improv theatre",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "discuss improv theatre",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook improv theatre",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::attend dance performances",
+      "topic": "Arts",
+      "baseChinese": "舞蹈表演",
+      "baseEnglish": "dance performances",
+      "type": "verb",
+      "original": "attend dance performances",
+      "focus": "attend",
+      "currentOptions": [
+        {
+          "phrase": "attend dance performances",
+          "term": "attend",
+          "zh": "观看",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲参与和支持现场艺术活动。"
+        },
+        {
+          "phrase": "analyse dance performances",
+          "term": "analyse",
+          "zh": "赏析",
+          "stance": "Neutral",
+          "tone": "这条搭配适合从动作、舞台和文化表达角度分析舞蹈表演。"
+        },
+        {
+          "phrase": "dismiss dance performances",
+          "term": "dismiss",
+          "zh": "轻视",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判把舞蹈表演视为不重要或缺乏价值。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::watch theatrical performances",
+      "topic": "Arts",
+      "baseChinese": "戏剧表演",
+      "baseEnglish": "theatrical performances",
+      "type": "verb",
+      "original": "watch theatrical performances",
+      "focus": "watch",
+      "currentOptions": [
+        {
+          "phrase": "maintain theatrical performances",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "discuss theatrical performances",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "overlook theatrical performances",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::appreciate visual arts",
+      "topic": "Arts",
+      "baseChinese": "视觉艺术",
+      "baseEnglish": "visual arts",
+      "type": "verb",
+      "original": "appreciate visual arts",
+      "focus": "appreciate",
+      "currentOptions": [
+        {
+          "phrase": "promote visual arts",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "analyse visual arts",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline visual arts",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::create abstract paintings",
+      "topic": "Arts",
+      "baseChinese": "抽象画",
+      "baseEnglish": "abstract painting",
+      "type": "verb",
+      "original": "create abstract paintings",
+      "focus": "create",
+      "currentOptions": [
+        {
+          "phrase": "create abstract paintings",
+          "term": "create",
+          "zh": "创作",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲艺术家进行抽象画创作。"
+        },
+        {
+          "phrase": "interpret abstract paintings",
+          "term": "interpret",
+          "zh": "解读",
+          "stance": "Neutral",
+          "tone": "这条搭配适合分析抽象画的形式、色彩和意义。"
+        },
+        {
+          "phrase": "dismiss abstract paintings",
+          "term": "dismiss",
+          "zh": "轻视",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判否定抽象画的艺术价值。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::exhibit contemporary sculpture",
+      "topic": "Arts",
+      "baseChinese": "当代雕塑",
+      "baseEnglish": "contemporary sculpture",
+      "type": "verb",
+      "original": "exhibit contemporary sculpture",
+      "focus": "exhibit",
+      "currentOptions": [
+        {
+          "phrase": "maintain contemporary sculpture",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess contemporary sculpture",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine contemporary sculpture",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::design digital installations",
+      "topic": "Arts",
+      "baseChinese": "数字装置",
+      "baseEnglish": "digital installations",
+      "type": "verb",
+      "original": "design digital installations",
+      "focus": "design",
+      "currentOptions": [
+        {
+          "phrase": "develop digital installations",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss digital installations",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "undermine digital installations",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::use immersive projections",
+      "topic": "Arts",
+      "baseChinese": "沉浸式投影",
+      "baseEnglish": "immersive projections",
+      "type": "verb",
+      "original": "use immersive projections",
+      "focus": "use",
+      "currentOptions": [
+        {
+          "phrase": "use immersive projections",
+          "term": "use",
+          "zh": "使用",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲借助沉浸式投影增强艺术体验。"
+        },
+        {
+          "phrase": "evaluate immersive projections",
+          "term": "evaluate",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观分析沉浸式投影的展示效果和成本。"
+        },
+        {
+          "phrase": "overuse immersive projections",
+          "term": "overuse",
+          "zh": "过度使用",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判技术喧宾夺主、削弱艺术内容。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::interpret abstract art",
+      "topic": "Arts",
+      "baseChinese": "抽象艺术",
+      "baseEnglish": "abstract art",
+      "type": "verb",
+      "original": "interpret abstract art",
+      "focus": "interpret",
+      "currentOptions": [
+        {
+          "phrase": "promote abstract art",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "analyse abstract art",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline abstract art",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Arts::verb::support contemporary art",
+      "topic": "Arts",
+      "baseChinese": "当代艺术",
+      "baseEnglish": "contemporary art",
+      "type": "verb",
+      "original": "support contemporary art",
+      "focus": "support",
+      "currentOptions": [
+        {
+          "phrase": "develop contemporary art",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "discuss contemporary art",
+          "term": "discuss",
+          "zh": "讨论",
+          "stance": "Neutral",
+          "tone": "中性语气，适合引出议题或观点对比。"
+        },
+        {
+          "phrase": "undermine contemporary art",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    }
+  ],
+  "part": "part1"
+}

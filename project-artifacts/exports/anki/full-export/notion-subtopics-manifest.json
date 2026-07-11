@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-06-27T02:59:12.858Z",
+  "source": "Notion Task 2 Practice / 2025-2026 高频 Subtopics",
+  "deckName": "IELTS Topic Collocation::2025-2026 Subtopics",
+  "totalCards": 54,
+  "format": "one Anki overview card per Notion subtopic",
+  "fields": [
+    "Front",
+    "Back",
+    "Topic",
+    "TopicZh",
+    "Type",
+    "BaseChinese",
+    "BaseEnglish",
+    "HighlightChinese",
+    "HighlightEnglish",
+    "Tags",
+    "CardId"
+  ],
+  "files": [
+    {
+      "fileName": "notion-subtopics-anki-all.tsv",
+      "count": 54
+    },
+    {
+      "fileName": "notion-subtopics-technology-科技-anki.tsv",
+      "count": 5
+    },
+    {
+      "fileName": "notion-subtopics-education-教育-anki.tsv",
+      "count": 6
+    },
+    {
+      "fileName": "notion-subtopics-environment-环境-anki.tsv",
+      "count": 6
+    },
+    {
+      "fileName": "notion-subtopics-government-政府-anki.tsv",
+      "count": 5
+    },
+    {
+      "fileName": "notion-subtopics-society-社会-anki.tsv",
+      "count": 5
+    },
+    {
+      "fileName": "notion-subtopics-health-健康-anki.tsv",
+      "count": 4
+    },
+    {
+      "fileName": "notion-subtopics-urbanization-城市化-anki.tsv",
+      "count": 6
+    },
+    {
+      "fileName": "notion-subtopics-media-媒体-anki.tsv",
+      "count": 5
+    },
+    {
+      "fileName": "notion-subtopics-economy-经济-anki.tsv",
+      "count": 6
+    },
+    {
+      "fileName": "notion-subtopics-arts-艺术-anki.tsv",
+      "count": 6
+    }
+  ]
+}

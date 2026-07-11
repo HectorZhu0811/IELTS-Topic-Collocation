@@ -1,0 +1,614 @@
+{
+  "topic": "Technology",
+  "curator": "technology-topic-curation-worker",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "approved": [
+    {
+      "cardKey": "Technology::adjective::major technological revolution",
+      "baseChinese": "技术革命",
+      "baseEnglish": "technological revolution",
+      "type": "adjective",
+      "original": "major technological revolution",
+      "focus": "major",
+      "options": [
+        {
+          "phrase": "sweeping technological revolution",
+          "term": "sweeping",
+          "zh": "席卷多个领域的技术革命",
+          "stance": "Neutral",
+          "tone": "适合描述技术变化影响范围很广，例如改变工作、教育和医疗等多个领域。"
+        },
+        {
+          "phrase": "transformative technological revolution",
+          "term": "transformative",
+          "zh": "带来深层改变的技术革命",
+          "stance": "Positive",
+          "tone": "适合强调技术革命能重塑产业、公共服务或日常生活方式。"
+        },
+        {
+          "phrase": "far-reaching technological revolution",
+          "term": "far-reaching",
+          "zh": "影响深远的技术革命",
+          "stance": "Neutral",
+          "tone": "适合说明技术革命的影响不局限于短期效率，而会延伸到社会结构和就业模式。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::radical disruptive innovation",
+      "baseChinese": "颠覆性创新",
+      "baseEnglish": "disruptive innovation",
+      "type": "adjective",
+      "original": "radical disruptive innovation",
+      "focus": "radical",
+      "options": [
+        {
+          "phrase": "groundbreaking disruptive innovation",
+          "term": "groundbreaking",
+          "zh": "具有开创性的颠覆性创新",
+          "stance": "Positive",
+          "tone": "适合强调某项创新突破旧技术路线，并创造新的产品或服务模式。"
+        },
+        {
+          "phrase": "transformative disruptive innovation",
+          "term": "transformative",
+          "zh": "能够重塑行业的颠覆性创新",
+          "stance": "Positive",
+          "tone": "适合讨论人工智能、自动化或平台技术对行业规则的深层改变。"
+        },
+        {
+          "phrase": "market-disrupting innovation",
+          "term": "market-disrupting",
+          "zh": "打破原有市场格局的创新",
+          "stance": "Neutral",
+          "tone": "适合分析新技术如何冲击传统企业、就业结构或消费者习惯。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::robust cybersecurity",
+      "baseChinese": "网络安全",
+      "baseEnglish": "cybersecurity",
+      "type": "adjective",
+      "original": "robust cybersecurity",
+      "focus": "robust",
+      "options": [
+        {
+          "phrase": "strong cybersecurity",
+          "term": "strong",
+          "zh": "强有力的网络安全防护",
+          "stance": "Positive",
+          "tone": "适合说明机构需要可靠的防护能力来保护用户数据和关键系统。"
+        },
+        {
+          "phrase": "comprehensive cybersecurity",
+          "term": "comprehensive",
+          "zh": "覆盖全面的网络安全体系",
+          "stance": "Positive",
+          "tone": "适合强调网络安全不仅包括技术工具，也包括员工培训、应急流程和合规管理。"
+        },
+        {
+          "phrase": "resilient cybersecurity",
+          "term": "resilient",
+          "zh": "具备恢复能力的网络安全体系",
+          "stance": "Positive",
+          "tone": "适合讨论系统在遭遇攻击后仍能维持服务并迅速恢复。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::strengthen cybersecurity",
+      "baseChinese": "网络安全",
+      "baseEnglish": "cybersecurity",
+      "type": "verb",
+      "original": "strengthen cybersecurity",
+      "focus": "strengthen",
+      "options": [
+        {
+          "phrase": "enhance cybersecurity",
+          "term": "enhance",
+          "zh": "提升网络安全水平",
+          "stance": "Positive",
+          "tone": "适合说明通过加密、多因素认证或安全培训提升防护能力。"
+        },
+        {
+          "phrase": "improve cybersecurity",
+          "term": "improve",
+          "zh": "改善网络安全防护",
+          "stance": "Positive",
+          "tone": "适合概括政府、学校或企业逐步修补漏洞并降低攻击风险。"
+        },
+        {
+          "phrase": "reinforce cybersecurity",
+          "term": "reinforce",
+          "zh": "加固网络安全防线",
+          "stance": "Positive",
+          "tone": "适合强调在原有系统基础上增加额外保护层，例如备份、监控和访问控制。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::prevent data breaches",
+      "baseChinese": "数据泄露",
+      "baseEnglish": "data breach / data leak",
+      "type": "verb",
+      "original": "prevent data breaches",
+      "focus": "prevent",
+      "options": [
+        {
+          "phrase": "reduce the risk of data breaches",
+          "term": "reduce the risk of",
+          "zh": "降低数据泄露风险",
+          "stance": "Positive",
+          "tone": "适合说明隐私法规、加密和权限管理只能降低风险，而不能保证绝对安全。"
+        },
+        {
+          "phrase": "guard against data breaches",
+          "term": "guard against",
+          "zh": "防范数据泄露",
+          "stance": "Positive",
+          "tone": "适合强调企业或平台主动建立防护措施来保护个人信息。"
+        },
+        {
+          "phrase": "detect data breaches",
+          "term": "detect",
+          "zh": "发现数据泄露",
+          "stance": "Neutral",
+          "tone": "适合讨论安全系统及时发现泄露事件，从而减少损失和通知受影响用户。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::deploy AI assistants",
+      "baseChinese": "AI助教",
+      "baseEnglish": "AI-powered tutor / AI assistant",
+      "type": "verb",
+      "original": "deploy AI assistants",
+      "focus": "deploy",
+      "options": [
+        {
+          "phrase": "introduce AI assistants",
+          "term": "introduce",
+          "zh": "引入 AI 助教",
+          "stance": "Positive",
+          "tone": "适合说明学校或在线平台首次把 AI 助教用于答疑、批改或个性化练习。"
+        },
+        {
+          "phrase": "implement AI assistants",
+          "term": "implement",
+          "zh": "实际应用 AI 助教",
+          "stance": "Positive",
+          "tone": "适合强调 AI 助教从试点进入真实教学流程，而不仅是概念展示。"
+        },
+        {
+          "phrase": "integrate AI assistants into classrooms",
+          "term": "integrate into",
+          "zh": "把 AI 助教融入课堂",
+          "stance": "Positive",
+          "tone": "适合讨论 AI 助教与教师授课、课后反馈和学生自主学习之间的配合。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::seamless video conferencing",
+      "baseChinese": "视频会议",
+      "baseEnglish": "video conferencing",
+      "type": "adjective",
+      "original": "seamless video conferencing",
+      "focus": "seamless",
+      "options": [
+        {
+          "phrase": "smooth video conferencing",
+          "term": "smooth",
+          "zh": "流畅的视频会议体验",
+          "stance": "Positive",
+          "tone": "适合强调远程办公或在线课堂中画面、声音和连接都比较稳定。"
+        },
+        {
+          "phrase": "reliable video conferencing",
+          "term": "reliable",
+          "zh": "可靠的视频会议服务",
+          "stance": "Positive",
+          "tone": "适合说明视频会议系统在重要会议、远程面试或线上教学中不容易中断。"
+        },
+        {
+          "phrase": "uninterrupted video conferencing",
+          "term": "uninterrupted",
+          "zh": "不中断的视频会议",
+          "stance": "Positive",
+          "tone": "适合讨论稳定网络和平台性能如何减少掉线、卡顿和沟通延迟。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::use video conferencing",
+      "baseChinese": "视频会议",
+      "baseEnglish": "video conferencing",
+      "type": "verb",
+      "original": "use video conferencing",
+      "focus": "use",
+      "options": [
+        {
+          "phrase": "adopt video conferencing",
+          "term": "adopt",
+          "zh": "采用视频会议",
+          "stance": "Positive",
+          "tone": "适合说明企业、学校或医院把视频会议作为正式沟通方式。"
+        },
+        {
+          "phrase": "rely on video conferencing",
+          "term": "rely on",
+          "zh": "依赖视频会议",
+          "stance": "Neutral",
+          "tone": "适合分析远程办公或跨国合作中视频会议成为主要沟通渠道。"
+        },
+        {
+          "phrase": "hold video conferences",
+          "term": "hold",
+          "zh": "举行视频会议",
+          "stance": "Positive",
+          "tone": "适合较正式地表达个人、团队或机构通过视频会议沟通，从而降低出行成本。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::rigorous scientific research",
+      "baseChinese": "科学研究",
+      "baseEnglish": "scientific research",
+      "type": "adjective",
+      "original": "rigorous scientific research",
+      "focus": "rigorous",
+      "options": [
+        {
+          "phrase": "methodologically sound scientific research",
+          "term": "methodologically sound",
+          "zh": "方法严谨可靠的科学研究",
+          "stance": "Positive",
+          "tone": "适合强调研究设计、样本选择和数据处理都经得起检验。"
+        },
+        {
+          "phrase": "evidence-based scientific research",
+          "term": "evidence-based",
+          "zh": "以证据为基础的科学研究",
+          "stance": "Positive",
+          "tone": "适合说明政策或医疗建议应建立在实验结果和可靠数据之上。"
+        },
+        {
+          "phrase": "peer-reviewed scientific research",
+          "term": "peer-reviewed",
+          "zh": "经过同行评审的科学研究",
+          "stance": "Positive",
+          "tone": "适合强调研究成果在发表前接受专业学者审查，可信度更高。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::precise gene editing",
+      "baseChinese": "基因编辑",
+      "baseEnglish": "gene editing",
+      "type": "adjective",
+      "original": "precise gene editing",
+      "focus": "precise",
+      "options": [
+        {
+          "phrase": "targeted gene editing",
+          "term": "targeted",
+          "zh": "定向基因编辑",
+          "stance": "Positive",
+          "tone": "适合强调技术能作用于特定基因位点，而不是笼统改变遗传信息。"
+        },
+        {
+          "phrase": "accurate gene editing",
+          "term": "accurate",
+          "zh": "准确的基因编辑",
+          "stance": "Positive",
+          "tone": "适合说明医学或农业应用中需要尽量减少脱靶风险。"
+        },
+        {
+          "phrase": "high-precision gene editing",
+          "term": "high-precision",
+          "zh": "高精度基因编辑",
+          "stance": "Positive",
+          "tone": "适合讨论新一代基因编辑工具在治疗遗传疾病方面的潜力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::regulate gene editing",
+      "baseChinese": "基因编辑",
+      "baseEnglish": "gene editing",
+      "type": "verb",
+      "original": "regulate gene editing",
+      "focus": "regulate",
+      "options": [
+        {
+          "phrase": "govern gene editing",
+          "term": "govern",
+          "zh": "治理基因编辑",
+          "stance": "Neutral",
+          "tone": "适合从法律、伦理和公共监督角度讨论基因编辑的使用边界。"
+        },
+        {
+          "phrase": "oversee gene editing",
+          "term": "oversee",
+          "zh": "监督基因编辑活动",
+          "stance": "Neutral",
+          "tone": "适合说明监管机构或伦理委员会需要审查实验和临床应用。"
+        },
+        {
+          "phrase": "place restrictions on gene editing",
+          "term": "place restrictions on",
+          "zh": "对基因编辑设置限制",
+          "stance": "Neutral",
+          "tone": "适合讨论对胚胎编辑、商业化应用或非治疗性用途设置明确边界。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::expand telemedicine",
+      "baseChinese": "远程医疗",
+      "baseEnglish": "telemedicine",
+      "type": "verb",
+      "original": "expand telemedicine",
+      "focus": "expand",
+      "options": [
+        {
+          "phrase": "scale up telemedicine",
+          "term": "scale up",
+          "zh": "扩大远程医疗服务规模",
+          "stance": "Positive",
+          "tone": "适合说明把小范围试点推广到更多社区、农村地区或慢病管理场景。"
+        },
+        {
+          "phrase": "extend telemedicine services",
+          "term": "extend",
+          "zh": "拓展远程医疗服务",
+          "stance": "Positive",
+          "tone": "适合强调医院或政府把线上问诊、远程复诊和健康咨询覆盖到更多患者。"
+        },
+        {
+          "phrase": "widen access to telemedicine",
+          "term": "widen access to",
+          "zh": "扩大远程医疗的可及性",
+          "stance": "Positive",
+          "tone": "适合讨论远程医疗如何帮助偏远地区、行动不便者或医疗资源不足的人群。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::accelerate vaccine development",
+      "baseChinese": "疫苗开发",
+      "baseEnglish": "vaccine development",
+      "type": "verb",
+      "original": "accelerate vaccine development",
+      "focus": "accelerate",
+      "options": [
+        {
+          "phrase": "speed up vaccine development",
+          "term": "speed up",
+          "zh": "加快疫苗开发",
+          "stance": "Positive",
+          "tone": "适合说明新技术、资金投入或全球合作能缩短研发周期。"
+        },
+        {
+          "phrase": "expedite vaccine development",
+          "term": "expedite",
+          "zh": "加速推进疫苗开发",
+          "stance": "Positive",
+          "tone": "适合较正式地讨论政府审批、临床试验协调和研发资源整合。"
+        },
+        {
+          "phrase": "fast-track vaccine development",
+          "term": "fast-track",
+          "zh": "快速推进疫苗开发流程",
+          "stance": "Positive",
+          "tone": "适合描述公共卫生危机中对疫苗研发和审批流程进行优先处理。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::biocompatible artificial organs",
+      "baseChinese": "人工器官",
+      "baseEnglish": "artificial organs",
+      "type": "adjective",
+      "original": "biocompatible artificial organs",
+      "focus": "biocompatible",
+      "options": [
+        {
+          "phrase": "patient-compatible artificial organs",
+          "term": "patient-compatible",
+          "zh": "与患者身体相容的人工器官",
+          "stance": "Positive",
+          "tone": "适合强调人工器官需要降低排异反应并适应患者个体情况。"
+        },
+        {
+          "phrase": "implantable artificial organs",
+          "term": "implantable",
+          "zh": "可植入人体的人工器官",
+          "stance": "Positive",
+          "tone": "适合说明人工器官不是实验模型，而是能够进入临床植入场景。"
+        },
+        {
+          "phrase": "transplantable artificial organs",
+          "term": "transplantable",
+          "zh": "可移植的人工器官",
+          "stance": "Positive",
+          "tone": "适合讨论人工器官作为器官短缺问题的一种潜在解决方案。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::implant artificial organs",
+      "baseChinese": "人工器官",
+      "baseEnglish": "artificial organs",
+      "type": "verb",
+      "original": "implant artificial organs",
+      "focus": "implant",
+      "options": [
+        {
+          "phrase": "transplant artificial organs",
+          "term": "transplant",
+          "zh": "移植人工器官",
+          "stance": "Positive",
+          "tone": "适合医学语境，强调通过手术把人工器官用于替代受损器官。"
+        },
+        {
+          "phrase": "replace damaged organs with artificial organs",
+          "term": "replace with",
+          "zh": "用人工器官替换受损器官",
+          "stance": "Positive",
+          "tone": "适合说明人工器官在器官衰竭或严重损伤后的治疗作用。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::minimally invasive robotic surgery",
+      "baseChinese": "机器人手术",
+      "baseEnglish": "robotic surgery",
+      "type": "adjective",
+      "original": "minimally invasive robotic surgery",
+      "focus": "minimally invasive",
+      "options": [
+        {
+          "phrase": "keyhole robotic surgery",
+          "term": "keyhole",
+          "zh": "微创小切口机器人手术",
+          "stance": "Positive",
+          "tone": "适合说明机器人手术通过小切口完成操作，从而减少创伤和恢复时间。"
+        },
+        {
+          "phrase": "small-incision robotic surgery",
+          "term": "small-incision",
+          "zh": "小切口机器人手术",
+          "stance": "Positive",
+          "tone": "适合强调机器人手术相较传统开放手术切口更小、术后恢复更快。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::perform robotic surgery",
+      "baseChinese": "机器人手术",
+      "baseEnglish": "robotic surgery",
+      "type": "verb",
+      "original": "perform robotic surgery",
+      "focus": "perform",
+      "options": [
+        {
+          "phrase": "carry out robotic surgery",
+          "term": "carry out",
+          "zh": "实施机器人手术",
+          "stance": "Neutral",
+          "tone": "适合正式描述医生或医院完成机器人辅助手术。"
+        },
+        {
+          "phrase": "conduct robotic surgery",
+          "term": "conduct",
+          "zh": "开展机器人手术",
+          "stance": "Neutral",
+          "tone": "适合说明医院具备开展机器人手术的技术、设备和专业团队。"
+        },
+        {
+          "phrase": "use robotic systems in surgery",
+          "term": "use robotic systems in",
+          "zh": "在手术中使用机器人系统",
+          "stance": "Neutral",
+          "tone": "适合解释医生借助机器人系统提升操作稳定性和精细度。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::automated smart home",
+      "baseChinese": "智能家居",
+      "baseEnglish": "smart home",
+      "type": "adjective",
+      "original": "automated smart home",
+      "focus": "automated",
+      "options": [
+        {
+          "phrase": "connected smart home",
+          "term": "connected",
+          "zh": "设备互联的智能家居",
+          "stance": "Positive",
+          "tone": "适合说明灯光、安防、家电和手机应用之间能够互相连接。"
+        },
+        {
+          "phrase": "app-controlled smart home",
+          "term": "app-controlled",
+          "zh": "由手机应用控制的智能家居",
+          "stance": "Positive",
+          "tone": "适合描述用户通过手机远程控制空调、门锁、照明和监控设备。"
+        },
+        {
+          "phrase": "voice-controlled smart home",
+          "term": "voice-controlled",
+          "zh": "语音控制的智能家居",
+          "stance": "Positive",
+          "tone": "适合讨论语音助手如何让老人、儿童或行动不便者更方便地使用家居设备。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::verb::install smart home devices",
+      "baseChinese": "智能家居",
+      "baseEnglish": "smart home",
+      "type": "verb",
+      "original": "install smart home devices",
+      "focus": "install",
+      "options": [
+        {
+          "phrase": "set up smart home devices",
+          "term": "set up",
+          "zh": "设置智能家居设备",
+          "stance": "Positive",
+          "tone": "适合描述用户把智能音箱、摄像头或传感器连接到家庭网络并完成配置。"
+        },
+        {
+          "phrase": "fit smart home devices",
+          "term": "fit",
+          "zh": "安装智能家居设备",
+          "stance": "Neutral",
+          "tone": "适合英式表达，描述在住宅中安装智能门锁、恒温器或安防设备。"
+        },
+        {
+          "phrase": "integrate smart home devices",
+          "term": "integrate",
+          "zh": "整合智能家居设备",
+          "stance": "Positive",
+          "tone": "适合强调把不同品牌或不同功能的设备接入同一个家庭系统。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Technology::adjective::fast drone delivery",
+      "baseChinese": "无人机配送",
+      "baseEnglish": "drone delivery",
+      "type": "adjective",
+      "original": "fast drone delivery",
+      "focus": "fast",
+      "options": [
+        {
+          "phrase": "rapid drone delivery",
+          "term": "rapid",
+          "zh": "快速无人机配送",
+          "stance": "Positive",
+          "tone": "适合强调无人机能缩短药品、文件或小件商品的配送时间。"
+        },
+        {
+          "phrase": "same-day drone delivery",
+          "term": "same-day",
+          "zh": "当日达无人机配送",
+          "stance": "Positive",
+          "tone": "适合讨论电商、医疗物资或城市物流中的即时配送需求。"
+        },
+        {
+          "phrase": "time-sensitive drone delivery",
+          "term": "time-sensitive",
+          "zh": "适用于紧急时效需求的无人机配送",
+          "stance": "Positive",
+          "tone": "适合说明无人机配送在救灾、医疗样本或偏远地区紧急补给中的价值。"
+        }
+      ]
+    }
+  ],
+  "deferred": []
+}

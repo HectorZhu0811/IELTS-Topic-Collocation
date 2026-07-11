@@ -1,0 +1,969 @@
+{
+  "topic": "Government",
+  "curator": "topic-subagent",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "approved": [
+    {
+      "cardKey": "Government::adjective::targeted market-oriented measures",
+      "baseChinese": "市场导向手段",
+      "baseEnglish": "market-oriented measures",
+      "type": "adjective",
+      "original": "targeted market-oriented measures",
+      "focus": "targeted",
+      "options": [
+        {
+          "phrase": "tailored market-oriented measures",
+          "term": "tailored",
+          "zh": "根据具体经济问题调整的市场化手段",
+          "stance": "Positive",
+          "tone": "适合说明政府不是一刀切干预，而是针对特定行业或群体设计市场化政策。"
+        },
+        {
+          "phrase": "incentive-based market-oriented measures",
+          "term": "incentive-based",
+          "zh": "以激励机制为基础的市场化手段",
+          "stance": "Neutral",
+          "tone": "适合解释税收优惠、补贴或价格信号如何引导企业和个人行为。"
+        },
+        {
+          "phrase": "sector-specific market-oriented measures",
+          "term": "sector-specific",
+          "zh": "面向特定行业的市场化手段",
+          "stance": "Neutral",
+          "tone": "适合讨论政府在住房、能源、教育等不同领域采用差异化政策。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::adopt market-oriented measures",
+      "baseChinese": "市场导向手段",
+      "baseEnglish": "market-oriented measures",
+      "type": "verb",
+      "original": "adopt market-oriented measures",
+      "focus": "adopt",
+      "options": [
+        {
+          "phrase": "implement market-oriented measures",
+          "term": "implement",
+          "zh": "实施市场化手段",
+          "stance": "Positive",
+          "tone": "强调政策从设计进入执行阶段，适合正式政策建议。"
+        },
+        {
+          "phrase": "introduce market-oriented measures",
+          "term": "introduce",
+          "zh": "推出市场化手段",
+          "stance": "Neutral",
+          "tone": "适合描述政府开始使用价格、竞争或激励机制来处理公共问题。"
+        },
+        {
+          "phrase": "phase in market-oriented measures",
+          "term": "phase in",
+          "zh": "逐步引入市场化手段",
+          "stance": "Neutral",
+          "tone": "适合说明改革需要分阶段推进，以减少对居民或企业的冲击。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::provide high-quality public services",
+      "baseChinese": "高质量公共服务",
+      "baseEnglish": "high-quality public services",
+      "type": "verb",
+      "original": "provide high-quality public services",
+      "focus": "provide",
+      "options": [
+        {
+          "phrase": "deliver high-quality public services",
+          "term": "deliver",
+          "zh": "提供并落实高质量公共服务",
+          "stance": "Positive",
+          "tone": "常用于政府绩效语境，强调服务真正到达公众。"
+        },
+        {
+          "phrase": "fund high-quality public services",
+          "term": "fund",
+          "zh": "为高质量公共服务提供资金支持",
+          "stance": "Neutral",
+          "tone": "适合讨论税收、预算和公共服务质量之间的关系。"
+        },
+        {
+          "phrase": "improve access to high-quality public services",
+          "term": "improve access to",
+          "zh": "改善获得高质量公共服务的机会",
+          "stance": "Positive",
+          "tone": "适合强调公平性，尤其是偏远地区或弱势群体能否享受公共服务。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::ordinary taxpayers",
+      "baseChinese": "纳税人",
+      "baseEnglish": "taxpayers",
+      "type": "adjective",
+      "original": "ordinary taxpayers",
+      "focus": "ordinary",
+      "options": [
+        {
+          "phrase": "individual taxpayers",
+          "term": "individual",
+          "zh": "个人纳税人",
+          "stance": "Neutral",
+          "tone": "适合区别个人纳税人与企业纳税人，语气客观正式。"
+        },
+        {
+          "phrase": "middle-income taxpayers",
+          "term": "middle-income",
+          "zh": "中等收入纳税人",
+          "stance": "Neutral",
+          "tone": "适合讨论税负分配、减税政策或公共支出的受影响群体。"
+        },
+        {
+          "phrase": "overburdened taxpayers",
+          "term": "overburdened",
+          "zh": "税负过重的纳税人",
+          "stance": "Negative",
+          "tone": "适合批判政府开支过大或税制不公平给居民带来压力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::protect taxpayers",
+      "baseChinese": "纳税人",
+      "baseEnglish": "taxpayers",
+      "type": "verb",
+      "original": "protect taxpayers",
+      "focus": "protect",
+      "options": [
+        {
+          "phrase": "shield taxpayers from unnecessary costs",
+          "term": "shield from",
+          "zh": "使纳税人免受不必要成本影响",
+          "stance": "Positive",
+          "tone": "适合说明政策应避免把浪费或低效项目的成本转嫁给公众。"
+        },
+        {
+          "phrase": "ease the burden on taxpayers",
+          "term": "ease the burden on",
+          "zh": "减轻纳税人的负担",
+          "stance": "Positive",
+          "tone": "适合讨论减税、提高财政效率或控制公共债务。"
+        },
+        {
+          "phrase": "represent taxpayers' interests",
+          "term": "represent",
+          "zh": "代表纳税人的利益",
+          "stance": "Neutral",
+          "tone": "适合强调民选政府或监管机构对公共资金使用负有责任。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::annual national budget",
+      "baseChinese": "国家预算",
+      "baseEnglish": "national budget",
+      "type": "adjective",
+      "original": "annual national budget",
+      "focus": "annual",
+      "options": [
+        {
+          "phrase": "balanced national budget",
+          "term": "balanced",
+          "zh": "收支平衡的国家预算",
+          "stance": "Positive",
+          "tone": "适合说明政府控制赤字、保持财政稳定。"
+        },
+        {
+          "phrase": "austere national budget",
+          "term": "austere",
+          "zh": "紧缩型国家预算",
+          "stance": "Negative",
+          "tone": "适合讨论削减福利、教育或医疗支出带来的社会影响。"
+        },
+        {
+          "phrase": "expansionary national budget",
+          "term": "expansionary",
+          "zh": "扩张型国家预算",
+          "stance": "Neutral",
+          "tone": "适合说明政府通过增加支出刺激经济或扩大公共服务。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::approve a national budget",
+      "baseChinese": "国家预算",
+      "baseEnglish": "national budget",
+      "type": "verb",
+      "original": "approve a national budget",
+      "focus": "approve",
+      "options": [
+        {
+          "phrase": "pass a national budget",
+          "term": "pass",
+          "zh": "通过国家预算",
+          "stance": "Neutral",
+          "tone": "适合描述议会或政府正式完成预算程序。"
+        },
+        {
+          "phrase": "draft a national budget",
+          "term": "draft",
+          "zh": "起草国家预算",
+          "stance": "Neutral",
+          "tone": "适合强调预算在通过前需要规划收入来源和支出重点。"
+        },
+        {
+          "phrase": "scrutinize a national budget",
+          "term": "scrutinize",
+          "zh": "严格审查国家预算",
+          "stance": "Neutral",
+          "tone": "适合说明公共资金使用需要透明度和监督。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::comprehensive legislation",
+      "baseChinese": "立法",
+      "baseEnglish": "legislation",
+      "type": "adjective",
+      "original": "comprehensive legislation",
+      "focus": "comprehensive",
+      "options": [
+        {
+          "phrase": "far-reaching legislation",
+          "term": "far-reaching",
+          "zh": "影响广泛的立法",
+          "stance": "Neutral",
+          "tone": "适合说明法律会改变多个群体、行业或社会行为。"
+        },
+        {
+          "phrase": "robust legislation",
+          "term": "robust",
+          "zh": "有力度的立法",
+          "stance": "Positive",
+          "tone": "适合支持政府用清晰、有执行力的法律回应社会问题。"
+        },
+        {
+          "phrase": "enforceable legislation",
+          "term": "enforceable",
+          "zh": "可执行的立法",
+          "stance": "Positive",
+          "tone": "强调法律不仅写在纸面上，还能被监管机构实际执行。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::introduce legislation",
+      "baseChinese": "立法",
+      "baseEnglish": "legislation",
+      "type": "verb",
+      "original": "introduce legislation",
+      "focus": "introduce",
+      "options": [
+        {
+          "phrase": "enact legislation",
+          "term": "enact",
+          "zh": "制定并颁布立法",
+          "stance": "Positive",
+          "tone": "适合说明政府或议会把政策目标转化为正式法律。"
+        },
+        {
+          "phrase": "draft legislation",
+          "term": "draft",
+          "zh": "起草立法",
+          "stance": "Neutral",
+          "tone": "适合描述法律形成前的准备阶段，包括文本设计和利益协调。"
+        },
+        {
+          "phrase": "tighten legislation",
+          "term": "tighten",
+          "zh": "收紧立法",
+          "stance": "Neutral",
+          "tone": "适合讨论政府提高监管标准或加大违法成本。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::proposed bill",
+      "baseChinese": "法案",
+      "baseEnglish": "bill",
+      "type": "adjective",
+      "original": "proposed bill",
+      "focus": "proposed",
+      "options": [
+        {
+          "phrase": "draft bill",
+          "term": "draft",
+          "zh": "草案阶段的法案",
+          "stance": "Neutral",
+          "tone": "适合说明法案尚未通过，仍可被讨论或修改。"
+        },
+        {
+          "phrase": "pending bill",
+          "term": "pending",
+          "zh": "等待审议或表决的法案",
+          "stance": "Neutral",
+          "tone": "适合描述法案处于立法程序中、结果尚未确定。"
+        },
+        {
+          "phrase": "government-backed bill",
+          "term": "government-backed",
+          "zh": "由政府支持的法案",
+          "stance": "Neutral",
+          "tone": "适合说明法案有行政部门或执政党的政治支持。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::pass a bill",
+      "baseChinese": "法案",
+      "baseEnglish": "bill",
+      "type": "verb",
+      "original": "pass a bill",
+      "focus": "pass",
+      "options": [
+        {
+          "phrase": "vote on a bill",
+          "term": "vote on",
+          "zh": "就法案进行表决",
+          "stance": "Neutral",
+          "tone": "适合描述立法机构对法案作出正式决定。"
+        },
+        {
+          "phrase": "amend a bill",
+          "term": "amend",
+          "zh": "修改法案",
+          "stance": "Neutral",
+          "tone": "适合说明议员在通过前调整条款、范围或执行细节。"
+        },
+        {
+          "phrase": "reject a bill",
+          "term": "reject",
+          "zh": "否决法案",
+          "stance": "Negative",
+          "tone": "适合说明法案因成本、争议或公众反对而未能通过。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::constitutional amendment",
+      "baseChinese": "修正案",
+      "baseEnglish": "amendment",
+      "type": "adjective",
+      "original": "constitutional amendment",
+      "focus": "constitutional",
+      "options": [
+        {
+          "phrase": "legal amendment",
+          "term": "legal",
+          "zh": "法律层面的修正案",
+          "stance": "Neutral",
+          "tone": "适合泛指对法律文本或制度安排的正式修改。"
+        },
+        {
+          "phrase": "procedural amendment",
+          "term": "procedural",
+          "zh": "程序性修正案",
+          "stance": "Neutral",
+          "tone": "适合说明修改重点在流程、审议方式或执行步骤。"
+        },
+        {
+          "phrase": "rights-based amendment",
+          "term": "rights-based",
+          "zh": "以权利保护为核心的修正案",
+          "stance": "Positive",
+          "tone": "适合讨论修正案如何扩大或明确公民权利。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::propose an amendment",
+      "baseChinese": "修正案",
+      "baseEnglish": "amendment",
+      "type": "verb",
+      "original": "propose an amendment",
+      "focus": "propose",
+      "options": [
+        {
+          "phrase": "table an amendment",
+          "term": "table",
+          "zh": "提交修正案供审议",
+          "stance": "Neutral",
+          "tone": "适合议会语境，强调把修改建议正式提交程序。"
+        },
+        {
+          "phrase": "draft an amendment",
+          "term": "draft",
+          "zh": "起草修正案",
+          "stance": "Neutral",
+          "tone": "适合描述修改条款在正式提交前的文本准备。"
+        },
+        {
+          "phrase": "vote on an amendment",
+          "term": "vote on",
+          "zh": "就修正案进行表决",
+          "stance": "Neutral",
+          "tone": "适合说明修正案需要经过民主或法定程序决定是否通过。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::genuine judicial independence",
+      "baseChinese": "司法独立",
+      "baseEnglish": "judicial independence",
+      "type": "adjective",
+      "original": "genuine judicial independence",
+      "focus": "genuine",
+      "options": [
+        {
+          "phrase": "institutional judicial independence",
+          "term": "institutional",
+          "zh": "制度层面的司法独立",
+          "stance": "Positive",
+          "tone": "适合强调司法独立来自制度设计，而不是临时承诺。"
+        },
+        {
+          "phrase": "effective judicial independence",
+          "term": "effective",
+          "zh": "实际有效的司法独立",
+          "stance": "Positive",
+          "tone": "适合说明法院在现实中能够不受政治或行政压力影响。"
+        },
+        {
+          "phrase": "fragile judicial independence",
+          "term": "fragile",
+          "zh": "脆弱的司法独立",
+          "stance": "Negative",
+          "tone": "适合批判司法体系容易受到权力干预或舆论压力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::safeguard judicial independence",
+      "baseChinese": "司法独立",
+      "baseEnglish": "judicial independence",
+      "type": "verb",
+      "original": "safeguard judicial independence",
+      "focus": "safeguard",
+      "options": [
+        {
+          "phrase": "uphold judicial independence",
+          "term": "uphold",
+          "zh": "维护司法独立",
+          "stance": "Positive",
+          "tone": "适合说明政府、法院或宪法原则应保护司法不受干预。"
+        },
+        {
+          "phrase": "reinforce judicial independence",
+          "term": "reinforce",
+          "zh": "强化司法独立",
+          "stance": "Positive",
+          "tone": "适合讨论通过任命制度、经费保障或透明程序加强法院独立性。"
+        },
+        {
+          "phrase": "erode judicial independence",
+          "term": "erode",
+          "zh": "侵蚀司法独立",
+          "stance": "Negative",
+          "tone": "适合批判政治压力、腐败或行政干预逐步削弱法院独立。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::fundamental rights and obligations",
+      "baseChinese": "权利与义务",
+      "baseEnglish": "rights and obligations",
+      "type": "adjective",
+      "original": "fundamental rights and obligations",
+      "focus": "fundamental",
+      "options": [
+        {
+          "phrase": "legal rights and obligations",
+          "term": "legal",
+          "zh": "法律上的权利与义务",
+          "stance": "Neutral",
+          "tone": "适合说明公民、企业或政府在法律框架下的责任边界。"
+        },
+        {
+          "phrase": "civic rights and obligations",
+          "term": "civic",
+          "zh": "公民层面的权利与义务",
+          "stance": "Neutral",
+          "tone": "适合讨论公民参与、守法、纳税和享有公共服务之间的关系。"
+        },
+        {
+          "phrase": "constitutional rights and obligations",
+          "term": "constitutional",
+          "zh": "宪法规定的权利与义务",
+          "stance": "Neutral",
+          "tone": "适合强调权利和义务具有最高层级的法律依据。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::balance rights and obligations",
+      "baseChinese": "权利与义务",
+      "baseEnglish": "rights and obligations",
+      "type": "verb",
+      "original": "balance rights and obligations",
+      "focus": "balance",
+      "options": [
+        {
+          "phrase": "reconcile rights and obligations",
+          "term": "reconcile",
+          "zh": "协调权利与义务",
+          "stance": "Positive",
+          "tone": "适合说明法律需要处理个人自由与社会责任之间的张力。"
+        },
+        {
+          "phrase": "clarify rights and obligations",
+          "term": "clarify",
+          "zh": "明确权利与义务",
+          "stance": "Positive",
+          "tone": "适合讨论清晰规则如何减少纠纷并提高公众守法意识。"
+        },
+        {
+          "phrase": "respect rights and obligations",
+          "term": "respect",
+          "zh": "尊重权利与义务",
+          "stance": "Positive",
+          "tone": "适合强调个人、企业和政府都应遵守法律边界。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::guarantee due process",
+      "baseChinese": "正当程序",
+      "baseEnglish": "due process",
+      "type": "verb",
+      "original": "guarantee due process",
+      "focus": "guarantee",
+      "options": [
+        {
+          "phrase": "ensure due process",
+          "term": "ensure",
+          "zh": "确保正当程序",
+          "stance": "Positive",
+          "tone": "适合说明政府和法院必须遵守公平审理和合法程序。"
+        },
+        {
+          "phrase": "uphold due process",
+          "term": "uphold",
+          "zh": "维护正当程序",
+          "stance": "Positive",
+          "tone": "适合强调即使面对犯罪或公共压力，也不能牺牲程序正义。"
+        },
+        {
+          "phrase": "deny due process",
+          "term": "deny",
+          "zh": "剥夺正当程序",
+          "stance": "Negative",
+          "tone": "适合批判任意拘押、秘密审判或缺乏申诉渠道的做法。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::full national sovereignty",
+      "baseChinese": "国家主权",
+      "baseEnglish": "national sovereignty",
+      "type": "adjective",
+      "original": "full national sovereignty",
+      "focus": "full",
+      "options": [
+        {
+          "phrase": "effective national sovereignty",
+          "term": "effective",
+          "zh": "实际有效的国家主权",
+          "stance": "Positive",
+          "tone": "适合说明国家不仅名义上独立，也能实际控制政策和领土事务。"
+        },
+        {
+          "phrase": "undisputed national sovereignty",
+          "term": "undisputed",
+          "zh": "无争议的国家主权",
+          "stance": "Positive",
+          "tone": "适合描述国家主权得到国内外普遍承认。"
+        },
+        {
+          "phrase": "territorial sovereignty",
+          "term": "territorial",
+          "zh": "领土主权",
+          "stance": "Neutral",
+          "tone": "适合讨论边界、领海、资源控制或外部干预问题。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::defend national sovereignty",
+      "baseChinese": "国家主权",
+      "baseEnglish": "national sovereignty",
+      "type": "verb",
+      "original": "defend national sovereignty",
+      "focus": "defend",
+      "options": [
+        {
+          "phrase": "preserve national sovereignty",
+          "term": "preserve",
+          "zh": "维护并保全国家主权",
+          "stance": "Positive",
+          "tone": "适合说明政府在外交、国防或贸易谈判中保护自主决策权。"
+        },
+        {
+          "phrase": "assert national sovereignty",
+          "term": "assert",
+          "zh": "主张国家主权",
+          "stance": "Neutral",
+          "tone": "适合描述国家在国际争端或跨境治理中强调自身权利。"
+        },
+        {
+          "phrase": "violate national sovereignty",
+          "term": "violate",
+          "zh": "侵犯国家主权",
+          "stance": "Negative",
+          "tone": "适合批判外部干预、非法军事行动或未经同意的跨境执法。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::international treaty and agreement",
+      "baseChinese": "条约与协议",
+      "baseEnglish": "treaty and agreement",
+      "type": "adjective",
+      "original": "international treaty and agreement",
+      "focus": "international",
+      "options": [
+        {
+          "phrase": "bilateral treaties and agreements",
+          "term": "bilateral",
+          "zh": "双边条约与协议",
+          "stance": "Neutral",
+          "tone": "适合说明两个国家之间围绕贸易、安全或司法合作达成的安排。"
+        },
+        {
+          "phrase": "binding treaties and agreements",
+          "term": "binding",
+          "zh": "具有约束力的条约与协议",
+          "stance": "Neutral",
+          "tone": "适合强调协议对签署方具有正式义务，而不是象征性承诺。"
+        },
+        {
+          "phrase": "regional treaties and agreements",
+          "term": "regional",
+          "zh": "区域性条约与协议",
+          "stance": "Neutral",
+          "tone": "适合讨论邻近国家或区域组织之间的合作机制。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::sign a treaty and agreement",
+      "baseChinese": "条约与协议",
+      "baseEnglish": "treaty and agreement",
+      "type": "verb",
+      "original": "sign a treaty and agreement",
+      "focus": "sign",
+      "options": [
+        {
+          "phrase": "negotiate a treaty or agreement",
+          "term": "negotiate",
+          "zh": "谈判达成条约或协议",
+          "stance": "Neutral",
+          "tone": "适合描述签署前围绕条款、利益和义务进行磋商。"
+        },
+        {
+          "phrase": "ratify a treaty or agreement",
+          "term": "ratify",
+          "zh": "批准条约或协议",
+          "stance": "Positive",
+          "tone": "适合说明协议经过国内法定程序后正式生效。"
+        },
+        {
+          "phrase": "withdraw from a treaty or agreement",
+          "term": "withdraw from",
+          "zh": "退出条约或协议",
+          "stance": "Negative",
+          "tone": "适合讨论国家因利益冲突、政治变化或履约成本而退出国际安排。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::formal extradition",
+      "baseChinese": "引渡",
+      "baseEnglish": "extradition",
+      "type": "adjective",
+      "original": "formal extradition",
+      "focus": "formal",
+      "options": [
+        {
+          "phrase": "lawful extradition",
+          "term": "lawful",
+          "zh": "符合法律程序的引渡",
+          "stance": "Positive",
+          "tone": "适合强调跨境移交嫌疑人必须有法律依据和程序保障。"
+        },
+        {
+          "phrase": "judicial extradition",
+          "term": "judicial",
+          "zh": "经司法程序处理的引渡",
+          "stance": "Neutral",
+          "tone": "适合说明引渡由法院或司法机关审查，而非单纯政治决定。"
+        },
+        {
+          "phrase": "expedited extradition",
+          "term": "expedited",
+          "zh": "加速处理的引渡",
+          "stance": "Neutral",
+          "tone": "适合讨论严重犯罪案件中加快跨境司法合作的做法。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::request extradition",
+      "baseChinese": "引渡",
+      "baseEnglish": "extradition",
+      "type": "verb",
+      "original": "request extradition",
+      "focus": "request",
+      "options": [
+        {
+          "phrase": "seek extradition",
+          "term": "seek",
+          "zh": "寻求引渡",
+          "stance": "Neutral",
+          "tone": "适合描述一国依法要求另一国移交犯罪嫌疑人。"
+        },
+        {
+          "phrase": "grant extradition",
+          "term": "grant",
+          "zh": "准许引渡",
+          "stance": "Positive",
+          "tone": "适合说明被请求国同意移交嫌疑人以支持跨境司法合作。"
+        },
+        {
+          "phrase": "challenge extradition",
+          "term": "challenge",
+          "zh": "对引渡提出异议",
+          "stance": "Negative",
+          "tone": "适合讨论嫌疑人或律师基于人权、证据或程序问题反对引渡。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::combat drug trafficking",
+      "baseChinese": "贩毒",
+      "baseEnglish": "drug trafficking",
+      "type": "verb",
+      "original": "combat drug trafficking",
+      "focus": "combat",
+      "options": [
+        {
+          "phrase": "tackle drug trafficking",
+          "term": "tackle",
+          "zh": "应对并打击贩毒",
+          "stance": "Positive",
+          "tone": "适合政策建议，强调政府需要综合执法、教育和边境管控。"
+        },
+        {
+          "phrase": "curb drug trafficking",
+          "term": "curb",
+          "zh": "遏制贩毒活动",
+          "stance": "Positive",
+          "tone": "适合说明政策目标是减少贩毒规模和社会危害。"
+        },
+        {
+          "phrase": "dismantle drug-trafficking networks",
+          "term": "dismantle",
+          "zh": "摧毁贩毒网络",
+          "stance": "Positive",
+          "tone": "适合强调执法重点在犯罪组织、资金链和供应链。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::cross-border human trafficking",
+      "baseChinese": "人口贩卖",
+      "baseEnglish": "human trafficking",
+      "type": "adjective",
+      "original": "cross-border human trafficking",
+      "focus": "cross-border",
+      "options": [
+        {
+          "phrase": "transnational human trafficking",
+          "term": "transnational",
+          "zh": "跨国人口贩卖",
+          "stance": "Negative",
+          "tone": "适合说明犯罪链条跨越国境，需要多国执法合作。"
+        },
+        {
+          "phrase": "organized human trafficking",
+          "term": "organized",
+          "zh": "有组织的人口贩卖",
+          "stance": "Negative",
+          "tone": "强调人口贩卖背后存在团伙、分工和牟利结构。"
+        },
+        {
+          "phrase": "large-scale human trafficking",
+          "term": "large-scale",
+          "zh": "大规模人口贩卖",
+          "stance": "Negative",
+          "tone": "适合强调问题严重、受害者数量多或涉及范围广。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::prevent human trafficking",
+      "baseChinese": "人口贩卖",
+      "baseEnglish": "human trafficking",
+      "type": "verb",
+      "original": "prevent human trafficking",
+      "focus": "prevent",
+      "options": [
+        {
+          "phrase": "tackle human trafficking",
+          "term": "tackle",
+          "zh": "应对人口贩卖问题",
+          "stance": "Positive",
+          "tone": "适合概括政府通过执法、教育和社会保护综合处理该问题。"
+        },
+        {
+          "phrase": "curb human trafficking",
+          "term": "curb",
+          "zh": "遏制人口贩卖",
+          "stance": "Positive",
+          "tone": "适合说明政策目标是减少受害者数量和犯罪机会。"
+        },
+        {
+          "phrase": "prosecute human-trafficking networks",
+          "term": "prosecute",
+          "zh": "起诉人口贩卖犯罪网络",
+          "stance": "Positive",
+          "tone": "适合强调司法机关追究组织者和参与者的刑事责任。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::combat money laundering",
+      "baseChinese": "洗钱",
+      "baseEnglish": "money laundering",
+      "type": "verb",
+      "original": "combat money laundering",
+      "focus": "combat",
+      "options": [
+        {
+          "phrase": "tackle money laundering",
+          "term": "tackle",
+          "zh": "应对并打击洗钱",
+          "stance": "Positive",
+          "tone": "适合说明政府、银行和执法机构共同处理非法资金流动。"
+        },
+        {
+          "phrase": "curb money laundering",
+          "term": "curb",
+          "zh": "遏制洗钱活动",
+          "stance": "Positive",
+          "tone": "适合强调减少非法资金进入金融体系。"
+        },
+        {
+          "phrase": "detect money laundering",
+          "term": "detect",
+          "zh": "发现洗钱行为",
+          "stance": "Neutral",
+          "tone": "适合讨论金融监管、客户审查和可疑交易报告。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::adjective::organized smuggling of migrants",
+      "baseChinese": "偷渡",
+      "baseEnglish": "smuggling of migrants",
+      "type": "adjective",
+      "original": "organized smuggling of migrants",
+      "focus": "organized",
+      "options": [
+        {
+          "phrase": "transnational smuggling of migrants",
+          "term": "transnational",
+          "zh": "跨国偷渡活动",
+          "stance": "Negative",
+          "tone": "适合说明偷渡链条跨越多个国家，需要边境和司法合作。"
+        },
+        {
+          "phrase": "profit-driven smuggling of migrants",
+          "term": "profit-driven",
+          "zh": "以牟利为目的的偷渡活动",
+          "stance": "Negative",
+          "tone": "强调犯罪者利用移民困境赚钱，而不是提供人道帮助。"
+        },
+        {
+          "phrase": "large-scale smuggling of migrants",
+          "term": "large-scale",
+          "zh": "大规模偷渡活动",
+          "stance": "Negative",
+          "tone": "适合说明偷渡人数多、网络复杂或社会风险高。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::crack down on the smuggling of migrants",
+      "baseChinese": "偷渡",
+      "baseEnglish": "smuggling of migrants",
+      "type": "verb",
+      "original": "crack down on the smuggling of migrants",
+      "focus": "crack down on",
+      "options": [
+        {
+          "phrase": "tackle the smuggling of migrants",
+          "term": "tackle",
+          "zh": "应对并打击偷渡活动",
+          "stance": "Positive",
+          "tone": "适合政策建议，强调边境管理、执法合作和保护弱势移民。"
+        },
+        {
+          "phrase": "disrupt migrant-smuggling networks",
+          "term": "disrupt",
+          "zh": "破坏偷渡犯罪网络",
+          "stance": "Positive",
+          "tone": "适合强调执法重点是切断组织者、运输渠道和资金流。"
+        },
+        {
+          "phrase": "prosecute migrant smugglers",
+          "term": "prosecute",
+          "zh": "起诉组织偷渡者",
+          "stance": "Positive",
+          "tone": "适合说明司法机关追究偷渡组织者的刑事责任。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Government::verb::strengthen multilateral cooperation",
+      "baseChinese": "多边合作机制",
+      "baseEnglish": "multilateral cooperation",
+      "type": "verb",
+      "original": "strengthen multilateral cooperation",
+      "focus": "strengthen",
+      "options": [
+        {
+          "phrase": "deepen multilateral cooperation",
+          "term": "deepen",
+          "zh": "深化多边合作",
+          "stance": "Positive",
+          "tone": "适合说明国家在气候、贸易、安全或公共卫生领域扩大合作深度。"
+        },
+        {
+          "phrase": "expand multilateral cooperation",
+          "term": "expand",
+          "zh": "扩大多边合作",
+          "stance": "Positive",
+          "tone": "适合强调更多国家、机构或议题被纳入合作框架。"
+        },
+        {
+          "phrase": "revitalize multilateral cooperation",
+          "term": "revitalize",
+          "zh": "重振多边合作",
+          "stance": "Positive",
+          "tone": "适合讨论在单边主义或国际冲突后恢复多边机制的作用。"
+        }
+      ]
+    }
+  ],
+  "deferred": []
+}

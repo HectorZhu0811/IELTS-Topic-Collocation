@@ -1,0 +1,34 @@
+{
+  "syncedAt": "2026-06-30T09:08:13.324Z",
+  "rootDeck": "IELTS::Collocations::Topic Collocation",
+  "sourceFile": "project-artifacts/exports/anki/full-export/topic-collocation-anki-all.tsv",
+  "totalRows": 556,
+  "targetTopicDecks": 10,
+  "added": 0,
+  "updated": 556,
+  "movedCardsToTopicDecks": 0,
+  "skippedAsDuplicates": 0,
+  "duplicateCardIdMatches": 0,
+  "existingMainNotesBeforeSync": 556,
+  "existingWithoutCardIdBeforeSync": 0,
+  "sampleDecks": [
+    "IELTS::Collocations::Topic Collocation::健康 Health",
+    "IELTS::Collocations::Topic Collocation::城市化 Urbanization",
+    "IELTS::Collocations::Topic Collocation::媒体 Media",
+    "IELTS::Collocations::Topic Collocation::政府 Government",
+    "IELTS::Collocations::Topic Collocation::教育 Education",
+    "IELTS::Collocations::Topic Collocation::环境 Environment",
+    "IELTS::Collocations::Topic Collocation::社会 Society",
+    "IELTS::Collocations::Topic Collocation::科技 Technology",
+    "IELTS::Collocations::Topic Collocation::经济 Economy",
+    "IELTS::Collocations::Topic Collocation::艺术 Arts"
+  ],
+  "verification": {
+    "topicCollocationNonSubtopicCount": 556,
+    "matchedSourceCardIds": 556,
+    "missingCardIds": [],
+    "duplicateCardIds": [],
+    "notesWithoutCardId": []
+  },
+  "errors": []
+}

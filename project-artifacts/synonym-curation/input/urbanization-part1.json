@@ -1,0 +1,572 @@
+{
+  "topic": "Urbanization",
+  "guidance": "project-docs/synonym-curation-guidelines.md",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "issueCount": 39,
+  "issueCardCount": 16,
+  "issueRows": [
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "城市规划",
+      "baseEnglish": "urban planning",
+      "focus": "improve",
+      "original": "improve urban planning",
+      "term": "maintain",
+      "phrase": "maintain urban planning",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "城市规划",
+      "baseEnglish": "urban planning",
+      "focus": "improve",
+      "original": "improve urban planning",
+      "term": "assess",
+      "phrase": "assess urban planning",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "城市规划",
+      "baseEnglish": "urban planning",
+      "focus": "improve",
+      "original": "improve urban planning",
+      "term": "overlook",
+      "phrase": "overlook urban planning",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "adjective",
+      "baseChinese": "城市贫民窟",
+      "baseEnglish": "urban slum",
+      "focus": "overcrowded",
+      "original": "overcrowded urban slum",
+      "term": "overcrowded",
+      "phrase": "overcrowded urban slum",
+      "zh": "过度拥挤的",
+      "tone": "消极，强调居住压力。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "城市贫民窟",
+      "baseEnglish": "urban slum",
+      "focus": "redevelop",
+      "original": "redevelop urban slums",
+      "term": "redevelop",
+      "phrase": "redevelop urban slums",
+      "zh": "重建",
+      "tone": "这条搭配适合讲通过住房、交通和公共服务改善城市贫民窟。",
+      "reasons": [
+        "same-as-original-focus"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "城市人口密度",
+      "baseEnglish": "urban population density",
+      "focus": "reduce",
+      "original": "reduce urban population density",
+      "term": "develop",
+      "phrase": "develop urban population density",
+      "zh": "发展 / 培养",
+      "tone": "积极语气，适合能力、习惯、服务或长期方向。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "城市人口密度",
+      "baseEnglish": "urban population density",
+      "focus": "reduce",
+      "original": "reduce urban population density",
+      "term": "assess",
+      "phrase": "assess urban population density",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "城市人口密度",
+      "baseEnglish": "urban population density",
+      "focus": "reduce",
+      "original": "reduce urban population density",
+      "term": "undermine",
+      "phrase": "undermine urban population density",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "生活质量",
+      "baseEnglish": "quality of life",
+      "focus": "improve",
+      "original": "improve quality of life",
+      "term": "maintain",
+      "phrase": "maintain quality of life",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "生活质量",
+      "baseEnglish": "quality of life",
+      "focus": "improve",
+      "original": "improve quality of life",
+      "term": "assess",
+      "phrase": "assess quality of life",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "生活质量",
+      "baseEnglish": "quality of life",
+      "focus": "improve",
+      "original": "improve quality of life",
+      "term": "undermine",
+      "phrase": "undermine quality of life",
+      "zh": "损害 / 削弱",
+      "tone": "消极语气，强调逐步破坏某种价值或效果。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "城市绿地",
+      "baseEnglish": "urban green space",
+      "focus": "expand",
+      "original": "expand urban green space",
+      "term": "promote",
+      "phrase": "promote urban green space",
+      "zh": "促进 / 推动",
+      "tone": "积极语气，适合提出改善方向或倡导某种做法。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "城市绿地",
+      "baseEnglish": "urban green space",
+      "focus": "expand",
+      "original": "expand urban green space",
+      "term": "analyse",
+      "phrase": "analyse urban green space",
+      "zh": "分析",
+      "tone": "中性语气，适合客观拆解成因、影响或变化。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "城市绿地",
+      "baseEnglish": "urban green space",
+      "focus": "expand",
+      "original": "expand urban green space",
+      "term": "sideline",
+      "phrase": "sideline urban green space",
+      "zh": "边缘化",
+      "tone": "消极语气，用于批判某个议题或群体被放到次要位置。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "公共交通",
+      "baseEnglish": "public transport",
+      "focus": "use",
+      "original": "use public transport",
+      "term": "maintain",
+      "phrase": "maintain public transport",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "公共交通",
+      "baseEnglish": "public transport",
+      "focus": "use",
+      "original": "use public transport",
+      "term": "overlook",
+      "phrase": "overlook public transport",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase",
+        "likely-invalid-collocation"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "私家车",
+      "baseEnglish": "private vehicle",
+      "focus": "restrict",
+      "original": "restrict private vehicles",
+      "term": "maintain",
+      "phrase": "maintain private vehicles",
+      "zh": "保持 / 维持",
+      "tone": "积极语气，强调把有价值的状态稳定住。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "私家车",
+      "baseEnglish": "private vehicle",
+      "focus": "restrict",
+      "original": "restrict private vehicles",
+      "term": "assess",
+      "phrase": "assess private vehicles",
+      "zh": "评估",
+      "tone": "中性语气，更偏分析和判断。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    },
+    {
+      "topic": "Urbanization",
+      "type": "verb",
+      "baseChinese": "私家车",
+      "baseEnglish": "private vehicle",
+      "focus": "restrict",
+      "original": "restrict private vehicles",
+      "term": "overlook",
+      "phrase": "overlook private vehicles",
+      "zh": "忽略",
+      "tone": "消极语气，适合批判讨论或政策中的盲点。",
+      "reasons": [
+        "generic-verb-bank",
+        "formulaic-verb-phrase"
+      ]
+    }
+  ],
+  "cardsToReview": [
+    {
+      "cardKey": "Urbanization::verb::improve urban planning",
+      "topic": "Urbanization",
+      "baseChinese": "城市规划",
+      "baseEnglish": "urban planning",
+      "type": "verb",
+      "original": "improve urban planning",
+      "focus": "improve",
+      "currentOptions": [
+        {
+          "phrase": "maintain urban planning",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess urban planning",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook urban planning",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::adjective::overcrowded urban slum",
+      "topic": "Urbanization",
+      "baseChinese": "城市贫民窟",
+      "baseEnglish": "urban slum",
+      "type": "adjective",
+      "original": "overcrowded urban slum",
+      "focus": "overcrowded",
+      "currentOptions": [
+        {
+          "phrase": "deprived urban slum",
+          "term": "deprived",
+          "zh": "贫困匮乏的",
+          "stance": "Negative",
+          "tone": "消极，强调资源不足。"
+        },
+        {
+          "phrase": "informal urban slum",
+          "term": "informal",
+          "zh": "非正式的",
+          "stance": "Neutral",
+          "tone": "中性，常用于 settlements。"
+        },
+        {
+          "phrase": "overcrowded urban slum",
+          "term": "overcrowded",
+          "zh": "过度拥挤的",
+          "stance": "Negative",
+          "tone": "消极，强调居住压力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::redevelop urban slums",
+      "topic": "Urbanization",
+      "baseChinese": "城市贫民窟",
+      "baseEnglish": "urban slum",
+      "type": "verb",
+      "original": "redevelop urban slums",
+      "focus": "redevelop",
+      "currentOptions": [
+        {
+          "phrase": "redevelop urban slums",
+          "term": "redevelop",
+          "zh": "重建",
+          "stance": "Positive",
+          "tone": "这条搭配适合讲通过住房、交通和公共服务改善城市贫民窟。"
+        },
+        {
+          "phrase": "map urban slums",
+          "term": "map",
+          "zh": "绘制分布",
+          "stance": "Neutral",
+          "tone": "这条搭配适合客观调查城市贫民窟的位置、人口和基础设施状况。"
+        },
+        {
+          "phrase": "leave urban slums overcrowded",
+          "term": "leave overcrowded",
+          "zh": "使城市贫民窟持续过度拥挤",
+          "stance": "Negative",
+          "tone": "这条搭配适合批判城市规划失灵让贫民窟拥挤问题长期存在。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::reduce urban population density",
+      "topic": "Urbanization",
+      "baseChinese": "城市人口密度",
+      "baseEnglish": "urban population density",
+      "type": "verb",
+      "original": "reduce urban population density",
+      "focus": "reduce",
+      "currentOptions": [
+        {
+          "phrase": "develop urban population density",
+          "term": "develop",
+          "zh": "发展 / 培养",
+          "stance": "Positive",
+          "tone": "积极语气，适合能力、习惯、服务或长期方向。"
+        },
+        {
+          "phrase": "assess urban population density",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine urban population density",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::improve quality of life",
+      "topic": "Urbanization",
+      "baseChinese": "生活质量",
+      "baseEnglish": "quality of life",
+      "type": "verb",
+      "original": "improve quality of life",
+      "focus": "improve",
+      "currentOptions": [
+        {
+          "phrase": "maintain quality of life",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess quality of life",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "undermine quality of life",
+          "term": "undermine",
+          "zh": "损害 / 削弱",
+          "stance": "Negative",
+          "tone": "消极语气，强调逐步破坏某种价值或效果。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::expand urban green space",
+      "topic": "Urbanization",
+      "baseChinese": "城市绿地",
+      "baseEnglish": "urban green space",
+      "type": "verb",
+      "original": "expand urban green space",
+      "focus": "expand",
+      "currentOptions": [
+        {
+          "phrase": "promote urban green space",
+          "term": "promote",
+          "zh": "促进 / 推动",
+          "stance": "Positive",
+          "tone": "积极语气，适合提出改善方向或倡导某种做法。"
+        },
+        {
+          "phrase": "analyse urban green space",
+          "term": "analyse",
+          "zh": "分析",
+          "stance": "Neutral",
+          "tone": "中性语气，适合客观拆解成因、影响或变化。"
+        },
+        {
+          "phrase": "sideline urban green space",
+          "term": "sideline",
+          "zh": "边缘化",
+          "stance": "Negative",
+          "tone": "消极语气，用于批判某个议题或群体被放到次要位置。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::use public transport",
+      "topic": "Urbanization",
+      "baseChinese": "公共交通",
+      "baseEnglish": "public transport",
+      "type": "verb",
+      "original": "use public transport",
+      "focus": "use",
+      "currentOptions": [
+        {
+          "phrase": "maintain public transport",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "employ public transport",
+          "term": "employ",
+          "zh": "采用 / 使用",
+          "stance": "Neutral",
+          "tone": "比 use 更正式。"
+        },
+        {
+          "phrase": "overlook public transport",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Urbanization::verb::restrict private vehicles",
+      "topic": "Urbanization",
+      "baseChinese": "私家车",
+      "baseEnglish": "private vehicle",
+      "type": "verb",
+      "original": "restrict private vehicles",
+      "focus": "restrict",
+      "currentOptions": [
+        {
+          "phrase": "maintain private vehicles",
+          "term": "maintain",
+          "zh": "保持 / 维持",
+          "stance": "Positive",
+          "tone": "积极语气，强调把有价值的状态稳定住。"
+        },
+        {
+          "phrase": "assess private vehicles",
+          "term": "assess",
+          "zh": "评估",
+          "stance": "Neutral",
+          "tone": "中性语气，更偏分析和判断。"
+        },
+        {
+          "phrase": "overlook private vehicles",
+          "term": "overlook",
+          "zh": "忽略",
+          "stance": "Negative",
+          "tone": "消极语气，适合批判讨论或政策中的盲点。"
+        }
+      ]
+    }
+  ],
+  "part": "part1"
+}

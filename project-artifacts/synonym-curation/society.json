@@ -1,0 +1,1062 @@
+{
+  "topic": "Society",
+  "curator": "topic-subagent",
+  "sourceAudit": "project-artifacts/qa/synonym-template-audit.json",
+  "approved": [
+    {
+      "cardKey": "Society::adjective::rapidly growing aging population",
+      "baseChinese": "人口老龄化",
+      "baseEnglish": "aging population",
+      "type": "adjective",
+      "original": "rapidly growing aging population",
+      "focus": "rapidly growing",
+      "options": [
+        {
+          "phrase": "fast-aging population",
+          "term": "fast-aging",
+          "zh": "快速老龄化的人口",
+          "stance": "Neutral",
+          "tone": "适合客观描述老年人口比例上升速度很快。"
+        },
+        {
+          "phrase": "accelerating population aging",
+          "term": "accelerating",
+          "zh": "加速的人口老龄化",
+          "stance": "Neutral",
+          "tone": "适合分析人口结构变化正在加快。"
+        },
+        {
+          "phrase": "expanding elderly population",
+          "term": "expanding",
+          "zh": "不断扩大的老年人口",
+          "stance": "Neutral",
+          "tone": "适合说明老年群体规模扩大带来的养老和医疗压力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::address aging population",
+      "baseChinese": "人口老龄化",
+      "baseEnglish": "aging population",
+      "type": "verb",
+      "original": "address aging population",
+      "focus": "address",
+      "options": [
+        {
+          "phrase": "cope with an aging population",
+          "term": "cope with",
+          "zh": "应对人口老龄化",
+          "stance": "Neutral",
+          "tone": "适合讨论政府和社会如何承受养老、医疗和劳动力压力。"
+        },
+        {
+          "phrase": "respond to population aging",
+          "term": "respond to",
+          "zh": "回应人口老龄化趋势",
+          "stance": "Neutral",
+          "tone": "适合说明政策需要根据人口结构变化作出调整。"
+        },
+        {
+          "phrase": "adapt to an aging society",
+          "term": "adapt to",
+          "zh": "适应老龄化社会",
+          "stance": "Positive",
+          "tone": "适合讲延迟退休、养老服务和社区支持等适应性措施。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::persistently low birth rate",
+      "baseChinese": "出生率",
+      "baseEnglish": "birth rate",
+      "type": "adjective",
+      "original": "persistently low birth rate",
+      "focus": "persistently low",
+      "options": [
+        {
+          "phrase": "declining birth rate",
+          "term": "declining",
+          "zh": "下降的出生率",
+          "stance": "Negative",
+          "tone": "适合说明年轻家庭生育意愿下降。"
+        },
+        {
+          "phrase": "falling fertility rate",
+          "term": "falling",
+          "zh": "下降的生育率",
+          "stance": "Negative",
+          "tone": "适合从人口趋势角度讨论少子化问题。"
+        },
+        {
+          "phrase": "below-replacement fertility rate",
+          "term": "below-replacement",
+          "zh": "低于世代更替水平的生育率",
+          "stance": "Negative",
+          "tone": "适合较正式地说明出生水平不足以维持人口规模。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::reverse a low birth rate",
+      "baseChinese": "出生率",
+      "baseEnglish": "birth rate",
+      "type": "verb",
+      "original": "reverse a low birth rate",
+      "focus": "reverse",
+      "options": [
+        {
+          "phrase": "boost the birth rate",
+          "term": "boost",
+          "zh": "提高出生率",
+          "stance": "Positive",
+          "tone": "适合讲育儿补贴、住房支持等鼓励生育的政策。"
+        },
+        {
+          "phrase": "increase fertility rates",
+          "term": "increase",
+          "zh": "提高生育率",
+          "stance": "Positive",
+          "tone": "适合正式讨论提升整体生育水平。"
+        },
+        {
+          "phrase": "lift the birth rate",
+          "term": "lift",
+          "zh": "拉升出生率",
+          "stance": "Positive",
+          "tone": "适合说明政策目标是让出生率从较低水平回升。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::vulnerable single-parent family",
+      "baseChinese": "单亲家庭",
+      "baseEnglish": "single-parent family",
+      "type": "adjective",
+      "original": "vulnerable single-parent family",
+      "focus": "vulnerable",
+      "options": [
+        {
+          "phrase": "low-income single-parent families",
+          "term": "low-income",
+          "zh": "低收入单亲家庭",
+          "stance": "Negative",
+          "tone": "适合强调单亲家庭在收入和育儿成本方面的压力。"
+        },
+        {
+          "phrase": "financially insecure single-parent households",
+          "term": "financially insecure",
+          "zh": "经济缺乏保障的单亲家庭",
+          "stance": "Negative",
+          "tone": "适合说明家庭收入不稳定会影响儿童成长。"
+        },
+        {
+          "phrase": "disadvantaged single-parent families",
+          "term": "disadvantaged",
+          "zh": "处于弱势的单亲家庭",
+          "stance": "Negative",
+          "tone": "适合讨论福利、托育和教育支持的必要性。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::support single-parent families",
+      "baseChinese": "单亲家庭",
+      "baseEnglish": "single-parent family",
+      "type": "verb",
+      "original": "support single-parent families",
+      "focus": "support",
+      "options": [
+        {
+          "phrase": "assist single-parent families",
+          "term": "assist",
+          "zh": "帮助单亲家庭",
+          "stance": "Positive",
+          "tone": "适合讲政府或社区提供实际帮助。"
+        },
+        {
+          "phrase": "provide childcare subsidies for single-parent families",
+          "term": "provide",
+          "zh": "为单亲家庭提供托育补贴",
+          "stance": "Positive",
+          "tone": "适合具体说明减轻育儿负担的措施。"
+        },
+        {
+          "phrase": "offer targeted welfare to single-parent households",
+          "term": "offer",
+          "zh": "向单亲家庭提供定向福利",
+          "stance": "Positive",
+          "tone": "适合强调社会保障应照顾家庭结构差异。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::typical nuclear family",
+      "baseChinese": "核心家庭",
+      "baseEnglish": "nuclear family",
+      "type": "adjective",
+      "original": "typical nuclear family",
+      "focus": "typical",
+      "options": [
+        {
+          "phrase": "conventional nuclear family",
+          "term": "conventional",
+          "zh": "传统意义上的核心家庭",
+          "stance": "Neutral",
+          "tone": "适合描述父母与子女组成的常见家庭模式。"
+        },
+        {
+          "phrase": "two-parent nuclear family",
+          "term": "two-parent",
+          "zh": "双亲核心家庭",
+          "stance": "Neutral",
+          "tone": "适合具体说明由父母双方和孩子组成的家庭。"
+        },
+        {
+          "phrase": "traditional nuclear family",
+          "term": "traditional",
+          "zh": "传统核心家庭",
+          "stance": "Neutral",
+          "tone": "适合与单亲家庭、大家庭或同居家庭作对比。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::form a nuclear family",
+      "baseChinese": "核心家庭",
+      "baseEnglish": "nuclear family",
+      "type": "verb",
+      "original": "form a nuclear family",
+      "focus": "form",
+      "options": [
+        {
+          "phrase": "start a nuclear family",
+          "term": "start",
+          "zh": "组建核心家庭",
+          "stance": "Neutral",
+          "tone": "适合描述年轻人婚后建立小家庭。"
+        },
+        {
+          "phrase": "establish a nuclear family",
+          "term": "establish",
+          "zh": "建立核心家庭",
+          "stance": "Neutral",
+          "tone": "适合较正式地描述家庭结构的形成。"
+        },
+        {
+          "phrase": "live in a nuclear family",
+          "term": "live in",
+          "zh": "生活在核心家庭中",
+          "stance": "Neutral",
+          "tone": "适合说明某种家庭结构对儿童或老人的影响。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::harmonious intergenerational relationship",
+      "baseChinese": "代际关系",
+      "baseEnglish": "intergenerational relationship",
+      "type": "adjective",
+      "original": "harmonious intergenerational relationship",
+      "focus": "harmonious",
+      "options": [
+        {
+          "phrase": "positive intergenerational relationships",
+          "term": "positive",
+          "zh": "积极的代际关系",
+          "stance": "Positive",
+          "tone": "适合说明不同年龄群体之间相互理解。"
+        },
+        {
+          "phrase": "close bonds between generations",
+          "term": "close",
+          "zh": "亲密的代际纽带",
+          "stance": "Positive",
+          "tone": "适合强调家庭成员或社区中不同世代的情感联系。"
+        },
+        {
+          "phrase": "respectful intergenerational relationships",
+          "term": "respectful",
+          "zh": "相互尊重的代际关系",
+          "stance": "Positive",
+          "tone": "适合讨论减少代沟和冲突。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::improve intergenerational relationships",
+      "baseChinese": "代际关系",
+      "baseEnglish": "intergenerational relationship",
+      "type": "verb",
+      "original": "improve intergenerational relationships",
+      "focus": "improve",
+      "options": [
+        {
+          "phrase": "strengthen intergenerational relationships",
+          "term": "strengthen",
+          "zh": "加强代际关系",
+          "stance": "Positive",
+          "tone": "适合讲家庭沟通、社区活动和共同照护带来的关系改善。"
+        },
+        {
+          "phrase": "bridge the generation gap",
+          "term": "bridge",
+          "zh": "弥合代沟",
+          "stance": "Positive",
+          "tone": "适合说明不同年龄群体之间减少误解。"
+        },
+        {
+          "phrase": "foster understanding between generations",
+          "term": "foster",
+          "zh": "促进代际理解",
+          "stance": "Positive",
+          "tone": "适合强调教育、沟通和共同活动的作用。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::widening wealth gap",
+      "baseChinese": "贫富差距",
+      "baseEnglish": "wealth gap",
+      "type": "adjective",
+      "original": "widening wealth gap",
+      "focus": "widening",
+      "options": [
+        {
+          "phrase": "growing wealth gap",
+          "term": "growing",
+          "zh": "扩大的贫富差距",
+          "stance": "Negative",
+          "tone": "适合说明财富分配越来越不均。"
+        },
+        {
+          "phrase": "deepening wealth inequality",
+          "term": "deepening",
+          "zh": "加深的财富不平等",
+          "stance": "Negative",
+          "tone": "适合更正式地批判资产差距加剧。"
+        },
+        {
+          "phrase": "expanding gap between rich and poor",
+          "term": "expanding",
+          "zh": "不断扩大的贫富差距",
+          "stance": "Negative",
+          "tone": "适合在社会公平和阶层固化话题中使用。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::narrow the wealth gap",
+      "baseChinese": "贫富差距",
+      "baseEnglish": "wealth gap",
+      "type": "verb",
+      "original": "narrow the wealth gap",
+      "focus": "narrow",
+      "options": [
+        {
+          "phrase": "reduce wealth inequality",
+          "term": "reduce",
+          "zh": "减少财富不平等",
+          "stance": "Positive",
+          "tone": "适合讲税收、教育和福利政策改善分配。"
+        },
+        {
+          "phrase": "close the gap between rich and poor",
+          "term": "close",
+          "zh": "缩小贫富之间的差距",
+          "stance": "Positive",
+          "tone": "适合较直接地表达社会公平目标。"
+        },
+        {
+          "phrase": "curb economic disparities",
+          "term": "curb",
+          "zh": "遏制经济差距",
+          "stance": "Positive",
+          "tone": "适合强调政府需要控制不平等继续扩大。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::upward social mobility",
+      "baseChinese": "社会流动性",
+      "baseEnglish": "social mobility",
+      "type": "adjective",
+      "original": "upward social mobility",
+      "focus": "upward",
+      "options": [
+        {
+          "phrase": "greater social mobility",
+          "term": "greater",
+          "zh": "更高的社会流动性",
+          "stance": "Positive",
+          "tone": "适合说明教育和就业机会让人更容易改变阶层。"
+        },
+        {
+          "phrase": "intergenerational social mobility",
+          "term": "intergenerational",
+          "zh": "代际社会流动性",
+          "stance": "Neutral",
+          "tone": "适合分析子女能否超越父母的社会经济地位。"
+        },
+        {
+          "phrase": "restricted social mobility",
+          "term": "restricted",
+          "zh": "受限制的社会流动性",
+          "stance": "Negative",
+          "tone": "适合批判教育、户籍或收入差距造成阶层固化。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::statutory minimum wage",
+      "baseChinese": "最低工资",
+      "baseEnglish": "minimum wage",
+      "type": "adjective",
+      "original": "statutory minimum wage",
+      "focus": "statutory",
+      "options": [
+        {
+          "phrase": "legal minimum wage",
+          "term": "legal",
+          "zh": "法定最低工资",
+          "stance": "Neutral",
+          "tone": "适合客观说明最低工资由法律规定。"
+        },
+        {
+          "phrase": "mandated minimum wage",
+          "term": "mandated",
+          "zh": "强制规定的最低工资",
+          "stance": "Neutral",
+          "tone": "适合强调雇主必须遵守最低工资要求。"
+        },
+        {
+          "phrase": "government-set minimum wage",
+          "term": "government-set",
+          "zh": "政府设定的最低工资",
+          "stance": "Neutral",
+          "tone": "适合说明最低工资是公共政策工具。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::raise the minimum wage",
+      "baseChinese": "最低工资",
+      "baseEnglish": "minimum wage",
+      "type": "verb",
+      "original": "raise the minimum wage",
+      "focus": "raise",
+      "options": [
+        {
+          "phrase": "increase the minimum wage",
+          "term": "increase",
+          "zh": "提高最低工资",
+          "stance": "Positive",
+          "tone": "适合讨论保障低收入劳动者收入。"
+        },
+        {
+          "phrase": "lift the minimum wage",
+          "term": "lift",
+          "zh": "上调最低工资",
+          "stance": "Positive",
+          "tone": "适合说明政府把最低工资标准调高。"
+        },
+        {
+          "phrase": "adjust the minimum wage upward",
+          "term": "adjust upward",
+          "zh": "向上调整最低工资",
+          "stance": "Neutral",
+          "tone": "适合较正式地描述工资标准的政策调整。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::adequate basic living security",
+      "baseChinese": "基本生活保障",
+      "baseEnglish": "basic living security",
+      "type": "adjective",
+      "original": "adequate basic living security",
+      "focus": "adequate",
+      "options": [
+        {
+          "phrase": "sufficient basic living support",
+          "term": "sufficient",
+          "zh": "足够的基本生活支持",
+          "stance": "Positive",
+          "tone": "适合说明福利水平能够覆盖基本衣食住行。"
+        },
+        {
+          "phrase": "decent basic living standard",
+          "term": "decent",
+          "zh": "体面的基本生活水平",
+          "stance": "Positive",
+          "tone": "适合强调保障不仅是生存，也包括基本尊严。"
+        },
+        {
+          "phrase": "stable social safety net",
+          "term": "stable",
+          "zh": "稳定的社会安全网",
+          "stance": "Positive",
+          "tone": "适合讨论社会保障制度能持续托底弱势群体。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::ensure basic living security",
+      "baseChinese": "基本生活保障",
+      "baseEnglish": "basic living security",
+      "type": "verb",
+      "original": "ensure basic living security",
+      "focus": "ensure",
+      "options": [
+        {
+          "phrase": "guarantee basic living security",
+          "term": "guarantee",
+          "zh": "保障基本生活",
+          "stance": "Positive",
+          "tone": "适合讲政府通过福利制度托住基本生活底线。"
+        },
+        {
+          "phrase": "safeguard basic living standards",
+          "term": "safeguard",
+          "zh": "维护基本生活水平",
+          "stance": "Positive",
+          "tone": "适合强调公共政策防止弱势群体陷入贫困。"
+        },
+        {
+          "phrase": "provide a basic safety net",
+          "term": "provide",
+          "zh": "提供基本社会安全网",
+          "stance": "Positive",
+          "tone": "适合讨论失业、疾病或养老风险下的最低保障。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::prevent disability discrimination",
+      "baseChinese": "残障歧视",
+      "baseEnglish": "disability discrimination",
+      "type": "verb",
+      "original": "prevent disability discrimination",
+      "focus": "prevent",
+      "options": [
+        {
+          "phrase": "combat disability discrimination",
+          "term": "combat",
+          "zh": "打击残障歧视",
+          "stance": "Positive",
+          "tone": "适合强调法律、教育和职场规范共同减少歧视。"
+        },
+        {
+          "phrase": "reduce discrimination against people with disabilities",
+          "term": "reduce",
+          "zh": "减少对残障人士的歧视",
+          "stance": "Positive",
+          "tone": "适合正式说明政策目标是降低歧视发生率。"
+        },
+        {
+          "phrase": "prohibit disability-based discrimination",
+          "term": "prohibit",
+          "zh": "禁止基于残障的歧视",
+          "stance": "Positive",
+          "tone": "适合讨论反歧视法律和工作场所规则。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::genuine gender equality",
+      "baseChinese": "性别平等",
+      "baseEnglish": "gender equality",
+      "type": "adjective",
+      "original": "genuine gender equality",
+      "focus": "genuine",
+      "options": [
+        {
+          "phrase": "substantive gender equality",
+          "term": "substantive",
+          "zh": "实质性别平等",
+          "stance": "Positive",
+          "tone": "适合强调不只是法律上平等，也包括机会和结果更公平。"
+        },
+        {
+          "phrase": "full gender equality",
+          "term": "full",
+          "zh": "充分的性别平等",
+          "stance": "Positive",
+          "tone": "适合表达教育、就业和家庭责任等方面都更平等。"
+        },
+        {
+          "phrase": "equal gender representation",
+          "term": "equal",
+          "zh": "平等的性别代表性",
+          "stance": "Positive",
+          "tone": "适合讨论政治、企业或公共机构中的女性参与。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::promote gender equality",
+      "baseChinese": "性别平等",
+      "baseEnglish": "gender equality",
+      "type": "verb",
+      "original": "promote gender equality",
+      "focus": "promote",
+      "options": [
+        {
+          "phrase": "advance gender equality",
+          "term": "advance",
+          "zh": "推进性别平等",
+          "stance": "Positive",
+          "tone": "适合说明法律、教育和职场改革让性别更平等。"
+        },
+        {
+          "phrase": "achieve gender equality",
+          "term": "achieve",
+          "zh": "实现性别平等",
+          "stance": "Positive",
+          "tone": "适合表达政策或社会改革的最终目标。"
+        },
+        {
+          "phrase": "strengthen gender-equality protections",
+          "term": "strengthen",
+          "zh": "加强性别平等保护",
+          "stance": "Positive",
+          "tone": "适合讨论反歧视规则、产假制度和同工同酬。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::truly inclusive society",
+      "baseChinese": "包容社会",
+      "baseEnglish": "inclusive society",
+      "type": "adjective",
+      "original": "truly inclusive society",
+      "focus": "truly inclusive",
+      "options": [
+        {
+          "phrase": "equitable society",
+          "term": "equitable",
+          "zh": "公平包容的社会",
+          "stance": "Positive",
+          "tone": "适合强调不同群体都能获得公平机会。"
+        },
+        {
+          "phrase": "socially inclusive society",
+          "term": "socially inclusive",
+          "zh": "社会层面包容的社会",
+          "stance": "Positive",
+          "tone": "适合说明弱势群体、移民或残障人士能够平等参与。"
+        },
+        {
+          "phrase": "open and tolerant society",
+          "term": "open and tolerant",
+          "zh": "开放且宽容的社会",
+          "stance": "Positive",
+          "tone": "适合讨论对不同文化、身份和生活方式的接纳。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::build an inclusive society",
+      "baseChinese": "包容社会",
+      "baseEnglish": "inclusive society",
+      "type": "verb",
+      "original": "build an inclusive society",
+      "focus": "build",
+      "options": [
+        {
+          "phrase": "create an inclusive society",
+          "term": "create",
+          "zh": "创建包容社会",
+          "stance": "Positive",
+          "tone": "适合讲制度和公共服务让不同群体都能参与社会生活。"
+        },
+        {
+          "phrase": "strengthen social inclusion",
+          "term": "strengthen",
+          "zh": "加强社会包容",
+          "stance": "Positive",
+          "tone": "适合强调提升弱势群体的参与感和归属感。"
+        },
+        {
+          "phrase": "remove barriers to social participation",
+          "term": "remove",
+          "zh": "消除社会参与障碍",
+          "stance": "Positive",
+          "tone": "适合讨论无障碍设施、反歧视政策和公平教育。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::vibrant multiculturalism",
+      "baseChinese": "多元文化",
+      "baseEnglish": "multiculturalism",
+      "type": "adjective",
+      "original": "vibrant multiculturalism",
+      "focus": "vibrant",
+      "options": [
+        {
+          "phrase": "rich cultural diversity",
+          "term": "rich",
+          "zh": "丰富的文化多样性",
+          "stance": "Positive",
+          "tone": "适合强调不同文化共存带来的社会活力。"
+        },
+        {
+          "phrase": "dynamic multicultural society",
+          "term": "dynamic",
+          "zh": "充满活力的多元文化社会",
+          "stance": "Positive",
+          "tone": "适合描述移民、语言和文化交流让社会更开放。"
+        },
+        {
+          "phrase": "pluralistic culture",
+          "term": "pluralistic",
+          "zh": "多元并存的文化",
+          "stance": "Positive",
+          "tone": "适合较正式地说明社会容纳不同文化传统。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::embrace multiculturalism",
+      "baseChinese": "多元文化",
+      "baseEnglish": "multiculturalism",
+      "type": "verb",
+      "original": "embrace multiculturalism",
+      "focus": "embrace",
+      "options": [
+        {
+          "phrase": "accept cultural diversity",
+          "term": "accept",
+          "zh": "接受文化多样性",
+          "stance": "Positive",
+          "tone": "适合说明社会对不同文化背景的人更加接纳。"
+        },
+        {
+          "phrase": "celebrate multiculturalism",
+          "term": "celebrate",
+          "zh": "认可并欣赏多元文化",
+          "stance": "Positive",
+          "tone": "适合强调学校、社区或媒体积极呈现多元文化价值。"
+        },
+        {
+          "phrase": "accommodate cultural differences",
+          "term": "accommodate",
+          "zh": "包容文化差异",
+          "stance": "Positive",
+          "tone": "适合讲公共服务和教育制度尊重不同文化习惯。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::prevent juvenile delinquency",
+      "baseChinese": "青少年犯罪",
+      "baseEnglish": "juvenile delinquency",
+      "type": "verb",
+      "original": "prevent juvenile delinquency",
+      "focus": "prevent",
+      "options": [
+        {
+          "phrase": "reduce juvenile delinquency",
+          "term": "reduce",
+          "zh": "减少青少年犯罪",
+          "stance": "Positive",
+          "tone": "适合讲教育、家庭监督和社区项目降低犯罪率。"
+        },
+        {
+          "phrase": "curb youth crime",
+          "term": "curb",
+          "zh": "遏制青少年犯罪",
+          "stance": "Positive",
+          "tone": "适合强调需要控制青少年犯罪上升趋势。"
+        },
+        {
+          "phrase": "deter young people from crime",
+          "term": "deter",
+          "zh": "阻止年轻人走向犯罪",
+          "stance": "Positive",
+          "tone": "适合讨论惩戒、教育和早期干预的预防作用。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::long-term imprisonment",
+      "baseChinese": "监禁",
+      "baseEnglish": "imprisonment",
+      "type": "adjective",
+      "original": "long-term imprisonment",
+      "focus": "long-term",
+      "options": [
+        {
+          "phrase": "lengthy prison sentences",
+          "term": "lengthy",
+          "zh": "较长的监禁刑期",
+          "stance": "Negative",
+          "tone": "适合批判长期服刑的成本或再融入困难。"
+        },
+        {
+          "phrase": "prolonged imprisonment",
+          "term": "prolonged",
+          "zh": "长期监禁",
+          "stance": "Negative",
+          "tone": "适合正式讨论监禁时间过长对个人和社会的影响。"
+        },
+        {
+          "phrase": "custodial sentences",
+          "term": "custodial",
+          "zh": "监禁类刑罚",
+          "stance": "Neutral",
+          "tone": "适合与社区服务、罚款或缓刑等非监禁处罚作对比。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::impose imprisonment",
+      "baseChinese": "监禁",
+      "baseEnglish": "imprisonment",
+      "type": "verb",
+      "original": "impose imprisonment",
+      "focus": "impose",
+      "options": [
+        {
+          "phrase": "hand down prison sentences",
+          "term": "hand down",
+          "zh": "判处监禁刑",
+          "stance": "Neutral",
+          "tone": "适合描述法院作出监禁判决。"
+        },
+        {
+          "phrase": "sentence offenders to prison",
+          "term": "sentence",
+          "zh": "判罪犯入狱",
+          "stance": "Neutral",
+          "tone": "适合说明严重犯罪会导致入狱处罚。"
+        },
+        {
+          "phrase": "use custodial sentences",
+          "term": "use",
+          "zh": "采用监禁刑罚",
+          "stance": "Neutral",
+          "tone": "适合讨论刑事司法体系是否依赖监禁。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::provide rehabilitation",
+      "baseChinese": "改造",
+      "baseEnglish": "rehabilitation",
+      "type": "verb",
+      "original": "provide rehabilitation",
+      "focus": "provide",
+      "options": [
+        {
+          "phrase": "offer rehabilitation programs",
+          "term": "offer",
+          "zh": "提供改造项目",
+          "stance": "Positive",
+          "tone": "适合讲监狱或社区为罪犯提供教育和心理辅导。"
+        },
+        {
+          "phrase": "deliver rehabilitative services",
+          "term": "deliver",
+          "zh": "提供改造性服务",
+          "stance": "Positive",
+          "tone": "适合正式描述政府或机构实际执行改造服务。"
+        },
+        {
+          "phrase": "fund offender rehabilitation",
+          "term": "fund",
+          "zh": "资助罪犯改造",
+          "stance": "Positive",
+          "tone": "适合讨论公共资金投入教育、戒毒和就业培训。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::strong civic awareness",
+      "baseChinese": "公民意识",
+      "baseEnglish": "civic awareness",
+      "type": "adjective",
+      "original": "strong civic awareness",
+      "focus": "strong",
+      "options": [
+        {
+          "phrase": "heightened civic awareness",
+          "term": "heightened",
+          "zh": "提高了的公民意识",
+          "stance": "Positive",
+          "tone": "适合说明公共教育或社会事件让人更关注公共责任。"
+        },
+        {
+          "phrase": "deep civic responsibility",
+          "term": "deep",
+          "zh": "深厚的公民责任感",
+          "stance": "Positive",
+          "tone": "适合强调个人愿意参与公共事务和遵守社会责任。"
+        },
+        {
+          "phrase": "growing civic awareness",
+          "term": "growing",
+          "zh": "不断增强的公民意识",
+          "stance": "Positive",
+          "tone": "适合描述学生或公众的公民意识正在提升。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::raise civic awareness",
+      "baseChinese": "公民意识",
+      "baseEnglish": "civic awareness",
+      "type": "verb",
+      "original": "raise civic awareness",
+      "focus": "raise",
+      "options": [
+        {
+          "phrase": "enhance civic awareness",
+          "term": "enhance",
+          "zh": "提升公民意识",
+          "stance": "Positive",
+          "tone": "适合讲学校、公民课程或公益活动提升公共责任感。"
+        },
+        {
+          "phrase": "cultivate civic responsibility",
+          "term": "cultivate",
+          "zh": "培养公民责任感",
+          "stance": "Positive",
+          "tone": "适合强调教育长期塑造学生的社会责任。"
+        },
+        {
+          "phrase": "strengthen public understanding of civic duties",
+          "term": "strengthen",
+          "zh": "加强公众对公民义务的理解",
+          "stance": "Positive",
+          "tone": "适合讨论投票、守法、志愿服务等公共义务。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::meaningful voluntary work",
+      "baseChinese": "志愿服务",
+      "baseEnglish": "voluntary work / community service",
+      "type": "adjective",
+      "original": "meaningful voluntary work",
+      "focus": "meaningful",
+      "options": [
+        {
+          "phrase": "rewarding voluntary work",
+          "term": "rewarding",
+          "zh": "有收获的志愿服务",
+          "stance": "Positive",
+          "tone": "适合说明志愿者在帮助他人的同时获得成长。"
+        },
+        {
+          "phrase": "socially useful community service",
+          "term": "socially useful",
+          "zh": "对社会有实际作用的社区服务",
+          "stance": "Positive",
+          "tone": "适合强调志愿服务能解决社区中的具体问题。"
+        },
+        {
+          "phrase": "impactful volunteer work",
+          "term": "impactful",
+          "zh": "有实际影响的志愿工作",
+          "stance": "Positive",
+          "tone": "适合说明志愿活动能带来可见的社会改善。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::active political participation",
+      "baseChinese": "政治参与",
+      "baseEnglish": "political participation",
+      "type": "adjective",
+      "original": "active political participation",
+      "focus": "active",
+      "options": [
+        {
+          "phrase": "broad political participation",
+          "term": "broad",
+          "zh": "广泛的政治参与",
+          "stance": "Positive",
+          "tone": "适合说明更多公民参与投票、公共讨论或社区治理。"
+        },
+        {
+          "phrase": "informed political participation",
+          "term": "informed",
+          "zh": "基于充分信息的政治参与",
+          "stance": "Positive",
+          "tone": "适合强调公民应理解政策和候选人后再参与。"
+        },
+        {
+          "phrase": "grassroots political participation",
+          "term": "grassroots",
+          "zh": "基层政治参与",
+          "stance": "Positive",
+          "tone": "适合讨论普通居民参与社区决策和公共事务。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::adjective::peaceful public protest",
+      "baseChinese": "公共抗议",
+      "baseEnglish": "public protest",
+      "type": "adjective",
+      "original": "peaceful public protest",
+      "focus": "peaceful",
+      "options": [
+        {
+          "phrase": "non-violent public protest",
+          "term": "non-violent",
+          "zh": "非暴力公共抗议",
+          "stance": "Positive",
+          "tone": "适合强调抗议以和平方式表达公共诉求。"
+        },
+        {
+          "phrase": "lawful public protest",
+          "term": "lawful",
+          "zh": "合法的公共抗议",
+          "stance": "Neutral",
+          "tone": "适合说明抗议在法律允许范围内进行。"
+        },
+        {
+          "phrase": "orderly public demonstrations",
+          "term": "orderly",
+          "zh": "有序的公共示威",
+          "stance": "Positive",
+          "tone": "适合描述公共表达没有演变为混乱或暴力。"
+        }
+      ]
+    },
+    {
+      "cardKey": "Society::verb::organize public protests",
+      "baseChinese": "公共抗议",
+      "baseEnglish": "public protest",
+      "type": "verb",
+      "original": "organize public protests",
+      "focus": "organize",
+      "options": [
+        {
+          "phrase": "stage public protests",
+          "term": "stage",
+          "zh": "举行公共抗议",
+          "stance": "Neutral",
+          "tone": "适合描述公众为了表达诉求而举行抗议活动。"
+        },
+        {
+          "phrase": "hold public demonstrations",
+          "term": "hold",
+          "zh": "举行公共示威",
+          "stance": "Neutral",
+          "tone": "适合正式描述集体表达政治或社会诉求。"
+        },
+        {
+          "phrase": "coordinate peaceful demonstrations",
+          "term": "coordinate",
+          "zh": "协调和平示威",
+          "stance": "Positive",
+          "tone": "适合强调抗议活动需要安排路线、秩序和安全。"
+        }
+      ]
+    }
+  ],
+  "deferred": []
+}

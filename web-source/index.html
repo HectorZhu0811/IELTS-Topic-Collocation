@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IELTS Task 2 Collocation Trainer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <p class="eyebrow">IELTS Writing Task 2</p>
+      <h1>
+        <button id="headerTopicButton" class="header-topic-button" type="button">
+          <span id="pageTitleText">Collocation Trainer</span>
+        </button>
+      </h1>
+      <p id="pageSubtitle" class="page-subtitle">A focused writing practice space for topic vocabulary and recall practice.</p>
+    </div>
+    <div class="stats" aria-live="polite">
+      <span id="visibleCount">0</span>
+      <span>/</span>
+      <span id="totalCount">0</span>
+    </div>
+  </header>
+
+  <main>
+    <section id="topicLanding" class="topic-landing" aria-label="Topic selection"></section>
+
+    <section id="studyPage" class="study-page" hidden>
+      <nav class="study-nav" aria-label="Study navigation">
+        <button id="backButton" class="back-button" type="button">All topics</button>
+        <div id="topicFilters" class="topic-filters" aria-label="Topic filters"></div>
+      </nav>
+
+      <section class="toolbar" aria-label="Flashcard controls">
+        <div class="toolbar-copy" aria-live="polite">
+          <span id="toolbarKicker">Selected · 科技</span>
+          <strong id="toolbarTopicTitle">Technology</strong>
+        </div>
+        <label class="search-box">
+          <span>Search this topic</span>
+          <input id="searchInput" type="search" placeholder="中文 / English / synonym / tone">
+        </label>
+        <button id="orderResetButton" type="button">Reset order</button>
+        <button id="resetButton" type="button">Shuffle cards</button>
+        <button id="bankButton" type="button">Collocation bank</button>
+        <button id="zenButton" type="button">Zen mode</button>
+        <button id="continueZenButton" type="button">Continue Zen</button>
+        <button id="exportMemoryButton" type="button">Export memory</button>
+        <button id="importMemoryButton" type="button">Import memory</button>
+        <input id="importMemoryInput" type="file" accept="application/json,.json" hidden>
+      </section>
+
+      <section id="collocationBank" class="collocation-bank" aria-live="polite"></section>
+      <section id="recentTopicInline" class="recent-topic-inline" aria-live="polite"></section>
+      <section id="topicSections" class="topic-sections" aria-live="polite"></section>
+      <section id="zenPage" class="zen-page" hidden aria-live="polite"></section>
+    </section>
+
+    <section id="bankPage" class="bank-page" hidden aria-live="polite"></section>
+  </main>
+
+  <script src="sentences.js"></script>
+  <script src="synonym-curation.js"></script>
+  <script src="data.js"></script>
+  <script src="subtopics.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

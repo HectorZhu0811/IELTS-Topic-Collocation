@@ -1,0 +1,60 @@
+{
+  "generatedAt": "2026-07-04T05:25:19.043Z",
+  "source": "web-source/data.js",
+  "totalCards": 556,
+  "fields": [
+    "Front",
+    "Back",
+    "Topic",
+    "TopicZh",
+    "Type",
+    "BaseChinese",
+    "BaseEnglish",
+    "HighlightChinese",
+    "HighlightEnglish",
+    "Tags",
+    "CardId"
+  ],
+  "files": [
+    {
+      "fileName": "technology-科技-anki.tsv",
+      "count": 72
+    },
+    {
+      "fileName": "education-教育-anki.tsv",
+      "count": 80
+    },
+    {
+      "fileName": "environment-环境-anki.tsv",
+      "count": 48
+    },
+    {
+      "fileName": "government-政府-anki.tsv",
+      "count": 52
+    },
+    {
+      "fileName": "society-社会-anki.tsv",
+      "count": 62
+    },
+    {
+      "fileName": "health-健康-anki.tsv",
+      "count": 64
+    },
+    {
+      "fileName": "urbanization-城市化-anki.tsv",
+      "count": 42
+    },
+    {
+      "fileName": "media-媒体-anki.tsv",
+      "count": 44
+    },
+    {
+      "fileName": "economy-经济-anki.tsv",
+      "count": 46
+    },
+    {
+      "fileName": "arts-艺术-anki.tsv",
+      "count": 46
+    }
+  ]
+}
