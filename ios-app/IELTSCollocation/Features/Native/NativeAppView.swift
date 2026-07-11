@@ -7,34 +7,76 @@ enum AppRoute: Hashable {
     case settings
 }
 
+enum AppTab: Hashable {
+    case topics
+    case memory
+    case search
+}
+
 struct NativeAppView: View {
     @StateObject private var store = LearningStore()
-    @State private var path: [AppRoute] = []
+    @State private var selectedTab: AppTab = .topics
+    @State private var topicsPath: [AppRoute] = []
+    @State private var memoryPath: [AppRoute] = []
+    @State private var searchPath: [AppRoute] = []
 
     var body: some View {
-        NavigationStack(path: $path) {
-            Group {
-                if let error = store.loadError {
-                    LoadErrorView(message: error)
-                } else if store.content == nil {
-                    ProgressView("Loading trainer")
-                } else {
-                    HomeView(store: store, path: $path)
+        Group {
+            if let error = store.loadError {
+                LoadErrorView(message: error)
+            } else if store.content == nil {
+                ProgressView("Loading trainer")
+            } else {
+                TabView(selection: $selectedTab) {
+                    NavigationStack(path: $topicsPath) {
+                        HomeView(store: store, path: $topicsPath)
+                            .navigationDestination(for: AppRoute.self) { route in
+                                destination(for: route, path: $topicsPath)
+                            }
+                    }
+                    .tabItem {
+                        Label("全部话题", systemImage: "square.grid.2x2")
+                    }
+                    .tag(AppTab.topics)
+
+                    NavigationStack(path: $memoryPath) {
+                        MemoryBankView(store: store, path: $memoryPath)
+                            .navigationDestination(for: AppRoute.self) { route in
+                                destination(for: route, path: $memoryPath)
+                            }
+                    }
+                    .tabItem {
+                        Label("Memory Bank", systemImage: "bookmark")
+                    }
+                    .tag(AppTab.memory)
+
+                    NavigationStack(path: $searchPath) {
+                        EmptyStateView(title: "搜索卡片", message: "输入中文或英文搜索卡片")
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .background(AppBackground())
+                            .navigationDestination(for: AppRoute.self) { route in
+                                destination(for: route, path: $searchPath)
+                            }
+                    }
+                    .tabItem {
+                        Label("搜索", systemImage: "magnifyingglass")
+                    }
+                    .tag(AppTab.search)
                 }
-            }
-            .navigationDestination(for: AppRoute.self) { route in
-                destination(for: route)
             }
         }
     }
 
     @ViewBuilder
-    private func destination(for route: AppRoute) -> some View {
+    private func destination(
+        for route: AppRoute,
+        path: Binding<[AppRoute]>
+    ) -> some View {
         switch route {
         case .topic(let topicId):
-            TopicStudyView(store: store, path: $path, topicId: topicId)
+            TopicStudyView(store: store, path: path, topicId: topicId)
         case .memoryBank:
-            MemoryBankView(store: store, path: $path)
+            MemoryBankView(store: store, path: path)
         case .settings:
             SettingsView(store: store)
         }
@@ -55,21 +97,12 @@ struct HomeView: View {
     }
 
     private var featureTopic: Topic? {
-        rankedTopics.first
+        store.continuationTopic()
     }
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
-                AppHeader(
-                    title: "IELTS Collocation",
-                    subtitle: nil,
-                    actionIcon: "gearshape",
-                    actionLabel: "Settings"
-                ) {
-                    path.append(.settings)
-                }
-
                 hero
                 topicGrid
             }
@@ -82,37 +115,34 @@ struct HomeView: View {
 
     private var hero: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Text("Today")
+            Text("今日学习")
                 .font(.caption.weight(.heavy))
                 .foregroundStyle(featureTopic?.tint ?? .secondary)
-                .textCase(.uppercase)
 
-            Text("Pick a topic and review today's due cards.")
-                .font(.title2.weight(.heavy))
-                .lineLimit(3)
-                .minimumScaleFactor(0.82)
+            if let topic = featureTopic {
+                Text(topic.title)
+                    .font(.title2.weight(.heavy))
 
-            HStack(spacing: 10) {
-                SummaryPill(value: "\(store.cards.filter(store.isDue).count)", label: "due")
-                SummaryPill(value: "\(store.memoryBankCards().count)", label: "saved")
-            }
-
-            HStack(spacing: 12) {
-                Button {
-                    path.append(.topic(store.lastTopicId))
-                } label: {
-                    Label("Resume", systemImage: "play.fill")
-                        .frame(maxWidth: .infinity)
+                if store.dueCount(topicId: topic.id) > 0 {
+                    Text("\(store.dueCount(topicId: topic.id)) 张待复习卡片")
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(.secondary)
+                } else {
+                    Text("今日已完成")
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(.secondary)
                 }
-                .buttonStyle(PrimaryGlassButtonStyle(tint: featureTopic?.tint ?? .blue, accent: featureTopic?.accentTint))
 
                 Button {
-                    path.append(.memoryBank)
+                    store.rememberTopic(topic.id)
+                    path.append(.topic(topic.id))
                 } label: {
-                    Label("Memory", systemImage: "building.columns.fill")
+                    Label("继续 \(topic.title)", systemImage: "play.fill")
                         .frame(maxWidth: .infinity)
                 }
-                .buttonStyle(SecondaryGlassButtonStyle())
+                .buttonStyle(
+                    PrimaryGlassButtonStyle(tint: topic.tint, accent: topic.accentTint)
+                )
             }
         }
         .padding(18)

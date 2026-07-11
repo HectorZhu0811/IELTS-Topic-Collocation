@@ -40,6 +40,33 @@ final class LearningStore: ObservableObject {
         cards.first { $0.id == id }
     }
 
+    func continuationTopic() -> Topic? {
+        let snapshots = topics.map {
+            TopicDueSnapshot(
+                topicId: $0.id,
+                dueCount: dueCount(topicId: $0.id),
+                totalCount: cards(for: $0.id).count
+            )
+        }
+        guard let topicId = ContinuationTopicSelector.select(
+            from: snapshots,
+            recentTopicId: lastTopicId
+        ) else {
+            return nil
+        }
+        return topic(id: topicId)
+    }
+
+    func searchCards(query: String) -> [Flashcard] {
+        cards.filter {
+            CardSearchMatcher.matches(
+                query: query,
+                frontChinese: $0.frontChinese,
+                backEnglish: $0.backEnglish
+            )
+        }
+    }
+
     func dueCount(topicId: String) -> Int {
         cards(for: topicId).filter { isDue($0) }.count
     }

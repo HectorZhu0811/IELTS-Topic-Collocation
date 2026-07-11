@@ -21,6 +21,25 @@ expect(
   !source.includes('subtitle: "Native trainer ·'),
   "Home header should not show the redundant native/card-count subtitle."
 );
+expect(
+  !source.includes('title: "IELTS Collocation"'),
+  "The removed home brand header must stay absent."
+);
+expect(
+  source.includes("TabView(selection: $selectedTab)"),
+  "The root should use a selected native TabView."
+);
+for (const label of ['Label("全部话题"', 'Label("Memory Bank"', 'Label("搜索"']) {
+  expect(source.includes(label), `Missing bottom tab: ${label}`);
+}
+expect(
+  source.includes("store.continuationTopic()"),
+  "The home continuation card should use the due-ratio selector."
+);
+expect(
+  source.includes('Label("继续 \\(topic.title)"'),
+  "The primary action should name the selected topic."
+);
 
 expect(
   !source.includes("case topicSearch"),
