@@ -9,6 +9,7 @@ enum AppRoute: Hashable {
 }
 
 enum AppTab: Hashable {
+    case home
     case topics
     case memory
     case search
@@ -16,7 +17,8 @@ enum AppTab: Hashable {
 
 struct NativeAppView: View {
     @StateObject private var store = LearningStore()
-    @State private var selectedTab: AppTab = .topics
+    @State private var selectedTab: AppTab = .home
+    @State private var homePath: [AppRoute] = []
     @State private var topicsPath: [AppRoute] = []
     @State private var memoryPath: [AppRoute] = []
     @State private var searchPath: [AppRoute] = []
@@ -29,8 +31,19 @@ struct NativeAppView: View {
                 ProgressView("Loading trainer")
             } else {
                 TabView(selection: $selectedTab) {
+                    NavigationStack(path: $homePath) {
+                        HomeView(store: store, path: $homePath)
+                            .navigationDestination(for: AppRoute.self) { route in
+                                destination(for: route, path: $homePath)
+                            }
+                    }
+                    .tabItem {
+                        Label("首页", systemImage: "house.fill")
+                    }
+                    .tag(AppTab.home)
+
                     NavigationStack(path: $topicsPath) {
-                        HomeView(store: store, path: $topicsPath)
+                        AllTopicsView(store: store, path: $topicsPath)
                             .navigationDestination(for: AppRoute.self) { route in
                                 destination(for: route, path: $topicsPath)
                             }
@@ -220,15 +233,6 @@ struct HomeView: View {
     @ObservedObject var store: LearningStore
     @Binding var path: [AppRoute]
 
-    private var rankedTopics: [Topic] {
-        store.topics.sorted {
-            let left = store.dueCount(topicId: $0.id) + store.weakCount(topicId: $0.id)
-            let right = store.dueCount(topicId: $1.id) + store.weakCount(topicId: $1.id)
-            if left == right { return $0.id < $1.id }
-            return left > right
-        }
-    }
-
     private var featureTopic: Topic? {
         store.continuationTopic()
     }
@@ -237,7 +241,7 @@ struct HomeView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
                 hero
-                topicGrid
+                HomeOverviewPlaceholder()
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 14)
@@ -284,23 +288,68 @@ struct HomeView: View {
         }
     }
 
-    private var topicGrid: some View {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 160, maximum: 240), spacing: 12)], spacing: 12) {
-            ForEach(rankedTopics) { topic in
-                Button {
-                    store.rememberTopic(topic.id)
-                    path.append(.topic(topic.id))
-                } label: {
-                    TopicTile(
-                        topic: topic,
-                        due: store.dueCount(topicId: topic.id),
-                        weak: store.weakCount(topicId: topic.id)
-                    )
-                }
-                .frame(maxWidth: .infinity)
-                .buttonStyle(.plain)
+}
+
+struct HomeOverviewPlaceholder: View {
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack(spacing: 8) {
+                Image(systemName: "chart.line.uptrend.xyaxis")
+                Text("学习概览")
             }
+            .font(.headline.weight(.heavy))
+            .foregroundStyle(.secondary)
+
+            Text("更多学习数据即将上线")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.secondary)
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(18)
+        .background {
+            TopicSoftCardBackground(topic: nil, cornerRadius: 24)
+        }
+        .accessibilityElement(children: .combine)
+    }
+}
+
+struct AllTopicsView: View {
+    @ObservedObject var store: LearningStore
+    @Binding var path: [AppRoute]
+
+    private var rankedTopics: [Topic] {
+        store.topics.sorted {
+            let left = store.dueCount(topicId: $0.id) + store.weakCount(topicId: $0.id)
+            let right = store.dueCount(topicId: $1.id) + store.weakCount(topicId: $1.id)
+            if left == right { return $0.id < $1.id }
+            return left > right
+        }
+    }
+
+    var body: some View {
+        ScrollView {
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 160, maximum: 240), spacing: 12)], spacing: 12) {
+                ForEach(rankedTopics) { topic in
+                    Button {
+                        store.rememberTopic(topic.id)
+                        path.append(.topic(topic.id))
+                    } label: {
+                        TopicTile(
+                            topic: topic,
+                            due: store.dueCount(topicId: topic.id),
+                            weak: store.weakCount(topicId: topic.id)
+                        )
+                    }
+                    .frame(maxWidth: .infinity)
+                    .buttonStyle(.plain)
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 14)
+        }
+        .background(AppBackground())
+        .navigationTitle("全部话题")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
@@ -677,10 +726,6 @@ struct MemoryBankView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                AppHeader(title: "Memory Bank", subtitle: "\(store.memoryBankCards().count) saved or weak cards", actionIcon: "gearshape", actionLabel: "Settings") {
-                    path.append(.settings)
-                }
-
                 if groupedCards.isEmpty {
                     EmptyStateView(title: "No saved cards", message: "Mark difficult collocations or rate them as weak.")
                 } else {

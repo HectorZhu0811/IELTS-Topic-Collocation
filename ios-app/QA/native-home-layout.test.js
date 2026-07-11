@@ -29,8 +29,28 @@ expect(
   source.includes("TabView(selection: $selectedTab)"),
   "The root should use a selected native TabView."
 );
-for (const label of ['Label("全部话题"', 'Label("Memory Bank"', 'Label("搜索"']) {
-  expect(source.includes(label), `Missing bottom tab: ${label}`);
+expect(
+  source.includes("case home") && source.includes("case topics"),
+  "AppTab should expose separate home and topics cases."
+);
+expect(
+  source.includes("@State private var selectedTab: AppTab = .home"),
+  "Home should be the default selected tab."
+);
+expect(
+  source.includes("@State private var homePath: [AppRoute] = []"),
+  "Home should preserve an independent navigation path."
+);
+for (const [label, icon] of [
+  ["首页", "house.fill"],
+  ["全部话题", "square.grid.2x2"],
+  ["Memory Bank", "bookmark"],
+  ["搜索", "magnifyingglass"],
+]) {
+  expect(
+    source.includes(`Label("${label}", systemImage: "${icon}")`),
+    `Missing bottom tab: ${label} / ${icon}`
+  );
 }
 expect(
   source.includes("store.continuationTopic()"),
@@ -39,6 +59,47 @@ expect(
 expect(
   source.includes('Label("继续 \\(topic.title)"'),
   "The primary action should name the selected topic."
+);
+
+const homeSection = source.match(
+  /struct HomeView: View \{([\s\S]*?)\n\}\n\nstruct HomeOverviewPlaceholder/
+);
+expect(homeSection, "HomeView should be followed by the learning overview placeholder.");
+expect(!homeSection[1].includes("rankedTopics"), "Home should not rank the full topic grid.");
+expect(!homeSection[1].includes("LazyVGrid"), "Home should not render topic cards.");
+expect(homeSection[1].includes('Text("今日学习")'), "Home should retain the Today card.");
+
+const placeholderSection = source.match(
+  /struct HomeOverviewPlaceholder: View \{([\s\S]*?)\n\}\n\nstruct AllTopicsView/
+);
+expect(placeholderSection, "Home should include a bounded learning overview placeholder.");
+expect(
+  placeholderSection[1].includes('Text("学习概览")') &&
+    placeholderSection[1].includes('Text("更多学习数据即将上线")'),
+  "The learning overview placeholder should use the approved copy."
+);
+
+const allTopicsSection = source.match(
+  /struct AllTopicsView: View \{([\s\S]*?)\n\}\n\nstruct TopicStudyView/
+);
+expect(allTopicsSection, "AllTopicsView should own the topic grid.");
+expect(allTopicsSection[1].includes("rankedTopics"), "All Topics should retain topic ranking.");
+expect(allTopicsSection[1].includes("LazyVGrid"), "All Topics should render the adaptive grid.");
+expect(
+  allTopicsSection[1].includes('.navigationTitle("全部话题")') &&
+    allTopicsSection[1].includes(".navigationBarTitleDisplayMode(.inline)"),
+  "All Topics should use the approved inline title."
+);
+
+const memorySection = source.match(
+  /struct MemoryBankView: View \{([\s\S]*?)\n\}\n\nstruct SettingsView/
+);
+expect(memorySection, "MemoryBankView should remain bounded before SettingsView.");
+expect(!memorySection[1].includes("AppHeader("), "Memory Bank should not render the banner.");
+expect(!memorySection[1].includes("gearshape"), "Memory Bank should not render the settings gear.");
+expect(
+  !memorySection[1].includes("path.append(.settings)"),
+  "Memory Bank should not expose a settings entry."
 );
 
 expect(
