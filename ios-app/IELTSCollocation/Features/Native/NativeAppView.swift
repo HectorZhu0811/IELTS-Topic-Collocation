@@ -3,6 +3,7 @@ import UniformTypeIdentifiers
 
 enum AppRoute: Hashable {
     case topic(String)
+    case cardPreview(String)
     case memoryBank
     case settings
 }
@@ -51,9 +52,7 @@ struct NativeAppView: View {
                     .tag(AppTab.memory)
 
                     NavigationStack(path: $searchPath) {
-                        EmptyStateView(title: "搜索卡片", message: "输入中文或英文搜索卡片")
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .background(AppBackground())
+                        CardSearchView(store: store, path: $searchPath)
                             .navigationDestination(for: AppRoute.self) { route in
                                 destination(for: route, path: $searchPath)
                             }
@@ -75,11 +74,145 @@ struct NativeAppView: View {
         switch route {
         case .topic(let topicId):
             TopicStudyView(store: store, path: path, topicId: topicId)
+        case .cardPreview(let cardId):
+            CardPreviewView(store: store, cardId: cardId)
         case .memoryBank:
             MemoryBankView(store: store, path: path)
         case .settings:
             SettingsView(store: store)
         }
+    }
+}
+
+struct CardSearchView: View {
+    @ObservedObject var store: LearningStore
+    @Binding var path: [AppRoute]
+    @State private var query = ""
+
+    private var normalizedQuery: String {
+        query.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    private var results: [Flashcard] {
+        store.searchCards(query: query)
+    }
+
+    var body: some View {
+        ScrollView {
+            LazyVStack(spacing: 12) {
+                if normalizedQuery.isEmpty {
+                    EmptyStateView(
+                        title: "搜索卡片",
+                        message: "输入中文或英文搜索卡片"
+                    )
+                    .frame(minHeight: 360)
+                } else if results.isEmpty {
+                    EmptyStateView(
+                        title: "没有找到匹配卡片",
+                        message: "尝试更换中文或英文关键词"
+                    )
+                    .frame(minHeight: 360)
+                } else {
+                    ForEach(results) { card in
+                        Button {
+                            path.append(.cardPreview(card.id))
+                        } label: {
+                            CardSearchResultRow(
+                                card: card,
+                                topic: store.topic(id: card.topic)
+                            )
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 14)
+        }
+        .background(AppBackground())
+        .searchable(text: $query, prompt: "搜索中文或英文")
+        .navigationTitle("搜索")
+        .navigationBarTitleDisplayMode(.inline)
+    }
+}
+
+struct CardSearchResultRow: View {
+    let card: Flashcard
+    let topic: Topic?
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(card.frontChinese)
+                .font(.headline.weight(.heavy))
+                .foregroundStyle(.primary)
+                .multilineTextAlignment(.leading)
+
+            Text(card.backEnglish)
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.leading)
+
+            HStack {
+                Text(card.topic)
+                    .font(.caption.weight(.bold))
+                    .foregroundStyle(topic?.tint ?? .secondary)
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .font(.caption.weight(.bold))
+                    .foregroundStyle(.tertiary)
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(16)
+        .background {
+            TopicSoftCardBackground(topic: topic, cornerRadius: 22)
+        }
+        .contentShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("\(card.frontChinese)，\(card.backEnglish)，\(card.topic)")
+        .accessibilityHint("轻点打开卡片预览")
+    }
+}
+
+struct CardPreviewView: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    @ObservedObject var store: LearningStore
+    let cardId: String
+
+    @State private var revealed = false
+
+    var body: some View {
+        Group {
+            if let card = store.card(id: cardId) {
+                ScrollView {
+                    Button {
+                        withAnimation(reduceMotion ? nil : .spring(response: 0.48, dampingFraction: 0.84)) {
+                            revealed.toggle()
+                        }
+                    } label: {
+                        FlippableStudyCard(
+                            card: card,
+                            topic: store.topic(id: card.topic),
+                            revealed: revealed,
+                            minHeight: 390,
+                            frontSubtitle: "轻点查看英文"
+                        )
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel(revealed ? card.backEnglish : card.frontChinese)
+                    .accessibilityHint(revealed ? "轻点返回中文" : "轻点查看英文")
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 24)
+                }
+                .background(AppBackground(topic: store.topic(id: card.topic)))
+                .navigationTitle(card.topic)
+                .navigationBarTitleDisplayMode(.inline)
+            } else {
+                LoadErrorView(message: "Card not found.")
+            }
+        }
+        .toolbar(.hidden, for: .tabBar)
     }
 }
 
@@ -213,6 +346,7 @@ struct TopicStudyView: View {
         }
         .background(AppBackground(topic: topic))
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar(.hidden, for: .tabBar)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
