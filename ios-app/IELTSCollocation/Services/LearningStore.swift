@@ -246,12 +246,30 @@ final class LearningStore: ObservableObject {
         return record
     }
 
-    func memoryBankCards() -> [Flashcard] {
-        cards.filter { markedCardIds.contains($0.id) || isWeak($0) }
+    func galleryStatus(for card: Flashcard) -> GalleryMemoryStatus {
+        GalleryMemoryStatus(record(for: card).status)
+    }
+
+    func galleryCards(
+        topicId: String? = nil,
+        status: GalleryMemoryStatus? = nil
+    ) -> [Flashcard] {
+        cards.filter { card in
+            let matchesTopic = topicId == nil || card.topic == topicId
+            let matchesStatus = status == nil || galleryStatus(for: card) == status
+            return matchesTopic && matchesStatus
+        }
             .sorted { lhs, rhs in
-                if lhs.topic == rhs.topic { return lhs.frontChinese < rhs.frontChinese }
-                return lhs.topic < rhs.topic
+                let leftTopicIndex = topics.firstIndex { $0.id == lhs.topic } ?? 0
+                let rightTopicIndex = topics.firstIndex { $0.id == rhs.topic } ?? 0
+                if leftTopicIndex != rightTopicIndex { return leftTopicIndex < rightTopicIndex }
+                return lhs.frontChinese < rhs.frontChinese
             }
+    }
+
+    func galleryDistribution(topicId: String? = nil) -> GalleryMemoryDistribution {
+        let scopedCards = cards.filter { topicId == nil || $0.topic == topicId }
+        return GalleryMemoryDistribution(statuses: scopedCards.map(galleryStatus(for:)))
     }
 
     func exportMemoryData() throws -> Data {

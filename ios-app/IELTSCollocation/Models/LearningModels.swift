@@ -156,6 +156,57 @@ struct DailyStudyProgress: Codable, Equatable {
     }
 }
 
+enum GalleryMemoryStatus: String, CaseIterable, Identifiable, Hashable {
+    case new
+    case weak
+    case known
+
+    var id: Self { self }
+
+    var label: String {
+        switch self {
+        case .new: "未学习"
+        case .weak: "薄弱"
+        case .known: "已掌握"
+        }
+    }
+
+    init(_ status: ReviewStatus) {
+        switch status {
+        case .new: self = .new
+        case .weak: self = .weak
+        case .known: self = .known
+        }
+    }
+}
+
+struct GalleryMemoryDistribution: Equatable {
+    let total: Int
+    let new: Int
+    let weak: Int
+    let known: Int
+
+    init(statuses: [GalleryMemoryStatus]) {
+        total = statuses.count
+        new = statuses.filter { $0 == .new }.count
+        weak = statuses.filter { $0 == .weak }.count
+        known = statuses.filter { $0 == .known }.count
+    }
+
+    func count(for status: GalleryMemoryStatus) -> Int {
+        switch status {
+        case .new: new
+        case .weak: weak
+        case .known: known
+        }
+    }
+
+    func percentage(for status: GalleryMemoryStatus) -> Int {
+        guard total > 0 else { return 0 }
+        return Int((Double(count(for: status)) / Double(total) * 100).rounded())
+    }
+}
+
 struct ReviewRecord: Codable, Equatable {
     var cardId: String
     var status: ReviewStatus

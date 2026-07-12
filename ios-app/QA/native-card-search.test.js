@@ -15,19 +15,11 @@ function expect(condition, message) {
   if (!condition) throw new Error(message);
 }
 
-expect(source.includes("struct CardSearchView: View"), "Missing card search screen.");
-expect(
-  source.includes('.searchable(text: $query, prompt: "搜索中文或英文")'),
-  "Search needs the approved Chinese/English prompt."
-);
-expect(
-  source.includes("store.searchCards(query: query)"),
-  "Search must use the Chinese/English-only store adapter."
-);
-expect(
-  source.includes("path.append(.cardPreview(card.id))"),
-  "Search results should open independent previews."
-);
+expect(source.includes("struct GalleryView: View"), "Gallery should own card search.");
+expect(source.includes("CardSearchMatcher.matches("), "Gallery should reuse the bilingual matcher.");
+expect(source.includes('TextField("搜索中文或英文", text:'), "Gallery should expose the approved inline search prompt.");
+expect(!source.includes("struct CardSearchView: View"), "Search should stay on Gallery.");
+expect(!source.includes("case cardSearch"), "Search should not require a navigation route.");
 expect(source.includes("struct CardPreviewView: View"), "Missing independent preview screen.");
 
 const preview = source.match(
