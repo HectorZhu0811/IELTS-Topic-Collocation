@@ -4,15 +4,14 @@ import UniformTypeIdentifiers
 enum AppRoute: Hashable {
     case topic(String)
     case cardPreview(String)
-    case memoryBank
+    case gallery
     case settings
 }
 
 enum AppTab: Hashable {
     case home
     case topics
-    case memory
-    case search
+    case gallery
 }
 
 struct NativeAppView: View {
@@ -20,8 +19,7 @@ struct NativeAppView: View {
     @State private var selectedTab: AppTab = .home
     @State private var homePath: [AppRoute] = []
     @State private var topicsPath: [AppRoute] = []
-    @State private var memoryPath: [AppRoute] = []
-    @State private var searchPath: [AppRoute] = []
+    @State private var galleryPath: [AppRoute] = []
 
     var body: some View {
         Group {
@@ -53,27 +51,16 @@ struct NativeAppView: View {
                     }
                     .tag(AppTab.topics)
 
-                    NavigationStack(path: $memoryPath) {
-                        MemoryBankView(store: store, path: $memoryPath)
+                    NavigationStack(path: $galleryPath) {
+                        GalleryView(store: store, path: $galleryPath)
                             .navigationDestination(for: AppRoute.self) { route in
-                                destination(for: route, path: $memoryPath)
+                                destination(for: route, path: $galleryPath)
                             }
                     }
                     .tabItem {
-                        Label("Memory Bank", systemImage: "bookmark")
+                        Label("Gallery", systemImage: "rectangle.grid.2x2")
                     }
-                    .tag(AppTab.memory)
-
-                    NavigationStack(path: $searchPath) {
-                        CardSearchView(store: store, path: $searchPath)
-                            .navigationDestination(for: AppRoute.self) { route in
-                                destination(for: route, path: $searchPath)
-                            }
-                    }
-                    .tabItem {
-                        Label("搜索", systemImage: "magnifyingglass")
-                    }
-                    .tag(AppTab.search)
+                    .tag(AppTab.gallery)
                 }
             }
         }
@@ -89,101 +76,11 @@ struct NativeAppView: View {
             TopicStudyView(store: store, path: path, topicId: topicId)
         case .cardPreview(let cardId):
             CardPreviewView(store: store, cardId: cardId)
-        case .memoryBank:
-            MemoryBankView(store: store, path: path)
+        case .gallery:
+            GalleryView(store: store, path: path)
         case .settings:
             SettingsView(store: store)
         }
-    }
-}
-
-struct CardSearchView: View {
-    @ObservedObject var store: LearningStore
-    @Binding var path: [AppRoute]
-    @State private var query = ""
-
-    private var normalizedQuery: String {
-        query.trimmingCharacters(in: .whitespacesAndNewlines)
-    }
-
-    private var results: [Flashcard] {
-        store.searchCards(query: query)
-    }
-
-    var body: some View {
-        ScrollView {
-            LazyVStack(spacing: 12) {
-                if normalizedQuery.isEmpty {
-                    EmptyStateView(
-                        title: "搜索卡片",
-                        message: "输入中文或英文搜索卡片"
-                    )
-                    .frame(minHeight: 360)
-                } else if results.isEmpty {
-                    EmptyStateView(
-                        title: "没有找到匹配卡片",
-                        message: "尝试更换中文或英文关键词"
-                    )
-                    .frame(minHeight: 360)
-                } else {
-                    ForEach(results) { card in
-                        Button {
-                            path.append(.cardPreview(card.id))
-                        } label: {
-                            CardSearchResultRow(
-                                card: card,
-                                topic: store.topic(id: card.topic)
-                            )
-                        }
-                        .buttonStyle(.plain)
-                    }
-                }
-            }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 14)
-        }
-        .background(AppBackground())
-        .searchable(text: $query, prompt: "搜索中文或英文")
-        .navigationTitle("搜索")
-        .navigationBarTitleDisplayMode(.inline)
-    }
-}
-
-struct CardSearchResultRow: View {
-    let card: Flashcard
-    let topic: Topic?
-
-    var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Text(card.frontChinese)
-                .font(.headline.weight(.heavy))
-                .foregroundStyle(.primary)
-                .multilineTextAlignment(.leading)
-
-            Text(card.backEnglish)
-                .font(.subheadline.weight(.semibold))
-                .foregroundStyle(.secondary)
-                .multilineTextAlignment(.leading)
-
-            HStack {
-                Text(card.topic)
-                    .font(.caption.weight(.bold))
-                    .foregroundStyle(topic?.tint ?? .secondary)
-                Spacer()
-                Image(systemName: "chevron.right")
-                    .font(.caption.weight(.bold))
-                    .foregroundStyle(.tertiary)
-            }
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(16)
-        .background {
-            TopicSoftCardBackground(topic: topic, cornerRadius: 22)
-        }
-        .contentShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
-        .accessibilityElement(children: .combine)
-        .accessibilityLabel("\(card.frontChinese)，\(card.backEnglish)，\(card.topic)")
-        .accessibilityHint("轻点打开卡片预览")
     }
 }
 
@@ -359,8 +256,6 @@ struct TopicStudyView: View {
     let topicId: String
 
     @State private var revealed = false
-    @State private var showGalleryPlaceholder = false
-
     private var topic: Topic? { store.topic(id: topicId) }
 
     private var currentCard: Flashcard? {
@@ -386,7 +281,7 @@ struct TopicStudyView: View {
                 } else {
                     NoDueTopicView(
                         chooseAnotherTopic: { path.removeAll() },
-                        showGalleryPlaceholder: { showGalleryPlaceholder = true }
+                        showGallery: { path.append(.gallery) }
                     )
                 }
             }
@@ -399,11 +294,11 @@ struct TopicStudyView: View {
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
-                    path.append(.memoryBank)
+                    path.append(.gallery)
                 } label: {
-                    Image(systemName: "bookmark")
+                    Image(systemName: "rectangle.grid.2x2")
                 }
-                .accessibilityLabel("Memory Bank")
+                .accessibilityLabel("Gallery")
             }
         }
         .onAppear {
@@ -413,11 +308,6 @@ struct TopicStudyView: View {
         .onReceive(NotificationCenter.default.publisher(for: Notification.Name.NSCalendarDayChanged)) { _ in
             revealed = false
             store.prepareDailySession(topicId: topicId)
-        }
-        .alert("Card Gallery 即将上线", isPresented: $showGalleryPlaceholder) {
-            Button("知道了", role: .cancel) {}
-        } message: {
-            Text("全部卡片 Gallery 将在后续版本提供。")
         }
     }
 
@@ -492,7 +382,7 @@ struct TopicProgressHeader: View {
 
 struct NoDueTopicView: View {
     let chooseAnotherTopic: () -> Void
-    let showGalleryPlaceholder: () -> Void
+    let showGallery: () -> Void
 
     var body: some View {
         VStack(spacing: 18) {
@@ -503,7 +393,7 @@ struct NoDueTopicView: View {
             Text("今天没有待复习卡片")
                 .font(.title2.weight(.heavy))
 
-            Text("可以学习其他话题，或稍后查看全部卡片。")
+            Text("可以学习其他话题，或浏览 Gallery 中的全部卡片。")
                 .font(.body)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
@@ -511,7 +401,7 @@ struct NoDueTopicView: View {
             Button("学习其他话题", action: chooseAnotherTopic)
                 .buttonStyle(PrimaryGlassButtonStyle(tint: .green))
 
-            Button("查看全部卡片", action: showGalleryPlaceholder)
+            Button("查看 Gallery", action: showGallery)
                 .buttonStyle(SecondaryGlassButtonStyle())
         }
         .frame(maxWidth: .infinity, minHeight: 360)
@@ -713,44 +603,386 @@ extension Flashcard {
     }
 }
 
-struct MemoryBankView: View {
+struct GalleryView: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
     @ObservedObject var store: LearningStore
     @Binding var path: [AppRoute]
 
-    private var groupedCards: [(String, [Flashcard])] {
-        Dictionary(grouping: store.memoryBankCards(), by: \.topic)
-            .sorted { $0.key < $1.key }
-            .map { ($0.key, $0.value) }
+    @State private var selectedTopicId: String?
+    @State private var selectedStatus: GalleryMemoryStatus?
+    @State private var isSearching = false
+    @State private var searchQuery = ""
+    @FocusState private var searchFieldFocused: Bool
+
+    private var normalizedSearchQuery: String {
+        searchQuery.trimmingCharacters(in: .whitespacesAndNewlines)
+    }
+
+    private var visibleCards: [Flashcard] {
+        let scopedCards = store.galleryCards(
+            topicId: selectedTopicId,
+            status: selectedStatus
+        )
+        guard !normalizedSearchQuery.isEmpty else { return scopedCards }
+        return scopedCards.filter { card in
+            CardSearchMatcher.matches(
+                query: normalizedSearchQuery,
+                frontChinese: card.frontChinese,
+                backEnglish: card.backEnglish
+            )
+        }
+    }
+
+    private var visibleCardIds: [String] {
+        visibleCards.map(\.id)
+    }
+
+    private var distribution: GalleryMemoryDistribution {
+        store.galleryDistribution(topicId: selectedTopicId)
+    }
+
+    private var searchAnimation: Animation? {
+        reduceMotion ? nil : .snappy(duration: 0.28)
+    }
+
+    private var searchFieldTransition: AnyTransition {
+        reduceMotion ? .identity : .move(edge: .trailing).combined(with: .opacity)
+    }
+
+    private var titleTransition: AnyTransition {
+        reduceMotion ? .identity : .move(edge: .leading).combined(with: .opacity)
+    }
+
+    private var cardTransition: AnyTransition {
+        reduceMotion ? .identity : .opacity.combined(with: .move(edge: .top))
+    }
+
+    private var animatedSearchQuery: Binding<String> {
+        Binding(
+            get: { searchQuery },
+            set: { newValue in
+                withAnimation(searchAnimation) {
+                    searchQuery = newValue
+                }
+            }
+        )
     }
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 16) {
-                if groupedCards.isEmpty {
-                    EmptyStateView(title: "No saved cards", message: "Mark difficult collocations or rate them as weak.")
-                } else {
-                    ForEach(groupedCards, id: \.0) { topicId, cards in
-                        VStack(alignment: .leading, spacing: 10) {
-                            Button {
-                                path.append(.topic(topicId))
-                            } label: {
-                                Label("\(topicId) · \(cards.count)", systemImage: "arrowshape.turn.up.right.fill")
-                                    .font(.headline.weight(.bold))
-                            }
-                            .buttonStyle(SecondaryGlassButtonStyle())
+        List {
+            Section {
+                topicTabs
+                    .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
 
-                            ForEach(cards.prefix(12)) { card in
-                                FlashcardView(store: store, card: card)
+                memoryFilters
+                    .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 10, trailing: 16))
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
+            }
+
+            if visibleCards.isEmpty {
+                GalleryEmptyState(
+                    topicId: selectedTopicId,
+                    status: selectedStatus,
+                    query: normalizedSearchQuery
+                )
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
+            } else {
+                ForEach(visibleCards) { card in
+                    Button {
+                        path.append(.cardPreview(card.id))
+                    } label: {
+                        GalleryCardRow(card: card, status: store.galleryStatus(for: card))
+                    }
+                    .buttonStyle(.plain)
+                    .listRowInsets(EdgeInsets(top: 5, leading: 16, bottom: 5, trailing: 16))
+                    .listRowBackground(Color.clear)
+                    .listRowSeparator(.hidden)
+                    .transition(cardTransition)
+                }
+            }
+        }
+        .listStyle(.plain)
+        .scrollContentBackground(.hidden)
+        .background(AppBackground())
+        .safeAreaInset(edge: .top, spacing: 0) {
+            galleryHeader
+        }
+        .animation(searchAnimation, value: visibleCardIds)
+        .toolbar(.hidden, for: .navigationBar)
+    }
+
+    private var galleryHeader: some View {
+        HStack(alignment: .center, spacing: 12) {
+            if isSearching {
+                HStack(spacing: 8) {
+                    Image(systemName: "magnifyingglass")
+                        .foregroundStyle(.secondary)
+
+                    TextField("搜索中文或英文", text: animatedSearchQuery)
+                        .focused($searchFieldFocused)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled()
+                        .submitLabel(.search)
+                        .accessibilityLabel("搜索中文或英文卡片")
+
+                    if !searchQuery.isEmpty {
+                        Button {
+                            withAnimation(searchAnimation) {
+                                searchQuery = ""
                             }
+                        } label: {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundStyle(.secondary)
+                                .frame(width: 44, height: 44)
                         }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("清除搜索内容")
+                    }
+                }
+                .padding(.leading, 12)
+                .frame(height: 44)
+                .background(Color.primary.opacity(0.08), in: Capsule())
+                .transition(searchFieldTransition)
+
+                Button("取消", action: closeSearch)
+                    .font(.body.weight(.semibold))
+                    .frame(minHeight: 44)
+                    .transition(searchFieldTransition)
+            } else {
+                Text("Gallery")
+                    .font(.largeTitle.weight(.bold))
+                    .transition(titleTransition)
+
+                Spacer(minLength: 12)
+
+                Button(action: openSearch) {
+                    Image(systemName: "magnifyingglass")
+                        .font(.title2.weight(.medium))
+                        .frame(width: 44, height: 44)
+                        .background(Color.primary.opacity(0.08), in: Circle())
+                }
+                .buttonStyle(.plain)
+                .accessibilityLabel("搜索")
+                .accessibilityHint("在 Gallery 顶部展开搜索栏")
+            }
+        }
+        .frame(height: 44)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 6)
+        .background(.ultraThinMaterial)
+    }
+
+    private func openSearch() {
+        withAnimation(searchAnimation) {
+            isSearching = true
+        }
+        Task { @MainActor in
+            searchFieldFocused = true
+        }
+    }
+
+    private func closeSearch() {
+        searchFieldFocused = false
+        withAnimation(searchAnimation) {
+            searchQuery = ""
+            isSearching = false
+        }
+    }
+
+    private var topicTabs: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                GalleryTopicTab(
+                    title: "全部 · \(store.metadata?.cardCount ?? 0)",
+                    isSelected: selectedTopicId == nil
+                ) {
+                    selectedTopicId = nil
+                }
+
+                ForEach(store.topics) { topic in
+                    GalleryTopicTab(
+                        title: topic.title,
+                        isSelected: selectedTopicId == topic.id
+                    ) {
+                        selectedTopicId = topic.id
                     }
                 }
             }
-            .padding(.horizontal, 16)
-            .padding(.vertical, 14)
+            .padding(.vertical, 2)
         }
-        .background(AppBackground())
-        .navigationBarTitleDisplayMode(.inline)
+        .accessibilityLabel("话题筛选")
+    }
+
+    private var memoryFilters: some View {
+        HStack(spacing: 8) {
+            ForEach(GalleryMemoryStatus.allCases) { status in
+                GalleryMemoryFilterButton(
+                    status: status,
+                    percentage: distribution.percentage(for: status),
+                    isSelected: selectedStatus == status
+                ) {
+                    selectedStatus = selectedStatus == status ? nil : status
+                }
+            }
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .accessibilityElement(children: .contain)
+        .accessibilityLabel("记忆程度筛选")
+    }
+}
+
+struct GalleryTopicTab: View {
+    let title: String
+    let isSelected: Bool
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            Text(title)
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(isSelected ? .white : .secondary)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 9)
+                .background(isSelected ? Color.primary : Color.secondary.opacity(0.12), in: Capsule())
+                .frame(minHeight: 44)
+        }
+        .buttonStyle(.plain)
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
+    }
+}
+
+struct GalleryMemoryFilterButton: View {
+    let status: GalleryMemoryStatus
+    let percentage: Int
+    let isSelected: Bool
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 5) {
+                Circle()
+                    .fill(status.dotColor)
+                    .frame(width: 8, height: 8)
+                Text("\(status.label) \(percentage)%")
+                    .font(.caption.weight(.semibold))
+            }
+            .foregroundStyle(status.textColor)
+            .padding(.horizontal, 9)
+            .padding(.vertical, 7)
+            .background(status.fillColor.opacity(0.72), in: Capsule())
+            .overlay {
+                Capsule()
+                    .stroke(isSelected ? Color.primary : .clear, lineWidth: 2)
+            }
+            .frame(minHeight: 44)
+        }
+        .buttonStyle(.plain)
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
+        .accessibilityLabel("\(status.label) \(percentage)%")
+        .accessibilityHint(isSelected ? "再次轻点显示全部记忆程度" : "轻点筛选此记忆程度")
+    }
+}
+
+struct GalleryCardRow: View {
+    let card: Flashcard
+    let status: GalleryMemoryStatus
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            HStack(alignment: .top, spacing: 12) {
+                VStack(alignment: .leading, spacing: 5) {
+                    Text(card.frontChinese)
+                        .font(.body.weight(.semibold))
+                        .multilineTextAlignment(.leading)
+
+                    Text(card.backEnglish)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.leading)
+                }
+
+                Spacer(minLength: 8)
+
+                Text(status.label)
+                    .font(.caption.weight(.bold))
+                    .foregroundStyle(status.textColor)
+                    .fixedSize(horizontal: true, vertical: false)
+            }
+        }
+        .frame(maxWidth: .infinity, minHeight: 66, alignment: .leading)
+        .padding(.horizontal, 15)
+        .padding(.vertical, 12)
+        .background(status.fillColor, in: RoundedRectangle(cornerRadius: 17, style: .continuous))
+        .contentShape(RoundedRectangle(cornerRadius: 17, style: .continuous))
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(card.frontChinese)，\(card.backEnglish)，\(status.label)")
+        .accessibilityHint("轻点打开卡片详情")
+    }
+}
+
+struct GalleryEmptyState: View {
+    let topicId: String?
+    let status: GalleryMemoryStatus?
+    let query: String
+
+    var body: some View {
+        VStack(spacing: 10) {
+            Image(systemName: "rectangle.grid.2x2")
+                .font(.system(.largeTitle, design: .rounded, weight: .semibold))
+                .foregroundStyle(.secondary)
+            Text("没有匹配的卡片")
+                .font(.headline)
+            Text(message)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+        }
+        .frame(maxWidth: .infinity, minHeight: 220)
+        .padding(.vertical, 24)
+    }
+
+    private var message: String {
+        if !query.isEmpty {
+            return "没有找到包含“\(query)”的中文或英文卡片。"
+        }
+        if let status {
+            return "当前没有“\(status.label)”状态的卡片。"
+        }
+        if let topicId {
+            return "\(topicId) 暂时没有可展示的卡片。"
+        }
+        return "当前内容库暂时为空。"
+    }
+}
+
+private extension GalleryMemoryStatus {
+    var fillColor: Color {
+        switch self {
+        case .new: Color(red: 0.90, green: 0.91, blue: 0.94)
+        case .weak: Color(red: 1.00, green: 0.86, blue: 0.64)
+        case .known: Color(red: 0.74, green: 0.92, blue: 0.81)
+        }
+    }
+
+    var dotColor: Color {
+        switch self {
+        case .new: .gray
+        case .weak: .orange
+        case .known: .green
+        }
+    }
+
+    var textColor: Color {
+        switch self {
+        case .new: .primary
+        case .weak: Color(red: 0.36, green: 0.19, blue: 0.02)
+        case .known: Color(red: 0.02, green: 0.30, blue: 0.18)
+        }
     }
 }
 
@@ -767,16 +999,16 @@ struct SettingsView: View {
                 LabeledContent("Topics", value: "\(store.metadata?.topicCount ?? 0)")
             }
 
-            Section("Memory") {
-                Button("Prepare memory export") {
+            Section("学习状态") {
+                Button("准备学习状态导出") {
                     prepareExport()
                 }
                 if let exportURL {
                     ShareLink(item: exportURL) {
-                        Label("Share memory JSON", systemImage: "square.and.arrow.up")
+                        Label("分享学习状态 JSON", systemImage: "square.and.arrow.up")
                     }
                 }
-                Button("Import memory JSON") {
+                Button("导入学习状态 JSON") {
                     importing = true
                 }
                 if let importMessage {
@@ -803,12 +1035,12 @@ struct SettingsView: View {
                     let allowed = url.startAccessingSecurityScopedResource()
                     defer { if allowed { url.stopAccessingSecurityScopedResource() } }
                     try store.importMemoryData(Data(contentsOf: url))
-                    importMessage = "Memory imported."
+                    importMessage = "学习状态已导入。"
                 } catch {
-                    importMessage = "Import failed: \(error.localizedDescription)"
+                    importMessage = "导入失败：\(error.localizedDescription)"
                 }
             case .failure(let error):
-                importMessage = "Import failed: \(error.localizedDescription)"
+                importMessage = "导入失败：\(error.localizedDescription)"
             }
         }
     }
@@ -820,7 +1052,7 @@ struct SettingsView: View {
             try data.write(to: url, options: .atomic)
             exportURL = url
         } catch {
-            importMessage = "Export failed: \(error.localizedDescription)"
+            importMessage = "导出失败：\(error.localizedDescription)"
         }
     }
 }
