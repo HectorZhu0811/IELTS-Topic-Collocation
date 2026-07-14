@@ -11,10 +11,9 @@ IELTSCollocation/Resources/Content/ios-content.json
 Current exported content target:
 
 ```text
-556 cards
+970 cards
 10 topics
-54 recent subtopics
-1487 synonym options bundled for beta 2.0 optional-collocation work
+1487 synonym options
 ```
 
 The app stores review state, marked cards, review logs, last topic, and settings locally. Export/import uses the existing `topic-collocation-memory-v1` JSON format.
