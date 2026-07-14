@@ -1,5 +1,26 @@
 import Foundation
 
+enum AppRoute: Hashable {
+    case topic(String)
+    case cardPreview(String)
+    case gallery
+    case settings
+}
+
+enum GalleryNavigationRules {
+    static func initialTopicId(for path: [AppRoute]) -> String? {
+        guard path.last == .gallery else { return nil }
+        guard let parentRoute = path.dropLast().last else { return nil }
+        guard case .topic(let topicId) = parentRoute else { return nil }
+        return topicId
+    }
+
+    static func backPath(from path: [AppRoute]) -> [AppRoute] {
+        guard path.last == .gallery else { return path }
+        return Array(path.dropLast())
+    }
+}
+
 struct TopicDueSnapshot: Equatable {
     let topicId: String
     let dueCount: Int

@@ -46,18 +46,25 @@ expect(allTopicsSection[1].includes("rankedTopics"), "All Topics should retain t
 expect(allTopicsSection[1].includes("LazyVGrid"), "All Topics should render the adaptive grid.");
 expect(allTopicsSection[1].includes('.navigationTitle("全部话题")'), "All Topics should use the approved title.");
 
-const topicStudySection = source.match(/struct TopicStudyView: View \{([\s\S]*?)\n\}\n\nstruct TopicProgressHeader/);
-expect(topicStudySection, "TopicStudyView should be followed by TopicProgressHeader.");
+const topicStudySection = source.match(/struct TopicStudyView: View \{([\s\S]*?)\n\}\n\nstruct /);
+expect(topicStudySection, "TopicStudyView should be a bounded study screen.");
+expect(!topicStudySection[1].includes("TopicProgressHeader("), "Study cards should not show the topic header.");
+expect(!source.includes("struct TopicProgressHeader: View"), "The unused topic header should be removed from the native study flow.");
 expect(topicStudySection[1].includes("path.append(.gallery)"), "Topic study should expose a Gallery route.");
 expect(topicStudySection[1].includes('.accessibilityLabel("Gallery")'), "The topic Gallery action needs an accessible label.");
+expect(
+  !topicStudySection[1].includes('.toolbar(.hidden, for: .tabBar)'),
+  "Topic study should keep the bottom tab bar stable during push and pop."
+);
 expect(source.includes("今天没有待复习卡片"), "No-due state should explain that today's queue is empty.");
 expect(source.includes("查看 Gallery"), "No-due state should offer a Gallery route.");
 
-const gallerySection = source.match(/struct GalleryView: View \{([\s\S]*?)\n\}\n\nstruct GalleryTopicTab/);
-expect(gallerySection, "GalleryView should be followed by its topic tab component.");
+const gallerySection = source.match(/struct GalleryView: View \{([\s\S]*?)\n\}\n\nstruct GalleryTopicPickerButton/);
+expect(gallerySection, "GalleryView should be followed by its topic picker component.");
 expect(gallerySection[1].includes("List {"), "Gallery should use a native List.");
-expect(gallerySection[1].includes("ScrollView(.horizontal"), "Gallery should expose horizontal topic tabs.");
-expect(gallerySection[1].includes("GalleryMemoryFilterButton"), "Gallery should expose clickable memory filters.");
+expect(!gallerySection[1].includes("ScrollView(.horizontal"), "Gallery topic selection should not require horizontal swiping.");
+expect(gallerySection[1].includes("GalleryTopicPickerSheet"), "Gallery should expose all topics in a native sheet.");
+expect(gallerySection[1].includes("GalleryMemorySegmentedControl"), "Gallery should expose one clickable memory segmented control.");
 expect(gallerySection[1].includes("GalleryCardRow"), "Gallery should render bilingual card rows.");
 expect(gallerySection[1].includes("private var galleryHeader: some View"), "Gallery should use a stable custom title row.");
 expect(gallerySection[1].includes(".toolbar(.hidden, for: .navigationBar)"), "Gallery should hide the animated system navigation bar.");

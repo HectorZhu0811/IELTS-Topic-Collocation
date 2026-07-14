@@ -1,13 +1,6 @@
 import SwiftUI
 import UniformTypeIdentifiers
 
-enum AppRoute: Hashable {
-    case topic(String)
-    case cardPreview(String)
-    case gallery
-    case settings
-}
-
 enum AppTab: Hashable {
     case home
     case topics
@@ -77,7 +70,11 @@ struct NativeAppView: View {
         case .cardPreview(let cardId):
             CardPreviewView(store: store, cardId: cardId)
         case .gallery:
-            GalleryView(store: store, path: path)
+            GalleryView(
+                store: store,
+                path: path,
+                initialTopicId: GalleryNavigationRules.initialTopicId(for: path.wrappedValue)
+            )
         case .settings:
             SettingsView(store: store)
         }
@@ -86,6 +83,7 @@ struct NativeAppView: View {
 
 struct CardPreviewView: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.dismiss) private var dismiss
 
     @ObservedObject var store: LearningStore
     let cardId: String
@@ -116,13 +114,45 @@ struct CardPreviewView: View {
                     .padding(.vertical, 24)
                 }
                 .background(AppBackground(topic: store.topic(id: card.topic)))
-                .navigationTitle(card.topic)
-                .navigationBarTitleDisplayMode(.inline)
             } else {
                 LoadErrorView(message: "Card not found.")
             }
         }
-        .toolbar(.hidden, for: .tabBar)
+        .safeAreaInset(edge: .top, spacing: 0) {
+            GalleryDetailHeader(title: store.card(id: cardId)?.topic ?? "卡片") {
+                dismiss()
+            }
+        }
+        .toolbar(.hidden, for: .navigationBar)
+    }
+}
+
+struct GalleryDetailHeader: View {
+    let title: String
+    let backAction: () -> Void
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Button(action: backAction) {
+                Image(systemName: "chevron.left")
+                    .font(.title3.weight(.semibold))
+                    .frame(width: 44, height: 44)
+                    .background(Color.primary.opacity(0.08), in: Circle())
+            }
+            .buttonStyle(.plain)
+            .accessibilityLabel("返回")
+            .accessibilityHint("返回 Gallery")
+
+            Text(title)
+                .font(.headline.weight(.semibold))
+                .lineLimit(1)
+
+            Spacer(minLength: 0)
+        }
+        .frame(height: 44)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 6)
+        .background(.ultraThinMaterial)
     }
 }
 
@@ -265,12 +295,6 @@ struct TopicStudyView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                TopicProgressHeader(
-                    title: topic?.title ?? topicId,
-                    topic: topic,
-                    progress: store.dailyProgressFraction(topicId: topicId)
-                )
-
                 if let card = currentCard {
                     SingleCardStudyView(
                         card: card,
@@ -290,7 +314,6 @@ struct TopicStudyView: View {
         }
         .background(AppBackground(topic: topic))
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar(.hidden, for: .tabBar)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
@@ -322,61 +345,6 @@ struct TopicStudyView: View {
             }
             revealed = false
         }
-    }
-}
-
-struct TopicProgressHeader: View {
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
-
-    let title: String
-    let topic: Topic?
-    let progress: Double
-
-    private let cornerRadius: CGFloat = 24
-
-    private var clampedProgress: Double {
-        min(max(progress, 0), 1)
-    }
-
-    var body: some View {
-        ZStack(alignment: .leading) {
-            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                .fill(.ultraThinMaterial)
-
-            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                .fill(.white.opacity(0.48))
-
-            GeometryReader { proxy in
-                HStack(spacing: 0) {
-                    LinearGradient(
-                        colors: [
-                            (topic?.tint ?? .green).opacity(0.22),
-                            (topic?.accentTint ?? .green).opacity(0.14)
-                        ],
-                        startPoint: .leading,
-                        endPoint: .trailing
-                    )
-                        .frame(width: proxy.size.width * clampedProgress)
-                    Spacer(minLength: 0)
-                }
-                .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
-            }
-
-            RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                .strokeBorder((topic?.tint ?? .green).opacity(0.16), lineWidth: 1)
-
-            Text(title)
-                .font(.largeTitle.weight(.heavy))
-                .lineLimit(1)
-                .minimumScaleFactor(0.68)
-                .padding(.horizontal, 22)
-        }
-        .frame(maxWidth: .infinity, minHeight: 108)
-        .shadow(color: .black.opacity(0.055), radius: 18, x: 0, y: 12)
-        .animation(reduceMotion ? nil : .snappy, value: clampedProgress)
-        .accessibilityElement(children: .ignore)
-        .accessibilityLabel(title)
-        .accessibilityValue("今日学习进度 \(Int((clampedProgress * 100).rounded()))%")
     }
 }
 
@@ -608,12 +576,25 @@ struct GalleryView: View {
 
     @ObservedObject var store: LearningStore
     @Binding var path: [AppRoute]
+    let initialTopicId: String?
 
     @State private var selectedTopicId: String?
     @State private var selectedStatus: GalleryMemoryStatus?
     @State private var isSearching = false
+    @State private var isTopicPickerPresented = false
     @State private var searchQuery = ""
     @FocusState private var searchFieldFocused: Bool
+
+    init(
+        store: LearningStore,
+        path: Binding<[AppRoute]>,
+        initialTopicId: String? = nil
+    ) {
+        self.store = store
+        self._path = path
+        self.initialTopicId = initialTopicId
+        self._selectedTopicId = State(initialValue: initialTopicId)
+    }
 
     private var normalizedSearchQuery: String {
         searchQuery.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -658,6 +639,10 @@ struct GalleryView: View {
         reduceMotion ? .identity : .opacity.combined(with: .move(edge: .top))
     }
 
+    private var showsBackButton: Bool {
+        path.last == .gallery
+    }
+
     private var animatedSearchQuery: Binding<String> {
         Binding(
             get: { searchQuery },
@@ -672,7 +657,7 @@ struct GalleryView: View {
     var body: some View {
         List {
             Section {
-                topicTabs
+                topicPicker
                     .listRowInsets(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))
                     .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
@@ -696,10 +681,14 @@ struct GalleryView: View {
                     Button {
                         path.append(.cardPreview(card.id))
                     } label: {
-                        GalleryCardRow(card: card, status: store.galleryStatus(for: card))
+                        GalleryCardRow(
+                            card: card,
+                            topic: store.topic(id: card.topic),
+                            status: store.galleryStatus(for: card)
+                        )
                     }
                     .buttonStyle(.plain)
-                    .listRowInsets(EdgeInsets(top: 5, leading: 16, bottom: 5, trailing: 16))
+                    .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
                     .listRowBackground(Color.clear)
                     .listRowSeparator(.hidden)
                     .transition(cardTransition)
@@ -714,6 +703,15 @@ struct GalleryView: View {
         }
         .animation(searchAnimation, value: visibleCardIds)
         .toolbar(.hidden, for: .navigationBar)
+        .sheet(isPresented: $isTopicPickerPresented) {
+            GalleryTopicPickerSheet(
+                topics: store.topics,
+                selectedTopicId: selectedTopicId,
+                totalCardCount: store.metadata?.cardCount ?? store.cards.count,
+                cardCount: { store.cards(for: $0).count },
+                onSelect: selectTopic
+            )
+        }
     }
 
     private var galleryHeader: some View {
@@ -754,6 +752,18 @@ struct GalleryView: View {
                     .frame(minHeight: 44)
                     .transition(searchFieldTransition)
             } else {
+                if showsBackButton {
+                    Button(action: leaveGallery) {
+                        Image(systemName: "chevron.left")
+                            .font(.title3.weight(.semibold))
+                            .frame(width: 44, height: 44)
+                            .background(Color.primary.opacity(0.08), in: Circle())
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityLabel("返回")
+                    .accessibilityHint("返回上一层")
+                }
+
                 Text("Gallery")
                     .font(.largeTitle.weight(.bold))
                     .transition(titleTransition)
@@ -794,133 +804,274 @@ struct GalleryView: View {
         }
     }
 
-    private var topicTabs: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 8) {
-                GalleryTopicTab(
-                    title: "全部 · \(store.metadata?.cardCount ?? 0)",
-                    isSelected: selectedTopicId == nil
-                ) {
-                    selectedTopicId = nil
-                }
+    private func leaveGallery() {
+        path = GalleryNavigationRules.backPath(from: path)
+    }
 
-                ForEach(store.topics) { topic in
-                    GalleryTopicTab(
-                        title: topic.title,
-                        isSelected: selectedTopicId == topic.id
-                    ) {
-                        selectedTopicId = topic.id
-                    }
-                }
-            }
-            .padding(.vertical, 2)
+    private var topicPicker: some View {
+        GalleryTopicPickerButton(
+            topic: selectedTopicId.flatMap { store.topic(id: $0) },
+            count: selectedTopicId.map { store.cards(for: $0).count }
+                ?? (store.metadata?.cardCount ?? store.cards.count)
+        ) {
+            isTopicPickerPresented = true
         }
         .accessibilityLabel("话题筛选")
     }
 
     private var memoryFilters: some View {
-        HStack(spacing: 8) {
-            ForEach(GalleryMemoryStatus.allCases) { status in
-                GalleryMemoryFilterButton(
-                    status: status,
-                    percentage: distribution.percentage(for: status),
-                    isSelected: selectedStatus == status
-                ) {
-                    selectedStatus = selectedStatus == status ? nil : status
-                }
-            }
-        }
-        .frame(maxWidth: .infinity, alignment: .leading)
+        GalleryMemorySegmentedControl(
+            distribution: distribution,
+            selection: $selectedStatus
+        )
         .accessibilityElement(children: .contain)
         .accessibilityLabel("记忆程度筛选")
     }
+
+    private func selectTopic(_ topicId: String?) {
+        withAnimation(searchAnimation) {
+            selectedTopicId = topicId
+        }
+    }
 }
 
-struct GalleryTopicTab: View {
-    let title: String
-    let isSelected: Bool
+struct GalleryTopicPickerButton: View {
+    let topic: Topic?
+    let count: Int
     let action: () -> Void
 
     var body: some View {
         Button(action: action) {
-            Text(title)
-                .font(.subheadline.weight(.semibold))
-                .foregroundStyle(isSelected ? .white : .secondary)
-                .padding(.horizontal, 14)
-                .padding(.vertical, 9)
-                .background(isSelected ? Color.primary : Color.secondary.opacity(0.12), in: Capsule())
-                .frame(minHeight: 44)
+            HStack(spacing: 7) {
+                Image(systemName: "square.grid.2x2.fill")
+                    .foregroundStyle(topic?.tint ?? Color.primary)
+
+                Text(topic?.title ?? "全部话题")
+                    .lineLimit(1)
+
+                Text("· \(count)")
+                    .foregroundStyle(.secondary)
+
+                Image(systemName: "chevron.up.chevron.down")
+                    .font(.caption.weight(.bold))
+                    .foregroundStyle(.secondary)
+            }
+            .font(.subheadline.weight(.semibold))
+            .padding(.horizontal, 13)
+            .frame(height: 40)
+            .background(.thinMaterial, in: Capsule())
+            .overlay {
+                Capsule()
+                    .strokeBorder((topic?.tint ?? Color.secondary).opacity(0.24), lineWidth: 1)
+            }
+            .contentShape(Capsule())
         }
         .buttonStyle(.plain)
+        .frame(minHeight: 44)
+        .accessibilityValue(topic?.title ?? "全部话题")
+        .accessibilityHint("轻点打开全部话题")
+    }
+}
+
+struct GalleryTopicPickerSheet: View {
+    @Environment(\.dismiss) private var dismiss
+
+    let topics: [Topic]
+    let selectedTopicId: String?
+    let totalCardCount: Int
+    let cardCount: (String) -> Int
+    let onSelect: (String?) -> Void
+
+    var body: some View {
+        NavigationStack {
+            List {
+                Button {
+                    select(nil)
+                } label: {
+                    GalleryTopicPickerRow(
+                        title: "全部话题",
+                        count: totalCardCount,
+                        tint: .primary,
+                        isSelected: selectedTopicId == nil
+                    )
+                }
+                .buttonStyle(.plain)
+
+                ForEach(topics) { topic in
+                    Button {
+                        select(topic.id)
+                    } label: {
+                        GalleryTopicPickerRow(
+                            title: topic.title,
+                            count: cardCount(topic.id),
+                            tint: topic.tint,
+                            isSelected: selectedTopicId == topic.id
+                        )
+                    }
+                    .buttonStyle(.plain)
+                }
+            }
+            .listStyle(.insetGrouped)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("选择话题")
+                        .font(.headline)
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("完成") {
+                        dismiss()
+                    }
+                }
+            }
+        }
+        .presentationDetents([.medium, .large])
+        .presentationDragIndicator(.visible)
+    }
+
+    private func select(_ topicId: String?) {
+        onSelect(topicId)
+        dismiss()
+    }
+}
+
+struct GalleryTopicPickerRow: View {
+    let title: String
+    let count: Int
+    let tint: Color
+    let isSelected: Bool
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Circle()
+                .fill(tint)
+                .frame(width: 10, height: 10)
+                .accessibilityHidden(true)
+
+            Text(title)
+                .font(.body.weight(isSelected ? .semibold : .regular))
+
+            Spacer(minLength: 8)
+
+            Text("\(count)")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+
+            if isSelected {
+                Image(systemName: "checkmark")
+                    .font(.body.weight(.semibold))
+                    .foregroundStyle(tint)
+                    .accessibilityHidden(true)
+            }
+        }
+        .frame(minHeight: 44)
+        .contentShape(Rectangle())
+        .foregroundStyle(.primary)
+        .accessibilityElement(children: .combine)
         .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 }
 
-struct GalleryMemoryFilterButton: View {
-    let status: GalleryMemoryStatus
-    let percentage: Int
-    let isSelected: Bool
-    let action: () -> Void
+struct GalleryMemorySegmentedControl: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    let distribution: GalleryMemoryDistribution
+    @Binding var selection: GalleryMemoryStatus?
 
     var body: some View {
-        Button(action: action) {
-            HStack(spacing: 5) {
-                Circle()
-                    .fill(status.dotColor)
-                    .frame(width: 8, height: 8)
-                Text("\(status.label) \(percentage)%")
-                    .font(.caption.weight(.semibold))
+        ViewThatFits(in: .horizontal) {
+            HStack(spacing: 8) {
+                ForEach(GalleryMemoryStatus.allCases) { status in
+                    filterCapsule(for: status)
+                }
             }
-            .foregroundStyle(status.textColor)
-            .padding(.horizontal, 9)
-            .padding(.vertical, 7)
-            .background(status.fillColor.opacity(0.72), in: Capsule())
+
+            VStack(alignment: .leading, spacing: 6) {
+                ForEach(GalleryMemoryStatus.allCases) { status in
+                    filterCapsule(for: status)
+                }
+            }
+        }
+    }
+
+    private func filterCapsule(for status: GalleryMemoryStatus) -> some View {
+        let isSelected = selection == status
+
+        return Button {
+            withAnimation(reduceMotion ? nil : .snappy(duration: 0.24)) {
+                selection = isSelected ? nil : status
+            }
+        } label: {
+            HStack(spacing: 5) {
+                Image(systemName: status.iconName)
+                    .foregroundStyle(status.primaryColor)
+
+                Text(status.label)
+
+                Text("\(distribution.percentage(for: status))%")
+                    .foregroundStyle(isSelected ? status.textColor.opacity(0.88) : Color.secondary)
+            }
+            .font(.subheadline.weight(.semibold))
+            .foregroundStyle(isSelected ? status.textColor : Color.primary)
+            .padding(.horizontal, 11)
+            .frame(height: 38)
+            .background(status.capsuleBackground(isSelected: isSelected), in: Capsule())
             .overlay {
                 Capsule()
-                    .stroke(isSelected ? Color.primary : .clear, lineWidth: 2)
+                    .strokeBorder(
+                        status.primaryColor.opacity(isSelected ? 0.72 : 0.22),
+                        lineWidth: isSelected ? 1.5 : 1
+                    )
             }
-            .frame(minHeight: 44)
+            .shadow(color: isSelected ? status.primaryColor.opacity(0.13) : .clear, radius: 4, y: 2)
+            .contentShape(Capsule())
         }
         .buttonStyle(.plain)
+        .frame(minHeight: 44)
         .accessibilityAddTraits(isSelected ? .isSelected : [])
-        .accessibilityLabel("\(status.label) \(percentage)%")
+        .accessibilityLabel("\(status.label) \(distribution.percentage(for: status))%")
         .accessibilityHint(isSelected ? "再次轻点显示全部记忆程度" : "轻点筛选此记忆程度")
     }
 }
 
 struct GalleryCardRow: View {
     let card: Flashcard
+    let topic: Topic?
     let status: GalleryMemoryStatus
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 6) {
-            HStack(alignment: .top, spacing: 12) {
-                VStack(alignment: .leading, spacing: 5) {
-                    Text(card.frontChinese)
-                        .font(.body.weight(.semibold))
-                        .multilineTextAlignment(.leading)
+        HStack(alignment: .center, spacing: 12) {
+            VStack(alignment: .leading, spacing: 3) {
+                Text(card.frontChinese)
+                    .font(.body.weight(.semibold))
+                    .multilineTextAlignment(.leading)
 
-                    Text(card.backEnglish)
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                        .multilineTextAlignment(.leading)
-                }
+                Text(card.backEnglish)
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.leading)
+            }
 
-                Spacer(minLength: 8)
+            Spacer(minLength: 8)
 
-                Text(status.label)
-                    .font(.caption.weight(.bold))
-                    .foregroundStyle(status.textColor)
-                    .fixedSize(horizontal: true, vertical: false)
+            Image(systemName: "chevron.right")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.secondary)
+                .accessibilityHidden(true)
+        }
+        .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+        .padding(.horizontal, 16)
+        .padding(.vertical, 6)
+        .background {
+            GeometryReader { proxy in
+                TopicSoftCardBackground(topic: topic, cornerRadius: 14, shadowOpacity: 0)
+                    .frame(width: proxy.size.width, height: proxy.size.height)
+                    .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
             }
         }
-        .frame(maxWidth: .infinity, minHeight: 66, alignment: .leading)
-        .padding(.horizontal, 15)
-        .padding(.vertical, 12)
-        .background(status.fillColor, in: RoundedRectangle(cornerRadius: 17, style: .continuous))
-        .contentShape(RoundedRectangle(cornerRadius: 17, style: .continuous))
+        .contentShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+        .padding(.vertical, 5)
         .accessibilityElement(children: .ignore)
-        .accessibilityLabel("\(card.frontChinese)，\(card.backEnglish)，\(status.label)")
+        .accessibilityLabel("\(card.frontChinese)，\(card.backEnglish)，\(topic?.title ?? card.topic)，\(status.label)")
         .accessibilityHint("轻点打开卡片详情")
     }
 }
@@ -961,28 +1112,47 @@ struct GalleryEmptyState: View {
 }
 
 private extension GalleryMemoryStatus {
-    var fillColor: Color {
+    var iconName: String {
         switch self {
-        case .new: Color(red: 0.90, green: 0.91, blue: 0.94)
-        case .weak: Color(red: 1.00, green: 0.86, blue: 0.64)
-        case .known: Color(red: 0.74, green: 0.92, blue: 0.81)
+        case .new: "circle"
+        case .weak: "exclamationmark.circle.fill"
+        case .known: "checkmark.circle.fill"
         }
     }
 
-    var dotColor: Color {
+    var primaryColor: Color {
         switch self {
-        case .new: .gray
-        case .weak: .orange
-        case .known: .green
+        case .new: Color(red: 0.18, green: 0.43, blue: 0.92)
+        case .weak: Color(red: 0.94, green: 0.48, blue: 0.12)
+        case .known: Color(red: 0.05, green: 0.59, blue: 0.34)
+        }
+    }
+
+    var accentColor: Color {
+        switch self {
+        case .new: Color(red: 0.18, green: 0.74, blue: 0.86)
+        case .weak: Color(red: 0.97, green: 0.38, blue: 0.33)
+        case .known: Color(red: 0.16, green: 0.76, blue: 0.61)
         }
     }
 
     var textColor: Color {
         switch self {
-        case .new: .primary
-        case .weak: Color(red: 0.36, green: 0.19, blue: 0.02)
-        case .known: Color(red: 0.02, green: 0.30, blue: 0.18)
+        case .new: Color(red: 0.04, green: 0.22, blue: 0.55)
+        case .weak: Color(red: 0.43, green: 0.18, blue: 0.01)
+        case .known: Color(red: 0.01, green: 0.31, blue: 0.17)
         }
+    }
+
+    func capsuleBackground(isSelected: Bool) -> LinearGradient {
+        LinearGradient(
+            colors: [
+                primaryColor.opacity(isSelected ? 0.30 : 0.10),
+                accentColor.opacity(isSelected ? 0.22 : 0.07)
+            ],
+            startPoint: .leading,
+            endPoint: .trailing
+        )
     }
 }
 
@@ -1227,6 +1397,13 @@ struct AppBackground: View {
 struct TopicSoftCardBackground: View {
     let topic: Topic?
     let cornerRadius: CGFloat
+    let shadowOpacity: Double
+
+    init(topic: Topic?, cornerRadius: CGFloat, shadowOpacity: Double = 0.055) {
+        self.topic = topic
+        self.cornerRadius = cornerRadius
+        self.shadowOpacity = shadowOpacity
+    }
 
     private var tint: Color { topic?.tint ?? .blue }
     private var accent: Color { topic?.accentTint ?? .cyan }
@@ -1256,7 +1433,7 @@ struct TopicSoftCardBackground: View {
                 .strokeBorder(tint.opacity(0.16), lineWidth: 1)
         }
         .clipShape(RoundedRectangle(cornerRadius: cornerRadius, style: .continuous))
-        .shadow(color: .black.opacity(0.055), radius: 18, x: 0, y: 12)
+        .shadow(color: .black.opacity(shadowOpacity), radius: 18, x: 0, y: 12)
     }
 }
 

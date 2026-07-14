@@ -39,8 +39,16 @@ expect(
   "Preview should reuse the existing flippable study card."
 );
 expect(
-  preview[1].includes('.toolbar(.hidden, for: .tabBar)'),
-  "Preview should hide the bottom tab bar."
+  !preview[1].includes('.toolbar(.hidden, for: .tabBar)'),
+  "Gallery preview should keep the bottom tab bar stable."
+);
+expect(
+  preview[1].includes('.toolbar(.hidden, for: .navigationBar)'),
+  "Gallery preview should keep the system navigation bar hidden across push and pop."
+);
+expect(
+  preview[1].includes("GalleryDetailHeader"),
+  "Gallery preview should use the same custom navigation chrome as Gallery."
 );
 
 console.log("Native card search checks passed.");

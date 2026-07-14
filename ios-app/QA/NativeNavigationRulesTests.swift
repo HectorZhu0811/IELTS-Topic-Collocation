@@ -10,6 +10,36 @@ struct NativeNavigationRulesTests {
     }
 
     static func main() {
+        let topicGalleryPath = GalleryNavigationRules.backPath(
+            from: [.topic("Technology"), .gallery]
+        )
+        expect(
+            topicGalleryPath == [.topic("Technology")],
+            "Gallery back should reveal the topic parent"
+        )
+
+        let rootGalleryPath = GalleryNavigationRules.backPath(from: [.gallery])
+        expect(rootGalleryPath.isEmpty, "Gallery back from a root path should return to the tab root")
+
+        expect(
+            GalleryNavigationRules.initialTopicId(for: [.topic("Technology"), .gallery]) == "Technology",
+            "Pushed Gallery should inherit its parent topic"
+        )
+        expect(
+            GalleryNavigationRules.initialTopicId(for: [.gallery]) == nil,
+            "Root Gallery should not inherit a topic filter"
+        )
+        expect(
+            GalleryNavigationRules.initialTopicId(for: [.settings, .gallery]) == nil,
+            "Gallery should not infer a topic from an unrelated parent route"
+        )
+
+        let unrelatedPath: [AppRoute] = [.topic("Technology")]
+        expect(
+            GalleryNavigationRules.backPath(from: unrelatedPath) == unrelatedPath,
+            "Gallery back should not mutate a non-Gallery path"
+        )
+
         let ratioWinner = ContinuationTopicSelector.select(
             from: [
                 TopicDueSnapshot(topicId: "Education", dueCount: 60, totalCount: 100),
